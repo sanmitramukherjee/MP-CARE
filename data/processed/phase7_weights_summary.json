@@ -1,0 +1,739 @@
+{
+  "experiment": "phase7_weight_sensitivity",
+  "trials": 30,
+  "seed0": 5000,
+  "loss": 0.1,
+  "anchor": "w_d=1.0; other weights at defaults (w_e=1.0, w_t=0.5, w_q=0.5, w_h=0.3); each swept weight replaces its default in that config",
+  "sweep": {
+    "w_e": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "w_t": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "w_q": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "w_h": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ]
+  },
+  "per_config": {
+    "w_e=0.0": {
+      "weights": {
+        "w_e": 0.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.855,
+          "ci95": 0.0175,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3633,
+          "ci95": 0.2389,
+          "n": 30
+        }
+      }
+    },
+    "w_e=0.25": {
+      "weights": {
+        "w_e": 0.25
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8606,
+          "ci95": 0.0171,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3767,
+          "ci95": 0.2371,
+          "n": 30
+        }
+      }
+    },
+    "w_e=0.5": {
+      "weights": {
+        "w_e": 0.5
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8569,
+          "ci95": 0.0191,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3967,
+          "ci95": 0.1739,
+          "n": 30
+        }
+      }
+    },
+    "w_e=1.0": {
+      "weights": {
+        "w_e": 1.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8498,
+          "ci95": 0.0178,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.42,
+          "ci95": 0.1439,
+          "n": 30
+        }
+      }
+    },
+    "w_e=2.0": {
+      "weights": {
+        "w_e": 2.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8434,
+          "ci95": 0.0187,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.39,
+          "ci95": 0.2053,
+          "n": 30
+        }
+      }
+    },
+    "w_e=4.0": {
+      "weights": {
+        "w_e": 4.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8343,
+          "ci95": 0.0192,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3967,
+          "ci95": 0.1702,
+          "n": 30
+        }
+      }
+    },
+    "w_t=0.0": {
+      "weights": {
+        "w_t": 0.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8609,
+          "ci95": 0.0178,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3967,
+          "ci95": 0.1728,
+          "n": 30
+        }
+      }
+    },
+    "w_t=0.25": {
+      "weights": {
+        "w_t": 0.25
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8543,
+          "ci95": 0.0175,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3467,
+          "ci95": 0.2051,
+          "n": 30
+        }
+      }
+    },
+    "w_t=0.5": {
+      "weights": {
+        "w_t": 0.5
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8498,
+          "ci95": 0.0178,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.42,
+          "ci95": 0.1439,
+          "n": 30
+        }
+      }
+    },
+    "w_t=1.0": {
+      "weights": {
+        "w_t": 1.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.844,
+          "ci95": 0.0171,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.4233,
+          "ci95": 0.1427,
+          "n": 30
+        }
+      }
+    },
+    "w_t=2.0": {
+      "weights": {
+        "w_t": 2.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.846,
+          "ci95": 0.0175,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.4233,
+          "ci95": 0.1427,
+          "n": 30
+        }
+      }
+    },
+    "w_t=4.0": {
+      "weights": {
+        "w_t": 4.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.848,
+          "ci95": 0.0168,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.4067,
+          "ci95": 0.2059,
+          "n": 30
+        }
+      }
+    },
+    "w_q=0.0": {
+      "weights": {
+        "w_q": 0.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.844,
+          "ci95": 0.0193,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.42,
+          "ci95": 0.1439,
+          "n": 30
+        }
+      }
+    },
+    "w_q=0.25": {
+      "weights": {
+        "w_q": 0.25
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.843,
+          "ci95": 0.0198,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.4033,
+          "ci95": 0.1466,
+          "n": 30
+        }
+      }
+    },
+    "w_q=0.5": {
+      "weights": {
+        "w_q": 0.5
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8498,
+          "ci95": 0.0178,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.42,
+          "ci95": 0.1439,
+          "n": 30
+        }
+      }
+    },
+    "w_q=1.0": {
+      "weights": {
+        "w_q": 1.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8471,
+          "ci95": 0.0191,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3567,
+          "ci95": 0.2105,
+          "n": 30
+        }
+      }
+    },
+    "w_q=2.0": {
+      "weights": {
+        "w_q": 2.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8471,
+          "ci95": 0.019,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3733,
+          "ci95": 0.2091,
+          "n": 30
+        }
+      }
+    },
+    "w_q=4.0": {
+      "weights": {
+        "w_q": 4.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8496,
+          "ci95": 0.0168,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3867,
+          "ci95": 0.207,
+          "n": 30
+        }
+      }
+    },
+    "w_h=0.0": {
+      "weights": {
+        "w_h": 0.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8493,
+          "ci95": 0.0195,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.39,
+          "ci95": 0.1514,
+          "n": 30
+        }
+      }
+    },
+    "w_h=0.25": {
+      "weights": {
+        "w_h": 0.25
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8486,
+          "ci95": 0.0177,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.4033,
+          "ci95": 0.1466,
+          "n": 30
+        }
+      }
+    },
+    "w_h=0.5": {
+      "weights": {
+        "w_h": 0.5
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8526,
+          "ci95": 0.0179,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.4167,
+          "ci95": 0.1696,
+          "n": 30
+        }
+      }
+    },
+    "w_h=1.0": {
+      "weights": {
+        "w_h": 1.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.861,
+          "ci95": 0.0154,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.3933,
+          "ci95": 0.1735,
+          "n": 30
+        }
+      }
+    },
+    "w_h=2.0": {
+      "weights": {
+        "w_h": 2.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8566,
+          "ci95": 0.0187,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.36,
+          "ci95": 0.1756,
+          "n": 30
+        }
+      }
+    },
+    "w_h=4.0": {
+      "weights": {
+        "w_h": 4.0
+      },
+      "chain_loss10": {
+        "pdr": {
+          "mean": 0.6707,
+          "ci95": 0.027,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 24.5167,
+          "ci95": 0.1602,
+          "n": 30
+        }
+      },
+      "mobility_loss10": {
+        "pdr": {
+          "mean": 0.8566,
+          "ci95": 0.0187,
+          "n": 30
+        },
+        "delivery_completion_s": {
+          "mean": 84.36,
+          "ci95": 0.1756,
+          "n": 30
+        }
+      }
+    }
+  }
+}

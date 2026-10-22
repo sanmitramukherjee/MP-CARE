@@ -1,0 +1,2923 @@
+{
+  "experiment": "phase6_scalability",
+  "density": {
+    "variant": "v3",
+    "scale_points": {
+      "5": {
+        "box": [
+          271.0,
+          271.0
+        ],
+        "waypoints": 10
+      },
+      "10": {
+        "box": [
+          460.0,
+          460.0
+        ],
+        "waypoints": 20
+      },
+      "20": {
+        "box": [
+          722.0,
+          722.0
+        ],
+        "waypoints": 40
+      },
+      "30": {
+        "box": [
+          914.0,
+          914.0
+        ],
+        "waypoints": 60
+      },
+      "40": {
+        "box": [
+          1077.0,
+          1077.0
+        ],
+        "waypoints": 80
+      },
+      "50": {
+        "box": [
+          1180.0,
+          1180.0
+        ],
+        "waypoints": 100
+      }
+    },
+    "rationale": "measured k ~ 7.7-8.8 (above log(n) percolation); validated by data/raw/probe_v3_geometry.py on all 30 seeds: connectivity 29-30/30, greedy corridor 0.90-1.00"
+  },
+  "scale_points": {
+    "5": {
+      "box": [
+        271.0,
+        271.0
+      ],
+      "waypoints": 10
+    },
+    "10": {
+      "box": [
+        460.0,
+        460.0
+      ],
+      "waypoints": 20
+    },
+    "20": {
+      "box": [
+        722.0,
+        722.0
+      ],
+      "waypoints": 40
+    },
+    "30": {
+      "box": [
+        914.0,
+        914.0
+      ],
+      "waypoints": 60
+    },
+    "40": {
+      "box": [
+        1077.0,
+        1077.0
+      ],
+      "waypoints": 80
+    },
+    "50": {
+      "box": [
+        1180.0,
+        1180.0
+      ],
+      "waypoints": 100
+    }
+  },
+  "duration_s": 150.0,
+  "n_trials": 30,
+  "seed0": 3000,
+  "algorithms": [
+    "mpcare",
+    "gpsr",
+    "olsr",
+    "aodv"
+  ],
+  "convergence_defs": {
+    "mpcare": "src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state)",
+    "gpsr": "stateless: n/a",
+    "olsr": "src topology table covers its static-window connected component (set coverage in t<30 s)",
+    "aodv": "first route discovery to the far destination within the static window (None if discovery completes only after t=30 s)"
+  },
+  "cpu_note": "perf_counter around every real node's protocol work in every tick, divided by nodes x ticks; includes GIL-serialized process-global work (honest upper bound)",
+  "stats": {
+    "N5": {
+      "cpu_ms_per_node_tick": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0292,
+            "ci95": 0.0034,
+            "std": 0.009,
+            "min": 0.0149,
+            "max": 0.0379
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0096,
+            "ci95": 0.0002,
+            "std": 0.0006,
+            "min": 0.0089,
+            "max": 0.0116
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.0063,
+            "ci95": 0.0001,
+            "std": 0.0003,
+            "min": 0.0058,
+            "max": 0.0069
+          }
+        },
+        "kruskal_wallis": {
+          "H": 113.391,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0292,
+            "rank_biserial": 1.0,
+            "cohens_d": 4.587,
+            "mw_p_holm": 0.0
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0197,
+            "rank_biserial": 1.0,
+            "cohens_d": 3.077,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0229,
+            "rank_biserial": 1.0,
+            "cohens_d": 3.596,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "control_pkts_per_node_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 1.193,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.193,
+            "max": 1.193
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 1.033,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.033,
+            "max": 1.033
+          }
+        },
+        "kruskal_wallis": {
+          "H": 59.0,
+          "p": 0.0,
+          "df": 1
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "aodv": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          }
+        }
+      },
+      "pdr": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 1.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 1.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 1.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 1.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "full_conv_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 5.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 5.0,
+            "max": 5.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.1,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.1,
+            "max": 0.1
+          }
+        },
+        "kruskal_wallis": {
+          "H": 89.0,
+          "p": 0.0,
+          "df": 2
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -5.0,
+            "rank_biserial": -1.0,
+            "cohens_d": -Infinity,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.1,
+            "rank_biserial": -1.0,
+            "cohens_d": -Infinity,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "reroutes_per_uav_min": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.4,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.4,
+            "max": 0.4
+          }
+        },
+        "kruskal_wallis": {
+          "H": 119.0,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.4,
+            "rank_biserial": -1.0,
+            "cohens_d": -Infinity,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "avg_degree": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 4.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 4.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 4.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 4.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 4.0,
+            "max": 4.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "mission_time_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 10.2767,
+            "ci95": 0.4602,
+            "std": 1.2325,
+            "min": 6.7,
+            "max": 11.7
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 10.2767,
+            "ci95": 0.4602,
+            "std": 1.2325,
+            "min": 6.7,
+            "max": 11.7
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 10.2767,
+            "ci95": 0.4602,
+            "std": 1.2325,
+            "min": 6.7,
+            "max": 11.7
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 10.2767,
+            "ci95": 0.4602,
+            "std": 1.2325,
+            "min": 6.7,
+            "max": 11.7
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      }
+    },
+    "N10": {
+      "cpu_ms_per_node_tick": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0558,
+            "ci95": 0.0018,
+            "std": 0.0048,
+            "min": 0.0477,
+            "max": 0.0647
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0272,
+            "ci95": 0.0013,
+            "std": 0.0034,
+            "min": 0.0206,
+            "max": 0.037
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.0075,
+            "ci95": 0.0002,
+            "std": 0.0006,
+            "min": 0.0065,
+            "max": 0.009
+          }
+        },
+        "kruskal_wallis": {
+          "H": 113.35,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0558,
+            "rank_biserial": 1.0,
+            "cohens_d": 16.454,
+            "mw_p_holm": 0.0
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0286,
+            "rank_biserial": 1.0,
+            "cohens_d": 6.86,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0483,
+            "rank_biserial": 1.0,
+            "cohens_d": 14.134,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "control_pkts_per_node_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 1.8153,
+            "ci95": 0.0575,
+            "std": 0.1541,
+            "min": 1.551,
+            "max": 2.118
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 1.0367,
+            "ci95": 0.0019,
+            "std": 0.005,
+            "min": 1.03,
+            "max": 1.047
+          }
+        },
+        "kruskal_wallis": {
+          "H": 44.485,
+          "p": 0.0,
+          "df": 1
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "aodv": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          }
+        }
+      },
+      "pdr": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.9933,
+            "ci95": 0.0136,
+            "std": 0.0365,
+            "min": 0.8,
+            "max": 1.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.988,
+            "ci95": 0.0146,
+            "std": 0.0392,
+            "min": 0.82,
+            "max": 1.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.9913,
+            "ci95": 0.0124,
+            "std": 0.0331,
+            "min": 0.82,
+            "max": 1.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.9893,
+            "ci95": 0.0134,
+            "std": 0.0359,
+            "min": 0.84,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 2.583,
+          "p": 0.462777,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.18993,
+            "paired_margin": 0.0053,
+            "rank_biserial": 0.09555555555555562,
+            "cohens_d": 0.141,
+            "mw_p_holm": 0.37981
+          },
+          "olsr": {
+            "mw_p": 0.10534,
+            "paired_margin": 0.002,
+            "rank_biserial": 0.12777777777777777,
+            "cohens_d": 0.057,
+            "mw_p_holm": 0.31602
+          },
+          "aodv": {
+            "mw_p": 0.1899,
+            "paired_margin": 0.004,
+            "rank_biserial": 0.09555555555555562,
+            "cohens_d": 0.11,
+            "mw_p_holm": 0.37981
+          }
+        }
+      },
+      "full_conv_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0067,
+            "ci95": 0.0095,
+            "std": 0.0254,
+            "min": 0.0,
+            "max": 0.1
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 5.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 5.0,
+            "max": 5.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.1133,
+            "ci95": 0.0162,
+            "std": 0.0434,
+            "min": 0.1,
+            "max": 0.3
+          }
+        },
+        "kruskal_wallis": {
+          "H": 85.402,
+          "p": 0.0,
+          "df": 2
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -4.9933,
+            "rank_biserial": -1.0,
+            "cohens_d": -278.337,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.1067,
+            "rank_biserial": -0.94,
+            "cohens_d": -3.0,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "reroutes_per_uav_min": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.2907,
+            "ci95": 0.0238,
+            "std": 0.0638,
+            "min": 0.2,
+            "max": 0.44
+          }
+        },
+        "kruskal_wallis": {
+          "H": 116.028,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.2907,
+            "rank_biserial": -1.0,
+            "cohens_d": -6.439,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "avg_degree": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 6.963,
+            "ci95": 0.1633,
+            "std": 0.4373,
+            "min": 6.15,
+            "max": 7.6
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 6.963,
+            "ci95": 0.1633,
+            "std": 0.4373,
+            "min": 6.15,
+            "max": 7.6
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 6.963,
+            "ci95": 0.1633,
+            "std": 0.4373,
+            "min": 6.15,
+            "max": 7.6
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 6.963,
+            "ci95": 0.1633,
+            "std": 0.4373,
+            "min": 6.15,
+            "max": 7.6
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "mission_time_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 21.9067,
+            "ci95": 0.5195,
+            "std": 1.3913,
+            "min": 18.1,
+            "max": 23.7
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 21.9067,
+            "ci95": 0.5195,
+            "std": 1.3913,
+            "min": 18.1,
+            "max": 23.7
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 21.9067,
+            "ci95": 0.5195,
+            "std": 1.3913,
+            "min": 18.1,
+            "max": 23.7
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 21.9067,
+            "ci95": 0.5195,
+            "std": 1.3913,
+            "min": 18.1,
+            "max": 23.7
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      }
+    },
+    "N20": {
+      "cpu_ms_per_node_tick": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.057,
+            "ci95": 0.0033,
+            "std": 0.0089,
+            "min": 0.0282,
+            "max": 0.0706
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0576,
+            "ci95": 0.0042,
+            "std": 0.0114,
+            "min": 0.043,
+            "max": 0.1084
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.0074,
+            "ci95": 0.0002,
+            "std": 0.0006,
+            "min": 0.0065,
+            "max": 0.0088
+          }
+        },
+        "kruskal_wallis": {
+          "H": 102.192,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.057,
+            "rank_biserial": 1.0,
+            "cohens_d": 9.111,
+            "mw_p_holm": 0.0
+          },
+          "olsr": {
+            "mw_p": 0.41187,
+            "paired_margin": -0.0005,
+            "rank_biserial": 0.12444444444444436,
+            "cohens_d": -0.052,
+            "mw_p_holm": 0.41187
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0496,
+            "rank_biserial": 1.0,
+            "cohens_d": 7.914,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "control_pkts_per_node_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 3.2347,
+            "ci95": 0.0529,
+            "std": 0.1418,
+            "min": 3.004,
+            "max": 3.484
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 1.0462,
+            "ci95": 0.0239,
+            "std": 0.064,
+            "min": 1.027,
+            "max": 1.384
+          }
+        },
+        "kruskal_wallis": {
+          "H": 44.362,
+          "p": 0.0,
+          "df": 1
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "aodv": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          }
+        }
+      },
+      "pdr": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.994,
+            "ci95": 0.0086,
+            "std": 0.023,
+            "min": 0.9,
+            "max": 1.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.9673,
+            "ci95": 0.0286,
+            "std": 0.0766,
+            "min": 0.74,
+            "max": 1.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.934,
+            "ci95": 0.0483,
+            "std": 0.1293,
+            "min": 0.56,
+            "max": 1.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.9587,
+            "ci95": 0.0322,
+            "std": 0.0861,
+            "min": 0.68,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 6.24,
+          "p": 0.098877,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.04148,
+            "paired_margin": 0.0267,
+            "rank_biserial": 0.19999999999999996,
+            "cohens_d": 0.472,
+            "mw_p_holm": 0.0722
+          },
+          "olsr": {
+            "mw_p": 0.01644,
+            "paired_margin": 0.06,
+            "rank_biserial": 0.24444444444444446,
+            "cohens_d": 0.646,
+            "mw_p_holm": 0.04931
+          },
+          "aodv": {
+            "mw_p": 0.0361,
+            "paired_margin": 0.0353,
+            "rank_biserial": 0.2055555555555555,
+            "cohens_d": 0.561,
+            "mw_p_holm": 0.0722
+          }
+        }
+      },
+      "full_conv_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0033,
+            "ci95": 0.0068,
+            "std": 0.0183,
+            "min": 0.0,
+            "max": 0.1
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 5.01,
+            "ci95": 0.0114,
+            "std": 0.0305,
+            "min": 5.0,
+            "max": 5.1
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.1667,
+            "ci95": 0.03,
+            "std": 0.0802,
+            "min": 0.1,
+            "max": 0.3
+          }
+        },
+        "kruskal_wallis": {
+          "H": 84.156,
+          "p": 0.0,
+          "df": 2
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -5.0067,
+            "rank_biserial": -1.0,
+            "cohens_d": -199.126,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.1633,
+            "rank_biserial": -0.9822222222222222,
+            "cohens_d": -2.807,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "reroutes_per_uav_min": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.8067,
+            "ci95": 1.6426,
+            "std": 4.3994,
+            "min": 0.0,
+            "max": 24.1
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.1973,
+            "ci95": 0.0212,
+            "std": 0.0567,
+            "min": 0.1,
+            "max": 0.3
+          }
+        },
+        "kruskal_wallis": {
+          "H": 105.999,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.1608,
+            "paired_margin": 0.8067,
+            "rank_biserial": 0.06666666666666665,
+            "cohens_d": 0.259,
+            "mw_p_holm": 0.3216
+          },
+          "olsr": {
+            "mw_p": 0.1608,
+            "paired_margin": 0.8067,
+            "rank_biserial": 0.06666666666666665,
+            "cohens_d": 0.259,
+            "mw_p_holm": 0.3216
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.6093,
+            "rank_biserial": -0.9311111111111111,
+            "cohens_d": 0.196,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "avg_degree": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 7.4533,
+            "ci95": 0.2239,
+            "std": 0.5997,
+            "min": 6.43,
+            "max": 8.98
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 7.4533,
+            "ci95": 0.2239,
+            "std": 0.5997,
+            "min": 6.43,
+            "max": 8.98
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 7.4533,
+            "ci95": 0.2239,
+            "std": 0.5997,
+            "min": 6.43,
+            "max": 8.98
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 7.4533,
+            "ci95": 0.2239,
+            "std": 0.5997,
+            "min": 6.43,
+            "max": 8.98
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "mission_time_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 38.6133,
+            "ci95": 0.4227,
+            "std": 1.1322,
+            "min": 36.2,
+            "max": 40.1
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 38.6133,
+            "ci95": 0.4227,
+            "std": 1.1322,
+            "min": 36.2,
+            "max": 40.1
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 38.6133,
+            "ci95": 0.4227,
+            "std": 1.1322,
+            "min": 36.2,
+            "max": 40.1
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 38.6133,
+            "ci95": 0.4227,
+            "std": 1.1322,
+            "min": 36.2,
+            "max": 40.1
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      }
+    },
+    "N30": {
+      "cpu_ms_per_node_tick": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0474,
+            "ci95": 0.0059,
+            "std": 0.0159,
+            "min": 0.0257,
+            "max": 0.0737
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0862,
+            "ci95": 0.0049,
+            "std": 0.0132,
+            "min": 0.06,
+            "max": 0.1233
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.0077,
+            "ci95": 0.0003,
+            "std": 0.0009,
+            "min": 0.0055,
+            "max": 0.0092
+          }
+        },
+        "kruskal_wallis": {
+          "H": 112.559,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0474,
+            "rank_biserial": 1.0,
+            "cohens_d": 4.221,
+            "mw_p_holm": 0.0
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -0.0388,
+            "rank_biserial": -0.9644444444444444,
+            "cohens_d": -2.66,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0397,
+            "rank_biserial": 1.0,
+            "cohens_d": 3.531,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "control_pkts_per_node_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 4.602,
+            "ci95": 0.0737,
+            "std": 0.1975,
+            "min": 4.259,
+            "max": 4.956
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 1.0673,
+            "ci95": 0.0365,
+            "std": 0.0976,
+            "min": 1.027,
+            "max": 1.44
+          }
+        },
+        "kruskal_wallis": {
+          "H": 44.376,
+          "p": 0.0,
+          "df": 1
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "aodv": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          }
+        }
+      },
+      "pdr": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.9467,
+            "ci95": 0.0639,
+            "std": 0.1713,
+            "min": 0.08,
+            "max": 1.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.8947,
+            "ci95": 0.0731,
+            "std": 0.1957,
+            "min": 0.02,
+            "max": 1.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.942,
+            "ci95": 0.0355,
+            "std": 0.0952,
+            "min": 0.68,
+            "max": 1.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.946,
+            "ci95": 0.0317,
+            "std": 0.0849,
+            "min": 0.66,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 4.804,
+          "p": 0.184985,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.03485,
+            "paired_margin": 0.052,
+            "rank_biserial": 0.2877777777777777,
+            "cohens_d": 0.283,
+            "mw_p_holm": 0.10454
+          },
+          "olsr": {
+            "mw_p": 0.2018,
+            "paired_margin": 0.0047,
+            "rank_biserial": 0.16888888888888887,
+            "cohens_d": 0.034,
+            "mw_p_holm": 0.29176
+          },
+          "aodv": {
+            "mw_p": 0.14588,
+            "paired_margin": 0.0007,
+            "rank_biserial": 0.19444444444444442,
+            "cohens_d": 0.005,
+            "mw_p_holm": 0.29176
+          }
+        }
+      },
+      "full_conv_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0167,
+            "ci95": 0.0142,
+            "std": 0.0379,
+            "min": 0.0,
+            "max": 0.1
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 5.23,
+            "ci95": 0.3511,
+            "std": 0.9403,
+            "min": 5.0,
+            "max": 10.2
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.33,
+            "ci95": 0.1048,
+            "std": 0.2806,
+            "min": 0.1,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 80.249,
+          "p": 0.0,
+          "df": 2
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -5.2133,
+            "rank_biserial": -1.0,
+            "cohens_d": -7.834,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.3133,
+            "rank_biserial": -0.9611111111111111,
+            "cohens_d": -1.565,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "reroutes_per_uav_min": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.5427,
+            "ci95": 1.0844,
+            "std": 2.9045,
+            "min": 0.0,
+            "max": 15.92
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.1866,
+            "ci95": 0.0207,
+            "std": 0.0554,
+            "min": 0.093,
+            "max": 0.307
+          }
+        },
+        "kruskal_wallis": {
+          "H": 99.297,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.01102,
+            "paired_margin": 0.5427,
+            "rank_biserial": 0.19999999999999996,
+            "cohens_d": 0.264,
+            "mw_p_holm": 0.02204
+          },
+          "olsr": {
+            "mw_p": 0.01102,
+            "paired_margin": 0.5427,
+            "rank_biserial": 0.19999999999999996,
+            "cohens_d": 0.264,
+            "mw_p_holm": 0.02204
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.3561,
+            "rank_biserial": -0.9222222222222223,
+            "cohens_d": 0.173,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "avg_degree": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 7.5447,
+            "ci95": 0.2116,
+            "std": 0.5667,
+            "min": 6.67,
+            "max": 8.94
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 7.5447,
+            "ci95": 0.2116,
+            "std": 0.5667,
+            "min": 6.67,
+            "max": 8.94
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 7.5447,
+            "ci95": 0.2116,
+            "std": 0.5667,
+            "min": 6.67,
+            "max": 8.94
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 7.5447,
+            "ci95": 0.2116,
+            "std": 0.5667,
+            "min": 6.67,
+            "max": 8.94
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "mission_time_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 50.2933,
+            "ci95": 0.5315,
+            "std": 1.4234,
+            "min": 47.2,
+            "max": 52.1
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 50.2933,
+            "ci95": 0.5315,
+            "std": 1.4234,
+            "min": 47.2,
+            "max": 52.1
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 50.2933,
+            "ci95": 0.5315,
+            "std": 1.4234,
+            "min": 47.2,
+            "max": 52.1
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 50.2933,
+            "ci95": 0.5315,
+            "std": 1.4234,
+            "min": 47.2,
+            "max": 52.1
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      }
+    },
+    "N40": {
+      "cpu_ms_per_node_tick": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0418,
+            "ci95": 0.0055,
+            "std": 0.0148,
+            "min": 0.0289,
+            "max": 0.0729
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.1137,
+            "ci95": 0.0083,
+            "std": 0.0222,
+            "min": 0.086,
+            "max": 0.1773
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.0037,
+            "ci95": 0.0003,
+            "std": 0.0007,
+            "min": 0.0027,
+            "max": 0.005
+          }
+        },
+        "kruskal_wallis": {
+          "H": 113.363,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0418,
+            "rank_biserial": 1.0,
+            "cohens_d": 3.994,
+            "mw_p_holm": 0.0
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -0.0718,
+            "rank_biserial": -1.0,
+            "cohens_d": -3.805,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0381,
+            "rank_biserial": 1.0,
+            "cohens_d": 3.633,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "control_pkts_per_node_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 5.9351,
+            "ci95": 0.0998,
+            "std": 0.2672,
+            "min": 5.237,
+            "max": 6.336
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 1.0613,
+            "ci95": 0.0538,
+            "std": 0.1442,
+            "min": 1.027,
+            "max": 1.824
+          }
+        },
+        "kruskal_wallis": {
+          "H": 44.325,
+          "p": 0.0,
+          "df": 1
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "aodv": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          }
+        }
+      },
+      "pdr": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.9427,
+            "ci95": 0.0717,
+            "std": 0.192,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.9293,
+            "ci95": 0.0535,
+            "std": 0.1432,
+            "min": 0.28,
+            "max": 1.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.9307,
+            "ci95": 0.0411,
+            "std": 0.11,
+            "min": 0.64,
+            "max": 1.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.928,
+            "ci95": 0.0343,
+            "std": 0.0918,
+            "min": 0.64,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 8.328,
+          "p": 0.039058,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.10014,
+            "paired_margin": 0.0133,
+            "rank_biserial": 0.21444444444444444,
+            "cohens_d": 0.079,
+            "mw_p_holm": 0.10014
+          },
+          "olsr": {
+            "mw_p": 0.03367,
+            "paired_margin": 0.012,
+            "rank_biserial": 0.2866666666666666,
+            "cohens_d": 0.077,
+            "mw_p_holm": 0.06734
+          },
+          "aodv": {
+            "mw_p": 0.00445,
+            "paired_margin": 0.0147,
+            "rank_biserial": 0.3944444444444444,
+            "cohens_d": 0.097,
+            "mw_p_holm": 0.01336
+          }
+        }
+      },
+      "full_conv_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0233,
+            "ci95": 0.0188,
+            "std": 0.0504,
+            "min": 0.0,
+            "max": 0.2
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 5.11,
+            "ci95": 0.0283,
+            "std": 0.0759,
+            "min": 5.0,
+            "max": 5.3
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.2533,
+            "ci95": 0.0497,
+            "std": 0.1332,
+            "min": 0.1,
+            "max": 0.7
+          }
+        },
+        "kruskal_wallis": {
+          "H": 79.281,
+          "p": 0.0,
+          "df": 2
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -5.0867,
+            "rank_biserial": -1.0,
+            "cohens_d": -78.966,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.23,
+            "rank_biserial": -0.9355555555555556,
+            "cohens_d": -2.284,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "reroutes_per_uav_min": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 1.1987,
+            "ci95": 2.4513,
+            "std": 6.5654,
+            "min": 0.0,
+            "max": 35.96
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.1557,
+            "ci95": 0.016,
+            "std": 0.0429,
+            "min": 0.09,
+            "max": 0.26
+          }
+        },
+        "kruskal_wallis": {
+          "H": 108.297,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.33371,
+            "paired_margin": 1.1987,
+            "rank_biserial": 0.03333333333333344,
+            "cohens_d": 0.258,
+            "mw_p_holm": 0.66742
+          },
+          "olsr": {
+            "mw_p": 0.33371,
+            "paired_margin": 1.1987,
+            "rank_biserial": 0.03333333333333344,
+            "cohens_d": 0.258,
+            "mw_p_holm": 0.66742
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 1.043,
+            "rank_biserial": -0.9333333333333333,
+            "cohens_d": 0.225,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "avg_degree": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 7.6863,
+            "ci95": 0.2276,
+            "std": 0.6097,
+            "min": 6.72,
+            "max": 9.17
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 7.6863,
+            "ci95": 0.2276,
+            "std": 0.6097,
+            "min": 6.72,
+            "max": 9.17
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 7.6863,
+            "ci95": 0.2276,
+            "std": 0.6097,
+            "min": 6.72,
+            "max": 9.17
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 7.6863,
+            "ci95": 0.2276,
+            "std": 0.6097,
+            "min": 6.72,
+            "max": 9.17
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "mission_time_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 60.4167,
+            "ci95": 0.618,
+            "std": 1.6551,
+            "min": 56.4,
+            "max": 62.3
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 60.4167,
+            "ci95": 0.618,
+            "std": 1.6551,
+            "min": 56.4,
+            "max": 62.3
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 60.4167,
+            "ci95": 0.618,
+            "std": 1.6551,
+            "min": 56.4,
+            "max": 62.3
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 60.4167,
+            "ci95": 0.618,
+            "std": 1.6551,
+            "min": 56.4,
+            "max": 62.3
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      }
+    },
+    "N50": {
+      "cpu_ms_per_node_tick": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.082,
+            "ci95": 0.0186,
+            "std": 0.0497,
+            "min": 0.0551,
+            "max": 0.2863
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.2237,
+            "ci95": 0.0076,
+            "std": 0.0203,
+            "min": 0.1864,
+            "max": 0.2683
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.0071,
+            "ci95": 0.0006,
+            "std": 0.0015,
+            "min": 0.0046,
+            "max": 0.0108
+          }
+        },
+        "kruskal_wallis": {
+          "H": 110.874,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.0,
+            "paired_margin": 0.082,
+            "rank_biserial": 1.0,
+            "cohens_d": 2.333,
+            "mw_p_holm": 0.0
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -0.1417,
+            "rank_biserial": -0.8844444444444445,
+            "cohens_d": -3.732,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": 0.0749,
+            "rank_biserial": 1.0,
+            "cohens_d": 2.129,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "control_pkts_per_node_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 7.2371,
+            "ci95": 0.1208,
+            "std": 0.3236,
+            "min": 6.41,
+            "max": 7.855
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 1.0683,
+            "ci95": 0.045,
+            "std": 0.1204,
+            "min": 1.027,
+            "max": 1.559
+          }
+        },
+        "kruskal_wallis": {
+          "H": 44.353,
+          "p": 0.0,
+          "df": 1
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "aodv": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          }
+        }
+      },
+      "pdr": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.9393,
+            "ci95": 0.0758,
+            "std": 0.203,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.8613,
+            "ci95": 0.0803,
+            "std": 0.215,
+            "min": 0.1,
+            "max": 1.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.8573,
+            "ci95": 0.0749,
+            "std": 0.2005,
+            "min": 0.0,
+            "max": 1.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.8753,
+            "ci95": 0.0728,
+            "std": 0.1949,
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 22.459,
+          "p": 7.7e-05,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.00013,
+            "paired_margin": 0.078,
+            "rank_biserial": 0.5411111111111111,
+            "cohens_d": 0.373,
+            "mw_p_holm": 0.0002
+          },
+          "olsr": {
+            "mw_p": 0.0001,
+            "paired_margin": 0.082,
+            "rank_biserial": 0.5511111111111111,
+            "cohens_d": 0.406,
+            "mw_p_holm": 0.0002
+          },
+          "aodv": {
+            "mw_p": 2e-05,
+            "paired_margin": 0.064,
+            "rank_biserial": 0.6055555555555556,
+            "cohens_d": 0.322,
+            "mw_p_holm": 7e-05
+          }
+        }
+      },
+      "full_conv_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 0.0167,
+            "ci95": 0.0142,
+            "std": 0.0379,
+            "min": 0.0,
+            "max": 0.1
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 5.12,
+            "ci95": 0.0181,
+            "std": 0.0484,
+            "min": 5.0,
+            "max": 5.2
+          },
+          "aodv": {
+            "n": 29,
+            "mean": 0.3793,
+            "ci95": 0.0999,
+            "std": 0.2624,
+            "min": 0.1,
+            "max": 1.1
+          }
+        },
+        "kruskal_wallis": {
+          "H": 80.779,
+          "p": 0.0,
+          "df": 2
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": 0.0,
+            "paired_margin": -5.1033,
+            "rank_biserial": -1.0,
+            "cohens_d": -117.363,
+            "mw_p_holm": 0.0
+          },
+          "aodv": {
+            "mw_p": 0.0,
+            "paired_margin": -0.3626,
+            "rank_biserial": -0.9827586206896551,
+            "cohens_d": -1.951,
+            "mw_p_holm": 0.0
+          }
+        }
+      },
+      "reroutes_per_uav_min": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 1.3331,
+            "ci95": 1.2736,
+            "std": 3.4112,
+            "min": 0.0,
+            "max": 10.704
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 0.1381,
+            "ci95": 0.0142,
+            "std": 0.0379,
+            "min": 0.072,
+            "max": 0.24
+          }
+        },
+        "kruskal_wallis": {
+          "H": 84.89,
+          "p": 0.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.00558,
+            "paired_margin": 1.3331,
+            "rank_biserial": 0.2333333333333334,
+            "cohens_d": 0.553,
+            "mw_p_holm": 0.01117
+          },
+          "olsr": {
+            "mw_p": 0.00558,
+            "paired_margin": 1.3331,
+            "rank_biserial": 0.2333333333333334,
+            "cohens_d": 0.553,
+            "mw_p_holm": 0.01117
+          },
+          "aodv": {
+            "mw_p": 1e-05,
+            "paired_margin": 1.1949,
+            "rank_biserial": -0.6644444444444444,
+            "cohens_d": 0.495,
+            "mw_p_holm": 2e-05
+          }
+        }
+      },
+      "avg_degree": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 8.1003,
+            "ci95": 0.1959,
+            "std": 0.5246,
+            "min": 7.25,
+            "max": 9.23
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 8.1003,
+            "ci95": 0.1959,
+            "std": 0.5246,
+            "min": 7.25,
+            "max": 9.23
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 8.1003,
+            "ci95": 0.1959,
+            "std": 0.5246,
+            "min": 7.25,
+            "max": 9.23
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 8.1003,
+            "ci95": 0.1959,
+            "std": 0.5246,
+            "min": 7.25,
+            "max": 9.23
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.9941,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "mission_time_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 30,
+            "mean": 67.0633,
+            "ci95": 0.5135,
+            "std": 1.3753,
+            "min": 62.4,
+            "max": 68.7
+          },
+          "gpsr": {
+            "n": 30,
+            "mean": 67.0633,
+            "ci95": 0.5135,
+            "std": 1.3753,
+            "min": 62.4,
+            "max": 68.7
+          },
+          "olsr": {
+            "n": 30,
+            "mean": 67.0633,
+            "ci95": 0.5135,
+            "std": 1.3753,
+            "min": 62.4,
+            "max": 68.7
+          },
+          "aodv": {
+            "n": 30,
+            "mean": 67.0633,
+            "ci95": 0.5135,
+            "std": 1.3753,
+            "min": 62.4,
+            "max": 68.7
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.99409,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      }
+    }
+  },
+  "alarms": {
+    "evaluated_at_N": 50,
+    "checks": [
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 0.082,
+        "ci95": 0.0186,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "gpsr",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 0.2237,
+        "ci95": 0.0076,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 0.0071,
+        "ci95": 0.0006,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "mpcare",
+        "verdict": "n/a",
+        "reason": "mpcare does not produce control_pkts_per_node_s"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "gpsr",
+        "verdict": "n/a",
+        "reason": "gpsr does not produce control_pkts_per_node_s"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 7.2371,
+        "ci95": 0.1208,
+        "threshold": 50.0,
+        "comparison": "mean <= 50.0",
+        "criterion": "control overhead <= 50 pkts/node/s at N=50"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 1.0683,
+        "ci95": 0.045,
+        "threshold": 50.0,
+        "comparison": "mean <= 50.0",
+        "criterion": "control overhead <= 50 pkts/node/s at N=50"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 0.0167,
+        "ci95": 0.0142,
+        "threshold": 30.0,
+        "comparison": "mean <= 30.0",
+        "criterion": "topology convergence <= 30 s at N=50"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "gpsr",
+        "verdict": "n/a",
+        "reason": "gpsr does not produce full_conv_s"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 5.12,
+        "ci95": 0.0181,
+        "threshold": 30.0,
+        "comparison": "mean <= 30.0",
+        "criterion": "topology convergence <= 30 s at N=50"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 0.3793,
+        "ci95": 0.0999,
+        "threshold": 30.0,
+        "comparison": "mean <= 30.0",
+        "criterion": "topology convergence <= 30 s at N=50"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 0.9393,
+        "ci95": 0.0758,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "gpsr",
+        "verdict": "PASS",
+        "mean": 0.8613,
+        "ci95": 0.0803,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 0.8573,
+        "ci95": 0.0749,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 0.8753,
+        "ci95": 0.0728,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 1.3331,
+        "ci95": 1.2736,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "gpsr",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 0.1381,
+        "ci95": 0.0142,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      }
+    ],
+    "all_pass": true
+  },
+  "benchmarks": {
+    "all_points_complete": true,
+    "runs_at_N50_no_crash": true,
+    "N50_disconnected_seeds_all_algos_pdr0": [],
+    "pdr_physics_note": "PDR at N>=30 is measured over random geometric graphs at the percolation edge (avg degree ~4.4 < log n): seeds where ALL algorithms score 0.0 are disconnected src-dst pairs (physics floor), so the section 8.3 PDR alarm is evaluated on a quantity that is floored by the scenario itself."
+  }
+}

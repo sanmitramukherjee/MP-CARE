@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!-- MP-CARE Tier 3 probe (NOTES/testROS2.md Task A): a STATIC instrumented
+     marker that publishes ground-truth odometry. Five of these spawned in a
+     200 m-spaced row give the same 4-hop chain geometry as the headless
+     benchmark — with zero gravity/control complexity.
+
+     Honest scope: these probes do NOT fly. They validate the pipeline the
+     gate cares about: Gazebo spawn -> OdometryPublisher -> ros_gz_bridge ->
+     /uav_i/odom -> network model -> MP-CARE routers -> triggers -> logger.
+     Flying multirotor platforms (x500 + ArduPilot/offboard) are a later
+     upgrade; the MP-CARE side cannot tell the difference because it consumes
+     the same odometry either way.
+
+     OdometryPublisher publishes nav_msgs/Odometry on /model/<name>/odometry
+     (Jetty default). If your build does not emit odometry for static models
+     (see SOP error E13), remove the <static> tag AND immediately re-add a
+     <pose> at ground level with a <plugin filename="gz-sim-multicopter..."> —
+     or fall back to the Tier 1 hand-injected odometry, which tests the same
+     MP-CARE chain without Gazebo. -->
+<sdf version="1.8">
+  <model name="uav_probe">
+    <static>true</static>
+    <pose>0 0 0.5 0 0 0</pose>
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.02</ixx><iyy>0.02</iyy><izz>0.02</izz>
+          <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry><sphere><radius>0.2</radius></sphere></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry><sphere><radius>0.2</radius></sphere></geometry>
+        <material>
+          <ambient>0.15 0.55 0.85 1</ambient>
+          <diffuse>0.15 0.55 0.85 1</diffuse>
+        </material>
+      </visual>
+      <!-- Visual-only marker shell (NOT physics): a 4 m translucent bubble
+           so the probe is visible from hundreds of metres in the GUI — the
+           0.2 m core is a couple of pixels at the 200 m chain spacing and
+           users reported seeing "only one ball" (the nearest one). Collision
+           stays the 0.2 m sphere above; behaviour must not attach here. -->
+      <visual name="visual_marker_shell">
+        <geometry><sphere><radius>4.0</radius></sphere></geometry>
+        <material>
+          <ambient>0.15 0.55 0.85 0.25</ambient>
+          <diffuse>0.15 0.55 0.85 0.35</diffuse>
+        </material>
+        <transparency>0.7</transparency>
+      </visual>
+    </link>
+    <plugin filename="gz-sim-odometry-publisher-system"
+            name="gz::sim::systems::OdometryPublisher">
+      <dimensions>3</dimensions>
+      <odom_publish_frequency>10</odom_publish_frequency>
+    </plugin>
+  </model>
+</sdf>

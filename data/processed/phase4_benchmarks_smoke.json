@@ -1,0 +1,16 @@
+{
+  "exp6_failure.exp3_reroute_faster_at_50ms": {
+    "result": "n/a",
+    "reason": "control messages are not delayed by injected_latency_ms in the current model (data-plane only), so the periodic-vs-event re-route latency cannot be measured here"
+  },
+  "exp6_failure.exp5_let_err_below_30pct_vle15": {
+    "median_rel_err_across_runs": null,
+    "n_runs": 0,
+    "pass": false
+  },
+  "exp6_failure.exp6_recovery_below_10s_single_kill": {
+    "median_recovery_s": 0.2,
+    "n": 17,
+    "pass": true
+  }
+}

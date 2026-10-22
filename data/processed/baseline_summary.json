@@ -1,0 +1,199 @@
+{
+  "n_trials": 30,
+  "duration_s": 90.0,
+  "seed0": 1000,
+  "algorithms": {
+    "astar_dist": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "mean": 0.3,
+        "std": 0.0,
+        "min": 0.3,
+        "max": 0.3
+      },
+      "min_chain_hops": {
+        "mean": 4,
+        "std": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "sanity_ok": true
+    },
+    "gpsr": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "mean": 0.3,
+        "std": 0.0,
+        "min": 0.3,
+        "max": 0.3
+      },
+      "min_chain_hops": {
+        "mean": 4,
+        "std": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "sanity_ok": true
+    },
+    "aodv": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "mean": 0.3,
+        "std": 0.0,
+        "min": 0.3,
+        "max": 0.3
+      },
+      "min_chain_hops": {
+        "mean": 4,
+        "std": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "control_pkts_per_node_s": {
+        "mean": 1.0456,
+        "std": 0.0045,
+        "min": 1.044,
+        "max": 1.06
+      },
+      "first_route_s": {
+        "mean": 0.4,
+        "std": 0.0,
+        "min": 0.4,
+        "max": 0.4
+      },
+      "sanity_ok": true
+    },
+    "olsr": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "mean": 0.3,
+        "std": 0.0,
+        "min": 0.3,
+        "max": 0.3
+      },
+      "min_chain_hops": {
+        "mean": 4,
+        "std": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "control_pkts_per_node_s": {
+        "mean": 1.7034,
+        "std": 0.0036,
+        "min": 1.698,
+        "max": 1.713
+      },
+      "first_route_s": {
+        "mean": 5.1,
+        "std": 0.0,
+        "min": 5.1000000000000005,
+        "max": 5.1000000000000005
+      },
+      "sanity_ok": true
+    },
+    "astar_etx": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "mean": 0.3,
+        "std": 0.0,
+        "min": 0.3,
+        "max": 0.3
+      },
+      "min_chain_hops": {
+        "mean": 4,
+        "std": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "sanity_ok": true
+    },
+    "mpcare": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "pdr": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "avg_latency_ms": {
+        "mean": 0.3,
+        "std": 0.0,
+        "min": 0.3,
+        "max": 0.3
+      },
+      "min_chain_hops": {
+        "mean": 4,
+        "std": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "sanity_ok": true
+    }
+  }
+}

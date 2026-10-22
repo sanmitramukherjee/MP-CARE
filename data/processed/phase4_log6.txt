@@ -1,0 +1,36 @@
+
+=== exp5_mobility: 5 conditions x 4 algorithms x 30 trials ===
+[exp5_mobility] speed_5        astar_dist  30 trials done (1s elapsed)
+[exp5_mobility] speed_5        gpsr        30 trials done (2s elapsed)
+[exp5_mobility] speed_5        olsr        30 trials done (3s elapsed)
+[exp5_mobility] speed_5        mpcare      30 trials done (9s elapsed)
+[exp5_mobility] speed_10       astar_dist  30 trials done (10s elapsed)
+[exp5_mobility] speed_10       gpsr        30 trials done (12s elapsed)
+[exp5_mobility] speed_10       olsr        30 trials done (16s elapsed)
+[exp5_mobility] speed_10       mpcare      30 trials done (21s elapsed)
+[exp5_mobility] speed_15       astar_dist  30 trials done (23s elapsed)
+[exp5_mobility] speed_15       gpsr        30 trials done (25s elapsed)
+[exp5_mobility] speed_15       olsr        30 trials done (28s elapsed)
+[exp5_mobility] speed_15       mpcare      30 trials done (34s elapsed)
+[exp5_mobility] speed_20       astar_dist  30 trials done (35s elapsed)
+[exp5_mobility] speed_20       gpsr        30 trials done (37s elapsed)
+[exp5_mobility] speed_20       olsr        30 trials done (41s elapsed)
+[exp5_mobility] speed_20       mpcare      30 trials done (46s elapsed)
+[exp5_mobility] speed_25       astar_dist  30 trials done (48s elapsed)
+[exp5_mobility] speed_25       gpsr        30 trials done (50s elapsed)
+[exp5_mobility] speed_25       olsr        30 trials done (53s elapsed)
+[exp5_mobility] speed_25       mpcare      30 trials done (60s elapsed)
+[exp5_mobility] wrote exp5_mobility.csv/_summary.json + graphs (speed)
+
+  condition       astar_dist    gpsr          olsr          mpcare        
+  speed_5         0.965±0.030   0.967±0.029   0.960±0.031   0.974±0.028   
+  speed_10        0.951±0.031   0.969±0.021   0.935±0.042   0.968±0.026   
+  speed_15        0.954±0.025   0.976±0.011   0.932±0.033   0.969±0.017   
+  speed_20        0.953±0.022   0.972±0.011   0.937±0.032   0.981±0.012   
+  speed_25        0.952±0.022   0.973±0.013   0.924±0.032   0.977±0.009   
+  post-hoc vs mpcare @speed_25 (Holm): astar_dist: p=0.49783, margin=+0.025, gpsr: p=0.98186, margin=+0.005, olsr: p=0.07653, margin=+0.053
+
+=== section 6.3 benchmark checks ===
+  [MISS] exp5_mobility.exp5_let_err_below_30pct_vle15
+
+DONE — data in C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed

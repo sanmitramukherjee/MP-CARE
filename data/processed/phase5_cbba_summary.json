@@ -1,0 +1,88 @@
+{
+  "losses": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6
+  ],
+  "loss_00": {
+    "compl_base_mean": 0.35,
+    "compl_comm_mean": 1.0,
+    "gain_pp": 65.0,
+    "optimal_base": 0.35,
+    "optimal_comm": 1.0,
+    "mw_p": 0.000650575225238037,
+    "route_cost_base": 1985.9,
+    "route_cost_comm": 312.9
+  },
+  "loss_10": {
+    "compl_base_mean": 0.4,
+    "compl_comm_mean": 1.0,
+    "gain_pp": 60.0,
+    "optimal_base": 0.4,
+    "optimal_comm": 1.0,
+    "mw_p": 0.0006666564181427859,
+    "route_cost_base": 1840.3,
+    "route_cost_comm": 312.9
+  },
+  "loss_20": {
+    "compl_base_mean": 0.35,
+    "compl_comm_mean": 1.0,
+    "gain_pp": 65.0,
+    "optimal_base": 0.35,
+    "optimal_comm": 1.0,
+    "mw_p": 0.000650575225238037,
+    "route_cost_base": 1985.9,
+    "route_cost_comm": 312.9
+  },
+  "loss_30": {
+    "compl_base_mean": 0.6,
+    "compl_comm_mean": 1.0,
+    "gain_pp": 40.0,
+    "optimal_base": 0.6,
+    "optimal_comm": 1.0,
+    "mw_p": 0.0018263820519137663,
+    "route_cost_base": 1404.1,
+    "route_cost_comm": 312.9
+  },
+  "loss_40": {
+    "compl_base_mean": 0.4,
+    "compl_comm_mean": 0.85,
+    "gain_pp": 45.0,
+    "optimal_base": 0.4,
+    "optimal_comm": 0.85,
+    "mw_p": 0.005137748552200838,
+    "route_cost_base": 1773.9,
+    "route_cost_comm": 586.1
+  },
+  "loss_50": {
+    "compl_base_mean": 0.55,
+    "compl_comm_mean": 0.95,
+    "gain_pp": 40.0,
+    "optimal_base": 0.55,
+    "optimal_comm": 0.95,
+    "mw_p": 0.002592588151993369,
+    "route_cost_base": 1323.9,
+    "route_cost_comm": 297.1
+  },
+  "loss_60": {
+    "compl_base_mean": 0.55,
+    "compl_comm_mean": 0.95,
+    "gain_pp": 40.0,
+    "optimal_base": 0.55,
+    "optimal_comm": 0.95,
+    "mw_p": 0.008088429155020838,
+    "route_cost_base": 1556.7,
+    "route_cost_comm": 471.4
+  },
+  "cbba:loss_00_holm_p": 0.004554026576666259,
+  "cbba:loss_10_holm_p": 0.004554026576666259,
+  "cbba:loss_20_holm_p": 0.004554026576666259,
+  "cbba:loss_30_holm_p": 0.007305528207655065,
+  "cbba:loss_40_holm_p": 0.010275497104401676,
+  "cbba:loss_50_holm_p": 0.007777764455980107,
+  "cbba:loss_60_holm_p": 0.010275497104401676
+}

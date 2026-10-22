@@ -1,0 +1,19 @@
+# Network model parameters (implementation_plan.md section 3.3 defaults)
+network_model:
+  ros__parameters:
+    alpha: 2.5                 # path-loss exponent (sweep 2.0-4.0)
+    pl0_db: 46.4               # reference loss at 1 m
+    tx_power_dbm: 20.0
+    noise_floor_dbm: -90.0
+    bandwidth_mbps: 11.0       # 802.11b
+    snr50_db: 1.7              # PRR sigmoid 50% point (at ~max range)
+    k_per_db: 0.9
+    mac_retries: 4             # 802.11 unicast retransmissions
+    max_range_m: 300.0
+    beacon_interval_s: 1.0
+    injected_loss: 0.0         # sweep 0.0-0.30 (Phase 4 experiment 2)
+    injected_latency_ms: 0.0   # sweep 0-200 (Phase 4 experiment 3)
+    queue_size: 64
+    rng_seed: 1
+    stale_s: 3.0               # odom silence before a UAV is pruned from the blob
+    n_uav: 5

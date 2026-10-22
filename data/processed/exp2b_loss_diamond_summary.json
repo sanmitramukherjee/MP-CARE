@@ -1,0 +1,930 @@
+{
+  "experiment": "exp2b_loss_diamond",
+  "n_trials": 30,
+  "seed0": 1000,
+  "duration_s": 90.0,
+  "algorithms": [
+    "astar_dist",
+    "gpsr",
+    "olsr",
+    "mpcare"
+  ],
+  "conditions": [
+    "loss_0.00",
+    "loss_0.05",
+    "loss_0.10",
+    "loss_0.15",
+    "loss_0.20",
+    "loss_0.25",
+    "loss_0.30"
+  ],
+  "primary_metric": "chain_pdr",
+  "primary_stats": {
+    "loss_0.00": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.7047,
+          "ci95": 0.0228,
+          "std": 0.061,
+          "min": 0.58,
+          "max": 0.82
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.7047,
+          "ci95": 0.0228,
+          "std": 0.061,
+          "min": 0.58,
+          "max": 0.82
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.7073,
+          "ci95": 0.0313,
+          "std": 0.084,
+          "min": 0.54,
+          "max": 0.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 68.527,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2953,
+          "rank_biserial": 1.0,
+          "cohens_d": 6.852,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2953,
+          "rank_biserial": 1.0,
+          "cohens_d": 6.852,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2927,
+          "rank_biserial": 1.0,
+          "cohens_d": 4.93,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.05": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.6447,
+          "ci95": 0.0257,
+          "std": 0.0688,
+          "min": 0.5,
+          "max": 0.76
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.6447,
+          "ci95": 0.0257,
+          "std": 0.0688,
+          "min": 0.5,
+          "max": 0.76
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.638,
+          "ci95": 0.0297,
+          "std": 0.0795,
+          "min": 0.48,
+          "max": 0.84
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.8507,
+          "ci95": 0.0194,
+          "std": 0.0519,
+          "min": 0.76,
+          "max": 0.94
+        }
+      },
+      "kruskal_wallis": {
+        "H": 65.663,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.206,
+          "rank_biserial": 0.9955555555555555,
+          "cohens_d": 3.379,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.206,
+          "rank_biserial": 0.9955555555555555,
+          "cohens_d": 3.379,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2127,
+          "rank_biserial": 0.9722222222222223,
+          "cohens_d": 3.166,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.10": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.5827,
+          "ci95": 0.023,
+          "std": 0.0616,
+          "min": 0.44,
+          "max": 0.72
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.5827,
+          "ci95": 0.023,
+          "std": 0.0616,
+          "min": 0.44,
+          "max": 0.72
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.5647,
+          "ci95": 0.0272,
+          "std": 0.0729,
+          "min": 0.42,
+          "max": 0.7
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.7287,
+          "ci95": 0.0249,
+          "std": 0.0668,
+          "min": 0.54,
+          "max": 0.84
+        }
+      },
+      "kruskal_wallis": {
+        "H": 53.286,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.146,
+          "rank_biserial": 0.8777777777777778,
+          "cohens_d": 2.272,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.146,
+          "rank_biserial": 0.8777777777777778,
+          "cohens_d": 2.272,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.164,
+          "rank_biserial": 0.8955555555555557,
+          "cohens_d": 2.346,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.15": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.526,
+          "ci95": 0.0195,
+          "std": 0.0523,
+          "min": 0.4,
+          "max": 0.62
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.526,
+          "ci95": 0.0195,
+          "std": 0.0523,
+          "min": 0.4,
+          "max": 0.62
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.504,
+          "ci95": 0.0318,
+          "std": 0.0852,
+          "min": 0.36,
+          "max": 0.68
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.6267,
+          "ci95": 0.0271,
+          "std": 0.0725,
+          "min": 0.52,
+          "max": 0.74
+        }
+      },
+      "kruskal_wallis": {
+        "H": 36.137,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.1007,
+          "rank_biserial": 0.7255555555555555,
+          "cohens_d": 1.593,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.1007,
+          "rank_biserial": 0.7255555555555555,
+          "cohens_d": 1.593,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.1227,
+          "rank_biserial": 0.711111111111111,
+          "cohens_d": 1.551,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.20": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.4747,
+          "ci95": 0.0251,
+          "std": 0.0672,
+          "min": 0.32,
+          "max": 0.6
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.4747,
+          "ci95": 0.0251,
+          "std": 0.0672,
+          "min": 0.32,
+          "max": 0.6
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.4307,
+          "ci95": 0.0332,
+          "std": 0.0889,
+          "min": 0.22,
+          "max": 0.58
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.5047,
+          "ci95": 0.0302,
+          "std": 0.081,
+          "min": 0.36,
+          "max": 0.64
+        }
+      },
+      "kruskal_wallis": {
+        "H": 10.442,
+        "p": 0.015145,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.21236,
+          "paired_margin": 0.03,
+          "rank_biserial": 0.18777777777777782,
+          "cohens_d": 0.403,
+          "mw_p_holm": 0.42472
+        },
+        "gpsr": {
+          "mw_p": 0.21236,
+          "paired_margin": 0.03,
+          "rank_biserial": 0.18777777777777782,
+          "cohens_d": 0.403,
+          "mw_p_holm": 0.42472
+        },
+        "olsr": {
+          "mw_p": 0.00287,
+          "paired_margin": 0.074,
+          "rank_biserial": 0.44777777777777783,
+          "cohens_d": 0.87,
+          "mw_p_holm": 0.00861
+        }
+      }
+    },
+    "loss_0.25": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.4227,
+          "ci95": 0.0264,
+          "std": 0.0708,
+          "min": 0.28,
+          "max": 0.58
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.4227,
+          "ci95": 0.0264,
+          "std": 0.0708,
+          "min": 0.28,
+          "max": 0.58
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.4033,
+          "ci95": 0.0217,
+          "std": 0.058,
+          "min": 0.3,
+          "max": 0.5
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.4087,
+          "ci95": 0.0252,
+          "std": 0.0674,
+          "min": 0.26,
+          "max": 0.58
+        }
+      },
+      "kruskal_wallis": {
+        "H": 2.468,
+        "p": 0.483697,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.33768,
+          "paired_margin": -0.014,
+          "rank_biserial": -0.1444444444444445,
+          "cohens_d": -0.203,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 0.33768,
+          "paired_margin": -0.014,
+          "rank_biserial": -0.1444444444444445,
+          "cohens_d": -0.203,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 0.6235,
+          "paired_margin": 0.0053,
+          "rank_biserial": 0.07444444444444454,
+          "cohens_d": 0.085,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "loss_0.30": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.3687,
+          "ci95": 0.0261,
+          "std": 0.0698,
+          "min": 0.24,
+          "max": 0.56
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.3687,
+          "ci95": 0.0261,
+          "std": 0.0698,
+          "min": 0.24,
+          "max": 0.56
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.3313,
+          "ci95": 0.0259,
+          "std": 0.0694,
+          "min": 0.18,
+          "max": 0.5
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.3453,
+          "ci95": 0.0233,
+          "std": 0.0624,
+          "min": 0.24,
+          "max": 0.46
+        }
+      },
+      "kruskal_wallis": {
+        "H": 7.18,
+        "p": 0.065186,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.22475,
+          "paired_margin": -0.0233,
+          "rank_biserial": -0.18222222222222217,
+          "cohens_d": -0.353,
+          "mw_p_holm": 0.67426
+        },
+        "gpsr": {
+          "mw_p": 0.22475,
+          "paired_margin": -0.0233,
+          "rank_biserial": -0.18222222222222217,
+          "cohens_d": -0.353,
+          "mw_p_holm": 0.67426
+        },
+        "olsr": {
+          "mw_p": 0.34886,
+          "paired_margin": 0.014,
+          "rank_biserial": 0.1411111111111112,
+          "cohens_d": 0.212,
+          "mw_p_holm": 0.67426
+        }
+      }
+    }
+  },
+  "pdr_stats": {
+    "loss_0.00": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.7047,
+          "ci95": 0.0228,
+          "std": 0.061,
+          "min": 0.58,
+          "max": 0.82
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.7047,
+          "ci95": 0.0228,
+          "std": 0.061,
+          "min": 0.58,
+          "max": 0.82
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.7073,
+          "ci95": 0.0313,
+          "std": 0.084,
+          "min": 0.54,
+          "max": 0.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 68.527,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2953,
+          "rank_biserial": 1.0,
+          "cohens_d": 6.852,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2953,
+          "rank_biserial": 1.0,
+          "cohens_d": 6.852,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2927,
+          "rank_biserial": 1.0,
+          "cohens_d": 4.93,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.05": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.6447,
+          "ci95": 0.0257,
+          "std": 0.0688,
+          "min": 0.5,
+          "max": 0.76
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.6447,
+          "ci95": 0.0257,
+          "std": 0.0688,
+          "min": 0.5,
+          "max": 0.76
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.638,
+          "ci95": 0.0297,
+          "std": 0.0795,
+          "min": 0.48,
+          "max": 0.84
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.8507,
+          "ci95": 0.0194,
+          "std": 0.0519,
+          "min": 0.76,
+          "max": 0.94
+        }
+      },
+      "kruskal_wallis": {
+        "H": 65.663,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.206,
+          "rank_biserial": 0.9955555555555555,
+          "cohens_d": 3.379,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.206,
+          "rank_biserial": 0.9955555555555555,
+          "cohens_d": 3.379,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.2127,
+          "rank_biserial": 0.9722222222222223,
+          "cohens_d": 3.166,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.10": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.5827,
+          "ci95": 0.023,
+          "std": 0.0616,
+          "min": 0.44,
+          "max": 0.72
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.5827,
+          "ci95": 0.023,
+          "std": 0.0616,
+          "min": 0.44,
+          "max": 0.72
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.5647,
+          "ci95": 0.0272,
+          "std": 0.0729,
+          "min": 0.42,
+          "max": 0.7
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.7287,
+          "ci95": 0.0249,
+          "std": 0.0668,
+          "min": 0.54,
+          "max": 0.84
+        }
+      },
+      "kruskal_wallis": {
+        "H": 53.286,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.146,
+          "rank_biserial": 0.8777777777777778,
+          "cohens_d": 2.272,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.146,
+          "rank_biserial": 0.8777777777777778,
+          "cohens_d": 2.272,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.164,
+          "rank_biserial": 0.8955555555555557,
+          "cohens_d": 2.346,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.15": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.526,
+          "ci95": 0.0195,
+          "std": 0.0523,
+          "min": 0.4,
+          "max": 0.62
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.526,
+          "ci95": 0.0195,
+          "std": 0.0523,
+          "min": 0.4,
+          "max": 0.62
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.504,
+          "ci95": 0.0318,
+          "std": 0.0852,
+          "min": 0.36,
+          "max": 0.68
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.6267,
+          "ci95": 0.0271,
+          "std": 0.0725,
+          "min": 0.52,
+          "max": 0.74
+        }
+      },
+      "kruskal_wallis": {
+        "H": 36.137,
+        "p": 0.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.0,
+          "paired_margin": 0.1007,
+          "rank_biserial": 0.7255555555555555,
+          "cohens_d": 1.593,
+          "mw_p_holm": 0.0
+        },
+        "gpsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.1007,
+          "rank_biserial": 0.7255555555555555,
+          "cohens_d": 1.593,
+          "mw_p_holm": 0.0
+        },
+        "olsr": {
+          "mw_p": 0.0,
+          "paired_margin": 0.1227,
+          "rank_biserial": 0.711111111111111,
+          "cohens_d": 1.551,
+          "mw_p_holm": 0.0
+        }
+      }
+    },
+    "loss_0.20": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.4747,
+          "ci95": 0.0251,
+          "std": 0.0672,
+          "min": 0.32,
+          "max": 0.6
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.4747,
+          "ci95": 0.0251,
+          "std": 0.0672,
+          "min": 0.32,
+          "max": 0.6
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.4307,
+          "ci95": 0.0332,
+          "std": 0.0889,
+          "min": 0.22,
+          "max": 0.58
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.5047,
+          "ci95": 0.0302,
+          "std": 0.081,
+          "min": 0.36,
+          "max": 0.64
+        }
+      },
+      "kruskal_wallis": {
+        "H": 10.442,
+        "p": 0.015145,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.21236,
+          "paired_margin": 0.03,
+          "rank_biserial": 0.18777777777777782,
+          "cohens_d": 0.403,
+          "mw_p_holm": 0.42472
+        },
+        "gpsr": {
+          "mw_p": 0.21236,
+          "paired_margin": 0.03,
+          "rank_biserial": 0.18777777777777782,
+          "cohens_d": 0.403,
+          "mw_p_holm": 0.42472
+        },
+        "olsr": {
+          "mw_p": 0.00287,
+          "paired_margin": 0.074,
+          "rank_biserial": 0.44777777777777783,
+          "cohens_d": 0.87,
+          "mw_p_holm": 0.00861
+        }
+      }
+    },
+    "loss_0.25": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.4227,
+          "ci95": 0.0264,
+          "std": 0.0708,
+          "min": 0.28,
+          "max": 0.58
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.4227,
+          "ci95": 0.0264,
+          "std": 0.0708,
+          "min": 0.28,
+          "max": 0.58
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.4033,
+          "ci95": 0.0217,
+          "std": 0.058,
+          "min": 0.3,
+          "max": 0.5
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.4087,
+          "ci95": 0.0252,
+          "std": 0.0674,
+          "min": 0.26,
+          "max": 0.58
+        }
+      },
+      "kruskal_wallis": {
+        "H": 2.468,
+        "p": 0.483697,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.33768,
+          "paired_margin": -0.014,
+          "rank_biserial": -0.1444444444444445,
+          "cohens_d": -0.203,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 0.33768,
+          "paired_margin": -0.014,
+          "rank_biserial": -0.1444444444444445,
+          "cohens_d": -0.203,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 0.6235,
+          "paired_margin": 0.0053,
+          "rank_biserial": 0.07444444444444454,
+          "cohens_d": 0.085,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "loss_0.30": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.3687,
+          "ci95": 0.0261,
+          "std": 0.0698,
+          "min": 0.24,
+          "max": 0.56
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.3687,
+          "ci95": 0.0261,
+          "std": 0.0698,
+          "min": 0.24,
+          "max": 0.56
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.3313,
+          "ci95": 0.0259,
+          "std": 0.0694,
+          "min": 0.18,
+          "max": 0.5
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.3453,
+          "ci95": 0.0233,
+          "std": 0.0624,
+          "min": 0.24,
+          "max": 0.46
+        }
+      },
+      "kruskal_wallis": {
+        "H": 7.18,
+        "p": 0.065186,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 0.22475,
+          "paired_margin": -0.0233,
+          "rank_biserial": -0.18222222222222217,
+          "cohens_d": -0.353,
+          "mw_p_holm": 0.67426
+        },
+        "gpsr": {
+          "mw_p": 0.22475,
+          "paired_margin": -0.0233,
+          "rank_biserial": -0.18222222222222217,
+          "cohens_d": -0.353,
+          "mw_p_holm": 0.67426
+        },
+        "olsr": {
+          "mw_p": 0.34886,
+          "paired_margin": 0.014,
+          "rank_biserial": 0.1411111111111112,
+          "cohens_d": 0.212,
+          "mw_p_holm": 0.67426
+        }
+      }
+    }
+  },
+  "benchmarks": {
+    "exp2_pdr80_at_20pct_loss[diamond]": {
+      "mpcare_mean": 0.5047,
+      "astar_dist_mean": 0.4747,
+      "mpcare_above_080": false,
+      "astar_dist_below_060": true
+    }
+  }
+}

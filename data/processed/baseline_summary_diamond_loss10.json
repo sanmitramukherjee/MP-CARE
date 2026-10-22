@@ -1,0 +1,201 @@
+{
+  "n_trials": 30,
+  "duration_s": 90.0,
+  "seed0": 1000,
+  "scenario": "diamond",
+  "injected_loss": 0.1,
+  "algorithms": {
+    "astar_dist": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 0.5827,
+        "std": 0.0616,
+        "min": 0.44,
+        "max": 0.72
+      },
+      "pdr": {
+        "mean": 0.5827,
+        "std": 0.0616,
+        "min": 0.44,
+        "max": 0.72
+      },
+      "avg_latency_ms": {
+        "mean": 0.1,
+        "std": 0.0,
+        "min": 0.1,
+        "max": 0.1
+      },
+      "min_chain_hops": {
+        "mean": 2,
+        "std": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "sanity_ok": true
+    },
+    "gpsr": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 0.5827,
+        "std": 0.0616,
+        "min": 0.44,
+        "max": 0.72
+      },
+      "pdr": {
+        "mean": 0.5827,
+        "std": 0.0616,
+        "min": 0.44,
+        "max": 0.72
+      },
+      "avg_latency_ms": {
+        "mean": 0.1,
+        "std": 0.0,
+        "min": 0.1,
+        "max": 0.1
+      },
+      "min_chain_hops": {
+        "mean": 2,
+        "std": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "sanity_ok": true
+    },
+    "astar_etx": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 0.746,
+        "std": 0.059,
+        "min": 0.62,
+        "max": 0.84
+      },
+      "pdr": {
+        "mean": 0.746,
+        "std": 0.059,
+        "min": 0.62,
+        "max": 0.84
+      },
+      "avg_latency_ms": {
+        "mean": 0.2,
+        "std": 0.0,
+        "min": 0.2,
+        "max": 0.2
+      },
+      "min_chain_hops": {
+        "mean": 3,
+        "std": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "sanity_ok": true
+    },
+    "aodv": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 0.6033,
+        "std": 0.0831,
+        "min": 0.38,
+        "max": 0.82
+      },
+      "pdr": {
+        "mean": 0.6033,
+        "std": 0.0831,
+        "min": 0.38,
+        "max": 0.82
+      },
+      "avg_latency_ms": {
+        "mean": 0.15,
+        "std": 0.063,
+        "min": 0.1,
+        "max": 0.3
+      },
+      "min_chain_hops": {
+        "mean": 2.3,
+        "std": 0.4661,
+        "min": 2,
+        "max": 3
+      },
+      "control_pkts_per_node_s": {
+        "mean": 1.0732,
+        "std": 0.0254,
+        "min": 1.038,
+        "max": 1.14
+      },
+      "first_route_s": {
+        "mean": 0.67,
+        "std": 0.6487,
+        "min": 0.2,
+        "max": 2.3000000000000003
+      },
+      "sanity_ok": true
+    },
+    "olsr": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 0.5647,
+        "std": 0.0729,
+        "min": 0.42,
+        "max": 0.7
+      },
+      "pdr": {
+        "mean": 0.5647,
+        "std": 0.0729,
+        "min": 0.42,
+        "max": 0.7
+      },
+      "avg_latency_ms": {
+        "mean": 0.1433,
+        "std": 0.1695,
+        "min": 0.1,
+        "max": 0.9
+      },
+      "min_chain_hops": {
+        "mean": 2,
+        "std": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "control_pkts_per_node_s": {
+        "mean": 1.4133,
+        "std": 0.0772,
+        "min": 1.316,
+        "max": 1.562
+      },
+      "first_route_s": {
+        "mean": 5.3367,
+        "std": 1.2678,
+        "min": 5.0,
+        "max": 10.0
+      },
+      "sanity_ok": true
+    },
+    "mpcare": {
+      "n_trials": 30,
+      "chain_pdr": {
+        "mean": 0.7287,
+        "std": 0.0668,
+        "min": 0.54,
+        "max": 0.84
+      },
+      "pdr": {
+        "mean": 0.7287,
+        "std": 0.0668,
+        "min": 0.54,
+        "max": 0.84
+      },
+      "avg_latency_ms": {
+        "mean": 0.2,
+        "std": 0.0,
+        "min": 0.2,
+        "max": 0.2
+      },
+      "min_chain_hops": {
+        "mean": 3,
+        "std": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "sanity_ok": true
+    }
+  }
+}

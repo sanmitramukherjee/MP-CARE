@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- Phase 6/7 scale world (canonical v3 geometry): obstacle-free
+     1600 m x 1600 m ground plane — fits the N=50 probe layout generated
+     from the campaign's own scenario builder (seed 3001, max coordinate
+     ~1135 m + margin; scripts/gen_gazebo_positions.py). SDF 1.8, Jetty.
+     Static probes only, like open_field (NOTES/testROS2.md Tier 3). -->
+<sdf version="1.8">
+  <world name="scale_field">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <gravity>0 0 -9.8</gravity>
+
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+
+    <scene>
+      <ambient>0.8 0.8 0.8 1</ambient>
+      <background>0.6 0.75 0.9 1</background>
+    </scene>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 100 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.3 0.3 0.3 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- ground plane: 1600 m x 1600 m open field -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>1600 1600</size></plane></geometry>
+          <surface><friction><ode><mu>1</mu><mu2>1</mu2></ode></friction></surface>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>1600 1600</size></plane></geometry>
+          <material>
+            <ambient>0.35 0.45 0.3 1</ambient>
+            <diffuse>0.4 0.55 0.35 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

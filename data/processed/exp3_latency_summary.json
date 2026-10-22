@@ -1,0 +1,928 @@
+{
+  "experiment": "exp3_latency",
+  "n_trials": 30,
+  "seed0": 1000,
+  "duration_s": 90.0,
+  "algorithms": [
+    "astar_dist",
+    "gpsr",
+    "olsr",
+    "mpcare"
+  ],
+  "conditions": [
+    "lat_0",
+    "lat_10",
+    "lat_25",
+    "lat_50",
+    "lat_100",
+    "lat_150",
+    "lat_200"
+  ],
+  "primary_metric": "avg_latency_ms",
+  "primary_stats": {
+    "lat_0": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 2.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 2.9,
+          "max": 2.9
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 2.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 2.9,
+          "max": 2.9
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 2.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 2.9,
+          "max": 2.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 2.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 2.9,
+          "max": 2.9
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_10": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 42.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 42.9,
+          "max": 42.9
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 42.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 42.9,
+          "max": 42.9
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 42.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 42.9,
+          "max": 42.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 42.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 42.9,
+          "max": 42.9
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_25": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 102.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 102.9,
+          "max": 102.9
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 102.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 102.9,
+          "max": 102.9
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 102.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 102.9,
+          "max": 102.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 102.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 102.9,
+          "max": 102.9
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_50": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 202.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 202.9,
+          "max": 202.9
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 202.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 202.9,
+          "max": 202.9
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 202.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 202.9,
+          "max": 202.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 202.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 202.9,
+          "max": 202.9
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_100": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 402.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 402.9,
+          "max": 402.9
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 402.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 402.9,
+          "max": 402.9
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 402.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 402.9,
+          "max": 402.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 402.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 402.9,
+          "max": 402.9
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_150": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 602.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 602.9,
+          "max": 602.9
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 602.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 602.9,
+          "max": 602.9
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 602.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 602.9,
+          "max": 602.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 602.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 602.9,
+          "max": 602.9
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_200": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 802.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 802.9,
+          "max": 802.9
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 802.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 802.9,
+          "max": 802.9
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 802.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 802.9,
+          "max": 802.9
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 802.9,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 802.9,
+          "max": 802.9
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    }
+  },
+  "pdr_stats": {
+    "lat_0": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_10": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_25": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_50": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_100": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_150": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    },
+    "lat_200": {
+      "per_algo": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 0.0,
+        "p": 1.0,
+        "df": 3
+      },
+      "posthoc_vs_mpcare": {
+        "astar_dist": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "gpsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        },
+        "olsr": {
+          "mw_p": 1.0,
+          "paired_margin": 0.0,
+          "rank_biserial": 0.0,
+          "cohens_d": 0.0,
+          "mw_p_holm": 1.0
+        }
+      }
+    }
+  },
+  "benchmarks": {
+    "exp3_reroute_faster_at_50ms": {
+      "result": "n/a",
+      "reason": "control messages are not delayed by injected_latency_ms in the current model (data-plane only), so the periodic-vs-event re-route latency cannot be measured here"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Swarm logger parameters (section 3.4 CSV schema, >= 10 Hz per UAV)
+logger:
+  ros__parameters:
+    out_dir: data/raw
+    trial_id: ""               # empty -> timestamped trial id
+    experiment: phase1_ros
+    algorithm: astar_dist+gpsr
+    rate_hz: 10.0

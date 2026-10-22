@@ -1,0 +1,68 @@
+
+=== envelope: 20 conditions x 2 algorithms x 30 trials ===
+[envelope] L0.00_S5       gpsr        30 trials done (1s elapsed)
+[envelope] L0.00_S5       mpcare      30 trials done (5s elapsed)
+[envelope] L0.00_S10      gpsr        30 trials done (7s elapsed)
+[envelope] L0.00_S10      mpcare      30 trials done (13s elapsed)
+[envelope] L0.00_S15      gpsr        30 trials done (15s elapsed)
+[envelope] L0.00_S15      mpcare      30 trials done (21s elapsed)
+[envelope] L0.00_S20      gpsr        30 trials done (23s elapsed)
+[envelope] L0.00_S20      mpcare      30 trials done (29s elapsed)
+[envelope] L0.00_S25      gpsr        30 trials done (31s elapsed)
+[envelope] L0.00_S25      mpcare      30 trials done (37s elapsed)
+[envelope] L0.10_S5       gpsr        30 trials done (39s elapsed)
+[envelope] L0.10_S5       mpcare      30 trials done (44s elapsed)
+[envelope] L0.10_S10      gpsr        30 trials done (46s elapsed)
+[envelope] L0.10_S10      mpcare      30 trials done (52s elapsed)
+[envelope] L0.10_S15      gpsr        30 trials done (54s elapsed)
+[envelope] L0.10_S15      mpcare      30 trials done (59s elapsed)
+[envelope] L0.10_S20      gpsr        30 trials done (61s elapsed)
+[envelope] L0.10_S20      mpcare      30 trials done (67s elapsed)
+[envelope] L0.10_S25      gpsr        30 trials done (69s elapsed)
+[envelope] L0.10_S25      mpcare      30 trials done (75s elapsed)
+[envelope] L0.20_S5       gpsr        30 trials done (76s elapsed)
+[envelope] L0.20_S5       mpcare      30 trials done (82s elapsed)
+[envelope] L0.20_S10      gpsr        30 trials done (84s elapsed)
+[envelope] L0.20_S10      mpcare      30 trials done (90s elapsed)
+[envelope] L0.20_S15      gpsr        30 trials done (92s elapsed)
+[envelope] L0.20_S15      mpcare      30 trials done (98s elapsed)
+[envelope] L0.20_S20      gpsr        30 trials done (100s elapsed)
+[envelope] L0.20_S20      mpcare      30 trials done (105s elapsed)
+[envelope] L0.20_S25      gpsr        30 trials done (107s elapsed)
+[envelope] L0.20_S25      mpcare      30 trials done (113s elapsed)
+[envelope] L0.30_S5       gpsr        30 trials done (115s elapsed)
+[envelope] L0.30_S5       mpcare      30 trials done (121s elapsed)
+[envelope] L0.30_S10      gpsr        30 trials done (122s elapsed)
+[envelope] L0.30_S10      mpcare      30 trials done (128s elapsed)
+[envelope] L0.30_S15      gpsr        30 trials done (130s elapsed)
+[envelope] L0.30_S15      mpcare      30 trials done (136s elapsed)
+[envelope] L0.30_S20      gpsr        30 trials done (138s elapsed)
+[envelope] L0.30_S20      mpcare      30 trials done (143s elapsed)
+[envelope] L0.30_S25      gpsr        30 trials done (145s elapsed)
+[envelope] L0.30_S25      mpcare      30 trials done (151s elapsed)
+[envelope] wrote envelope.csv/_summary.json + graphs (envelope)
+
+  condition       gpsr          mpcare        
+  L0.00_S5        0.967±0.029   0.974±0.028   
+  L0.00_S10       0.969±0.021   0.968±0.026   
+  L0.00_S15       0.976±0.011   0.969±0.017   
+  L0.00_S20       0.972±0.011   0.981±0.012   
+  L0.00_S25       0.973±0.013   0.977±0.009   
+  L0.10_S5        0.864±0.033   0.847±0.034   
+  L0.10_S10       0.850±0.034   0.835±0.025   
+  L0.10_S15       0.850±0.028   0.841±0.023   
+  L0.10_S20       0.848±0.025   0.855±0.020   
+  L0.10_S25       0.846±0.025   0.837±0.017   
+  L0.20_S5        0.762±0.035   0.746±0.038   
+  L0.20_S10       0.740±0.036   0.726±0.029   
+  L0.20_S15       0.739±0.032   0.720±0.025   
+  L0.20_S20       0.733±0.031   0.726±0.026   
+  L0.20_S25       0.733±0.029   0.715±0.022   
+  L0.30_S5        0.666±0.033   0.634±0.038   
+  L0.30_S10       0.637±0.034   0.600±0.035   
+  L0.30_S15       0.631±0.033   0.605±0.025   
+  L0.30_S20       0.631±0.031   0.605±0.028   
+  L0.30_S25       0.639±0.025   0.609±0.024   
+  post-hoc vs mpcare @L0.30_S25 (Holm): gpsr: p=0.06959, margin=-0.030
+
+DONE — data in C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed

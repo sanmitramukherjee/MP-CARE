@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- FastDDS profile for LARGE SWARM runs (N=50 gate): UDPv4 only.
+     The default SHM transport self-deadlocks at 50 processes on this VM
+     (open_and_lock_file failures on shared port files during the agent
+     boot storm); UDP-only removes the shared-memory rendezvous entirely.
+     Point FASTRTPS_DEFAULT_PROFILES_FILE at this file for the run. -->
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <transport_descriptors>
+    <transport_descriptor>
+      <transport_id>udp_only</transport_id>
+      <type>UDPv4</type>
+    </transport_descriptor>
+  </transport_descriptors>
+  <participant profile_name="udp_only_participant" is_default_profile="true">
+    <rtps>
+      <userTransports>
+        <transport_id>udp_only</transport_id>
+      </userTransports>
+      <useBuiltinTransports>false</useBuiltinTransports>
+    </rtps>
+  </participant>
+</profiles>

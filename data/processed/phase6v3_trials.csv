@@ -1,0 +1,721 @@
+seed,trial,algorithm,N,condition,chain_pdr,pdr,packets_sent,packets_delivered,avg_latency_ms,mission_time_s,cpu_ms_per_node_tick,control_pkts_per_node_s,beacons_per_node_s,data_tx_per_node_s,full_conv_s,convergence_def,conv_scope,avg_degree,reroutes_total,reroutes_per_uav_min,trigger_events,void_recovery_events,void_walk_drops,run_wall_s,sanity_ok
+3000,0,mpcare,5,N5,1.0,1.0,50,50,0.7,9.3,0.0166,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.2,True
+3001,1,mpcare,5,N5,1.0,1.0,50,50,0.7,10.5,0.0171,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.21,True
+3002,2,mpcare,5,N5,1.0,1.0,50,50,0.7,10.8,0.0172,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.2,True
+3003,3,mpcare,5,N5,1.0,1.0,50,50,0.7,10.5,0.0179,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.21,True
+3004,4,mpcare,5,N5,1.0,1.0,50,50,0.7,10.4,0.0208,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.25,True
+3005,5,mpcare,5,N5,1.0,1.0,50,50,0.7,9.1,0.0221,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.26,True
+3006,6,mpcare,5,N5,1.0,1.0,50,50,0.7,9.4,0.0217,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.26,True
+3007,7,mpcare,5,N5,1.0,1.0,50,50,0.7,11.2,0.0149,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.18,True
+3008,8,mpcare,5,N5,1.0,1.0,50,50,0.7,11.2,0.0172,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.21,True
+3009,9,mpcare,5,N5,1.0,1.0,50,50,0.7,11.7,0.0221,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.26,True
+3010,10,mpcare,5,N5,1.0,1.0,50,50,0.7,11.0,0.0209,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.25,True
+3011,11,mpcare,5,N5,1.0,1.0,50,50,0.7,7.4,0.016,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.19,True
+3012,12,mpcare,5,N5,1.0,1.0,50,50,0.7,9.7,0.0291,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.33,True
+3013,13,mpcare,5,N5,1.0,1.0,50,50,0.7,11.0,0.0379,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.43,True
+3014,14,mpcare,5,N5,1.0,1.0,50,50,0.7,10.2,0.0359,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3015,15,mpcare,5,N5,1.0,1.0,50,50,0.7,11.3,0.0366,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3016,16,mpcare,5,N5,1.0,1.0,50,50,0.7,11.0,0.037,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3017,17,mpcare,5,N5,1.0,1.0,50,50,0.7,10.3,0.0363,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3018,18,mpcare,5,N5,1.0,1.0,50,50,0.7,9.3,0.0368,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3019,19,mpcare,5,N5,1.0,1.0,50,50,0.7,11.4,0.0372,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.42,True
+3020,20,mpcare,5,N5,1.0,1.0,50,50,0.7,8.5,0.0376,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.43,True
+3021,21,mpcare,5,N5,1.0,1.0,50,50,0.7,6.7,0.0373,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.42,True
+3022,22,mpcare,5,N5,1.0,1.0,50,50,0.7,10.2,0.0368,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.42,True
+3023,23,mpcare,5,N5,1.0,1.0,50,50,0.7,11.1,0.0366,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3024,24,mpcare,5,N5,1.0,1.0,50,50,0.7,11.6,0.0359,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3025,25,mpcare,5,N5,1.0,1.0,50,50,0.7,11.7,0.0372,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.42,True
+3026,26,mpcare,5,N5,1.0,1.0,50,50,0.7,9.3,0.037,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.42,True
+3027,27,mpcare,5,N5,1.0,1.0,50,50,0.7,10.0,0.0368,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3028,28,mpcare,5,N5,1.0,1.0,50,50,0.7,11.1,0.0348,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.39,True
+3029,29,mpcare,5,N5,1.0,1.0,50,50,0.7,11.4,0.0359,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.0,0,0.0,,0,0,0.41,True
+3000,0,gpsr,5,N5,1.0,1.0,50,50,0.7,9.3,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3001,1,gpsr,5,N5,1.0,1.0,50,50,0.7,10.5,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3002,2,gpsr,5,N5,1.0,1.0,50,50,0.7,10.8,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3003,3,gpsr,5,N5,1.0,1.0,50,50,0.7,10.5,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3004,4,gpsr,5,N5,1.0,1.0,50,50,0.7,10.4,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3005,5,gpsr,5,N5,1.0,1.0,50,50,0.7,9.1,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.13,True
+3006,6,gpsr,5,N5,1.0,1.0,50,50,0.7,9.4,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3007,7,gpsr,5,N5,1.0,1.0,50,50,0.7,11.2,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.12,True
+3008,8,gpsr,5,N5,1.0,1.0,50,50,0.7,11.2,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.12,True
+3009,9,gpsr,5,N5,1.0,1.0,50,50,0.7,11.7,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3010,10,gpsr,5,N5,1.0,1.0,50,50,0.7,11.0,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3011,11,gpsr,5,N5,1.0,1.0,50,50,0.7,7.4,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.12,True
+3012,12,gpsr,5,N5,1.0,1.0,50,50,0.7,9.7,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3013,13,gpsr,5,N5,1.0,1.0,50,50,0.7,11.0,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.12,True
+3014,14,gpsr,5,N5,1.0,1.0,50,50,0.7,10.2,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.15,True
+3015,15,gpsr,5,N5,1.0,1.0,50,50,0.7,11.3,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3016,16,gpsr,5,N5,1.0,1.0,50,50,0.7,11.0,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3017,17,gpsr,5,N5,1.0,1.0,50,50,0.7,10.3,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3018,18,gpsr,5,N5,1.0,1.0,50,50,0.7,9.3,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3019,19,gpsr,5,N5,1.0,1.0,50,50,0.7,11.4,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3020,20,gpsr,5,N5,1.0,1.0,50,50,0.7,8.5,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3021,21,gpsr,5,N5,1.0,1.0,50,50,0.7,6.7,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3022,22,gpsr,5,N5,1.0,1.0,50,50,0.7,10.2,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3023,23,gpsr,5,N5,1.0,1.0,50,50,0.7,11.1,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3024,24,gpsr,5,N5,1.0,1.0,50,50,0.7,11.6,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3025,25,gpsr,5,N5,1.0,1.0,50,50,0.7,11.7,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3026,26,gpsr,5,N5,1.0,1.0,50,50,0.7,9.3,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3027,27,gpsr,5,N5,1.0,1.0,50,50,0.7,10.0,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.1,True
+3028,28,gpsr,5,N5,1.0,1.0,50,50,0.7,11.1,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.11,True
+3029,29,gpsr,5,N5,1.0,1.0,50,50,0.7,11.4,0.0,,,,,stateless: n/a,n/a,4.0,0,0.0,,,,0.12,True
+3000,0,olsr,5,N5,1.0,1.0,50,50,0.7,9.3,0.0096,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3001,1,olsr,5,N5,1.0,1.0,50,50,0.7,10.5,0.0089,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.2,True
+3002,2,olsr,5,N5,1.0,1.0,50,50,0.7,10.8,0.0097,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3003,3,olsr,5,N5,1.0,1.0,50,50,0.7,10.5,0.0097,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.22,True
+3004,4,olsr,5,N5,1.0,1.0,50,50,0.7,10.4,0.0096,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.22,True
+3005,5,olsr,5,N5,1.0,1.0,50,50,0.7,9.1,0.0095,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.22,True
+3006,6,olsr,5,N5,1.0,1.0,50,50,0.7,9.4,0.0096,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3007,7,olsr,5,N5,1.0,1.0,50,50,0.7,11.2,0.0096,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.22,True
+3008,8,olsr,5,N5,1.0,1.0,50,50,0.7,11.2,0.01,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.22,True
+3009,9,olsr,5,N5,1.0,1.0,50,50,0.7,11.7,0.0092,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3010,10,olsr,5,N5,1.0,1.0,50,50,0.7,11.0,0.0095,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3011,11,olsr,5,N5,1.0,1.0,50,50,0.7,7.4,0.009,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.2,True
+3012,12,olsr,5,N5,1.0,1.0,50,50,0.7,9.7,0.0092,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3013,13,olsr,5,N5,1.0,1.0,50,50,0.7,11.0,0.0095,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3014,14,olsr,5,N5,1.0,1.0,50,50,0.7,10.2,0.0094,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3015,15,olsr,5,N5,1.0,1.0,50,50,0.7,11.3,0.0096,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3016,16,olsr,5,N5,1.0,1.0,50,50,0.7,11.0,0.0093,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3017,17,olsr,5,N5,1.0,1.0,50,50,0.7,10.3,0.0098,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.22,True
+3018,18,olsr,5,N5,1.0,1.0,50,50,0.7,9.3,0.0095,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3019,19,olsr,5,N5,1.0,1.0,50,50,0.7,11.4,0.0114,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.25,True
+3020,20,olsr,5,N5,1.0,1.0,50,50,0.7,8.5,0.0091,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.2,True
+3021,21,olsr,5,N5,1.0,1.0,50,50,0.7,6.7,0.0097,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3022,22,olsr,5,N5,1.0,1.0,50,50,0.7,10.2,0.0095,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3023,23,olsr,5,N5,1.0,1.0,50,50,0.7,11.1,0.0094,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3024,24,olsr,5,N5,1.0,1.0,50,50,0.7,11.6,0.0093,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3025,25,olsr,5,N5,1.0,1.0,50,50,0.7,11.7,0.0098,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.22,True
+3026,26,olsr,5,N5,1.0,1.0,50,50,0.7,9.3,0.0092,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.2,True
+3027,27,olsr,5,N5,1.0,1.0,50,50,0.7,10.0,0.0091,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.2,True
+3028,28,olsr,5,N5,1.0,1.0,50,50,0.7,11.1,0.0093,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.21,True
+3029,29,olsr,5,N5,1.0,1.0,50,50,0.7,11.4,0.0116,1.193,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.0,0,0.0,,,,0.26,True
+3000,0,aodv,5,N5,1.0,1.0,50,50,0.7,9.3,0.0068,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.18,True
+3001,1,aodv,5,N5,1.0,1.0,50,50,0.7,10.5,0.0058,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.16,True
+3002,2,aodv,5,N5,1.0,1.0,50,50,0.7,10.8,0.0061,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.16,True
+3003,3,aodv,5,N5,1.0,1.0,50,50,0.7,10.5,0.0059,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.16,True
+3004,4,aodv,5,N5,1.0,1.0,50,50,0.7,10.4,0.0065,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.18,True
+3005,5,aodv,5,N5,1.0,1.0,50,50,0.7,9.1,0.0067,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.18,True
+3006,6,aodv,5,N5,1.0,1.0,50,50,0.7,9.4,0.0065,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3007,7,aodv,5,N5,1.0,1.0,50,50,0.7,11.2,0.0069,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3008,8,aodv,5,N5,1.0,1.0,50,50,0.7,11.2,0.0066,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.18,True
+3009,9,aodv,5,N5,1.0,1.0,50,50,0.7,11.7,0.0064,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3010,10,aodv,5,N5,1.0,1.0,50,50,0.7,11.0,0.0064,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3011,11,aodv,5,N5,1.0,1.0,50,50,0.7,7.4,0.0062,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3012,12,aodv,5,N5,1.0,1.0,50,50,0.7,9.7,0.006,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.16,True
+3013,13,aodv,5,N5,1.0,1.0,50,50,0.7,11.0,0.0061,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3014,14,aodv,5,N5,1.0,1.0,50,50,0.7,10.2,0.0064,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3015,15,aodv,5,N5,1.0,1.0,50,50,0.7,11.3,0.0063,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3016,16,aodv,5,N5,1.0,1.0,50,50,0.7,11.0,0.0061,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3017,17,aodv,5,N5,1.0,1.0,50,50,0.7,10.3,0.0068,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.19,True
+3018,18,aodv,5,N5,1.0,1.0,50,50,0.7,9.3,0.0063,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3019,19,aodv,5,N5,1.0,1.0,50,50,0.7,11.4,0.0062,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3020,20,aodv,5,N5,1.0,1.0,50,50,0.7,8.5,0.0061,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.16,True
+3021,21,aodv,5,N5,1.0,1.0,50,50,0.7,6.7,0.0062,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3022,22,aodv,5,N5,1.0,1.0,50,50,0.7,10.2,0.0061,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3023,23,aodv,5,N5,1.0,1.0,50,50,0.7,11.1,0.006,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.16,True
+3024,24,aodv,5,N5,1.0,1.0,50,50,0.7,11.6,0.0063,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3025,25,aodv,5,N5,1.0,1.0,50,50,0.7,11.7,0.0066,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3026,26,aodv,5,N5,1.0,1.0,50,50,0.7,9.3,0.0064,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.18,True
+3027,27,aodv,5,N5,1.0,1.0,50,50,0.7,10.0,0.0065,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3028,28,aodv,5,N5,1.0,1.0,50,50,0.7,11.1,0.0061,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.17,True
+3029,29,aodv,5,N5,1.0,1.0,50,50,0.7,11.4,0.0058,1.033,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.0,5,0.4,"{""route-change"": 5}",,,0.16,True
+3000,0,mpcare,10,N10,1.0,1.0,50,50,1.5,20.1,0.0564,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.53,0,0.0,,0,0,1.34,True
+3001,1,mpcare,10,N10,1.0,1.0,50,50,0.7,22.5,0.0647,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.42,0,0.0,,0,0,1.46,True
+3002,2,mpcare,10,N10,1.0,1.0,50,50,0.7,21.5,0.0625,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.57,0,0.0,,0,0,1.4,True
+3003,3,mpcare,10,N10,1.0,1.0,50,50,0.7,23.3,0.0589,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.26,0,0.0,,0,0,1.39,True
+3004,4,mpcare,10,N10,1.0,1.0,50,50,0.7,20.7,0.0556,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.6,0,0.0,,0,0,1.24,True
+3005,5,mpcare,10,N10,1.0,1.0,50,50,0.7,20.3,0.0614,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.54,0,0.0,,0,0,1.39,True
+3006,6,mpcare,10,N10,1.0,1.0,50,50,0.7,18.7,0.0539,,10.0,0.033,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.86,0,0.0,,0,0,1.24,True
+3007,7,mpcare,10,N10,1.0,1.0,50,50,0.7,22.3,0.0477,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.54,0,0.0,,0,0,1.1,True
+3008,8,mpcare,10,N10,0.8,0.8,50,40,2.9,22.6,0.0479,,10.0,0.113,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.54,0,0.0,,0,0,1.12,True
+3009,9,mpcare,10,N10,1.0,1.0,50,50,0.7,23.3,0.0515,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.1,0,0.0,,0,0,1.17,True
+3010,10,mpcare,10,N10,1.0,1.0,50,50,0.7,22.0,0.0521,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.54,0,0.0,,0,0,1.21,True
+3011,11,mpcare,10,N10,1.0,1.0,50,50,0.7,21.4,0.0512,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.08,0,0.0,,0,0,1.17,True
+3012,12,mpcare,10,N10,1.0,1.0,50,50,0.7,23.7,0.0532,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.55,0,0.0,,0,0,1.2,True
+3013,13,mpcare,10,N10,1.0,1.0,50,50,0.7,23.4,0.0512,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.41,0,0.0,,0,0,1.15,True
+3014,14,mpcare,10,N10,1.0,1.0,50,50,0.7,21.7,0.0501,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.15,0,0.0,,0,0,1.17,True
+3015,15,mpcare,10,N10,1.0,1.0,50,50,0.7,22.5,0.0631,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.3,0,0.0,,0,0,1.43,True
+3016,16,mpcare,10,N10,1.0,1.0,50,50,0.7,22.0,0.0519,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.34,0,0.0,,0,0,1.21,True
+3017,17,mpcare,10,N10,1.0,1.0,50,50,0.7,20.6,0.0639,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.56,0,0.0,,0,0,1.51,True
+3018,18,mpcare,10,N10,1.0,1.0,50,50,0.7,21.4,0.06,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.6,0,0.0,,0,0,1.4,True
+3019,19,mpcare,10,N10,1.0,1.0,50,50,0.7,22.7,0.0612,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.11,0,0.0,,0,0,1.41,True
+3020,20,mpcare,10,N10,1.0,1.0,50,50,0.7,21.9,0.0538,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.52,0,0.0,,0,0,1.25,True
+3021,21,mpcare,10,N10,1.0,1.0,50,50,0.7,18.1,0.0567,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.1,0,0.0,,0,0,1.3,True
+3022,22,mpcare,10,N10,1.0,1.0,50,50,0.7,20.4,0.0617,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.58,0,0.0,,0,0,1.39,True
+3023,23,mpcare,10,N10,1.0,1.0,50,50,0.7,22.2,0.0525,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.33,0,0.0,,0,0,1.19,True
+3024,24,mpcare,10,N10,1.0,1.0,50,50,1.5,23.1,0.0551,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.99,0,0.0,,0,0,1.29,True
+3025,25,mpcare,10,N10,1.0,1.0,50,50,1.5,23.4,0.0589,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.74,0,0.0,,0,0,1.38,True
+3026,26,mpcare,10,N10,1.0,1.0,50,50,2.2,23.0,0.0533,,10.0,0.1,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.68,0,0.0,,0,0,1.25,True
+3027,27,mpcare,10,N10,1.0,1.0,50,50,0.7,22.2,0.0551,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.08,0,0.0,,0,0,1.25,True
+3028,28,mpcare,10,N10,1.0,1.0,50,50,0.7,23.4,0.0536,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.06,0,0.0,,0,0,1.22,True
+3029,29,mpcare,10,N10,1.0,1.0,50,50,0.7,22.8,0.0542,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.21,0,0.0,,0,0,1.23,True
+3000,0,gpsr,10,N10,0.98,0.98,50,49,0.7,20.1,0.0,,,,,stateless: n/a,n/a,6.53,0,0.0,,,,0.36,True
+3001,1,gpsr,10,N10,1.0,1.0,50,50,0.7,22.5,0.0,,,,,stateless: n/a,n/a,7.42,0,0.0,,,,0.35,True
+3002,2,gpsr,10,N10,1.0,1.0,50,50,0.7,21.5,0.0,,,,,stateless: n/a,n/a,7.57,0,0.0,,,,0.36,True
+3003,3,gpsr,10,N10,1.0,1.0,50,50,0.7,23.3,0.0,,,,,stateless: n/a,n/a,6.26,0,0.0,,,,0.37,True
+3004,4,gpsr,10,N10,1.0,1.0,50,50,0.7,20.7,0.0,,,,,stateless: n/a,n/a,7.6,0,0.0,,,,0.45,True
+3005,5,gpsr,10,N10,1.0,1.0,50,50,0.7,20.3,0.0,,,,,stateless: n/a,n/a,7.54,0,0.0,,,,0.39,True
+3006,6,gpsr,10,N10,1.0,1.0,50,50,0.7,18.7,0.0,,,,,stateless: n/a,n/a,6.86,0,0.0,,,,0.42,True
+3007,7,gpsr,10,N10,1.0,1.0,50,50,0.7,22.3,0.0,,,,,stateless: n/a,n/a,6.54,0,0.0,,,,0.38,True
+3008,8,gpsr,10,N10,0.88,0.88,50,44,2.2,22.6,0.0,,,,,stateless: n/a,n/a,6.54,0,0.0,,,,0.37,True
+3009,9,gpsr,10,N10,1.0,1.0,50,50,0.7,23.3,0.0,,,,,stateless: n/a,n/a,7.1,0,0.0,,,,0.36,True
+3010,10,gpsr,10,N10,1.0,1.0,50,50,0.7,22.0,0.0,,,,,stateless: n/a,n/a,6.54,0,0.0,,,,0.37,True
+3011,11,gpsr,10,N10,1.0,1.0,50,50,0.7,21.4,0.0,,,,,stateless: n/a,n/a,7.08,0,0.0,,,,0.37,True
+3012,12,gpsr,10,N10,1.0,1.0,50,50,0.7,23.7,0.0,,,,,stateless: n/a,n/a,7.55,0,0.0,,,,0.35,True
+3013,13,gpsr,10,N10,1.0,1.0,50,50,0.7,23.4,0.0,,,,,stateless: n/a,n/a,7.41,0,0.0,,,,0.38,True
+3014,14,gpsr,10,N10,1.0,1.0,50,50,0.7,21.7,0.0,,,,,stateless: n/a,n/a,6.15,0,0.0,,,,0.36,True
+3015,15,gpsr,10,N10,1.0,1.0,50,50,0.7,22.5,0.0,,,,,stateless: n/a,n/a,7.3,0,0.0,,,,0.36,True
+3016,16,gpsr,10,N10,1.0,1.0,50,50,0.7,22.0,0.0,,,,,stateless: n/a,n/a,6.34,0,0.0,,,,0.35,True
+3017,17,gpsr,10,N10,1.0,1.0,50,50,0.7,20.6,0.0,,,,,stateless: n/a,n/a,6.56,0,0.0,,,,0.35,True
+3018,18,gpsr,10,N10,1.0,1.0,50,50,0.7,21.4,0.0,,,,,stateless: n/a,n/a,6.6,0,0.0,,,,0.3,True
+3019,19,gpsr,10,N10,1.0,1.0,50,50,0.7,22.7,0.0,,,,,stateless: n/a,n/a,7.11,0,0.0,,,,0.36,True
+3020,20,gpsr,10,N10,1.0,1.0,50,50,0.7,21.9,0.0,,,,,stateless: n/a,n/a,6.52,0,0.0,,,,0.36,True
+3021,21,gpsr,10,N10,1.0,1.0,50,50,0.7,18.1,0.0,,,,,stateless: n/a,n/a,7.1,0,0.0,,,,0.42,True
+3022,22,gpsr,10,N10,1.0,1.0,50,50,0.7,20.4,0.0,,,,,stateless: n/a,n/a,7.58,0,0.0,,,,0.37,True
+3023,23,gpsr,10,N10,1.0,1.0,50,50,0.7,22.2,0.0,,,,,stateless: n/a,n/a,7.33,0,0.0,,,,0.47,True
+3024,24,gpsr,10,N10,0.96,0.96,50,48,1.5,23.1,0.0,,,,,stateless: n/a,n/a,6.99,0,0.0,,,,0.36,True
+3025,25,gpsr,10,N10,0.82,0.82,50,41,0.7,23.4,0.0,,,,,stateless: n/a,n/a,6.74,0,0.0,,,,0.41,True
+3026,26,gpsr,10,N10,1.0,1.0,50,50,1.5,23.0,0.0,,,,,stateless: n/a,n/a,6.68,0,0.0,,,,0.44,True
+3027,27,gpsr,10,N10,1.0,1.0,50,50,0.7,22.2,0.0,,,,,stateless: n/a,n/a,7.08,0,0.0,,,,0.4,True
+3028,28,gpsr,10,N10,1.0,1.0,50,50,0.7,23.4,0.0,,,,,stateless: n/a,n/a,7.06,0,0.0,,,,0.39,True
+3029,29,gpsr,10,N10,1.0,1.0,50,50,0.7,22.8,0.0,,,,,stateless: n/a,n/a,7.21,0,0.0,,,,0.41,True
+3000,0,olsr,10,N10,0.98,0.98,50,49,0.7,20.1,0.0216,1.912,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.53,0,0.0,,,,0.75,True
+3001,1,olsr,10,N10,1.0,1.0,50,50,0.7,22.5,0.0239,1.551,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.42,0,0.0,,,,0.81,True
+3002,2,olsr,10,N10,1.0,1.0,50,50,0.7,21.5,0.0284,1.868,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.57,0,0.0,,,,0.93,True
+3003,3,olsr,10,N10,1.0,1.0,50,50,0.7,23.3,0.0229,1.762,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.26,0,0.0,,,,0.8,True
+3004,4,olsr,10,N10,1.0,1.0,50,50,0.7,20.7,0.0272,1.733,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.6,0,0.0,,,,0.91,True
+3005,5,olsr,10,N10,1.0,1.0,50,50,0.7,20.3,0.0254,1.659,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.54,0,0.0,,,,0.86,True
+3006,6,olsr,10,N10,1.0,1.0,50,50,0.7,18.7,0.0268,1.838,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.86,0,0.0,,,,0.91,True
+3007,7,olsr,10,N10,1.0,1.0,50,50,0.7,22.3,0.0251,1.703,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.54,0,0.0,,,,0.86,True
+3008,8,olsr,10,N10,0.98,0.98,50,49,2.2,22.6,0.0246,2.076,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.54,0,0.0,,,,0.85,True
+3009,9,olsr,10,N10,1.0,1.0,50,50,0.7,23.3,0.0269,1.705,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.1,0,0.0,,,,0.91,True
+3010,10,olsr,10,N10,1.0,1.0,50,50,0.7,22.0,0.0268,1.788,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.54,0,0.0,,,,0.94,True
+3011,11,olsr,10,N10,1.0,1.0,50,50,0.7,21.4,0.0314,1.762,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.08,0,0.0,,,,1.06,True
+3012,12,olsr,10,N10,1.0,1.0,50,50,0.7,23.7,0.0333,1.703,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.55,0,0.0,,,,1.1,True
+3013,13,olsr,10,N10,1.0,1.0,50,50,0.7,23.4,0.037,1.735,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.41,0,0.0,,,,1.22,True
+3014,14,olsr,10,N10,1.0,1.0,50,50,0.7,21.7,0.0272,1.989,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.15,0,0.0,,,,0.96,True
+3015,15,olsr,10,N10,1.0,1.0,50,50,0.7,22.5,0.0285,2.052,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.3,0,0.0,,,,0.94,True
+3016,16,olsr,10,N10,1.0,1.0,50,50,0.7,22.0,0.0206,1.744,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.34,0,0.0,,,,0.72,True
+3017,17,olsr,10,N10,1.0,1.0,50,50,0.7,20.6,0.0241,2.118,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.56,0,0.0,,,,0.82,True
+3018,18,olsr,10,N10,1.0,1.0,50,50,0.7,21.4,0.0264,1.915,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.6,0,0.0,,,,0.87,True
+3019,19,olsr,10,N10,1.0,1.0,50,50,0.7,22.7,0.0267,1.659,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.11,0,0.0,,,,0.9,True
+3020,20,olsr,10,N10,1.0,1.0,50,50,0.7,21.9,0.0269,2.017,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.52,0,0.0,,,,0.9,True
+3021,21,olsr,10,N10,1.0,1.0,50,50,0.7,18.1,0.03,1.817,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.1,0,0.0,,,,0.99,True
+3022,22,olsr,10,N10,1.0,1.0,50,50,0.7,20.4,0.0306,1.643,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.58,0,0.0,,,,1.01,True
+3023,23,olsr,10,N10,1.0,1.0,50,50,0.7,22.2,0.0313,1.731,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.33,0,0.0,,,,1.04,True
+3024,24,olsr,10,N10,0.98,0.98,50,49,1.5,23.1,0.0272,1.692,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.99,0,0.0,,,,0.95,True
+3025,25,olsr,10,N10,0.82,0.82,50,41,0.7,23.4,0.0287,2.073,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.74,0,0.0,,,,0.96,True
+3026,26,olsr,10,N10,0.98,0.98,50,49,1.5,23.0,0.0284,1.873,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.68,0,0.0,,,,0.94,True
+3027,27,olsr,10,N10,1.0,1.0,50,50,0.7,22.2,0.0283,2.001,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.08,0,0.0,,,,0.93,True
+3028,28,olsr,10,N10,1.0,1.0,50,50,0.7,23.4,0.0245,1.678,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.06,0,0.0,,,,0.83,True
+3029,29,olsr,10,N10,1.0,1.0,50,50,0.7,22.8,0.0238,1.661,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.21,0,0.0,,,,0.82,True
+3000,0,aodv,10,N10,1.0,1.0,50,50,0.7,20.1,0.0068,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.53,7,0.28,"{""route-change"": 7}",,,0.49,True
+3001,1,aodv,10,N10,1.0,1.0,50,50,0.7,22.5,0.0076,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.42,7,0.28,"{""route-change"": 7}",,,0.52,True
+3002,2,aodv,10,N10,1.0,1.0,50,50,0.7,21.5,0.0077,1.039,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.57,8,0.32,"{""route-change"": 8}",,,0.54,True
+3003,3,aodv,10,N10,1.0,1.0,50,50,0.7,23.3,0.0076,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.26,7,0.28,"{""route-change"": 7}",,,0.55,True
+3004,4,aodv,10,N10,1.0,1.0,50,50,0.7,20.7,0.0075,1.03,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.6,5,0.2,"{""route-change"": 5}",,,0.51,True
+3005,5,aodv,10,N10,1.0,1.0,50,50,0.7,20.3,0.0072,1.039,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.54,8,0.32,"{""route-change"": 8}",,,0.49,True
+3006,6,aodv,10,N10,1.0,1.0,50,50,0.7,18.7,0.0069,1.037,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.86,7,0.28,"{""route-change"": 7}",,,0.49,True
+3007,7,aodv,10,N10,1.0,1.0,50,50,0.7,22.3,0.0069,1.03,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.54,5,0.2,"{""route-change"": 5}",,,0.5,True
+3008,8,aodv,10,N10,0.88,0.88,50,44,2.2,22.6,0.0087,1.033,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.54,10,0.4,"{""route-change"": 10}",,,0.63,True
+3009,9,aodv,10,N10,1.0,1.0,50,50,0.7,23.3,0.0072,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.1,7,0.28,"{""route-change"": 7}",,,0.51,True
+3010,10,aodv,10,N10,1.0,1.0,50,50,0.7,22.0,0.0068,1.047,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.54,7,0.28,"{""route-change"": 7}",,,0.48,True
+3011,11,aodv,10,N10,1.0,1.0,50,50,0.7,21.4,0.0068,1.039,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.08,8,0.32,"{""route-change"": 8}",,,0.47,True
+3012,12,aodv,10,N10,1.0,1.0,50,50,0.7,23.7,0.0074,1.03,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.55,5,0.2,"{""route-change"": 5}",,,0.51,True
+3013,13,aodv,10,N10,1.0,1.0,50,50,0.7,23.4,0.009,1.03,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.41,5,0.2,"{""route-change"": 5}",,,0.61,True
+3014,14,aodv,10,N10,1.0,1.0,50,50,0.7,21.7,0.0071,1.031,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.15,7,0.28,"{""route-change"": 7}",,,0.53,True
+3015,15,aodv,10,N10,1.0,1.0,50,50,0.7,22.5,0.0082,1.03,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.3,5,0.2,"{""route-change"": 5}",,,0.55,True
+3016,16,aodv,10,N10,1.0,1.0,50,50,0.7,22.0,0.0071,1.04,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.34,10,0.4,"{""route-change"": 10}",,,0.51,True
+3017,17,aodv,10,N10,1.0,1.0,50,50,0.7,20.6,0.0077,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.56,7,0.28,"{""route-change"": 7}",,,0.56,True
+3018,18,aodv,10,N10,1.0,1.0,50,50,0.7,21.4,0.0078,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.6,7,0.28,"{""route-change"": 7}",,,0.57,True
+3019,19,aodv,10,N10,1.0,1.0,50,50,0.7,22.7,0.0083,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.11,7,0.28,"{""route-change"": 7}",,,0.58,True
+3020,20,aodv,10,N10,1.0,1.0,50,50,0.7,21.9,0.0073,1.031,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.52,7,0.28,"{""route-change"": 7}",,,0.53,True
+3021,21,aodv,10,N10,1.0,1.0,50,50,0.7,18.1,0.0079,1.046,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.1,9,0.36,"{""route-change"": 9}",,,0.56,True
+3022,22,aodv,10,N10,1.0,1.0,50,50,0.7,20.4,0.0082,1.03,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.58,5,0.2,"{""route-change"": 5}",,,0.58,True
+3023,23,aodv,10,N10,1.0,1.0,50,50,0.7,22.2,0.007,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.33,7,0.28,"{""route-change"": 7}",,,0.48,True
+3024,24,aodv,10,N10,0.98,0.98,50,49,1.5,23.1,0.0066,1.041,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.99,11,0.44,"{""route-change"": 11}",,,0.46,True
+3025,25,aodv,10,N10,0.84,0.84,50,42,0.7,23.4,0.0065,1.039,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.74,9,0.36,"{""route-change"": 9}",,,0.46,True
+3026,26,aodv,10,N10,0.98,0.98,50,49,1.5,23.0,0.0073,1.032,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.68,8,0.32,"{""route-change"": 8}",,,0.52,True
+3027,27,aodv,10,N10,1.0,1.0,50,50,0.7,22.2,0.007,1.038,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.08,6,0.24,"{""route-change"": 6}",,,0.49,True
+3028,28,aodv,10,N10,1.0,1.0,50,50,0.7,23.4,0.0073,1.046,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.06,9,0.36,"{""route-change"": 9}",,,0.51,True
+3029,29,aodv,10,N10,1.0,1.0,50,50,0.7,22.8,0.0083,1.039,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.21,8,0.32,"{""route-change"": 8}",,,0.57,True
+3000,0,mpcare,20,N20,1.0,1.0,50,50,0.7,39.9,0.0546,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.77,0,0.0,,0,0,3.49,True
+3001,1,mpcare,20,N20,1.0,1.0,50,50,2.2,39.4,0.0589,,10.0,0.05,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.48,0,0.0,,0,0,3.64,True
+3002,2,mpcare,20,N20,1.0,1.0,50,50,0.7,36.4,0.0656,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.87,0,0.0,,0,0,3.96,True
+3003,3,mpcare,20,N20,1.0,1.0,50,50,0.7,39.3,0.0571,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.05,0,0.0,,0,0,3.61,True
+3004,4,mpcare,20,N20,1.0,1.0,50,50,1.5,38.4,0.0601,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.82,0,0.0,,0,0,3.67,True
+3005,5,mpcare,20,N20,1.0,1.0,50,50,0.7,39.2,0.0681,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.02,0,0.0,,0,0,4.08,True
+3006,6,mpcare,20,N20,1.0,1.0,50,50,1.5,36.4,0.0611,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.44,0,0.0,,0,0,3.78,True
+3007,7,mpcare,20,N20,1.0,1.0,50,50,0.7,37.7,0.0693,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.98,0,0.0,,0,0,4.0,True
+3008,8,mpcare,20,N20,1.0,1.0,50,50,2.9,38.1,0.0506,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.54,0,0.0,,0,0,3.31,True
+3009,9,mpcare,20,N20,1.0,1.0,50,50,0.7,39.3,0.055,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.96,0,0.0,,0,0,3.5,True
+3010,10,mpcare,20,N20,1.0,1.0,50,50,0.7,38.7,0.0624,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.77,0,0.0,,0,0,3.78,True
+3011,11,mpcare,20,N20,1.0,1.0,50,50,0.7,39.4,0.0684,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.16,0,0.0,,0,0,4.06,True
+3012,12,mpcare,20,N20,1.0,1.0,50,50,0.7,40.1,0.058,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.97,0,0.0,,0,0,3.52,True
+3013,13,mpcare,20,N20,1.0,1.0,50,50,0.7,39.6,0.0619,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.82,0,0.0,,0,0,4.03,True
+3014,14,mpcare,20,N20,1.0,1.0,50,50,2.2,37.7,0.0536,,10.0,0.05,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.9,0,0.0,,0,0,3.74,True
+3015,15,mpcare,20,N20,1.0,1.0,50,50,2.2,39.1,0.0545,,10.0,0.05,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.75,0,0.0,,0,0,3.67,True
+3016,16,mpcare,20,N20,1.0,1.0,50,50,5.1,39.4,0.046,,10.0,0.117,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.05,0,0.0,,0,0,3.22,True
+3017,17,mpcare,20,N20,1.0,1.0,50,50,3.6,36.3,0.0439,,10.0,0.083,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.72,0,0.0,,0,0,3.14,True
+3018,18,mpcare,20,N20,1.0,1.0,50,50,0.7,36.2,0.0706,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.43,0,0.0,,0,0,4.79,True
+3019,19,mpcare,20,N20,1.0,1.0,50,50,0.7,39.0,0.0597,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.66,0,0.0,,0,0,3.65,True
+3020,20,mpcare,20,N20,1.0,1.0,50,50,0.7,40.0,0.052,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.94,0,0.0,,0,0,3.34,True
+3021,21,mpcare,20,N20,1.0,1.0,50,50,0.7,38.3,0.0541,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.17,0,0.0,,0,0,3.4,True
+3022,22,mpcare,20,N20,1.0,1.0,50,50,1.5,39.0,0.0588,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.96,0,0.0,,0,0,3.58,True
+3023,23,mpcare,20,N20,1.0,1.0,50,50,2.2,37.5,0.0537,,10.0,0.05,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.19,0,0.0,,0,0,3.4,True
+3024,24,mpcare,20,N20,0.92,0.92,50,46,4.4,39.3,0.0671,,10.0,0.1,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.48,1205,24.1,"{""pr-below-threshold"": 5, ""let-expiring"": 1200}",0,0,3.99,True
+3025,25,mpcare,20,N20,1.0,1.0,50,50,0.7,39.5,0.0601,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.42,0,0.0,,0,0,3.71,True
+3026,26,mpcare,20,N20,1.0,1.0,50,50,0.7,38.8,0.0592,,10.0,0.017,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.43,0,0.0,,0,0,3.69,True
+3027,27,mpcare,20,N20,0.9,0.9,50,45,4.4,38.2,0.0536,,10.0,0.098,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.63,5,0.1,"{""pr-below-threshold"": 5}",0,0,3.5,True
+3028,28,mpcare,20,N20,1.0,1.0,50,50,1.5,39.6,0.0447,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.36,0,0.0,,0,0,2.82,True
+3029,29,mpcare,20,N20,1.0,1.0,50,50,1.5,38.6,0.0282,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.86,0,0.0,,0,0,1.89,True
+3000,0,gpsr,20,N20,1.0,1.0,50,50,0.7,39.9,0.0,,,,,stateless: n/a,n/a,6.77,0,0.0,,,,0.95,True
+3001,1,gpsr,20,N20,1.0,1.0,50,50,2.2,39.4,0.0,,,,,stateless: n/a,n/a,7.48,0,0.0,,,,0.96,True
+3002,2,gpsr,20,N20,1.0,1.0,50,50,0.7,36.4,0.0,,,,,stateless: n/a,n/a,7.87,0,0.0,,,,0.99,True
+3003,3,gpsr,20,N20,1.0,1.0,50,50,0.7,39.3,0.0,,,,,stateless: n/a,n/a,7.05,0,0.0,,,,0.93,True
+3004,4,gpsr,20,N20,0.98,0.98,50,49,1.5,38.4,0.0,,,,,stateless: n/a,n/a,7.82,0,0.0,,,,1.9,True
+3005,5,gpsr,20,N20,1.0,1.0,50,50,0.7,39.2,0.0,,,,,stateless: n/a,n/a,8.02,0,0.0,,,,1.32,True
+3006,6,gpsr,20,N20,1.0,1.0,50,50,1.5,36.4,0.0,,,,,stateless: n/a,n/a,7.44,0,0.0,,,,1.11,True
+3007,7,gpsr,20,N20,1.0,1.0,50,50,0.7,37.7,0.0,,,,,stateless: n/a,n/a,8.98,0,0.0,,,,1.0,True
+3008,8,gpsr,20,N20,1.0,1.0,50,50,2.2,38.1,0.0,,,,,stateless: n/a,n/a,6.54,0,0.0,,,,1.0,True
+3009,9,gpsr,20,N20,1.0,1.0,50,50,0.7,39.3,0.0,,,,,stateless: n/a,n/a,6.96,0,0.0,,,,0.94,True
+3010,10,gpsr,20,N20,1.0,1.0,50,50,0.7,38.7,0.0,,,,,stateless: n/a,n/a,7.77,0,0.0,,,,0.97,True
+3011,11,gpsr,20,N20,1.0,1.0,50,50,0.7,39.4,0.0,,,,,stateless: n/a,n/a,8.16,0,0.0,,,,0.97,True
+3012,12,gpsr,20,N20,1.0,1.0,50,50,0.7,40.1,0.0,,,,,stateless: n/a,n/a,7.97,0,0.0,,,,0.98,True
+3013,13,gpsr,20,N20,1.0,1.0,50,50,0.7,39.6,0.0,,,,,stateless: n/a,n/a,7.82,0,0.0,,,,1.05,True
+3014,14,gpsr,20,N20,0.96,0.96,50,48,2.2,37.7,0.0,,,,,stateless: n/a,n/a,6.9,0,0.0,,,,1.04,True
+3015,15,gpsr,20,N20,0.98,0.98,50,49,1.5,39.1,0.0,,,,,stateless: n/a,n/a,7.75,0,0.0,,,,0.99,True
+3016,16,gpsr,20,N20,0.76,0.76,50,38,1.5,39.4,0.0,,,,,stateless: n/a,n/a,7.05,0,0.0,,,,1.01,True
+3017,17,gpsr,20,N20,0.74,0.74,50,37,2.2,36.3,0.0,,,,,stateless: n/a,n/a,6.72,0,0.0,,,,1.1,True
+3018,18,gpsr,20,N20,1.0,1.0,50,50,0.7,36.2,0.0,,,,,stateless: n/a,n/a,6.43,0,0.0,,,,1.01,True
+3019,19,gpsr,20,N20,1.0,1.0,50,50,0.7,39.0,0.0,,,,,stateless: n/a,n/a,7.66,0,0.0,,,,0.94,True
+3020,20,gpsr,20,N20,1.0,1.0,50,50,0.7,40.0,0.0,,,,,stateless: n/a,n/a,6.94,0,0.0,,,,0.96,True
+3021,21,gpsr,20,N20,1.0,1.0,50,50,0.7,38.3,0.0,,,,,stateless: n/a,n/a,7.17,0,0.0,,,,0.98,True
+3022,22,gpsr,20,N20,0.78,0.78,50,39,1.5,39.0,0.0,,,,,stateless: n/a,n/a,7.96,0,0.0,,,,1.01,True
+3023,23,gpsr,20,N20,1.0,1.0,50,50,1.5,37.5,0.0,,,,,stateless: n/a,n/a,7.19,0,0.0,,,,1.0,True
+3024,24,gpsr,20,N20,1.0,1.0,50,50,2.2,39.3,0.0,,,,,stateless: n/a,n/a,8.48,0,0.0,,,,1.06,True
+3025,25,gpsr,20,N20,0.98,0.98,50,49,0.7,39.5,0.0,,,,,stateless: n/a,n/a,7.42,0,0.0,,,,0.91,True
+3026,26,gpsr,20,N20,1.0,1.0,50,50,0.7,38.8,0.0,,,,,stateless: n/a,n/a,7.43,0,0.0,,,,0.9,True
+3027,27,gpsr,20,N20,0.84,0.84,50,42,2.2,38.2,0.0,,,,,stateless: n/a,n/a,6.63,0,0.0,,,,0.91,True
+3028,28,gpsr,20,N20,1.0,1.0,50,50,1.5,39.6,0.0,,,,,stateless: n/a,n/a,7.36,0,0.0,,,,1.02,True
+3029,29,gpsr,20,N20,1.0,1.0,50,50,1.5,38.6,0.0,,,,,stateless: n/a,n/a,7.86,0,0.0,,,,1.11,True
+3000,0,olsr,20,N20,1.0,1.0,50,50,0.7,39.9,0.043,3.183,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.77,0,0.0,,,,2.89,True
+3001,1,olsr,20,N20,1.0,1.0,50,50,2.2,39.4,0.0629,3.343,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.48,0,0.0,,,,3.93,True
+3002,2,olsr,20,N20,1.0,1.0,50,50,0.7,36.4,0.1084,3.422,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.87,0,0.0,,,,6.55,True
+3003,3,olsr,20,N20,1.0,1.0,50,50,0.7,39.3,0.0569,3.253,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.05,0,0.0,,,,3.97,True
+3004,4,olsr,20,N20,0.72,0.72,50,36,1.5,38.4,0.0556,3.05,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.82,0,0.0,,,,3.75,True
+3005,5,olsr,20,N20,1.0,1.0,50,50,0.7,39.2,0.0583,3.075,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.02,0,0.0,,,,3.85,True
+3006,6,olsr,20,N20,0.98,0.98,50,49,1.5,36.4,0.0567,3.208,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.44,0,0.0,,,,3.84,True
+3007,7,olsr,20,N20,1.0,1.0,50,50,0.7,37.7,0.0696,3.115,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.98,0,0.0,,,,4.36,True
+3008,8,olsr,20,N20,1.0,1.0,50,50,2.2,38.1,0.0494,3.437,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.54,0,0.0,,,,3.57,True
+3009,9,olsr,20,N20,1.0,1.0,50,50,0.7,39.3,0.0506,3.187,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.96,0,0.0,,,,3.54,True
+3010,10,olsr,20,N20,1.0,1.0,50,50,0.7,38.7,0.0598,3.092,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.77,0,0.0,,,,3.98,True
+3011,11,olsr,20,N20,1.0,1.0,50,50,0.7,39.4,0.0604,3.004,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.16,0,0.0,,,,3.94,True
+3012,12,olsr,20,N20,1.0,1.0,50,50,0.7,40.1,0.0593,3.057,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.97,0,0.0,,,,3.93,True
+3013,13,olsr,20,N20,1.0,1.0,50,50,0.7,39.6,0.0641,3.284,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.82,0,0.0,,,,4.14,True
+3014,14,olsr,20,N20,0.72,0.72,50,36,2.2,37.7,0.0515,3.355,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.9,0,0.0,,,,3.61,True
+3015,15,olsr,20,N20,1.0,1.0,50,50,1.5,39.1,0.054,3.43,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.75,0,0.0,,,,3.63,True
+3016,16,olsr,20,N20,0.6,0.6,50,30,1.5,39.4,0.0511,3.04,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.05,0,0.0,,,,3.58,True
+3017,17,olsr,20,N20,0.98,0.98,50,49,2.2,36.3,0.0522,3.361,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.72,0,0.0,,,,3.67,True
+3018,18,olsr,20,N20,1.0,1.0,50,50,0.7,36.2,0.0434,3.218,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.43,0,0.0,,,,3.28,True
+3019,19,olsr,20,N20,1.0,1.0,50,50,0.7,39.0,0.0555,3.207,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.66,0,0.0,,,,3.76,True
+3020,20,olsr,20,N20,1.0,1.0,50,50,0.7,40.0,0.0514,3.367,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.94,0,0.0,,,,3.57,True
+3021,21,olsr,20,N20,1.0,1.0,50,50,0.7,38.3,0.0645,3.454,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.17,0,0.0,,,,4.24,True
+3022,22,olsr,20,N20,0.76,0.76,50,38,1.5,39.0,0.0627,3.111,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.96,0,0.0,,,,4.1,True
+3023,23,olsr,20,N20,1.0,1.0,50,50,1.5,37.5,0.0515,3.299,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.19,0,0.0,,,,3.55,True
+3024,24,olsr,20,N20,0.82,0.82,50,41,2.2,39.3,0.0633,3.214,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.48,0,0.0,,,,4.02,True
+3025,25,olsr,20,N20,1.0,1.0,50,50,0.7,39.5,0.052,3.149,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.42,0,0.0,,,,3.6,True
+3026,26,olsr,20,N20,1.0,1.0,50,50,0.7,38.8,0.0555,3.377,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.43,0,0.0,,,,3.73,True
+3027,27,olsr,20,N20,0.88,0.88,50,44,2.2,38.2,0.0525,3.484,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.63,0,0.0,,,,3.62,True
+3028,28,olsr,20,N20,0.56,0.56,50,28,1.5,39.6,0.0532,3.088,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.36,0,0.0,,,,3.64,True
+3029,29,olsr,20,N20,1.0,1.0,50,50,1.5,38.6,0.0575,3.177,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.86,0,0.0,,,,3.79,True
+3000,0,aodv,20,N20,1.0,1.0,50,50,0.7,39.9,0.0068,1.027,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.77,5,0.1,"{""route-change"": 5}",,,1.96,True
+3001,1,aodv,20,N20,1.0,1.0,50,50,2.2,39.4,0.0075,1.037,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.48,13,0.26,"{""route-change"": 13}",,,2.09,True
+3002,2,aodv,20,N20,1.0,1.0,50,50,0.7,36.4,0.0077,1.029,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.87,7,0.14,"{""route-change"": 7}",,,2.08,True
+3003,3,aodv,20,N20,1.0,1.0,50,50,0.7,39.3,0.0088,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.05,8,0.16,"{""route-change"": 8}",,,2.47,True
+3004,4,aodv,20,N20,0.84,0.84,50,42,1.5,38.4,0.0086,1.029,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.82,7,0.14,"{""route-change"": 7}",,,2.33,True
+3005,5,aodv,20,N20,1.0,1.0,50,50,0.7,39.2,0.0078,1.035,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.02,7,0.14,"{""route-change"": 7}",,,2.02,True
+3006,6,aodv,20,N20,0.98,0.98,50,49,1.5,36.4,0.0072,1.03,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.44,10,0.2,"{""route-change"": 10}",,,1.99,True
+3007,7,aodv,20,N20,1.0,1.0,50,50,0.7,37.7,0.0079,1.035,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.98,7,0.14,"{""route-change"": 7}",,,2.0,True
+3008,8,aodv,20,N20,1.0,1.0,50,50,2.2,38.1,0.0065,1.032,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.54,15,0.3,"{""route-change"": 15}",,,1.9,True
+3009,9,aodv,20,N20,1.0,1.0,50,50,0.7,39.3,0.0068,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.96,8,0.16,"{""route-change"": 8}",,,1.96,True
+3010,10,aodv,20,N20,1.0,1.0,50,50,0.7,38.7,0.0073,1.028,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.77,5,0.1,"{""route-change"": 5}",,,2.0,True
+3011,11,aodv,20,N20,1.0,1.0,50,50,0.7,39.4,0.0078,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.16,8,0.16,"{""route-change"": 8}",,,2.04,True
+3012,12,aodv,20,N20,1.0,1.0,50,50,0.7,40.1,0.0076,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.97,8,0.16,"{""route-change"": 8}",,,2.03,True
+3013,13,aodv,20,N20,1.0,1.0,50,50,0.7,39.6,0.0078,1.045,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.82,13,0.26,"{""route-change"": 13}",,,2.08,True
+3014,14,aodv,20,N20,0.9,0.9,50,45,2.2,37.7,0.007,1.032,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.9,15,0.3,"{""route-change"": 15}",,,2.02,True
+3015,15,aodv,20,N20,1.0,1.0,50,50,1.5,39.1,0.0076,1.029,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.75,7,0.14,"{""route-change"": 7}",,,2.02,True
+3016,16,aodv,20,N20,0.76,0.76,50,38,1.5,39.4,0.0072,1.045,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.05,14,0.28,"{""route-change"": 14}",,,2.0,True
+3017,17,aodv,20,N20,1.0,1.0,50,50,2.2,36.3,0.0067,1.031,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.72,12,0.24,"{""route-change"": 12}",,,1.93,True
+3018,18,aodv,20,N20,1.0,1.0,50,50,0.7,36.2,0.0066,1.037,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.43,12,0.24,"{""route-change"": 12}",,,1.89,True
+3019,19,aodv,20,N20,1.0,1.0,50,50,0.7,39.0,0.0072,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.66,7,0.14,"{""route-change"": 7}",,,1.99,True
+3020,20,aodv,20,N20,1.0,1.0,50,50,0.7,40.0,0.0071,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.94,9,0.18,"{""route-change"": 9}",,,2.0,True
+3021,21,aodv,20,N20,1.0,1.0,50,50,0.7,38.3,0.0073,1.037,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.17,11,0.22,"{""route-change"": 11}",,,2.05,True
+3022,22,aodv,20,N20,0.92,0.92,50,46,1.5,39.0,0.0075,1.03,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.96,11,0.22,"{""route-change"": 11}",,,2.01,True
+3023,23,aodv,20,N20,1.0,1.0,50,50,1.5,37.5,0.0069,1.045,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.19,10,0.2,"{""route-change"": 10}",,,1.94,True
+3024,24,aodv,20,N20,0.68,0.68,50,34,2.2,39.3,0.0077,1.03,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.48,12,0.24,"{""route-change"": 12}",,,1.98,True
+3025,25,aodv,20,N20,1.0,1.0,50,50,0.7,39.5,0.0085,1.384,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.42,11,0.22,"{""route-change"": 11}",,,2.04,True
+3026,26,aodv,20,N20,1.0,1.0,50,50,0.7,38.8,0.0072,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.43,9,0.18,"{""route-change"": 9}",,,1.99,True
+3027,27,aodv,20,N20,0.92,0.92,50,46,2.2,38.2,0.0069,1.038,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.63,13,0.26,"{""route-change"": 13}",,,1.98,True
+3028,28,aodv,20,N20,0.76,0.76,50,38,1.5,39.6,0.0069,1.037,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.36,10,0.2,"{""route-change"": 10}",,,1.91,True
+3029,29,aodv,20,N20,1.0,1.0,50,50,1.5,38.6,0.0073,1.031,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.86,12,0.24,"{""route-change"": 12}",,,1.96,True
+3000,0,mpcare,30,N30,1.0,1.0,50,50,0.7,51.8,0.0574,,10.0,0.011,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.21,0,0.0,,0,0,7.55,True
+3001,1,mpcare,30,N30,1.0,1.0,50,50,1.5,51.2,0.0601,,10.0,0.022,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.65,0,0.0,,0,0,7.68,True
+3002,2,mpcare,30,N30,1.0,1.0,50,50,4.4,47.3,0.0601,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.6,0,0.0,,0,0,7.75,True
+3003,3,mpcare,30,N30,0.94,0.94,50,47,11.6,51.1,0.0538,,10.0,0.17,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.78,10,0.133,"{""better-alternative"": 10}",339,0,7.38,True
+3004,4,mpcare,30,N30,0.9,0.9,50,45,2.9,49.9,0.0588,,10.0,0.041,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.36,0,0.0,,0,0,7.67,True
+3005,5,mpcare,30,N30,1.0,1.0,50,50,0.7,51.0,0.0737,,10.0,0.011,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.88,0,0.0,,0,0,9.21,True
+3006,6,mpcare,30,N30,1.0,1.0,50,50,2.2,47.3,0.0497,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.14,0,0.0,,0,0,6.79,True
+3007,7,mpcare,30,N30,1.0,1.0,50,50,2.9,49.0,0.0335,,10.0,0.044,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.84,0,0.0,,0,0,4.52,True
+3008,8,mpcare,30,N30,1.0,1.0,50,50,4.4,49.6,0.0284,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.09,0,0.0,,0,0,4.29,True
+3009,9,mpcare,30,N30,0.78,0.78,50,39,9.5,51.1,0.0636,,10.0,0.123,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.67,1194,15.92,"{""better-alternative"": 1194}",217,0,8.67,True
+3010,10,mpcare,30,N30,1.0,1.0,50,50,0.7,52.0,0.0302,,10.0,0.011,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.85,0,0.0,,0,0,4.26,True
+3011,11,mpcare,30,N30,1.0,1.0,50,50,1.5,51.1,0.0311,,10.0,0.022,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.19,0,0.0,,0,0,4.28,True
+3012,12,mpcare,30,N30,1.0,1.0,50,50,1.5,52.1,0.0285,,10.0,0.022,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.66,0,0.0,,0,0,4.15,True
+3013,13,mpcare,30,N30,0.08,0.08,50,4,28.6,51.5,0.027,,10.0,0.539,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.19,2,0.027,"{""pr-below-threshold"": 2}",2217,0,4.1,True
+3014,14,mpcare,30,N30,0.86,0.86,50,43,2.2,48.9,0.0275,,10.0,0.03,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.42,5,0.067,"{""pr-below-threshold"": 5}",0,0,4.09,True
+3015,15,mpcare,30,N30,1.0,1.0,50,50,2.9,50.7,0.0278,,10.0,0.044,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.61,0,0.0,,0,0,4.08,True
+3016,16,mpcare,30,N30,0.94,0.94,50,47,5.0,51.2,0.0259,,10.0,0.075,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.92,5,0.067,"{""pr-below-threshold"": 5}",0,0,3.99,True
+3017,17,mpcare,30,N30,1.0,1.0,50,50,2.9,47.2,0.0265,,10.0,0.044,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.96,0,0.0,,0,0,4.06,True
+3018,18,mpcare,30,N30,1.0,1.0,50,50,0.7,48.5,0.0257,,10.0,0.011,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.96,0,0.0,,0,0,3.94,True
+3019,19,mpcare,30,N30,1.0,1.0,50,50,1.5,50.7,0.0401,,10.0,0.022,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.78,0,0.0,,0,0,5.54,True
+3020,20,mpcare,30,N30,1.0,1.0,50,50,3.6,51.9,0.0571,,10.0,0.056,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.43,0,0.0,,0,0,7.42,True
+3021,21,mpcare,30,N30,1.0,1.0,50,50,3.6,49.8,0.0551,,10.0,0.056,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.13,0,0.0,,0,0,7.33,True
+3022,22,mpcare,30,N30,0.94,0.94,50,47,0.7,51.2,0.0578,,10.0,0.011,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.51,5,0.067,"{""pr-below-threshold"": 5}",0,0,7.46,True
+3023,23,mpcare,30,N30,0.98,0.98,50,49,2.9,48.7,0.0547,,10.0,0.044,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.11,0,0.0,,0,0,7.29,True
+3024,24,mpcare,30,N30,1.0,1.0,50,50,2.2,51.1,0.0718,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.94,0,0.0,,0,0,8.45,True
+3025,25,mpcare,30,N30,1.0,1.0,50,50,1.5,51.3,0.0572,,10.0,0.022,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.13,0,0.0,,0,0,7.28,True
+3026,26,mpcare,30,N30,0.98,0.98,50,49,4.4,50.4,0.0573,,10.0,0.066,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.3,0,0.0,,0,0,7.52,True
+3027,27,mpcare,30,N30,1.0,1.0,50,50,5.8,49.7,0.056,,10.0,0.089,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.48,0,0.0,,0,0,7.28,True
+3028,28,mpcare,30,N30,1.0,1.0,50,50,0.7,51.4,0.0639,,10.0,0.011,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.43,0,0.0,,0,0,7.75,True
+3029,29,mpcare,30,N30,1.0,1.0,50,50,2.9,50.1,0.0625,,10.0,0.044,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.12,0,0.0,,0,0,7.79,True
+3000,0,gpsr,30,N30,1.0,1.0,50,50,0.7,51.8,0.0,,,,,stateless: n/a,n/a,7.21,0,0.0,,,,4.68,True
+3001,1,gpsr,30,N30,0.96,0.96,50,48,1.5,51.2,0.0,,,,,stateless: n/a,n/a,7.65,0,0.0,,,,4.81,True
+3002,2,gpsr,30,N30,1.0,1.0,50,50,2.2,47.3,0.0,,,,,stateless: n/a,n/a,7.6,0,0.0,,,,4.64,True
+3003,3,gpsr,30,N30,0.66,0.66,50,33,270.0,51.1,0.0,,,,,stateless: n/a,n/a,6.78,0,0.0,,,,6.93,True
+3004,4,gpsr,30,N30,0.74,0.74,50,37,2.2,49.9,0.0,,,,,stateless: n/a,n/a,7.36,0,0.0,,,,4.65,True
+3005,5,gpsr,30,N30,1.0,1.0,50,50,0.7,51.0,0.0,,,,,stateless: n/a,n/a,7.88,0,0.0,,,,4.77,True
+3006,6,gpsr,30,N30,0.72,0.72,50,36,1.5,47.3,0.0,,,,,stateless: n/a,n/a,7.14,0,0.0,,,,4.65,True
+3007,7,gpsr,30,N30,1.0,1.0,50,50,1.5,49.0,0.0,,,,,stateless: n/a,n/a,8.84,0,0.0,,,,4.83,True
+3008,8,gpsr,30,N30,0.82,0.82,50,41,2.9,49.6,0.0,,,,,stateless: n/a,n/a,7.09,0,0.0,,,,4.69,True
+3009,9,gpsr,30,N30,0.96,0.96,50,48,2.2,51.1,0.0,,,,,stateless: n/a,n/a,6.67,0,0.0,,,,4.82,True
+3010,10,gpsr,30,N30,1.0,1.0,50,50,0.7,52.0,0.0,,,,,stateless: n/a,n/a,7.85,0,0.0,,,,5.0,True
+3011,11,gpsr,30,N30,1.0,1.0,50,50,1.5,51.1,0.0,,,,,stateless: n/a,n/a,8.19,0,0.0,,,,5.17,True
+3012,12,gpsr,30,N30,0.96,0.96,50,48,0.7,52.1,0.0,,,,,stateless: n/a,n/a,7.66,0,0.0,,,,4.67,True
+3013,13,gpsr,30,N30,0.88,0.88,50,44,8.0,51.5,0.0,,,,,stateless: n/a,n/a,7.19,0,0.0,,,,4.79,True
+3014,14,gpsr,30,N30,0.02,0.02,50,1,41.5,48.9,0.0,,,,,stateless: n/a,n/a,7.42,0,0.0,,,,4.85,True
+3015,15,gpsr,30,N30,0.96,0.96,50,48,2.9,50.7,0.0,,,,,stateless: n/a,n/a,7.61,0,0.0,,,,4.82,True
+3016,16,gpsr,30,N30,0.78,0.78,50,39,2.9,51.2,0.0,,,,,stateless: n/a,n/a,6.92,0,0.0,,,,4.97,True
+3017,17,gpsr,30,N30,0.7,0.7,50,35,2.9,47.2,0.0,,,,,stateless: n/a,n/a,6.96,0,0.0,,,,4.98,True
+3018,18,gpsr,30,N30,1.0,1.0,50,50,0.7,48.5,0.0,,,,,stateless: n/a,n/a,6.96,0,0.0,,,,4.89,True
+3019,19,gpsr,30,N30,1.0,1.0,50,50,1.5,50.7,0.0,,,,,stateless: n/a,n/a,7.78,0,0.0,,,,4.72,True
+3020,20,gpsr,30,N30,0.96,0.96,50,48,2.2,51.9,0.0,,,,,stateless: n/a,n/a,7.43,0,0.0,,,,4.81,True
+3021,21,gpsr,30,N30,0.86,0.86,50,43,2.2,49.8,0.0,,,,,stateless: n/a,n/a,7.13,0,0.0,,,,4.74,True
+3022,22,gpsr,30,N30,0.98,0.98,50,49,0.7,51.2,0.0,,,,,stateless: n/a,n/a,7.51,0,0.0,,,,4.78,True
+3023,23,gpsr,30,N30,0.96,0.96,50,48,1.5,48.7,0.0,,,,,stateless: n/a,n/a,7.11,0,0.0,,,,4.83,True
+3024,24,gpsr,30,N30,1.0,1.0,50,50,1.5,51.1,0.0,,,,,stateless: n/a,n/a,8.94,0,0.0,,,,4.91,True
+3025,25,gpsr,30,N30,1.0,1.0,50,50,1.5,51.3,0.0,,,,,stateless: n/a,n/a,8.13,0,0.0,,,,4.95,True
+3026,26,gpsr,30,N30,1.0,1.0,50,50,2.9,50.4,0.0,,,,,stateless: n/a,n/a,7.3,0,0.0,,,,4.84,True
+3027,27,gpsr,30,N30,0.92,0.92,50,46,2.9,49.7,0.0,,,,,stateless: n/a,n/a,7.48,0,0.0,,,,4.88,True
+3028,28,gpsr,30,N30,1.0,1.0,50,50,0.7,51.4,0.0,,,,,stateless: n/a,n/a,8.43,0,0.0,,,,4.76,True
+3029,29,gpsr,30,N30,1.0,1.0,50,50,1.5,50.1,0.0,,,,,stateless: n/a,n/a,8.12,0,0.0,,,,4.91,True
+3000,0,olsr,30,N30,1.0,1.0,50,50,0.7,51.8,0.0824,4.546,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.21,0,0.0,,,,9.12,True
+3001,1,olsr,30,N30,1.0,1.0,50,50,1.5,51.2,0.0944,4.918,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.65,0,0.0,,,,9.65,True
+3002,2,olsr,30,N30,1.0,1.0,50,50,2.2,47.3,0.0865,4.356,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.6,0,0.0,,,,9.29,True
+3003,3,olsr,30,N30,0.98,0.98,50,49,2.2,51.1,0.1233,4.55,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.78,0,0.0,,,,12.88,True
+3004,4,olsr,30,N30,0.94,0.94,50,47,2.2,49.9,0.0937,4.805,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.36,0,0.0,,,,9.94,True
+3005,5,olsr,30,N30,1.0,1.0,50,50,0.7,51.0,0.0902,4.415,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.88,0,0.0,,,,9.47,True
+3006,6,olsr,30,N30,0.76,0.76,50,38,1.5,47.3,0.0807,4.275,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.14,0,0.0,,,,8.98,True
+3007,7,olsr,30,N30,1.0,1.0,50,50,1.5,49.0,0.1081,4.519,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.84,0,0.0,,,,10.42,True
+3008,8,olsr,30,N30,0.88,0.88,50,44,2.9,49.6,0.0821,4.728,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.09,0,0.0,,,,9.08,True
+3009,9,olsr,30,N30,0.96,0.96,50,48,2.2,51.1,0.0742,4.52,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.67,0,0.0,,,,8.63,True
+3010,10,olsr,30,N30,1.0,1.0,50,50,0.7,52.0,0.0921,4.549,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.85,0,0.0,,,,9.56,True
+3011,11,olsr,30,N30,1.0,1.0,50,50,1.5,51.1,0.0963,4.442,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.19,0,0.0,,,,9.77,True
+3012,12,olsr,30,N30,0.96,0.96,50,48,0.7,52.1,0.0912,4.4,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.66,0,0.0,,,,9.53,True
+3013,13,olsr,30,N30,0.78,0.78,50,39,4.9,51.5,0.0815,4.956,,,10.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.19,0,0.0,,,,9.13,True
+3014,14,olsr,30,N30,0.7,0.7,50,35,2.2,48.9,0.0842,4.542,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.42,0,0.0,,,,9.11,True
+3015,15,olsr,30,N30,1.0,1.0,50,50,2.9,50.7,0.0886,4.452,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.61,0,0.0,,,,9.5,True
+3016,16,olsr,30,N30,0.88,0.88,50,44,2.2,51.2,0.0781,4.302,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.92,0,0.0,,,,8.93,True
+3017,17,olsr,30,N30,1.0,1.0,50,50,2.9,47.2,0.0823,4.802,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.96,0,0.0,,,,9.13,True
+3018,18,olsr,30,N30,1.0,1.0,50,50,0.7,48.5,0.0785,4.698,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.96,0,0.0,,,,8.93,True
+3019,19,olsr,30,N30,1.0,1.0,50,50,1.5,50.7,0.0881,4.424,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.78,0,0.0,,,,9.3,True
+3020,20,olsr,30,N30,0.96,0.96,50,48,2.2,51.9,0.089,4.739,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.43,0,0.0,,,,9.41,True
+3021,21,olsr,30,N30,0.84,0.84,50,42,2.2,49.8,0.0852,4.934,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.13,0,0.0,,,,9.25,True
+3022,22,olsr,30,N30,1.0,1.0,50,50,0.7,51.2,0.0865,4.785,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.51,0,0.0,,,,9.24,True
+3023,23,olsr,30,N30,1.0,1.0,50,50,1.5,48.7,0.0821,4.744,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.11,0,0.0,,,,9.01,True
+3024,24,olsr,30,N30,1.0,1.0,50,50,1.5,51.1,0.1021,4.259,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.94,0,0.0,,,,10.04,True
+3025,25,olsr,30,N30,1.0,1.0,50,50,1.5,51.3,0.1049,4.595,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.13,0,0.0,,,,10.09,True
+3026,26,olsr,30,N30,0.68,0.68,50,34,2.9,50.4,0.0617,4.757,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.3,0,0.0,,,,6.27,True
+3027,27,olsr,30,N30,0.96,0.96,50,48,2.9,49.7,0.06,4.788,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.48,0,0.0,,,,6.11,True
+3028,28,olsr,30,N30,1.0,1.0,50,50,0.7,51.4,0.0712,4.634,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.43,0,0.0,,,,6.71,True
+3029,29,olsr,30,N30,0.98,0.98,50,49,1.5,50.1,0.0678,4.626,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.12,0,0.0,,,,6.59,True
+3000,0,aodv,30,N30,1.0,1.0,50,50,0.7,51.8,0.0057,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.21,17,0.227,"{""route-change"": 17}",,,4.18,True
+3001,1,aodv,30,N30,1.0,1.0,50,50,1.5,51.2,0.0073,1.036,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.65,11,0.147,"{""route-change"": 11}",,,5.14,True
+3002,2,aodv,30,N30,1.0,1.0,50,50,2.2,47.3,0.0068,1.036,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.6,19,0.253,"{""route-change"": 19}",,,4.8,True
+3003,3,aodv,30,N30,1.0,1.0,50,50,2.2,51.1,0.0055,1.03,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.78,16,0.213,"{""route-change"": 16}",,,4.14,True
+3004,4,aodv,30,N30,0.94,0.94,50,47,2.2,49.9,0.0084,1.027,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.36,12,0.16,"{""route-change"": 12}",,,6.07,True
+3005,5,aodv,30,N30,1.0,1.0,50,50,0.7,51.0,0.0085,1.035,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.88,7,0.093,"{""route-change"": 7}",,,5.8,True
+3006,6,aodv,30,N30,0.82,0.82,50,41,1.5,47.3,0.0082,1.383,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.14,16,0.213,"{""route-change"": 16}",,,5.28,True
+3007,7,aodv,30,N30,0.98,0.98,50,49,1.5,49.0,0.008,1.029,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.84,11,0.147,"{""route-change"": 11}",,,5.37,True
+3008,8,aodv,30,N30,0.78,0.78,50,39,2.9,49.6,0.0092,1.065,,,1.0,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.09,19,0.253,"{""route-change"": 19}",,,6.61,True
+3009,9,aodv,30,N30,0.96,0.96,50,48,2.2,51.1,0.0091,1.03,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.67,13,0.173,"{""route-change"": 13}",,,6.82,True
+3010,10,aodv,30,N30,1.0,1.0,50,50,0.7,52.0,0.0088,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.85,10,0.133,"{""route-change"": 10}",,,6.22,True
+3011,11,aodv,30,N30,1.0,1.0,50,50,1.5,51.1,0.0077,1.036,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.19,10,0.133,"{""route-change"": 10}",,,5.29,True
+3012,12,aodv,30,N30,0.94,0.94,50,47,0.7,52.1,0.0086,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.66,12,0.16,"{""route-change"": 12}",,,6.17,True
+3013,13,aodv,30,N30,0.66,0.66,50,33,4.4,51.5,0.0089,1.031,,,0.6,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.19,18,0.24,"{""route-change"": 18}",,,6.47,True
+3014,14,aodv,30,N30,0.82,0.82,50,41,2.2,48.9,0.0079,1.039,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.42,23,0.307,"{""route-change"": 23}",,,5.68,True
+3015,15,aodv,30,N30,0.94,0.94,50,47,2.9,50.7,0.0087,1.44,,,1.0,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.61,18,0.24,"{""route-change"": 18}",,,5.25,True
+3016,16,aodv,30,N30,0.9,0.9,50,45,2.2,51.2,0.007,1.054,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.92,21,0.28,"{""route-change"": 21}",,,5.19,True
+3017,17,aodv,30,N30,1.0,1.0,50,50,2.9,47.2,0.007,1.038,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.96,19,0.253,"{""route-change"": 19}",,,5.15,True
+3018,18,aodv,30,N30,1.0,1.0,50,50,0.7,48.5,0.0079,1.176,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.96,8,0.107,"{""route-change"": 8}",,,5.5,True
+3019,19,aodv,30,N30,1.0,1.0,50,50,1.5,50.7,0.0073,1.065,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.78,17,0.227,"{""route-change"": 17}",,,5.15,True
+3020,20,aodv,30,N30,0.9,0.9,50,45,2.2,51.9,0.0074,1.036,,,0.9,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.43,10,0.133,"{""route-change"": 10}",,,5.37,True
+3021,21,aodv,30,N30,0.98,0.98,50,49,2.2,49.8,0.007,1.038,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.13,14,0.187,"{""route-change"": 14}",,,5.16,True
+3022,22,aodv,30,N30,0.96,0.96,50,48,0.7,51.2,0.0072,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.51,10,0.133,"{""route-change"": 10}",,,5.24,True
+3023,23,aodv,30,N30,1.0,1.0,50,50,1.5,48.7,0.007,1.028,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.11,8,0.107,"{""route-change"": 8}",,,5.08,True
+3024,24,aodv,30,N30,1.0,1.0,50,50,1.5,51.1,0.0081,1.041,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.94,11,0.147,"{""route-change"": 11}",,,5.3,True
+3025,25,aodv,30,N30,1.0,1.0,50,50,1.5,51.3,0.0074,1.029,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.13,13,0.173,"{""route-change"": 13}",,,5.18,True
+3026,26,aodv,30,N30,0.82,0.82,50,41,2.9,50.4,0.0073,1.029,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.3,12,0.16,"{""route-change"": 12}",,,5.33,True
+3027,27,aodv,30,N30,0.98,0.98,50,49,2.9,49.7,0.0073,1.037,,,1.0,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.48,17,0.227,"{""route-change"": 17}",,,5.19,True
+3028,28,aodv,30,N30,1.0,1.0,50,50,0.7,51.4,0.0079,1.05,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.43,13,0.173,"{""route-change"": 13}",,,5.29,True
+3029,29,aodv,30,N30,1.0,1.0,50,50,1.5,50.1,0.0076,1.037,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.12,15,0.2,"{""route-change"": 15}",,,5.18,True
+3000,0,mpcare,40,N40,1.0,1.0,50,50,4.4,61.9,0.0605,,10.0,0.05,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.43,0,0.0,,0,0,14.31,True
+3001,1,mpcare,40,N40,1.0,1.0,50,50,0.7,62.1,0.0595,,10.0,0.008,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.35,0,0.0,,0,0,14.13,True
+3002,2,mpcare,40,N40,1.0,1.0,50,50,2.2,56.9,0.0633,,10.0,0.025,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.94,0,0.0,,0,0,14.33,True
+3003,3,mpcare,40,N40,1.0,1.0,50,50,2.9,61.1,0.0607,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.57,0,0.0,,0,0,14.16,True
+3004,4,mpcare,40,N40,0.9,0.9,50,45,0.7,61.9,0.0612,,10.0,0.008,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.76,0,0.0,,0,0,14.09,True
+3005,5,mpcare,40,N40,1.0,1.0,50,50,1.5,60.9,0.0653,,10.0,0.017,0.2,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.01,0,0.0,,0,0,14.66,True
+3006,6,mpcare,40,N40,1.0,1.0,50,50,4.4,56.5,0.0593,,10.0,0.05,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.27,0,0.0,,0,0,14.2,True
+3007,7,mpcare,40,N40,0.96,0.96,50,48,2.2,60.9,0.0729,,10.0,0.025,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.88,0,0.0,,0,0,15.32,True
+3008,8,mpcare,40,N40,1.0,1.0,50,50,2.9,59.3,0.0586,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.19,0,0.0,,0,0,14.16,True
+3009,9,mpcare,40,N40,1.0,1.0,50,50,3.6,61.1,0.0581,,10.0,0.042,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.72,0,0.0,,0,0,14.54,True
+3010,10,mpcare,40,N40,1.0,1.0,50,50,4.4,62.2,0.0347,,10.0,0.05,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.55,0,0.0,,0,0,8.98,True
+3011,11,mpcare,40,N40,1.0,1.0,50,50,2.2,61.1,0.0372,,10.0,0.025,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.91,0,0.0,,0,0,8.85,True
+3012,12,mpcare,40,N40,1.0,1.0,50,50,3.6,62.3,0.0311,,10.0,0.042,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.46,0,0.0,,0,0,8.32,True
+3013,13,mpcare,40,N40,1.0,1.0,50,50,0.7,61.6,0.0309,,10.0,0.008,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.22,0,0.0,,0,0,8.45,True
+3014,14,mpcare,40,N40,0.0,0.0,50,0,,58.5,0.0295,,10.0,0.425,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.12,0,0.0,,2450,0,8.17,True
+3015,15,mpcare,40,N40,1.0,1.0,50,50,4.4,60.7,0.033,,10.0,0.05,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.72,0,0.0,,0,0,8.74,True
+3016,16,mpcare,40,N40,1.0,1.0,50,50,1.5,61.2,0.0303,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",6.88,0,0.0,,0,0,8.45,True
+3017,17,mpcare,40,N40,0.96,0.96,50,48,2.9,56.4,0.0296,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.28,0,0.0,,0,0,8.0,True
+3018,18,mpcare,40,N40,0.98,0.98,50,49,2.9,60.6,0.0296,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.11,0,0.0,,0,0,8.21,True
+3019,19,mpcare,40,N40,1.0,1.0,50,50,0.7,60.6,0.0316,,10.0,0.008,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.82,0,0.0,,0,0,8.11,True
+3020,20,mpcare,40,N40,1.0,1.0,50,50,3.6,62.1,0.0289,,10.0,0.042,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.16,0,0.0,,0,0,7.95,True
+3021,21,mpcare,40,N40,1.0,1.0,50,50,1.5,59.5,0.029,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.35,0,0.0,,0,0,7.86,True
+3022,22,mpcare,40,N40,0.94,0.94,50,47,0.7,61.2,0.0305,,10.0,0.008,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.71,0,0.0,,0,0,8.05,True
+3023,23,mpcare,40,N40,1.0,1.0,50,50,2.9,58.3,0.03,,10.0,0.033,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.32,0,0.0,,0,0,8.07,True
+3024,24,mpcare,40,N40,0.92,0.92,50,46,5.8,61.1,0.0332,,10.0,0.066,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.47,0,0.0,,0,0,8.28,True
+3025,25,mpcare,40,N40,1.0,1.0,50,50,1.5,61.4,0.0343,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.58,0,0.0,,0,0,8.4,True
+3026,26,mpcare,40,N40,1.0,1.0,50,50,1.5,60.3,0.0316,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.87,0,0.0,,0,0,8.17,True
+3027,27,mpcare,40,N40,0.62,0.62,50,31,12.2,59.4,0.0305,,10.0,0.12,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.65,3596,35.96,"{""better-alternative"": 3596}",340,0,8.06,True
+3028,28,mpcare,40,N40,1.0,1.0,50,50,4.4,61.5,0.0358,,10.0,0.05,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",9.17,0,0.0,,0,0,8.41,True
+3029,29,mpcare,40,N40,1.0,1.0,50,50,0.7,59.9,0.0339,,10.0,0.008,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.12,0,0.0,,0,0,8.44,True
+3000,0,gpsr,40,N40,0.9,0.9,50,45,2.2,61.9,0.0,,,,,stateless: n/a,n/a,7.43,0,0.0,,,,6.27,True
+3001,1,gpsr,40,N40,1.0,1.0,50,50,0.7,62.1,0.0,,,,,stateless: n/a,n/a,7.35,0,0.0,,,,6.15,True
+3002,2,gpsr,40,N40,1.0,1.0,50,50,1.5,56.9,0.0,,,,,stateless: n/a,n/a,7.94,0,0.0,,,,6.23,True
+3003,3,gpsr,40,N40,1.0,1.0,50,50,2.2,61.1,0.0,,,,,stateless: n/a,n/a,7.57,0,0.0,,,,6.48,True
+3004,4,gpsr,40,N40,0.92,0.92,50,46,0.7,61.9,0.0,,,,,stateless: n/a,n/a,7.76,0,0.0,,,,5.99,True
+3005,5,gpsr,40,N40,0.86,0.86,50,43,1.5,60.9,0.0,,,,,stateless: n/a,n/a,8.01,0,0.0,,,,6.1,True
+3006,6,gpsr,40,N40,0.96,0.96,50,48,2.9,56.5,0.0,,,,,stateless: n/a,n/a,7.27,0,0.0,,,,6.04,True
+3007,7,gpsr,40,N40,1.0,1.0,50,50,1.5,60.9,0.0,,,,,stateless: n/a,n/a,8.88,0,0.0,,,,6.18,True
+3008,8,gpsr,40,N40,1.0,1.0,50,50,1.5,59.3,0.0,,,,,stateless: n/a,n/a,7.19,0,0.0,,,,6.16,True
+3009,9,gpsr,40,N40,0.96,0.96,50,48,2.2,61.1,0.0,,,,,stateless: n/a,n/a,6.72,0,0.0,,,,6.15,True
+3010,10,gpsr,40,N40,0.86,0.86,50,43,2.2,62.2,0.0,,,,,stateless: n/a,n/a,7.55,0,0.0,,,,6.3,True
+3011,11,gpsr,40,N40,0.98,0.98,50,49,1.5,61.1,0.0,,,,,stateless: n/a,n/a,8.91,0,0.0,,,,6.3,True
+3012,12,gpsr,40,N40,1.0,1.0,50,50,2.9,62.3,0.0,,,,,stateless: n/a,n/a,7.46,0,0.0,,,,6.01,True
+3013,13,gpsr,40,N40,1.0,1.0,50,50,0.7,61.6,0.0,,,,,stateless: n/a,n/a,7.22,0,0.0,,,,6.53,True
+3014,14,gpsr,40,N40,0.28,0.28,50,14,269.8,58.5,0.0,,,,,stateless: n/a,n/a,7.12,0,0.0,,,,7.51,True
+3015,15,gpsr,40,N40,1.0,1.0,50,50,2.2,60.7,0.0,,,,,stateless: n/a,n/a,7.72,0,0.0,,,,6.39,True
+3016,16,gpsr,40,N40,0.88,0.88,50,44,1.5,61.2,0.0,,,,,stateless: n/a,n/a,6.88,0,0.0,,,,6.04,True
+3017,17,gpsr,40,N40,0.96,0.96,50,48,2.2,56.4,0.0,,,,,stateless: n/a,n/a,7.28,0,0.0,,,,9.21,True
+3018,18,gpsr,40,N40,1.0,1.0,50,50,2.2,60.6,0.0,,,,,stateless: n/a,n/a,7.11,0,0.0,,,,9.67,True
+3019,19,gpsr,40,N40,1.0,1.0,50,50,0.7,60.6,0.0,,,,,stateless: n/a,n/a,7.82,0,0.0,,,,10.71,True
+3020,20,gpsr,40,N40,0.92,0.92,50,46,1.5,62.1,0.0,,,,,stateless: n/a,n/a,7.16,0,0.0,,,,10.92,True
+3021,21,gpsr,40,N40,1.0,1.0,50,50,1.5,59.5,0.0,,,,,stateless: n/a,n/a,7.35,0,0.0,,,,9.75,True
+3022,22,gpsr,40,N40,1.0,1.0,50,50,0.7,61.2,0.0,,,,,stateless: n/a,n/a,7.71,0,0.0,,,,10.27,True
+3023,23,gpsr,40,N40,0.78,0.78,50,39,2.2,58.3,0.0,,,,,stateless: n/a,n/a,7.32,0,0.0,,,,8.84,True
+3024,24,gpsr,40,N40,0.7,0.7,50,35,2.9,61.1,0.0,,,,,stateless: n/a,n/a,8.47,0,0.0,,,,8.43,True
+3025,25,gpsr,40,N40,0.92,0.92,50,46,0.7,61.4,0.0,,,,,stateless: n/a,n/a,8.58,0,0.0,,,,8.37,True
+3026,26,gpsr,40,N40,1.0,1.0,50,50,1.5,60.3,0.0,,,,,stateless: n/a,n/a,7.87,0,0.0,,,,7.22,True
+3027,27,gpsr,40,N40,1.0,1.0,50,50,13.1,59.4,0.0,,,,,stateless: n/a,n/a,7.65,0,0.0,,,,14.07,True
+3028,28,gpsr,40,N40,1.0,1.0,50,50,2.9,61.5,0.0,,,,,stateless: n/a,n/a,9.17,0,0.0,,,,11.62,True
+3029,29,gpsr,40,N40,1.0,1.0,50,50,0.7,59.9,0.0,,,,,stateless: n/a,n/a,8.12,0,0.0,,,,12.38,True
+3000,0,olsr,40,N40,1.0,1.0,50,50,2.2,61.9,0.1688,5.769,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.43,0,0.0,,,,24.61,True
+3001,1,olsr,40,N40,1.0,1.0,50,50,0.7,62.1,0.1773,6.268,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.35,0,0.0,,,,24.82,True
+3002,2,olsr,40,N40,1.0,1.0,50,50,1.5,56.9,0.1464,6.173,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.94,0,0.0,,,,20.55,True
+3003,3,olsr,40,N40,1.0,1.0,50,50,2.2,61.1,0.1037,5.988,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.57,0,0.0,,,,14.56,True
+3004,4,olsr,40,N40,0.94,0.94,50,47,0.7,61.9,0.1048,5.717,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.76,0,0.0,,,,14.54,True
+3005,5,olsr,40,N40,1.0,1.0,50,50,1.5,60.9,0.1046,5.863,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.01,0,0.0,,,,14.51,True
+3006,6,olsr,40,N40,0.98,0.98,50,49,2.9,56.5,0.0969,6.094,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.27,0,0.0,,,,14.0,True
+3007,7,olsr,40,N40,0.98,0.98,50,49,1.5,60.9,0.1435,5.433,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.88,0,0.0,,,,17.58,True
+3008,8,olsr,40,N40,0.98,0.98,50,49,1.5,59.3,0.0958,6.14,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.19,0,0.0,,,,13.87,True
+3009,9,olsr,40,N40,0.96,0.96,50,48,2.2,61.1,0.086,6.086,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.72,0,0.0,,,,13.1,True
+3010,10,olsr,40,N40,0.96,0.96,50,48,2.2,62.2,0.1052,5.904,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.55,0,0.0,,,,14.81,True
+3011,11,olsr,40,N40,0.96,0.96,50,48,1.5,61.1,0.1311,5.866,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.91,0,0.0,,,,16.46,True
+3012,12,olsr,40,N40,0.88,0.88,50,44,2.9,62.3,0.1074,6.336,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.46,0,0.0,,,,14.98,True
+3013,13,olsr,40,N40,1.0,1.0,50,50,0.7,61.6,0.0914,5.944,,,5.3,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.22,0,0.0,,,,13.24,True
+3014,14,olsr,40,N40,0.64,0.64,50,32,2.9,58.5,0.0999,6.011,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.12,0,0.0,,,,14.25,True
+3015,15,olsr,40,N40,0.66,0.66,50,33,2.2,60.7,0.1012,5.738,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.72,0,0.0,,,,14.31,True
+3016,16,olsr,40,N40,1.0,1.0,50,50,1.5,61.2,0.0893,5.35,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",6.88,0,0.0,,,,13.57,True
+3017,17,olsr,40,N40,0.94,0.94,50,47,2.2,56.4,0.1046,6.311,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.28,0,0.0,,,,14.93,True
+3018,18,olsr,40,N40,0.96,0.96,50,48,2.2,60.6,0.0969,5.82,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.11,0,0.0,,,,14.06,True
+3019,19,olsr,40,N40,1.0,1.0,50,50,0.7,60.6,0.1098,6.118,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.82,0,0.0,,,,14.93,True
+3020,20,olsr,40,N40,0.88,0.88,50,44,1.5,62.1,0.1021,5.938,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.16,0,0.0,,,,14.49,True
+3021,21,olsr,40,N40,1.0,1.0,50,50,1.5,59.5,0.1027,6.176,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.35,0,0.0,,,,14.47,True
+3022,22,olsr,40,N40,1.0,1.0,50,50,0.7,61.2,0.1108,6.242,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.71,0,0.0,,,,15.22,True
+3023,23,olsr,40,N40,1.0,1.0,50,50,2.2,58.3,0.105,6.145,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.32,0,0.0,,,,14.63,True
+3024,24,olsr,40,N40,0.66,0.66,50,33,2.9,61.1,0.1206,5.237,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.47,0,0.0,,,,15.8,True
+3025,25,olsr,40,N40,0.94,0.94,50,47,0.7,61.4,0.1242,5.843,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.58,0,0.0,,,,16.22,True
+3026,26,olsr,40,N40,1.0,1.0,50,50,1.5,60.3,0.1158,5.918,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.87,0,0.0,,,,15.61,True
+3027,27,olsr,40,N40,0.86,0.86,50,43,5.4,59.4,0.1125,5.799,,,5.3,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.65,0,0.0,,,,15.33,True
+3028,28,olsr,40,N40,0.74,0.74,50,37,2.2,61.5,0.1434,6.024,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",9.17,0,0.0,,,,17.51,True
+3029,29,olsr,40,N40,1.0,1.0,50,50,0.7,59.9,0.1084,5.801,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.12,0,0.0,,,,14.79,True
+3000,0,aodv,40,N40,1.0,1.0,50,50,2.2,61.9,0.0043,1.027,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.43,13,0.13,"{""route-change"": 13}",,,7.08,True
+3001,1,aodv,40,N40,1.0,1.0,50,50,0.7,62.1,0.0042,1.035,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.35,9,0.09,"{""route-change"": 9}",,,6.82,True
+3002,2,aodv,40,N40,1.0,1.0,50,50,1.5,56.9,0.0041,1.039,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.94,17,0.17,"{""route-change"": 17}",,,6.31,True
+3003,3,aodv,40,N40,0.84,0.84,50,42,2.2,61.1,0.0041,1.035,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.57,14,0.14,"{""route-change"": 14}",,,6.46,True
+3004,4,aodv,40,N40,0.82,0.82,50,41,0.9,61.9,0.0042,1.054,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.76,11,0.11,"{""route-change"": 11}",,,6.46,True
+3005,5,aodv,40,N40,0.9,0.9,50,45,1.5,60.9,0.0041,1.036,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.01,14,0.14,"{""route-change"": 14}",,,6.42,True
+3006,6,aodv,40,N40,0.98,0.98,50,49,2.9,56.5,0.0041,1.037,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.27,20,0.2,"{""route-change"": 20}",,,6.47,True
+3007,7,aodv,40,N40,0.96,0.96,50,48,1.5,60.9,0.0044,1.034,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.88,10,0.1,"{""route-change"": 10}",,,6.38,True
+3008,8,aodv,40,N40,0.98,0.98,50,49,1.5,59.3,0.0041,1.029,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.19,16,0.16,"{""route-change"": 16}",,,6.62,True
+3009,9,aodv,40,N40,0.98,0.98,50,49,2.2,61.1,0.004,1.028,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.72,14,0.14,"{""route-change"": 14}",,,6.63,True
+3010,10,aodv,40,N40,0.92,0.92,50,46,2.2,62.2,0.0042,1.043,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.55,18,0.18,"{""route-change"": 18}",,,6.71,True
+3011,11,aodv,40,N40,0.9,0.9,50,45,1.5,61.1,0.0045,1.029,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.91,14,0.14,"{""route-change"": 14}",,,6.57,True
+3012,12,aodv,40,N40,0.72,0.72,50,36,2.9,62.3,0.004,1.029,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.46,15,0.15,"{""route-change"": 15}",,,6.49,True
+3013,13,aodv,40,N40,1.0,1.0,50,50,0.7,61.6,0.004,1.035,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.22,11,0.11,"{""route-change"": 11}",,,6.52,True
+3014,14,aodv,40,N40,0.64,0.64,50,32,2.9,58.5,0.0039,1.031,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.12,24,0.24,"{""route-change"": 24}",,,6.32,True
+3015,15,aodv,40,N40,0.94,0.94,50,47,2.2,60.7,0.0049,1.037,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.72,20,0.2,"{""route-change"": 20}",,,7.38,True
+3016,16,aodv,40,N40,1.0,1.0,50,50,1.5,61.2,0.005,1.041,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",6.88,16,0.16,"{""route-change"": 16}",,,8.02,True
+3017,17,aodv,40,N40,0.96,0.96,50,48,2.2,56.4,0.0027,1.029,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.28,16,0.16,"{""route-change"": 16}",,,4.8,True
+3018,18,aodv,40,N40,0.96,0.96,50,48,2.2,60.6,0.0028,1.03,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.11,20,0.2,"{""route-change"": 20}",,,4.96,True
+3019,19,aodv,40,N40,1.0,1.0,50,50,0.7,60.6,0.0029,1.035,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.82,10,0.1,"{""route-change"": 10}",,,4.92,True
+3020,20,aodv,40,N40,0.9,0.9,50,45,1.5,62.1,0.0028,1.036,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.16,17,0.17,"{""route-change"": 17}",,,4.92,True
+3021,21,aodv,40,N40,1.0,1.0,50,50,1.5,59.5,0.0029,1.037,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.35,21,0.21,"{""route-change"": 21}",,,5.13,True
+3022,22,aodv,40,N40,0.98,0.98,50,49,0.7,61.2,0.0029,1.043,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.71,14,0.14,"{""route-change"": 14}",,,4.99,True
+3023,23,aodv,40,N40,1.0,1.0,50,50,2.2,58.3,0.0028,1.035,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.32,12,0.12,"{""route-change"": 12}",,,4.91,True
+3024,24,aodv,40,N40,0.78,0.78,50,39,2.9,61.1,0.0045,1.824,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.47,22,0.22,"{""route-change"": 22}",,,5.04,True
+3025,25,aodv,40,N40,0.9,0.9,50,45,0.7,61.4,0.0031,1.041,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.58,12,0.12,"{""route-change"": 12}",,,5.07,True
+3026,26,aodv,40,N40,1.0,1.0,50,50,1.5,60.3,0.0029,1.028,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.87,11,0.11,"{""route-change"": 11}",,,4.9,True
+3027,27,aodv,40,N40,0.84,0.84,50,42,5.1,59.4,0.0029,1.038,,,0.7,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.65,26,0.26,"{""route-change"": 26}",,,5.02,True
+3028,28,aodv,40,N40,0.94,0.94,50,47,2.9,61.5,0.0032,1.029,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",9.17,15,0.15,"{""route-change"": 15}",,,4.99,True
+3029,29,aodv,40,N40,1.0,1.0,50,50,0.7,59.9,0.0037,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.12,15,0.15,"{""route-change"": 15}",,,6.18,True
+3000,0,mpcare,50,N50,0.0,0.0,50,0,,68.3,0.2344,,10.0,0.246,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.51,1338,10.704,"{""better-alternative"": 167, ""pr-below-threshold"": 1171}",1060,0,88.91,True
+3001,1,mpcare,50,N50,1.0,1.0,50,50,2.9,68.5,0.2863,,10.0,0.027,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.28,0,0.0,,0,0,115.02,True
+3002,2,mpcare,50,N50,1.0,1.0,50,50,4.4,66.4,0.0942,,10.0,0.04,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.5,0,0.0,,0,0,33.56,True
+3003,3,mpcare,50,N50,1.0,1.0,50,50,2.9,67.4,0.0762,,10.0,0.027,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.57,0,0.0,,0,0,29.09,True
+3004,4,mpcare,50,N50,0.82,0.82,50,41,5.8,68.3,0.064,,10.0,0.045,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.11,10,0.08,"{""pr-below-threshold"": 10}",0,0,23.73,True
+3005,5,mpcare,50,N50,1.0,1.0,50,50,5.8,67.2,0.0735,,10.0,0.053,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.26,1199,9.592,"{""better-alternative"": 1199}",0,0,26.74,True
+3006,6,mpcare,50,N50,0.48,0.48,50,24,18.6,62.4,0.0795,,10.0,0.168,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.7,49,0.392,"{""better-alternative"": 49}",674,0,30.16,True
+3007,7,mpcare,50,N50,1.0,1.0,50,50,1.5,67.2,0.0824,,10.0,0.013,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",9.23,0,0.0,,0,0,27.86,True
+3008,8,mpcare,50,N50,1.0,1.0,50,50,4.4,65.4,0.0724,,10.0,0.04,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.97,0,0.0,,0,0,26.98,True
+3009,9,mpcare,50,N50,1.0,1.0,50,50,4.4,67.4,0.0691,,10.0,0.04,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.25,0,0.0,,0,0,27.25,True
+3010,10,mpcare,50,N50,1.0,1.0,50,50,3.6,68.6,0.0746,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.88,0,0.0,,0,0,27.64,True
+3011,11,mpcare,50,N50,0.96,0.96,50,48,5.8,67.5,0.0774,,10.0,0.052,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.84,1200,9.6,"{""better-alternative"": 1200}",0,0,26.94,True
+3012,12,mpcare,50,N50,0.98,0.98,50,49,5.1,68.7,0.0689,,10.0,0.046,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.56,0,0.0,,0,0,26.45,True
+3013,13,mpcare,50,N50,1.0,1.0,50,50,1.5,67.9,0.067,,10.0,0.013,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.48,0,0.0,,0,0,26.01,True
+3014,14,mpcare,50,N50,1.0,1.0,50,50,2.9,68.5,0.0708,,10.0,0.027,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.93,0,0.0,,0,0,26.36,True
+3015,15,mpcare,50,N50,1.0,1.0,50,50,2.9,66.9,0.0739,,10.0,0.027,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.07,0,0.0,,0,0,27.03,True
+3016,16,mpcare,50,N50,0.98,0.98,50,49,2.2,67.5,0.0704,,10.0,0.02,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.75,5,0.04,"{""better-alternative"": 5}",0,0,26.57,True
+3017,17,mpcare,50,N50,1.0,1.0,50,50,2.9,67.0,0.0706,,10.0,0.027,0.1,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.73,0,0.0,,0,0,26.58,True
+3018,18,mpcare,50,N50,1.0,1.0,50,50,3.6,66.9,0.065,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.37,0,0.0,,0,0,25.48,True
+3019,19,mpcare,50,N50,1.0,1.0,50,50,2.9,66.8,0.0702,,10.0,0.027,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.93,0,0.0,,0,0,26.13,True
+3020,20,mpcare,50,N50,1.0,1.0,50,50,2.9,68.5,0.0693,,10.0,0.027,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.38,0,0.0,,0,0,25.21,True
+3021,21,mpcare,50,N50,1.0,1.0,50,50,2.9,65.7,0.0587,,10.0,0.027,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.27,0,0.0,,0,0,22.02,True
+3022,22,mpcare,50,N50,1.0,1.0,50,50,2.9,67.5,0.0551,,10.0,0.027,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.86,0,0.0,,0,0,21.4,True
+3023,23,mpcare,50,N50,1.0,1.0,50,50,1.5,64.3,0.0563,,10.0,0.013,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.2,0,0.0,,0,0,21.39,True
+3024,24,mpcare,50,N50,1.0,1.0,50,50,1.5,67.4,0.059,,10.0,0.013,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.55,0,0.0,,0,0,21.68,True
+3025,25,mpcare,50,N50,0.98,0.98,50,49,0.7,67.7,0.0592,,10.0,0.007,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.8,0,0.0,,0,0,21.38,True
+3026,26,mpcare,50,N50,1.0,1.0,50,50,2.2,66.5,0.0583,,10.0,0.02,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.58,0,0.0,,0,0,21.37,True
+3027,27,mpcare,50,N50,1.0,1.0,50,50,6.6,65.6,0.0567,,10.0,0.06,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.09,1198,9.584,"{""better-alternative"": 1198}",0,0,21.62,True
+3028,28,mpcare,50,N50,1.0,1.0,50,50,3.6,67.8,0.0747,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",9.23,0,0.0,,0,0,25.63,True
+3029,29,mpcare,50,N50,0.98,0.98,50,49,7.3,66.1,0.0722,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",8.13,0,0.0,,0,0,26.62,True
+3000,0,gpsr,50,N50,0.1,0.1,50,5,381.3,68.3,0.0,,,,,stateless: n/a,n/a,8.51,0,0.0,,,,23.84,True
+3001,1,gpsr,50,N50,1.0,1.0,50,50,2.2,68.5,0.0,,,,,stateless: n/a,n/a,7.28,0,0.0,,,,23.07,True
+3002,2,gpsr,50,N50,0.98,0.98,50,49,2.9,66.4,0.0,,,,,stateless: n/a,n/a,8.5,0,0.0,,,,22.02,True
+3003,3,gpsr,50,N50,0.92,0.92,50,46,1.5,67.4,0.0,,,,,stateless: n/a,n/a,7.57,0,0.0,,,,22.03,True
+3004,4,gpsr,50,N50,0.86,0.86,50,43,2.9,68.3,0.0,,,,,stateless: n/a,n/a,8.11,0,0.0,,,,21.97,True
+3005,5,gpsr,50,N50,0.96,0.96,50,48,2.9,67.2,0.0,,,,,stateless: n/a,n/a,8.26,0,0.0,,,,22.32,True
+3006,6,gpsr,50,N50,0.18,0.18,50,9,283.8,62.4,0.0,,,,,stateless: n/a,n/a,7.7,0,0.0,,,,26.26,True
+3007,7,gpsr,50,N50,0.92,0.92,50,46,1.5,67.2,0.0,,,,,stateless: n/a,n/a,9.23,0,0.0,,,,22.11,True
+3008,8,gpsr,50,N50,0.82,0.82,50,41,2.9,65.4,0.0,,,,,stateless: n/a,n/a,7.97,0,0.0,,,,21.88,True
+3009,9,gpsr,50,N50,0.84,0.84,50,42,2.2,67.4,0.0,,,,,stateless: n/a,n/a,7.25,0,0.0,,,,21.51,True
+3010,10,gpsr,50,N50,1.0,1.0,50,50,2.2,68.6,0.0,,,,,stateless: n/a,n/a,7.88,0,0.0,,,,21.9,True
+3011,11,gpsr,50,N50,1.0,1.0,50,50,2.9,67.5,0.0,,,,,stateless: n/a,n/a,8.84,0,0.0,,,,21.69,True
+3012,12,gpsr,50,N50,0.78,0.78,50,39,2.9,68.7,0.0,,,,,stateless: n/a,n/a,7.56,0,0.0,,,,21.47,True
+3013,13,gpsr,50,N50,1.0,1.0,50,50,1.5,67.9,0.0,,,,,stateless: n/a,n/a,7.48,0,0.0,,,,19.24,True
+3014,14,gpsr,50,N50,0.98,0.98,50,49,2.2,68.5,0.0,,,,,stateless: n/a,n/a,7.93,0,0.0,,,,19.68,True
+3015,15,gpsr,50,N50,0.76,0.76,50,38,1.5,66.9,0.0,,,,,stateless: n/a,n/a,8.07,0,0.0,,,,21.94,True
+3016,16,gpsr,50,N50,0.82,0.82,50,41,1.5,67.5,0.0,,,,,stateless: n/a,n/a,7.75,0,0.0,,,,20.89,True
+3017,17,gpsr,50,N50,0.78,0.78,50,39,2.2,67.0,0.0,,,,,stateless: n/a,n/a,7.73,0,0.0,,,,21.77,True
+3018,18,gpsr,50,N50,0.92,0.92,50,46,2.2,66.9,0.0,,,,,stateless: n/a,n/a,7.37,0,0.0,,,,22.11,True
+3019,19,gpsr,50,N50,0.96,0.96,50,48,2.2,66.8,0.0,,,,,stateless: n/a,n/a,7.93,0,0.0,,,,21.74,True
+3020,20,gpsr,50,N50,0.92,0.92,50,46,1.5,68.5,0.0,,,,,stateless: n/a,n/a,8.38,0,0.0,,,,21.94,True
+3021,21,gpsr,50,N50,0.98,0.98,50,49,2.2,65.7,0.0,,,,,stateless: n/a,n/a,8.27,0,0.0,,,,21.81,True
+3022,22,gpsr,50,N50,1.0,1.0,50,50,1.5,67.5,0.0,,,,,stateless: n/a,n/a,7.86,0,0.0,,,,22.08,True
+3023,23,gpsr,50,N50,0.9,0.9,50,45,0.7,64.3,0.0,,,,,stateless: n/a,n/a,8.2,0,0.0,,,,21.69,True
+3024,24,gpsr,50,N50,0.98,0.98,50,49,0.7,67.4,0.0,,,,,stateless: n/a,n/a,8.55,0,0.0,,,,23.27,True
+3025,25,gpsr,50,N50,1.0,1.0,50,50,0.7,67.7,0.0,,,,,stateless: n/a,n/a,8.8,0,0.0,,,,22.42,True
+3026,26,gpsr,50,N50,1.0,1.0,50,50,1.5,66.5,0.0,,,,,stateless: n/a,n/a,8.58,0,0.0,,,,21.78,True
+3027,27,gpsr,50,N50,0.68,0.68,50,34,3.6,65.6,0.0,,,,,stateless: n/a,n/a,8.09,0,0.0,,,,19.77,True
+3028,28,gpsr,50,N50,0.96,0.96,50,48,2.2,67.8,0.0,,,,,stateless: n/a,n/a,9.23,0,0.0,,,,21.06,True
+3029,29,gpsr,50,N50,0.84,0.84,50,42,3.6,66.1,0.0,,,,,stateless: n/a,n/a,8.13,0,0.0,,,,20.06,True
+3000,0,olsr,50,N50,0.0,0.0,50,0,,68.3,0.2118,6.41,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.51,0,0.0,,,,41.44,True
+3001,1,olsr,50,N50,0.98,0.98,50,49,2.2,68.5,0.2064,7.647,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.28,0,0.0,,,,40.87,True
+3002,2,olsr,50,N50,1.0,1.0,50,50,2.9,66.4,0.2359,7.264,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.5,0,0.0,,,,42.91,True
+3003,3,olsr,50,N50,0.86,0.86,50,43,1.5,67.4,0.2128,6.878,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.57,0,0.0,,,,41.94,True
+3004,4,olsr,50,N50,0.86,0.86,50,43,2.9,68.3,0.2148,7.5,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.11,0,0.0,,,,40.34,True
+3005,5,olsr,50,N50,0.88,0.88,50,44,2.9,67.2,0.2178,7.061,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.26,0,0.0,,,,40.82,True
+3006,6,olsr,50,N50,0.7,0.7,50,35,4.4,62.4,0.1989,7.044,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.7,0,0.0,,,,38.63,True
+3007,7,olsr,50,N50,0.88,0.88,50,44,1.5,67.2,0.2683,7.04,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",9.23,0,0.0,,,,46.71,True
+3008,8,olsr,50,N50,0.64,0.64,50,32,2.9,65.4,0.2301,7.413,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.97,0,0.0,,,,43.02,True
+3009,9,olsr,50,N50,0.76,0.76,50,38,2.2,67.4,0.1995,7.423,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.25,0,0.0,,,,40.24,True
+3010,10,olsr,50,N50,1.0,1.0,50,50,2.2,68.6,0.2317,7.092,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.88,0,0.0,,,,43.91,True
+3011,11,olsr,50,N50,0.96,0.96,50,48,2.9,67.5,0.2562,7.373,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.84,0,0.0,,,,44.86,True
+3012,12,olsr,50,N50,0.96,0.96,50,48,2.9,68.7,0.1937,7.259,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.56,0,0.0,,,,37.97,True
+3013,13,olsr,50,N50,0.98,0.98,50,49,1.5,67.9,0.2141,7.207,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.48,0,0.0,,,,42.44,True
+3014,14,olsr,50,N50,1.0,1.0,50,50,2.2,68.5,0.2243,7.269,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.93,0,0.0,,,,42.23,True
+3015,15,olsr,50,N50,0.74,0.74,50,37,1.5,66.9,0.2245,6.92,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.07,0,0.0,,,,42.48,True
+3016,16,olsr,50,N50,0.98,0.98,50,49,1.5,67.5,0.1864,6.643,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.75,0,0.0,,,,37.91,True
+3017,17,olsr,50,N50,0.7,0.7,50,35,2.2,67.0,0.2077,7.489,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.73,0,0.0,,,,39.28,True
+3018,18,olsr,50,N50,0.92,0.92,50,46,2.2,66.9,0.1964,7.566,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.37,0,0.0,,,,39.02,True
+3019,19,olsr,50,N50,0.92,0.92,50,46,2.2,66.8,0.2146,7.285,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.93,0,0.0,,,,40.6,True
+3020,20,olsr,50,N50,0.96,0.96,50,48,1.5,68.5,0.2429,7.17,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.38,0,0.0,,,,43.35,True
+3021,21,olsr,50,N50,1.0,1.0,50,50,2.2,65.7,0.2383,7.253,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.27,0,0.0,,,,43.79,True
+3022,22,olsr,50,N50,0.8,0.8,50,40,1.5,67.5,0.234,7.855,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.86,0,0.0,,,,43.98,True
+3023,23,olsr,50,N50,0.94,0.94,50,47,0.7,64.3,0.2346,7.308,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.2,0,0.0,,,,43.5,True
+3024,24,olsr,50,N50,0.94,0.94,50,47,0.7,67.4,0.2325,6.585,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.55,0,0.0,,,,42.43,True
+3025,25,olsr,50,N50,1.0,1.0,50,50,0.7,67.7,0.2564,7.592,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.8,0,0.0,,,,44.96,True
+3026,26,olsr,50,N50,1.0,1.0,50,50,1.5,66.5,0.2278,7.274,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.58,0,0.0,,,,40.85,True
+3027,27,olsr,50,N50,0.64,0.64,50,32,3.6,65.6,0.2166,7.522,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.09,0,0.0,,,,39.71,True
+3028,28,olsr,50,N50,1.0,1.0,50,50,2.2,67.8,0.2598,7.579,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",9.23,0,0.0,,,,43.64,True
+3029,29,olsr,50,N50,0.72,0.72,50,36,3.6,66.1,0.2223,7.191,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",8.13,0,0.0,,,,41.46,True
+3000,0,aodv,50,N50,0.0,0.0,50,0,,68.3,0.0108,1.559,,,,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.51,24,0.192,"{""route-change"": 24}",,,21.63,True
+3001,1,aodv,50,N50,0.98,0.98,50,49,2.2,68.5,0.0074,1.058,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.28,21,0.168,"{""route-change"": 21}",,,21.4,True
+3002,2,aodv,50,N50,0.96,0.96,50,48,2.9,66.4,0.0069,1.047,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.5,23,0.184,"{""route-change"": 23}",,,18.06,True
+3003,3,aodv,50,N50,0.9,0.9,50,45,1.5,67.4,0.0063,1.029,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.57,15,0.12,"{""route-change"": 15}",,,17.95,True
+3004,4,aodv,50,N50,0.82,0.82,50,41,2.9,68.3,0.0077,1.035,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.11,20,0.16,"{""route-change"": 20}",,,21.05,True
+3005,5,aodv,50,N50,0.94,0.94,50,47,2.9,67.2,0.0072,1.036,,,1.0,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.26,19,0.152,"{""route-change"": 19}",,,19.68,True
+3006,6,aodv,50,N50,0.98,0.98,50,49,4.4,62.4,0.0093,1.455,,,0.6,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.7,30,0.24,"{""route-change"": 30}",,,21.39,True
+3007,7,aodv,50,N50,0.86,0.86,50,43,1.5,67.2,0.0087,1.042,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",9.23,16,0.128,"{""route-change"": 16}",,,21.2,True
+3008,8,aodv,50,N50,0.6,0.6,50,30,2.9,65.4,0.0071,1.029,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.97,17,0.136,"{""route-change"": 17}",,,19.1,True
+3009,9,aodv,50,N50,0.9,0.9,50,45,2.2,67.4,0.0085,1.029,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.25,15,0.12,"{""route-change"": 15}",,,23.62,True
+3010,10,aodv,50,N50,1.0,1.0,50,50,2.2,68.6,0.0074,1.029,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.88,14,0.112,"{""route-change"": 14}",,,19.68,True
+3011,11,aodv,50,N50,0.96,0.96,50,48,2.9,67.5,0.0082,1.035,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.84,15,0.12,"{""route-change"": 15}",,,21.18,True
+3012,12,aodv,50,N50,0.94,0.94,50,47,2.9,68.7,0.0077,1.035,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.56,16,0.128,"{""route-change"": 16}",,,21.53,True
+3013,13,aodv,50,N50,1.0,1.0,50,50,1.5,67.9,0.0078,1.065,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.48,18,0.144,"{""route-change"": 18}",,,21.74,True
+3014,14,aodv,50,N50,1.0,1.0,50,50,2.2,68.5,0.0079,1.051,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.93,22,0.176,"{""route-change"": 22}",,,21.51,True
+3015,15,aodv,50,N50,0.6,0.6,50,30,1.5,66.9,0.008,1.049,,,0.8,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.07,14,0.112,"{""route-change"": 14}",,,21.41,True
+3016,16,aodv,50,N50,0.98,0.98,50,49,1.5,67.5,0.0077,1.028,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.75,20,0.16,"{""route-change"": 20}",,,21.21,True
+3017,17,aodv,50,N50,0.86,0.86,50,43,2.2,67.0,0.0073,1.027,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.73,13,0.104,"{""route-change"": 13}",,,20.26,True
+3018,18,aodv,50,N50,0.98,0.98,50,49,2.2,66.9,0.0052,1.029,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.37,14,0.112,"{""route-change"": 14}",,,15.02,True
+3019,19,aodv,50,N50,0.9,0.9,50,45,2.2,66.8,0.0078,1.029,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.93,18,0.144,"{""route-change"": 18}",,,21.34,True
+3020,20,aodv,50,N50,0.96,0.96,50,48,1.5,68.5,0.0075,1.028,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.38,13,0.104,"{""route-change"": 13}",,,19.75,True
+3021,21,aodv,50,N50,0.86,0.86,50,43,2.2,65.7,0.0056,1.035,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.27,13,0.104,"{""route-change"": 13}",,,14.59,True
+3022,22,aodv,50,N50,0.86,0.86,50,43,1.5,67.5,0.0058,1.042,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.86,15,0.12,"{""route-change"": 15}",,,16.7,True
+3023,23,aodv,50,N50,0.94,0.94,50,47,0.7,64.3,0.0067,1.027,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.2,9,0.072,"{""route-change"": 9}",,,18.35,True
+3024,24,aodv,50,N50,0.92,0.92,50,46,0.7,67.4,0.0056,1.032,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.55,14,0.112,"{""route-change"": 14}",,,14.22,True
+3025,25,aodv,50,N50,1.0,1.0,50,50,0.7,67.7,0.0089,1.035,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.8,11,0.088,"{""route-change"": 11}",,,22.57,True
+3026,26,aodv,50,N50,1.0,1.0,50,50,1.5,66.5,0.0049,1.035,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.58,11,0.088,"{""route-change"": 11}",,,12.97,True
+3027,27,aodv,50,N50,0.74,0.74,50,37,3.6,65.6,0.0046,1.044,,,1.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.09,23,0.184,"{""route-change"": 23}",,,12.67,True
+3028,28,aodv,50,N50,0.9,0.9,50,45,2.2,67.8,0.0048,1.037,,,0.9,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",9.23,22,0.176,"{""route-change"": 22}",,,12.47,True
+3029,29,aodv,50,N50,0.92,0.92,50,46,3.6,66.1,0.0046,1.037,,,0.5,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",8.13,23,0.184,"{""route-change"": 23}",,,12.54,True

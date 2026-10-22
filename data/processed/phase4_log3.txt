@@ -1,0 +1,137 @@
+
+=== exp5_mobility: 5 conditions x 4 algorithms x 30 trials ===
+[exp5_mobility] speed_5        astar_dist  30 trials done (1s elapsed)
+[exp5_mobility] speed_5        gpsr        30 trials done (2s elapsed)
+[exp5_mobility] speed_5        olsr        30 trials done (4s elapsed)
+[exp5_mobility] speed_5        mpcare      30 trials done (10s elapsed)
+[exp5_mobility] speed_10       astar_dist  30 trials done (12s elapsed)
+[exp5_mobility] speed_10       gpsr        30 trials done (14s elapsed)
+[exp5_mobility] speed_10       olsr        30 trials done (17s elapsed)
+[exp5_mobility] speed_10       mpcare      30 trials done (23s elapsed)
+[exp5_mobility] speed_15       astar_dist  30 trials done (24s elapsed)
+[exp5_mobility] speed_15       gpsr        30 trials done (26s elapsed)
+[exp5_mobility] speed_15       olsr        30 trials done (29s elapsed)
+[exp5_mobility] speed_15       mpcare      30 trials done (35s elapsed)
+[exp5_mobility] speed_20       astar_dist  30 trials done (37s elapsed)
+[exp5_mobility] speed_20       gpsr        30 trials done (39s elapsed)
+[exp5_mobility] speed_20       olsr        30 trials done (42s elapsed)
+[exp5_mobility] speed_20       mpcare      30 trials done (47s elapsed)
+[exp5_mobility] speed_25       astar_dist  30 trials done (49s elapsed)
+[exp5_mobility] speed_25       gpsr        30 trials done (51s elapsed)
+[exp5_mobility] speed_25       olsr        30 trials done (54s elapsed)
+[exp5_mobility] speed_25       mpcare      30 trials done (60s elapsed)
+[exp5_mobility] wrote exp5_mobility.csv/_summary.json + graphs (speed)
+
+  condition       astar_dist    gpsr          olsr          mpcare        
+  speed_5         0.965±0.030   0.967±0.029   0.960±0.031   0.974±0.028   
+  speed_10        0.951±0.031   0.969±0.021   0.935±0.042   0.968±0.026   
+  speed_15        0.954±0.025   0.976±0.011   0.932±0.033   0.969±0.017   
+  speed_20        0.953±0.022   0.972±0.011   0.937±0.032   0.981±0.012   
+  speed_25        0.952±0.022   0.973±0.013   0.924±0.032   0.977±0.009   
+  post-hoc vs mpcare @speed_25 (Holm): astar_dist: p=0.49783, margin=+0.025, gpsr: p=0.98186, margin=+0.005, olsr: p=0.07653, margin=+0.053
+
+=== exp6_failure: 4 conditions x 6 algorithms x 30 trials ===
+[exp6_failure] kill_0         astar_dist  30 trials done (7s elapsed)
+[exp6_failure] kill_0         gpsr        30 trials done (14s elapsed)
+[exp6_failure] kill_0         aodv        30 trials done (22s elapsed)
+[exp6_failure] kill_0         olsr        30 trials done (36s elapsed)
+[exp6_failure] kill_0         astar_etx   30 trials done (43s elapsed)
+[exp6_failure] kill_0         mpcare      30 trials done (64s elapsed)
+[exp6_failure] kill_1         astar_dist  30 trials done (75s elapsed)
+[exp6_failure] kill_1         gpsr        30 trials done (85s elapsed)
+[exp6_failure] kill_1         aodv        30 trials done (98s elapsed)
+[exp6_failure] kill_1         olsr        30 trials done (114s elapsed)
+[exp6_failure] kill_1         astar_etx   30 trials done (125s elapsed)
+[exp6_failure] kill_1         mpcare      30 trials done (148s elapsed)
+[exp6_failure] kill_2         astar_dist  30 trials done (158s elapsed)
+[exp6_failure] kill_2         gpsr        30 trials done (168s elapsed)
+[exp6_failure] kill_2         aodv        30 trials done (179s elapsed)
+[exp6_failure] kill_2         olsr        30 trials done (193s elapsed)
+[exp6_failure] kill_2         astar_etx   30 trials done (203s elapsed)
+[exp6_failure] kill_2         mpcare      30 trials done (223s elapsed)
+[exp6_failure] kill_3         astar_dist  30 trials done (232s elapsed)
+[exp6_failure] kill_3         gpsr        30 trials done (241s elapsed)
+[exp6_failure] kill_3         aodv        30 trials done (252s elapsed)
+[exp6_failure] kill_3         olsr        30 trials done (265s elapsed)
+[exp6_failure] kill_3         astar_etx   30 trials done (274s elapsed)
+[exp6_failure] kill_3         mpcare      30 trials done (292s elapsed)
+[exp6_failure] wrote exp6_failure.csv/_summary.json + graphs (kill)
+
+  condition       astar_dist    gpsr          aodv          olsr          astar_etx     mpcare        
+  kill_0          0.947±0.014   0.895±0.014   0.944±0.012   0.939±0.014   1.000±0.000   1.000±0.000   
+  kill_1          0.947±0.014   0.899±0.014   0.695±0.108   0.931±0.011   1.000±0.000   0.992±0.006   
+  kill_2          0.945±0.015   0.906±0.015   0.604±0.102   0.927±0.011   0.995±0.005   0.989±0.007   
+  kill_3          0.942±0.015   0.907±0.015   0.503±0.081   0.927±0.016   0.989±0.006   0.955±0.029   
+  post-hoc vs mpcare @kill_3 (Holm): astar_dist: p=0.00141, margin=+0.013, gpsr: p=0.00012, margin=+0.048, aodv: p=0, margin=+0.452, olsr: p=0.00032, margin=+0.028, astar_etx: p=0.21489, margin=-0.034
+
+=== envelope: 20 conditions x 2 algorithms x 30 trials ===
+[envelope] L0.00_S5       gpsr        30 trials done (2s elapsed)
+[envelope] L0.00_S5       mpcare      30 trials done (8s elapsed)
+[envelope] L0.00_S10      gpsr        30 trials done (9s elapsed)
+[envelope] L0.00_S10      mpcare      30 trials done (15s elapsed)
+[envelope] L0.00_S15      gpsr        30 trials done (17s elapsed)
+[envelope] L0.00_S15      mpcare      30 trials done (22s elapsed)
+[envelope] L0.00_S20      gpsr        30 trials done (24s elapsed)
+[envelope] L0.00_S20      mpcare      30 trials done (30s elapsed)
+[envelope] L0.00_S25      gpsr        30 trials done (32s elapsed)
+[envelope] L0.00_S25      mpcare      30 trials done (37s elapsed)
+[envelope] L0.10_S5       gpsr        30 trials done (39s elapsed)
+[envelope] L0.10_S5       mpcare      30 trials done (44s elapsed)
+[envelope] L0.10_S10      gpsr        30 trials done (46s elapsed)
+[envelope] L0.10_S10      mpcare      30 trials done (52s elapsed)
+[envelope] L0.10_S15      gpsr        30 trials done (53s elapsed)
+[envelope] L0.10_S15      mpcare      30 trials done (59s elapsed)
+[envelope] L0.10_S20      gpsr        30 trials done (61s elapsed)
+[envelope] L0.10_S20      mpcare      30 trials done (67s elapsed)
+[envelope] L0.10_S25      gpsr        30 trials done (69s elapsed)
+[envelope] L0.10_S25      mpcare      30 trials done (74s elapsed)
+[envelope] L0.20_S5       gpsr        30 trials done (76s elapsed)
+[envelope] L0.20_S5       mpcare      30 trials done (81s elapsed)
+[envelope] L0.20_S10      gpsr        30 trials done (83s elapsed)
+[envelope] L0.20_S10      mpcare      30 trials done (88s elapsed)
+[envelope] L0.20_S15      gpsr        30 trials done (89s elapsed)
+[envelope] L0.20_S15      mpcare      30 trials done (92s elapsed)
+[envelope] L0.20_S20      gpsr        30 trials done (93s elapsed)
+[envelope] L0.20_S20      mpcare      30 trials done (96s elapsed)
+[envelope] L0.20_S25      gpsr        30 trials done (96s elapsed)
+[envelope] L0.20_S25      mpcare      30 trials done (99s elapsed)
+[envelope] L0.30_S5       gpsr        30 trials done (100s elapsed)
+[envelope] L0.30_S5       mpcare      30 trials done (102s elapsed)
+[envelope] L0.30_S10      gpsr        30 trials done (103s elapsed)
+[envelope] L0.30_S10      mpcare      30 trials done (106s elapsed)
+[envelope] L0.30_S15      gpsr        30 trials done (107s elapsed)
+[envelope] L0.30_S15      mpcare      30 trials done (109s elapsed)
+[envelope] L0.30_S20      gpsr        30 trials done (110s elapsed)
+[envelope] L0.30_S20      mpcare      30 trials done (113s elapsed)
+[envelope] L0.30_S25      gpsr        30 trials done (113s elapsed)
+[envelope] L0.30_S25      mpcare      30 trials done (117s elapsed)
+[envelope] wrote envelope.csv/_summary.json + graphs (envelope)
+
+  condition       gpsr          mpcare        
+  L0.00_S5        0.967±0.029   0.974±0.028   
+  L0.00_S10       0.969±0.021   0.968±0.026   
+  L0.00_S15       0.976±0.011   0.969±0.017   
+  L0.00_S20       0.972±0.011   0.981±0.012   
+  L0.00_S25       0.973±0.013   0.977±0.009   
+  L0.10_S5        0.864±0.033   0.847±0.034   
+  L0.10_S10       0.850±0.034   0.835±0.025   
+  L0.10_S15       0.850±0.028   0.841±0.023   
+  L0.10_S20       0.848±0.025   0.855±0.020   
+  L0.10_S25       0.846±0.025   0.837±0.017   
+  L0.20_S5        0.762±0.035   0.746±0.038   
+  L0.20_S10       0.740±0.036   0.726±0.029   
+  L0.20_S15       0.739±0.032   0.720±0.025   
+  L0.20_S20       0.733±0.031   0.726±0.026   
+  L0.20_S25       0.733±0.029   0.715±0.022   
+  L0.30_S5        0.666±0.033   0.634±0.038   
+  L0.30_S10       0.637±0.034   0.600±0.035   
+  L0.30_S15       0.631±0.033   0.605±0.025   
+  L0.30_S20       0.631±0.031   0.605±0.028   
+  L0.30_S25       0.639±0.025   0.609±0.024   
+  post-hoc vs mpcare @L0.30_S25 (Holm): gpsr: p=0.06959, margin=-0.030
+
+=== section 6.3 benchmark checks ===
+  [MISS] exp5_mobility.exp5_let_err_below_30pct_vle15
+  [PASS] exp6_failure.exp6_recovery_below_10s_single_kill
+
+DONE — data in C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed

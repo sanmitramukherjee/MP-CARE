@@ -1,0 +1,11 @@
+# MP-CARE agent parameters (planner_node / MpcareSwarmAdapter)
+mpcare_agent:
+  ros__parameters:
+    uav_id: 0              # overridden per-UAV in the launch file
+    n_uav: 5
+    speed_mps: 8.0
+    wp_tolerance_m: 1.0
+    max_range_m: 300.0     # radio range (§3.3); must match network_model
+    stale_s: 3.0           # odometry silence before a UAV is pruned (failure)
+    rng_seed: 1            # beacon-exchange radio draw seed
+    telemetry_rate_hz: 10.0

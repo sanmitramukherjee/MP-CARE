@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>olsr_routing</name>
+  <version>0.0.1</version>
+  <description>OLSR (RFC 3626) baseline routing for the MP-CARE swarm network. Node implementation is scheduled for Phase 2 (implementation_plan.md section 4).</description>
+  <maintainer email="mpcare@example.com">MP-CARE Project</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

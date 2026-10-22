@@ -1,0 +1,28 @@
+{
+  "spread": {
+    "conn_plain_mean": 0.6948,
+    "conn_comms_mean": 1.0,
+    "conn_gain_pp": 30.52,
+    "conn_gain_rel_pct": 43.93,
+    "mw_p": 6.386444750439146e-05,
+    "cohens_d": 28.509,
+    "min_dist_plain": 65.0,
+    "min_dist_comms": 9.71,
+    "coll_ticks_plain": 0,
+    "coll_ticks_comms": 0
+  },
+  "cross": {
+    "conn_plain_mean": 1.0,
+    "conn_comms_mean": 1.0,
+    "conn_gain_pp": 0.0,
+    "conn_gain_rel_pct": 0.0,
+    "mw_p": 1.0,
+    "cohens_d": 0.0,
+    "min_dist_plain": 29.038,
+    "min_dist_comms": 29.038,
+    "coll_ticks_plain": 0,
+    "coll_ticks_comms": 0
+  },
+  "orca:conn:spread_holm_p": 0.00012772889500878293,
+  "orca:safety:cross_holm_p": 1.0
+}

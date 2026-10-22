@@ -1,0 +1,64 @@
+# ============================================================
+# MP-CARE — minimal public repository: code + tests + configs only.
+# Private docs, the manuscript, and bulky datasets are NOT pushed.
+#   - Private documentation (submission strategy, reports, notes) -> Zenodo handles data
+#   - Manuscript (paper/) is submitted to Elsevier directly, not via git
+#   - Datasets are deposited on Zenodo (DOI cited in the paper)
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- ROS 2 / colcon / Gazebo ----------
+install/
+log/
+colcon_build/
+ws/
+gazebo_log/
+*.db3
+*.bag
+*.mcap
+
+# ---------- Private documentation ----------
+# Elsevier submission reports, runbooks, strategy notes
+docs/
+NOTES/
+SUMMARY.md
+.freebuff/
+
+# ---------- Manuscript ----------
+paper/
+
+# ---------- Literature-miner ----------
+literature-miner/
+
+# ---------- Legacy -----------
+Story/
+LinuxTests/
+paper_pages_final/
+IEEE Transactions on VT Template/
+
+# ---------- OS / editor noise ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/

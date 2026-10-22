@@ -1,0 +1,86 @@
+[N=5   500x500 10 wp] mpcare 30 trials done (8s elapsed)
+[N=5   500x500 10 wp] gpsr   30 trials done (13s elapsed)
+[N=5   500x500 10 wp] olsr   30 trials done (20s elapsed)
+[N=5   500x500 10 wp] aodv   30 trials done (25s elapsed)
+[N=10  700x700 20 wp] mpcare 30 trials done (56s elapsed)
+[N=10  700x700 20 wp] gpsr   30 trials done (69s elapsed)
+[N=10  700x700 20 wp] olsr   30 trials done (91s elapsed)
+[N=10  700x700 20 wp] aodv   30 trials done (108s elapsed)
+[N=20  1000x1000 40 wp] mpcare 30 trials done (194s elapsed)
+[N=20  1000x1000 40 wp] gpsr   30 trials done (258s elapsed)
+[N=20  1000x1000 40 wp] olsr   30 trials done (351s elapsed)
+[N=20  1000x1000 40 wp] aodv   30 trials done (417s elapsed)
+[N=30  1200x1200 60 wp] mpcare 30 trials done (642s elapsed)
+[N=30  1200x1200 60 wp] gpsr   30 trials done (822s elapsed)
+[N=30  1200x1200 60 wp] olsr   30 trials done (1087s elapsed)
+[N=30  1200x1200 60 wp] aodv   30 trials done (1262s elapsed)
+[N=40  1500x1500 80 wp] mpcare 30 trials done (1719s elapsed)
+[N=40  1500x1500 80 wp] gpsr   30 trials done (2127s elapsed)
+[N=40  1500x1500 80 wp] olsr   30 trials done (2664s elapsed)
+[N=40  1500x1500 80 wp] aodv   30 trials done (3042s elapsed)
+[N=50  1700x1700 100 wp] mpcare 30 trials done (3729s elapsed)
+[N=50  1700x1700 100 wp] gpsr   30 trials done (4354s elapsed)
+[N=50  1700x1700 100 wp] olsr   30 trials done (5147s elapsed)
+[N=50  1700x1700 100 wp] aodv   30 trials done (5641s elapsed)
+chart: C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed\phase6v2_g61_cpu_vs_n.png
+chart: C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed\phase6v2_g62_overhead_vs_n.png
+chart: C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed\phase6v2_g63_pdr_vs_n.png
+chart: C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed\phase6v2_g64_mission_vs_n.png
+chart: C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed\phase6v2_g65_degree_vs_n.png
+chart: C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed\phase6v2_g66_convergence_vs_n.png
+
+  point             mpcare            gpsr            olsr            aodv
+  PDR     N=5          0.919±0.092     0.961±0.034     0.907±0.095     0.920±0.091
+N=10         0.934±0.071     0.927±0.071     0.918±0.077     0.927±0.073
+N=20         0.809±0.139     0.843±0.110     0.825±0.128     0.831±0.127
+N=30         0.571±0.173     0.575±0.147     0.760±0.133     0.768±0.135
+N=40         0.653±0.168     0.633±0.161     0.778±0.123     0.782±0.123
+N=50         0.526±0.176     0.549±0.153     0.529±0.167     0.537±0.166
+
+  CPU ms/tickN=5          0.021±0.003     0.000±0.000     0.010±0.000     0.007±0.000
+N=10         0.038±0.001     0.000±0.000     0.017±0.001     0.007±0.000
+N=20         0.036±0.004     0.000±0.000     0.032±0.002     0.006±0.000
+N=30         0.045±0.004     0.000±0.000     0.057±0.004     0.007±0.001
+N=40         0.047±0.003     0.000±0.000     0.068±0.005     0.007±0.000
+N=50         0.040±0.002     0.000±0.000     0.064±0.006     0.005±0.001
+
+  ctrl pkts/n/sN=5                    -               -     1.586±0.047     1.297±0.343
+N=10                   -               -     2.128±0.055     1.253±0.209
+N=20                   -               -     3.057±0.123     1.147±0.078
+N=30                   -               -     4.027±0.143     1.194±0.104
+N=40                   -               -     4.309±0.208     1.214±0.096
+N=50                   -               -     4.714±0.299     1.374±0.132
+
+  conv s  N=5          0.007±0.009               -     5.000±0.000     0.139±0.045
+N=10         0.003±0.007               -     5.173±0.347     0.241±0.097
+N=20         0.007±0.010               -     6.131±0.936     0.269±0.136
+N=30         0.010±0.012               -     5.321±0.366     0.436±0.121
+N=40         0.007±0.009               -     6.047±0.713     0.523±0.159
+N=50         0.003±0.007               -     6.648±0.996     0.578±0.240
+
+== section 8.3 alarms (evaluated at N=50) ==
+  [PASS] mpcare  cpu_ms_per_node_tick       mean=0.04 mean <= 10.0
+  [PASS] gpsr    cpu_ms_per_node_tick       mean=0.0 mean <= 10.0
+  [PASS] olsr    cpu_ms_per_node_tick       mean=0.0641 mean <= 10.0
+  [PASS] aodv    cpu_ms_per_node_tick       mean=0.0051 mean <= 10.0
+  [ n/a] mpcare  control_pkts_per_node_s: mpcare does not produce control_pkts_per_node_s
+  [ n/a] gpsr    control_pkts_per_node_s: gpsr does not produce control_pkts_per_node_s
+  [PASS] olsr    control_pkts_per_node_s    mean=4.7144 mean <= 50.0
+  [PASS] aodv    control_pkts_per_node_s    mean=1.374 mean <= 50.0
+  [PASS] mpcare  full_conv_s                mean=0.0034 mean <= 30.0
+  [ n/a] gpsr    full_conv_s: gpsr does not produce full_conv_s
+  [PASS] olsr    full_conv_s                mean=6.6483 mean <= 30.0
+  [PASS] aodv    full_conv_s                mean=0.5778 mean <= 30.0
+  [ALARM] mpcare  pdr                        mean=0.526 mean >= 0.7
+  [ALARM] gpsr    pdr                        mean=0.5493 mean >= 0.7
+  [ALARM] olsr    pdr                        mean=0.5287 mean >= 0.7
+  [ALARM] aodv    pdr                        mean=0.5367 mean >= 0.7
+  [PASS] mpcare  reroutes_per_uav_min       mean=5.8632 mean <= 10.0
+  [PASS] gpsr    reroutes_per_uav_min       mean=0.0 mean <= 10.0
+  [PASS] olsr    reroutes_per_uav_min       mean=0.0 mean <= 10.0
+  [PASS] aodv    reroutes_per_uav_min       mean=0.1731 mean <= 10.0
+
+  benchmarks: {"all_points_complete": true, "runs_at_N50_no_crash": true, "N50_disconnected_seeds_all_algos_pdr0": [3004, 3005, 3006, 3015, 3022, 3029]}
+30 trials/point x 6 points x 4 algorithms in 5647s -> data/processed/phase6v2_*
+alarms fired: 4 (mpcare/pdr, gpsr/pdr, olsr/pdr, aodv/pdr) -- reported as findings, not exit gates (plan section 8.5)
+RESULT: EXIT CRITERIA MET (section 8.5)

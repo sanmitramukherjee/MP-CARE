@@ -1,0 +1,156 @@
+{
+  "experiment": "envelope",
+  "n_trials": 3,
+  "seed0": 5000,
+  "duration_s": 60.0,
+  "algorithms": [
+    "gpsr",
+    "mpcare"
+  ],
+  "conditions": [
+    "L0.00_S5",
+    "L0.00_S10"
+  ],
+  "primary_metric": "chain_pdr",
+  "primary_stats": {
+    "L0.00_S5": {
+      "per_algo": {
+        "gpsr": {
+          "n": 3,
+          "mean": 0.997,
+          "ci95": 0.0129,
+          "std": 0.0052,
+          "min": 0.991,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 3,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 1.0,
+        "p": 0.318676,
+        "df": 1
+      },
+      "posthoc_vs_mpcare": {
+        "gpsr": {
+          "mw_p": 0.50499,
+          "paired_margin": 0.003,
+          "rank_biserial": 0.33333333333333326,
+          "cohens_d": 0.816,
+          "mw_p_holm": 0.50499
+        }
+      }
+    },
+    "L0.00_S10": {
+      "per_algo": {
+        "gpsr": {
+          "n": 3,
+          "mean": 0.997,
+          "ci95": 0.0129,
+          "std": 0.0052,
+          "min": 0.991,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 3,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 1.0,
+        "p": 0.318676,
+        "df": 1
+      },
+      "posthoc_vs_mpcare": {
+        "gpsr": {
+          "mw_p": 0.50499,
+          "paired_margin": 0.003,
+          "rank_biserial": 0.33333333333333326,
+          "cohens_d": 0.816,
+          "mw_p_holm": 0.50499
+        }
+      }
+    }
+  },
+  "pdr_stats": {
+    "L0.00_S5": {
+      "per_algo": {
+        "gpsr": {
+          "n": 3,
+          "mean": 0.997,
+          "ci95": 0.0129,
+          "std": 0.0052,
+          "min": 0.991,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 3,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 1.0,
+        "p": 0.318676,
+        "df": 1
+      },
+      "posthoc_vs_mpcare": {
+        "gpsr": {
+          "mw_p": 0.50499,
+          "paired_margin": 0.003,
+          "rank_biserial": 0.33333333333333326,
+          "cohens_d": 0.816,
+          "mw_p_holm": 0.50499
+        }
+      }
+    },
+    "L0.00_S10": {
+      "per_algo": {
+        "gpsr": {
+          "n": 3,
+          "mean": 0.997,
+          "ci95": 0.0129,
+          "std": 0.0052,
+          "min": 0.991,
+          "max": 1.0
+        },
+        "mpcare": {
+          "n": 3,
+          "mean": 1.0,
+          "ci95": 0.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "kruskal_wallis": {
+        "H": 1.0,
+        "p": 0.318676,
+        "df": 1
+      },
+      "posthoc_vs_mpcare": {
+        "gpsr": {
+          "mw_p": 0.50499,
+          "paired_margin": 0.003,
+          "rank_biserial": 0.33333333333333326,
+          "cohens_d": 0.816,
+          "mw_p_holm": 0.50499
+        }
+      }
+    }
+  },
+  "benchmarks": {}
+}

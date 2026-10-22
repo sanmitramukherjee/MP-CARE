@@ -1,0 +1,678 @@
+{
+  "experiment": "phase6_scalability",
+  "density": {
+    "variant": "v3",
+    "scale_points": {
+      "30": {
+        "box": [
+          914.0,
+          914.0
+        ],
+        "waypoints": 60
+      }
+    },
+    "rationale": "measured k ~ 7.7-8.8 (above log(n) percolation); validated by data/raw/probe_v3_geometry.py on all 30 seeds: connectivity 29-30/30, greedy corridor 0.90-1.00"
+  },
+  "scale_points": {
+    "30": {
+      "box": [
+        914.0,
+        914.0
+      ],
+      "waypoints": 60
+    }
+  },
+  "duration_s": 150.0,
+  "n_trials": 3,
+  "seed0": 3000,
+  "algorithms": [
+    "mpcare",
+    "gpsr",
+    "olsr",
+    "aodv"
+  ],
+  "convergence_defs": {
+    "mpcare": "src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state)",
+    "gpsr": "stateless: n/a",
+    "olsr": "src topology table covers its static-window connected component (set coverage in t<30 s)",
+    "aodv": "first route discovery to the far destination within the static window (None if discovery completes only after t=30 s)"
+  },
+  "cpu_note": "perf_counter around every real node's protocol work in every tick, divided by nodes x ticks; includes GIL-serialized process-global work (honest upper bound)",
+  "stats": {
+    "N30": {
+      "cpu_ms_per_node_tick": {
+        "per_algo": {
+          "mpcare": {
+            "n": 3,
+            "mean": 0.0543,
+            "ci95": 0.0445,
+            "std": 0.0179,
+            "min": 0.0337,
+            "max": 0.0658
+          },
+          "gpsr": {
+            "n": 3,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 3,
+            "mean": 0.1002,
+            "ci95": 0.0047,
+            "std": 0.0019,
+            "min": 0.0981,
+            "max": 0.1017
+          },
+          "aodv": {
+            "n": 3,
+            "mean": 0.0072,
+            "ci95": 0.0009,
+            "std": 0.0004,
+            "min": 0.0069,
+            "max": 0.0076
+          }
+        },
+        "kruskal_wallis": {
+          "H": 10.532,
+          "p": 0.014549,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.0636,
+            "paired_margin": 0.0543,
+            "rank_biserial": 1.0,
+            "cohens_d": 4.291,
+            "mw_p_holm": 0.19081
+          },
+          "olsr": {
+            "mw_p": 0.08086,
+            "paired_margin": -0.0459,
+            "rank_biserial": -1.0,
+            "cohens_d": -3.605,
+            "mw_p_holm": 0.19081
+          },
+          "aodv": {
+            "mw_p": 0.08086,
+            "paired_margin": 0.0472,
+            "rank_biserial": 1.0,
+            "cohens_d": 3.724,
+            "mw_p_holm": 0.19081
+          }
+        }
+      },
+      "control_pkts_per_node_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 3,
+            "mean": 4.6067,
+            "ci95": 0.7102,
+            "std": 0.2859,
+            "min": 4.356,
+            "max": 4.918
+          },
+          "aodv": {
+            "n": 3,
+            "mean": 1.036,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.036,
+            "max": 1.036
+          }
+        },
+        "kruskal_wallis": {
+          "H": 4.355,
+          "p": 0.034821,
+          "df": 1
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "aodv": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          }
+        }
+      },
+      "pdr": {
+        "per_algo": {
+          "mpcare": {
+            "n": 3,
+            "mean": 1.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "gpsr": {
+            "n": 3,
+            "mean": 0.9867,
+            "ci95": 0.0574,
+            "std": 0.0231,
+            "min": 0.96,
+            "max": 1.0
+          },
+          "olsr": {
+            "n": 3,
+            "mean": 1.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "aodv": {
+            "n": 3,
+            "mean": 1.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "kruskal_wallis": {
+          "H": 3.0,
+          "p": 0.392747,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.50499,
+            "paired_margin": 0.0133,
+            "rank_biserial": 0.33333333333333326,
+            "cohens_d": 0.816,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "full_conv_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 3,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "gpsr": {
+            "n": 0
+          },
+          "olsr": {
+            "n": 3,
+            "mean": 5.0667,
+            "ci95": 0.1434,
+            "std": 0.0577,
+            "min": 5.0,
+            "max": 5.1
+          },
+          "aodv": {
+            "n": 3,
+            "mean": 0.2,
+            "ci95": 0.2484,
+            "std": 0.1,
+            "min": 0.1,
+            "max": 0.3
+          }
+        },
+        "kruskal_wallis": {
+          "H": 7.513,
+          "p": 0.022919,
+          "df": 2
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": null,
+            "paired_margin": null,
+            "rank_biserial": null,
+            "cohens_d": null,
+            "mw_p_holm": null
+          },
+          "olsr": {
+            "mw_p": 0.05935,
+            "paired_margin": -5.0667,
+            "rank_biserial": -1.0,
+            "cohens_d": -124.107,
+            "mw_p_holm": 0.11869
+          },
+          "aodv": {
+            "mw_p": 0.0636,
+            "paired_margin": -0.2,
+            "rank_biserial": -1.0,
+            "cohens_d": -2.828,
+            "mw_p_holm": 0.11869
+          }
+        }
+      },
+      "reroutes_per_uav_min": {
+        "per_algo": {
+          "mpcare": {
+            "n": 3,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "gpsr": {
+            "n": 3,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "olsr": {
+            "n": 3,
+            "mean": 0.0,
+            "ci95": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "aodv": {
+            "n": 3,
+            "mean": 0.209,
+            "ci95": 0.1372,
+            "std": 0.0552,
+            "min": 0.147,
+            "max": 0.253
+          }
+        },
+        "kruskal_wallis": {
+          "H": 10.735,
+          "p": 0.013284,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 1.0,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.0636,
+            "paired_margin": -0.209,
+            "rank_biserial": -1.0,
+            "cohens_d": -5.35,
+            "mw_p_holm": 0.19081
+          }
+        }
+      },
+      "avg_degree": {
+        "per_algo": {
+          "mpcare": {
+            "n": 3,
+            "mean": 7.4867,
+            "ci95": 0.5985,
+            "std": 0.2409,
+            "min": 7.21,
+            "max": 7.65
+          },
+          "gpsr": {
+            "n": 3,
+            "mean": 7.4867,
+            "ci95": 0.5985,
+            "std": 0.2409,
+            "min": 7.21,
+            "max": 7.65
+          },
+          "olsr": {
+            "n": 3,
+            "mean": 7.4867,
+            "ci95": 0.5985,
+            "std": 0.2409,
+            "min": 7.21,
+            "max": 7.65
+          },
+          "aodv": {
+            "n": 3,
+            "mean": 7.4867,
+            "ci95": 0.5985,
+            "std": 0.2409,
+            "min": 7.21,
+            "max": 7.65
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.81948,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.81948,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.81948,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      },
+      "mission_time_s": {
+        "per_algo": {
+          "mpcare": {
+            "n": 3,
+            "mean": 50.1,
+            "ci95": 6.0701,
+            "std": 2.4434,
+            "min": 47.3,
+            "max": 51.8
+          },
+          "gpsr": {
+            "n": 3,
+            "mean": 50.1,
+            "ci95": 6.0701,
+            "std": 2.4434,
+            "min": 47.3,
+            "max": 51.8
+          },
+          "olsr": {
+            "n": 3,
+            "mean": 50.1,
+            "ci95": 6.0701,
+            "std": 2.4434,
+            "min": 47.3,
+            "max": 51.8
+          },
+          "aodv": {
+            "n": 3,
+            "mean": 50.1,
+            "ci95": 6.0701,
+            "std": 2.4434,
+            "min": 47.3,
+            "max": 51.8
+          }
+        },
+        "kruskal_wallis": {
+          "H": 0.0,
+          "p": 1.0,
+          "df": 3
+        },
+        "posthoc_vs_mpcare": {
+          "gpsr": {
+            "mw_p": 0.81948,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "olsr": {
+            "mw_p": 0.81948,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          },
+          "aodv": {
+            "mw_p": 0.81948,
+            "paired_margin": 0.0,
+            "rank_biserial": 0.0,
+            "cohens_d": 0.0,
+            "mw_p_holm": 1.0
+          }
+        }
+      }
+    }
+  },
+  "alarms": {
+    "evaluated_at_N": 30,
+    "checks": [
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 0.0543,
+        "ci95": 0.0445,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "gpsr",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 0.1002,
+        "ci95": 0.0047,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "cpu_ms_per_node_tick",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 0.0072,
+        "ci95": 0.0009,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "per-UAV CPU ms/tick <= 10 ms at N=50"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "mpcare",
+        "verdict": "n/a",
+        "reason": "mpcare does not produce control_pkts_per_node_s"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "gpsr",
+        "verdict": "n/a",
+        "reason": "gpsr does not produce control_pkts_per_node_s"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 4.6067,
+        "ci95": 0.7102,
+        "threshold": 50.0,
+        "comparison": "mean <= 50.0",
+        "criterion": "control overhead <= 50 pkts/node/s at N=50"
+      },
+      {
+        "metric": "control_pkts_per_node_s",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 1.036,
+        "ci95": 0.0,
+        "threshold": 50.0,
+        "comparison": "mean <= 50.0",
+        "criterion": "control overhead <= 50 pkts/node/s at N=50"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 30.0,
+        "comparison": "mean <= 30.0",
+        "criterion": "topology convergence <= 30 s at N=50"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "gpsr",
+        "verdict": "n/a",
+        "reason": "gpsr does not produce full_conv_s"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 5.0667,
+        "ci95": 0.1434,
+        "threshold": 30.0,
+        "comparison": "mean <= 30.0",
+        "criterion": "topology convergence <= 30 s at N=50"
+      },
+      {
+        "metric": "full_conv_s",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 0.2,
+        "ci95": 0.2484,
+        "threshold": 30.0,
+        "comparison": "mean <= 30.0",
+        "criterion": "topology convergence <= 30 s at N=50"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 1.0,
+        "ci95": 0.0,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "gpsr",
+        "verdict": "PASS",
+        "mean": 0.9867,
+        "ci95": 0.0574,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 1.0,
+        "ci95": 0.0,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "pdr",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 1.0,
+        "ci95": 0.0,
+        "threshold": 0.7,
+        "comparison": "mean >= 0.7",
+        "criterion": "PDR >= 70% at N=50 under nominal conditions"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "mpcare",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "gpsr",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "olsr",
+        "verdict": "PASS",
+        "mean": 0.0,
+        "ci95": 0.0,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      },
+      {
+        "metric": "reroutes_per_uav_min",
+        "algorithm": "aodv",
+        "verdict": "PASS",
+        "mean": 0.209,
+        "ci95": 0.1372,
+        "threshold": 10.0,
+        "comparison": "mean <= 10.0",
+        "criterion": "re-routes <= 10 per UAV per minute at N=50"
+      }
+    ],
+    "all_pass": true
+  },
+  "benchmarks": {
+    "all_points_complete": true,
+    "runs_at_N30_no_crash": true,
+    "N30_disconnected_seeds_all_algos_pdr0": [],
+    "pdr_physics_note": "PDR at N>=30 is measured over random geometric graphs at the percolation edge (avg degree ~4.4 < log n): seeds where ALL algorithms score 0.0 are disconnected src-dst pairs (physics floor), so the section 8.3 PDR alarm is evaluated on a quantity that is floored by the scenario itself."
+  }
+}

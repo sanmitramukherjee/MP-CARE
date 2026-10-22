@@ -1,0 +1,73 @@
+seed,trial,algorithm,N,condition,chain_pdr,pdr,packets_sent,packets_delivered,avg_latency_ms,mission_time_s,cpu_ms_per_node_tick,control_pkts_per_node_s,beacons_per_node_s,data_tx_per_node_s,full_conv_s,convergence_def,conv_scope,avg_degree,reroutes_total,reroutes_per_uav_min,trigger_events,run_wall_s,sanity_ok
+3000,0,mpcare,5,N5,1.0,1.0,50,50,0.7,20.4,0.0066,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",2.7,0,0.0,,0.09,True
+3001,1,mpcare,5,N5,0.98,0.98,50,49,1.5,23.1,0.0082,,10.0,0.132,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",3.32,0,0.0,,0.1,True
+3002,2,mpcare,5,N5,1.0,1.0,50,50,0.7,23.8,0.0077,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",2.91,0,0.0,,0.1,True
+3000,0,gpsr,5,N5,1.0,1.0,50,50,0.7,20.4,0.0,,,,,stateless: n/a,n/a,2.7,0,0.0,,0.03,True
+3001,1,gpsr,5,N5,0.96,0.96,50,48,1.5,23.1,0.0,,,,,stateless: n/a,n/a,3.32,0,0.0,,0.04,True
+3002,2,gpsr,5,N5,1.0,1.0,50,50,0.7,23.8,0.0,,,,,stateless: n/a,n/a,2.91,0,0.0,,0.03,True
+3000,0,olsr,5,N5,1.0,1.0,50,50,0.7,20.4,0.0034,1.616,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",2.7,0,0.0,,0.08,True
+3001,1,olsr,5,N5,0.76,0.76,50,38,1.5,23.1,0.0032,1.669,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",3.32,0,0.0,,0.07,True
+3002,2,olsr,5,N5,1.0,1.0,50,50,0.7,23.8,0.0028,1.68,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",2.91,0,0.0,,0.06,True
+3000,0,aodv,5,N5,1.0,1.0,50,50,0.7,20.4,0.0015,1.041,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",2.7,8,0.64,"{""route-change"": 8}",0.04,True
+3001,1,aodv,5,N5,0.98,0.98,50,49,1.5,23.1,0.0015,1.045,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",3.32,9,0.72,"{""route-change"": 9}",0.04,True
+3002,2,aodv,5,N5,1.0,1.0,50,50,0.7,23.8,0.0017,1.032,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",2.91,5,0.4,"{""route-change"": 5}",0.05,True
+3000,0,mpcare,10,N10,0.98,0.98,50,49,2.9,32.8,0.0082,,10.0,0.132,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",3.34,0,0.0,,0.24,True
+3001,1,mpcare,10,N10,1.0,1.0,50,50,1.5,36.8,0.0094,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.1,0,0.0,,0.26,True
+3002,2,mpcare,10,N10,1.0,1.0,50,50,1.5,35.2,0.0103,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",3.66,0,0.0,,0.29,True
+3000,0,gpsr,10,N10,0.74,0.74,50,37,2.2,32.8,0.0,,,,,stateless: n/a,n/a,3.34,0,0.0,,0.1,True
+3001,1,gpsr,10,N10,1.0,1.0,50,50,1.5,36.8,0.0,,,,,stateless: n/a,n/a,4.1,0,0.0,,0.11,True
+3002,2,gpsr,10,N10,1.0,1.0,50,50,1.5,35.2,0.0,,,,,stateless: n/a,n/a,3.66,0,0.0,,0.11,True
+3000,0,olsr,10,N10,1.0,1.0,50,50,2.2,32.8,0.0038,2.031,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",3.34,0,0.0,,0.17,True
+3001,1,olsr,10,N10,1.0,1.0,50,50,1.5,36.8,0.006,2.402,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.1,0,0.0,,0.24,True
+3002,2,olsr,10,N10,0.94,0.94,50,47,1.5,35.2,0.0054,2.249,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",3.66,0,0.0,,0.22,True
+3000,0,aodv,10,N10,0.84,0.84,50,42,2.2,32.8,0.0014,1.05,,,0.9,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",3.34,13,0.52,"{""route-change"": 13}",0.12,True
+3001,1,aodv,10,N10,1.0,1.0,50,50,1.5,36.8,0.0016,1.059,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.1,9,0.36,"{""route-change"": 9}",0.13,True
+3002,2,aodv,10,N10,0.98,0.98,50,49,1.5,35.2,0.0017,1.058,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",3.66,12,0.48,"{""route-change"": 12}",0.14,True
+3000,0,mpcare,20,N20,1.0,1.0,50,50,0.7,57.1,0.0115,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.13,0,0.0,,0.92,True
+3001,1,mpcare,20,N20,0.16,0.16,50,8,4.4,56.5,0.0097,,10.0,0.778,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.03,0,0.0,,0.79,True
+3002,2,mpcare,20,N20,1.0,1.0,50,50,0.7,52.2,0.0099,,10.0,0.017,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",3.95,0,0.0,,0.8,True
+3000,0,gpsr,20,N20,1.0,1.0,50,50,0.7,57.1,0.0,,,,,stateless: n/a,n/a,4.13,0,0.0,,0.48,True
+3001,1,gpsr,20,N20,0.64,0.64,50,32,2.2,56.5,0.0,,,,,stateless: n/a,n/a,4.03,0,0.0,,0.45,True
+3002,2,gpsr,20,N20,1.0,1.0,50,50,0.7,52.2,0.0,,,,,stateless: n/a,n/a,3.95,0,0.0,,0.49,True
+3000,0,olsr,20,N20,1.0,1.0,50,50,0.7,57.1,0.0069,2.368,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.13,0,0.0,,0.74,True
+3001,1,olsr,20,N20,0.56,0.56,50,28,2.2,56.5,0.0095,3.602,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.03,0,0.0,,0.84,True
+3002,2,olsr,20,N20,1.0,1.0,50,50,0.7,52.2,0.0083,3.11,,,5.3,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",3.95,0,0.0,,0.8,True
+3000,0,aodv,20,N20,1.0,1.0,50,50,0.7,57.1,0.0016,1.018,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.13,8,0.16,"{""route-change"": 8}",0.56,True
+3001,1,aodv,20,N20,0.66,0.66,50,33,2.2,56.5,0.0015,1.045,,,1.8,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.03,16,0.32,"{""route-change"": 16}",0.52,True
+3002,2,aodv,20,N20,1.0,1.0,50,50,0.7,52.2,0.0017,1.027,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",3.95,11,0.22,"{""route-change"": 11}",0.59,True
+3000,0,mpcare,30,N30,1.0,1.0,50,50,0.7,69.6,0.0105,,10.0,0.011,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.41,0,0.0,,1.81,True
+3001,1,mpcare,30,N30,0.96,0.96,50,48,2.1,68.8,0.0101,,10.0,0.031,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.25,10,0.133,"{""better-alternative"": 10}",1.76,True
+3002,2,mpcare,30,N30,0.0,0.0,50,0,,63.6,0.0109,,10.0,0.567,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.66,0,0.0,,1.82,True
+3000,0,gpsr,30,N30,1.0,1.0,50,50,0.7,69.6,0.0,,,,,stateless: n/a,n/a,4.41,0,0.0,,1.35,True
+3001,1,gpsr,30,N30,0.66,0.66,50,33,1.5,68.8,0.0,,,,,stateless: n/a,n/a,4.25,0,0.0,,1.4,True
+3002,2,gpsr,30,N30,0.04,0.04,50,2,164.8,63.6,0.0,,,,,stateless: n/a,n/a,4.66,0,0.0,,1.43,True
+3000,0,olsr,30,N30,1.0,1.0,50,50,0.7,69.6,0.0147,3.754,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.41,0,0.0,,2.3,True
+3001,1,olsr,30,N30,0.82,0.82,50,41,1.5,68.8,0.0142,4.819,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.25,0,0.0,,2.09,True
+3002,2,olsr,30,N30,0.76,0.76,50,38,2.9,63.6,0.0132,4.179,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.66,0,0.0,,2.04,True
+3000,0,aodv,30,N30,1.0,1.0,50,50,0.7,69.6,0.0017,1.09,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.41,17,0.227,"{""route-change"": 17}",1.47,True
+3001,1,aodv,30,N30,0.94,0.94,50,47,2.9,68.8,0.0016,1.03,,,0.4,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.25,15,0.2,"{""route-change"": 15}",1.43,True
+3002,2,aodv,30,N30,0.98,0.98,50,49,3.6,63.6,0.0018,1.058,,,0.5,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.66,30,0.4,"{""route-change"": 30}",1.53,True
+3000,0,mpcare,40,N40,0.0,0.0,50,0,,88.2,0.0105,,10.0,0.425,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.01,0,0.0,,3.56,True
+3001,1,mpcare,40,N40,1.0,1.0,50,50,0.7,88.4,0.0091,,10.0,0.008,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",3.53,0,0.0,,3.34,True
+3002,2,mpcare,40,N40,1.0,1.0,50,50,2.9,81.1,0.0107,,10.0,0.033,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.13,0,0.0,,3.56,True
+3000,0,gpsr,40,N40,0.0,0.0,50,0,,88.2,0.0,,,,,stateless: n/a,n/a,4.01,0,0.0,,3.5,True
+3001,1,gpsr,40,N40,1.0,1.0,50,50,0.7,88.4,0.0,,,,,stateless: n/a,n/a,3.53,0,0.0,,3.52,True
+3002,2,gpsr,40,N40,1.0,1.0,50,50,2.2,81.1,0.0,,,,,stateless: n/a,n/a,4.13,0,0.0,,3.94,True
+3000,0,olsr,40,N40,0.0,0.0,50,0,,88.2,0.0194,3.845,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.01,0,0.0,,5.52,True
+3001,1,olsr,40,N40,1.0,1.0,50,50,0.7,88.4,0.021,4.33,,,10.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",3.53,0,0.0,,5.61,True
+3002,2,olsr,40,N40,0.98,0.98,50,49,2.2,81.1,0.0302,4.786,,,5.4,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.13,0,0.0,,6.42,True
+3000,0,aodv,40,N40,0.0,0.0,50,0,,88.2,0.0045,1.774,,,,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.01,15,0.15,"{""route-change"": 15}",5.83,True
+3001,1,aodv,40,N40,1.0,1.0,50,50,0.7,88.4,0.0041,1.024,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",3.53,11,0.11,"{""route-change"": 11}",7.35,True
+3002,2,aodv,40,N40,1.0,1.0,50,50,2.2,81.1,0.0039,1.226,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.13,15,0.15,"{""route-change"": 15}",6.14,True
+3000,0,mpcare,50,N50,0.0,0.0,50,0,,100.7,0.0225,,10.0,0.34,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.65,0,0.0,,10.29,True
+3001,1,mpcare,50,N50,0.0,0.0,50,0,,100.9,0.0204,,10.0,0.34,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",3.39,0,0.0,,10.78,True
+3002,2,mpcare,50,N50,0.0,0.0,50,0,,97.8,0.0197,,10.0,0.34,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",4.19,0,0.0,,9.56,True
+3000,0,gpsr,50,N50,0.04,0.04,50,2,430.9,100.7,0.0,,,,,stateless: n/a,n/a,4.65,0,0.0,,11.38,True
+3001,1,gpsr,50,N50,0.66,0.66,50,33,115.8,100.9,0.0,,,,,stateless: n/a,n/a,3.39,0,0.0,,7.34,True
+3002,2,gpsr,50,N50,0.0,0.0,50,0,,97.8,0.0,,,,,stateless: n/a,n/a,4.19,0,0.0,,6.43,True
+3000,0,olsr,50,N50,0.0,0.0,50,0,,100.7,0.0186,3.965,,,15.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.65,0,0.0,,7.9,True
+3001,1,olsr,50,N50,0.0,0.0,50,0,,100.9,0.0125,3.595,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",3.39,0,0.0,,7.15,True
+3002,2,olsr,50,N50,0.0,0.0,50,0,,97.8,0.0343,5.067,,,5.2,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",4.19,0,0.0,,10.79,True
+3000,0,aodv,50,N50,0.0,0.0,50,0,,100.7,0.0043,2.278,,,,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.65,13,0.104,"{""route-change"": 13}",7.52,True
+3001,1,aodv,50,N50,0.0,0.0,50,0,,100.9,0.0023,1.673,,,,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",3.39,24,0.192,"{""route-change"": 24}",6.22,True
+3002,2,aodv,50,N50,0.1,0.1,50,5,10.4,97.8,0.0024,1.613,,,,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",4.19,18,0.144,"{""route-change"": 18}",6.07,True

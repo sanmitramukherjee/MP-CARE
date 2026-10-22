@@ -1,0 +1,48 @@
+
+=== exp2_loss: 7 conditions x 4 algorithms x 30 trials ===
+[exp2_loss] loss_0.00      astar_dist  30 trials done (1s elapsed)
+[exp2_loss] loss_0.00      gpsr        30 trials done (2s elapsed)
+[exp2_loss] loss_0.00      olsr        30 trials done (5s elapsed)
+[exp2_loss] loss_0.00      mpcare      30 trials done (11s elapsed)
+[exp2_loss] loss_0.05      astar_dist  30 trials done (12s elapsed)
+[exp2_loss] loss_0.05      gpsr        30 trials done (14s elapsed)
+[exp2_loss] loss_0.05      olsr        30 trials done (17s elapsed)
+[exp2_loss] loss_0.05      mpcare      30 trials done (23s elapsed)
+[exp2_loss] loss_0.10      astar_dist  30 trials done (25s elapsed)
+[exp2_loss] loss_0.10      gpsr        30 trials done (27s elapsed)
+[exp2_loss] loss_0.10      olsr        30 trials done (30s elapsed)
+[exp2_loss] loss_0.10      mpcare      30 trials done (35s elapsed)
+[exp2_loss] loss_0.15      astar_dist  30 trials done (37s elapsed)
+[exp2_loss] loss_0.15      gpsr        30 trials done (39s elapsed)
+[exp2_loss] loss_0.15      olsr        30 trials done (42s elapsed)
+[exp2_loss] loss_0.15      mpcare      30 trials done (48s elapsed)
+[exp2_loss] loss_0.20      astar_dist  30 trials done (50s elapsed)
+[exp2_loss] loss_0.20      gpsr        30 trials done (51s elapsed)
+[exp2_loss] loss_0.20      olsr        30 trials done (55s elapsed)
+[exp2_loss] loss_0.20      mpcare      30 trials done (60s elapsed)
+[exp2_loss] loss_0.25      astar_dist  30 trials done (62s elapsed)
+[exp2_loss] loss_0.25      gpsr        30 trials done (64s elapsed)
+[exp2_loss] loss_0.25      olsr        30 trials done (67s elapsed)
+[exp2_loss] loss_0.25      mpcare      30 trials done (72s elapsed)
+[exp2_loss] loss_0.30      astar_dist  30 trials done (74s elapsed)
+[exp2_loss] loss_0.30      gpsr        30 trials done (76s elapsed)
+[exp2_loss] loss_0.30      olsr        30 trials done (79s elapsed)
+[exp2_loss] loss_0.30      mpcare      30 trials done (84s elapsed)
+[exp2_loss] wrote exp2_loss.csv/_summary.json + graphs (loss)
+
+  condition       astar_dist    gpsr          olsr          mpcare        
+  loss_0.00       1.000±0.000   1.000±0.000   1.000±0.000   1.000±0.000   
+  loss_0.05       0.827±0.021   0.827±0.021   0.805±0.026   0.804±0.021   
+  loss_0.10       0.672±0.023   0.672±0.023   0.629±0.031   0.659±0.024   
+  loss_0.15       0.525±0.026   0.525±0.026   0.485±0.049   0.544±0.022   
+  loss_0.20       0.414±0.024   0.414±0.024   0.359±0.041   0.407±0.028   
+  loss_0.25       0.328±0.020   0.328±0.020   0.245±0.044   0.312±0.021   
+  loss_0.30       0.249±0.020   0.249±0.020   0.157±0.029   0.241±0.023   
+  post-hoc vs mpcare @loss_0.30 (Holm): astar_dist: p=1, margin=-0.007, gpsr: p=1, margin=-0.007, olsr: p=0.00021, margin=+0.085
+
+=== section 6.3 benchmark checks ===
+  [n/a] exp2_loss.exp3_reroute_faster_at_50ms
+  [MISS] exp2_loss.exp5_let_err_below_30pct_vle15
+  [MISS] exp2_loss.exp6_recovery_below_10s_single_kill
+
+DONE — data in C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed

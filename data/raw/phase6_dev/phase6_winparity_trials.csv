@@ -1,0 +1,13 @@
+seed,trial,algorithm,N,condition,chain_pdr,pdr,packets_sent,packets_delivered,avg_latency_ms,mission_time_s,cpu_ms_per_node_tick,control_pkts_per_node_s,beacons_per_node_s,data_tx_per_node_s,full_conv_s,convergence_def,conv_scope,avg_degree,reroutes_total,reroutes_per_uav_min,trigger_events,void_recovery_events,void_walk_drops,run_wall_s,sanity_ok
+3000,0,mpcare,30,N30,1.0,1.0,50,50,0.7,51.8,0.0337,,10.0,0.011,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.21,0,0.0,,0,0,4.88,True
+3001,1,mpcare,30,N30,1.0,1.0,50,50,1.5,51.2,0.0635,,10.0,0.022,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.65,0,0.0,,0,0,8.12,True
+3002,2,mpcare,30,N30,1.0,1.0,50,50,4.4,47.3,0.0658,,10.0,0.067,0.0,src 1-hop table covers its static-window neighborhood (set coverage in t<30 s; 1-hop state = full state),"static window [0, 30) s",7.6,0,0.0,,0,0,8.26,True
+3000,0,gpsr,30,N30,1.0,1.0,50,50,0.7,51.8,0.0,,,,,stateless: n/a,n/a,7.21,0,0.0,,,,4.94,True
+3001,1,gpsr,30,N30,0.96,0.96,50,48,1.5,51.2,0.0,,,,,stateless: n/a,n/a,7.65,0,0.0,,,,5.19,True
+3002,2,gpsr,30,N30,1.0,1.0,50,50,2.2,47.3,0.0,,,,,stateless: n/a,n/a,7.6,0,0.0,,,,5.44,True
+3000,0,olsr,30,N30,1.0,1.0,50,50,0.7,51.8,0.0981,4.546,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.21,0,0.0,,,,10.33,True
+3001,1,olsr,30,N30,1.0,1.0,50,50,1.5,51.2,0.1009,4.918,,,5.0,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.65,0,0.0,,,,10.27,True
+3002,2,olsr,30,N30,1.0,1.0,50,50,2.2,47.3,0.1017,4.356,,,5.1,src topology table covers its static-window connected component (set coverage in t<30 s),"static window [0, 30) s",7.6,0,0.0,,,,10.87,True
+3000,0,aodv,30,N30,1.0,1.0,50,50,0.7,51.8,0.0069,1.036,,,0.1,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.21,17,0.227,"{""route-change"": 17}",,,5.27,True
+3001,1,aodv,30,N30,1.0,1.0,50,50,1.5,51.2,0.007,1.036,,,0.2,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.65,11,0.147,"{""route-change"": 11}",,,5.23,True
+3002,2,aodv,30,N30,1.0,1.0,50,50,2.2,47.3,0.0076,1.036,,,0.3,first route discovery to the far destination within the static window (None if discovery completes only after t=30 s),"static window [0, 30) s",7.6,19,0.253,"{""route-change"": 19}",,,5.57,True

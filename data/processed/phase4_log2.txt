@@ -1,0 +1,87 @@
+
+=== exp2b_loss_diamond: 7 conditions x 4 algorithms x 30 trials ===
+[exp2b_loss_diamond] loss_0.00      astar_dist  30 trials done (1s elapsed)
+[exp2b_loss_diamond] loss_0.00      gpsr        30 trials done (2s elapsed)
+[exp2b_loss_diamond] loss_0.00      olsr        30 trials done (4s elapsed)
+[exp2b_loss_diamond] loss_0.00      mpcare      30 trials done (7s elapsed)
+[exp2b_loss_diamond] loss_0.05      astar_dist  30 trials done (9s elapsed)
+[exp2b_loss_diamond] loss_0.05      gpsr        30 trials done (11s elapsed)
+[exp2b_loss_diamond] loss_0.05      olsr        30 trials done (15s elapsed)
+[exp2b_loss_diamond] loss_0.05      mpcare      30 trials done (22s elapsed)
+[exp2b_loss_diamond] loss_0.10      astar_dist  30 trials done (24s elapsed)
+[exp2b_loss_diamond] loss_0.10      gpsr        30 trials done (25s elapsed)
+[exp2b_loss_diamond] loss_0.10      olsr        30 trials done (29s elapsed)
+[exp2b_loss_diamond] loss_0.10      mpcare      30 trials done (36s elapsed)
+[exp2b_loss_diamond] loss_0.15      astar_dist  30 trials done (37s elapsed)
+[exp2b_loss_diamond] loss_0.15      gpsr        30 trials done (39s elapsed)
+[exp2b_loss_diamond] loss_0.15      olsr        30 trials done (43s elapsed)
+[exp2b_loss_diamond] loss_0.15      mpcare      30 trials done (50s elapsed)
+[exp2b_loss_diamond] loss_0.20      astar_dist  30 trials done (51s elapsed)
+[exp2b_loss_diamond] loss_0.20      gpsr        30 trials done (53s elapsed)
+[exp2b_loss_diamond] loss_0.20      olsr        30 trials done (57s elapsed)
+[exp2b_loss_diamond] loss_0.20      mpcare      30 trials done (63s elapsed)
+[exp2b_loss_diamond] loss_0.25      astar_dist  30 trials done (65s elapsed)
+[exp2b_loss_diamond] loss_0.25      gpsr        30 trials done (67s elapsed)
+[exp2b_loss_diamond] loss_0.25      olsr        30 trials done (70s elapsed)
+[exp2b_loss_diamond] loss_0.25      mpcare      30 trials done (77s elapsed)
+[exp2b_loss_diamond] loss_0.30      astar_dist  30 trials done (78s elapsed)
+[exp2b_loss_diamond] loss_0.30      gpsr        30 trials done (80s elapsed)
+[exp2b_loss_diamond] loss_0.30      olsr        30 trials done (84s elapsed)
+[exp2b_loss_diamond] loss_0.30      mpcare      30 trials done (90s elapsed)
+[exp2b_loss_diamond] wrote exp2b_loss_diamond.csv/_summary.json + graphs (loss)
+
+  condition       astar_dist    gpsr          olsr          mpcare        
+  loss_0.00       0.705±0.023   0.705±0.023   0.707±0.031   1.000±0.000   
+  loss_0.05       0.645±0.026   0.645±0.026   0.638±0.030   0.851±0.019   
+  loss_0.10       0.583±0.023   0.583±0.023   0.565±0.027   0.729±0.025   
+  loss_0.15       0.526±0.019   0.526±0.019   0.504±0.032   0.627±0.027   
+  loss_0.20       0.475±0.025   0.475±0.025   0.431±0.033   0.505±0.030   
+  loss_0.25       0.423±0.026   0.423±0.026   0.403±0.022   0.409±0.025   
+  loss_0.30       0.369±0.026   0.369±0.026   0.331±0.026   0.345±0.023   
+  post-hoc vs mpcare @loss_0.30 (Holm): astar_dist: p=0.67426, margin=-0.023, gpsr: p=0.67426, margin=-0.023, olsr: p=0.67426, margin=+0.014
+
+=== exp3_latency: 7 conditions x 4 algorithms x 30 trials ===
+[exp3_latency] lat_0          astar_dist  30 trials done (2s elapsed)
+[exp3_latency] lat_0          gpsr        30 trials done (3s elapsed)
+[exp3_latency] lat_0          olsr        30 trials done (7s elapsed)
+[exp3_latency] lat_0          mpcare      30 trials done (13s elapsed)
+[exp3_latency] lat_10         astar_dist  30 trials done (15s elapsed)
+[exp3_latency] lat_10         gpsr        30 trials done (16s elapsed)
+[exp3_latency] lat_10         olsr        30 trials done (20s elapsed)
+[exp3_latency] lat_10         mpcare      30 trials done (26s elapsed)
+[exp3_latency] lat_25         astar_dist  30 trials done (27s elapsed)
+[exp3_latency] lat_25         gpsr        30 trials done (29s elapsed)
+[exp3_latency] lat_25         olsr        30 trials done (33s elapsed)
+[exp3_latency] lat_25         mpcare      30 trials done (39s elapsed)
+[exp3_latency] lat_50         astar_dist  30 trials done (40s elapsed)
+[exp3_latency] lat_50         gpsr        30 trials done (42s elapsed)
+[exp3_latency] lat_50         olsr        30 trials done (46s elapsed)
+[exp3_latency] lat_50         mpcare      30 trials done (52s elapsed)
+[exp3_latency] lat_100        astar_dist  30 trials done (53s elapsed)
+[exp3_latency] lat_100        gpsr        30 trials done (55s elapsed)
+[exp3_latency] lat_100        olsr        30 trials done (59s elapsed)
+[exp3_latency] lat_100        mpcare      30 trials done (64s elapsed)
+[exp3_latency] lat_150        astar_dist  30 trials done (66s elapsed)
+[exp3_latency] lat_150        gpsr        30 trials done (68s elapsed)
+[exp3_latency] lat_150        olsr        30 trials done (71s elapsed)
+[exp3_latency] lat_150        mpcare      30 trials done (77s elapsed)
+[exp3_latency] lat_200        astar_dist  30 trials done (79s elapsed)
+[exp3_latency] lat_200        gpsr        30 trials done (81s elapsed)
+[exp3_latency] lat_200        olsr        30 trials done (84s elapsed)
+[exp3_latency] lat_200        mpcare      30 trials done (90s elapsed)
+[exp3_latency] wrote exp3_latency.csv/_summary.json
+
+  condition       astar_dist    gpsr          olsr          mpcare        
+  lat_0           2.900±0.000   2.900±0.000   2.900±0.000   2.900±0.000   
+  lat_10          42.900±0.000   42.900±0.000   42.900±0.000   42.900±0.000   
+  lat_25          102.900±0.000   102.900±0.000   102.900±0.000   102.900±0.000   
+  lat_50          202.900±0.000   202.900±0.000   202.900±0.000   202.900±0.000   
+  lat_100         402.900±0.000   402.900±0.000   402.900±0.000   402.900±0.000   
+  lat_150         602.900±0.000   602.900±0.000   602.900±0.000   602.900±0.000   
+  lat_200         802.900±0.000   802.900±0.000   802.900±0.000   802.900±0.000   
+  post-hoc vs mpcare @lat_200 (Holm): astar_dist: p=1, margin=+0.000, gpsr: p=1, margin=+0.000, olsr: p=1, margin=+0.000
+
+=== section 6.3 benchmark checks ===
+  [n/a] exp3_latency.exp3_reroute_faster_at_50ms
+
+DONE — data in C:\Users\Lenovo\Desktop\Personal\RoutingComm\data\processed

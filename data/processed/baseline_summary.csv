@@ -1,0 +1,7 @@
+algorithm,chain PDR,total PDR,avg e2e latency (ms),min chain hops,control pkts/node/s,first route (s),sanity_ok
+astar_dist,1.0 ± 0.0,1.0 ± 0.0,0.3 ± 0.0,4 ± 0.0,-,-,True
+gpsr,1.0 ± 0.0,1.0 ± 0.0,0.3 ± 0.0,4 ± 0.0,-,-,True
+aodv,1.0 ± 0.0,1.0 ± 0.0,0.3 ± 0.0,4 ± 0.0,1.0456 ± 0.0045,0.4 ± 0.0,True
+olsr,1.0 ± 0.0,1.0 ± 0.0,0.3 ± 0.0,4 ± 0.0,1.7034 ± 0.0036,5.1 ± 0.0,True
+astar_etx,1.0 ± 0.0,1.0 ± 0.0,0.3 ± 0.0,4 ± 0.0,-,-,True
+mpcare,1.0 ± 0.0,1.0 ± 0.0,0.3 ± 0.0,4 ± 0.0,-,-,True

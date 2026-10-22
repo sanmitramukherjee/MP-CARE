@@ -1,0 +1,582 @@
+[INFO] [launch]: All log files can be found below /home/san/.ros/log/2026-10-01-16-07-35-349234-San03-lappy-12511
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gz-1]: process started with pid [12527]
+[INFO] [ros2-2]: process started with pid [12528]
+[INFO] [ros2-3]: process started with pid [12529]
+[INFO] [ros2-4]: process started with pid [12530]
+[INFO] [ros2-5]: process started with pid [12531]
+[INFO] [ros2-6]: process started with pid [12532]
+[INFO] [ros2-7]: process started with pid [12533]
+[INFO] [ros2-8]: process started with pid [12534]
+[INFO] [ros2-9]: process started with pid [12535]
+[INFO] [ros2-10]: process started with pid [12536]
+[INFO] [ros2-11]: process started with pid [12537]
+[INFO] [ros2-12]: process started with pid [12538]
+[INFO] [ros2-13]: process started with pid [12539]
+[INFO] [ros2-14]: process started with pid [12540]
+[INFO] [ros2-15]: process started with pid [12542]
+[INFO] [ros2-16]: process started with pid [12543]
+[INFO] [ros2-17]: process started with pid [12544]
+[INFO] [ros2-18]: process started with pid [12545]
+[INFO] [ros2-19]: process started with pid [12546]
+[INFO] [ros2-20]: process started with pid [12547]
+[INFO] [ros2-21]: process started with pid [12548]
+[INFO] [ros2-22]: process started with pid [12549]
+[INFO] [ros2-23]: process started with pid [12550]
+[INFO] [ros2-24]: process started with pid [12551]
+[INFO] [ros2-25]: process started with pid [12552]
+[INFO] [ros2-26]: process started with pid [12553]
+[INFO] [ros2-27]: process started with pid [12554]
+[INFO] [ros2-28]: process started with pid [12555]
+[INFO] [ros2-29]: process started with pid [12558]
+[INFO] [ros2-30]: process started with pid [12559]
+[INFO] [ros2-31]: process started with pid [12560]
+[INFO] [ros2-32]: process started with pid [12561]
+[INFO] [ros2-33]: process started with pid [12562]
+[INFO] [ros2-34]: process started with pid [12563]
+[INFO] [ros2-35]: process started with pid [12564]
+[INFO] [ros2-36]: process started with pid [12565]
+[INFO] [ros2-37]: process started with pid [12566]
+[INFO] [ros2-38]: process started with pid [12567]
+[INFO] [ros2-39]: process started with pid [12568]
+[INFO] [ros2-40]: process started with pid [12569]
+[INFO] [ros2-41]: process started with pid [12572]
+[INFO] [ros2-42]: process started with pid [12573]
+[INFO] [ros2-43]: process started with pid [12574]
+[INFO] [ros2-44]: process started with pid [12578]
+[INFO] [ros2-45]: process started with pid [12580]
+[INFO] [ros2-46]: process started with pid [12583]
+[INFO] [ros2-47]: process started with pid [12584]
+[INFO] [ros2-48]: process started with pid [12589]
+[INFO] [ros2-49]: process started with pid [12592]
+[INFO] [ros2-50]: process started with pid [12593]
+[INFO] [ros2-51]: process started with pid [12594]
+[INFO] [network_model_node-52]: process started with pid [12597]
+[INFO] [planner_node-53]: process started with pid [12603]
+[INFO] [planner_node-54]: process started with pid [12605]
+[INFO] [planner_node-55]: process started with pid [12608]
+[INFO] [planner_node-56]: process started with pid [12610]
+[INFO] [planner_node-57]: process started with pid [12614]
+[INFO] [planner_node-58]: process started with pid [12619]
+[INFO] [planner_node-59]: process started with pid [12620]
+[INFO] [planner_node-60]: process started with pid [12622]
+[INFO] [planner_node-61]: process started with pid [12624]
+[INFO] [planner_node-62]: process started with pid [12625]
+[INFO] [planner_node-63]: process started with pid [12626]
+[INFO] [planner_node-64]: process started with pid [12627]
+[INFO] [planner_node-65]: process started with pid [12630]
+[INFO] [planner_node-66]: process started with pid [12631]
+[INFO] [planner_node-67]: process started with pid [12632]
+[INFO] [planner_node-68]: process started with pid [12633]
+[INFO] [planner_node-69]: process started with pid [12634]
+[INFO] [planner_node-70]: process started with pid [12635]
+[INFO] [planner_node-71]: process started with pid [12637]
+[INFO] [planner_node-72]: process started with pid [12639]
+[INFO] [planner_node-73]: process started with pid [12640]
+[INFO] [planner_node-74]: process started with pid [12643]
+[INFO] [planner_node-75]: process started with pid [12646]
+[INFO] [planner_node-76]: process started with pid [12649]
+[INFO] [planner_node-77]: process started with pid [12651]
+[INFO] [planner_node-78]: process started with pid [12653]
+[INFO] [planner_node-79]: process started with pid [12654]
+[INFO] [planner_node-80]: process started with pid [12657]
+[INFO] [planner_node-81]: process started with pid [12663]
+[INFO] [planner_node-82]: process started with pid [12665]
+[INFO] [planner_node-83]: process started with pid [12666]
+[INFO] [planner_node-84]: process started with pid [12667]
+[INFO] [planner_node-85]: process started with pid [12668]
+[INFO] [planner_node-86]: process started with pid [12669]
+[INFO] [planner_node-87]: process started with pid [12670]
+[INFO] [planner_node-88]: process started with pid [12671]
+[INFO] [planner_node-89]: process started with pid [12672]
+[INFO] [planner_node-90]: process started with pid [12681]
+[INFO] [planner_node-91]: process started with pid [12682]
+[INFO] [planner_node-92]: process started with pid [12687]
+[INFO] [planner_node-93]: process started with pid [12690]
+[INFO] [planner_node-94]: process started with pid [12691]
+[INFO] [planner_node-95]: process started with pid [12696]
+[INFO] [planner_node-96]: process started with pid [12697]
+[INFO] [planner_node-97]: process started with pid [12698]
+[INFO] [planner_node-98]: process started with pid [12701]
+[INFO] [planner_node-99]: process started with pid [12702]
+[INFO] [planner_node-100]: process started with pid [12707]
+[INFO] [planner_node-101]: process started with pid [12708]
+[INFO] [planner_node-102]: process started with pid [12709]
+[INFO] [logger_node-103]: process started with pid [12710]
+[INFO] [parameter_bridge-104]: process started with pid [13111]
+[INFO] [parameter_bridge-105]: process started with pid [13124]
+[INFO] [parameter_bridge-106]: process started with pid [13135]
+[INFO] [parameter_bridge-107]: process started with pid [13136]
+[INFO] [parameter_bridge-108]: process started with pid [13148]
+[INFO] [parameter_bridge-109]: process started with pid [13149]
+[INFO] [parameter_bridge-110]: process started with pid [13161]
+[INFO] [parameter_bridge-111]: process started with pid [13162]
+[INFO] [parameter_bridge-112]: process started with pid [13163]
+[INFO] [parameter_bridge-113]: process started with pid [13164]
+[INFO] [parameter_bridge-114]: process started with pid [13165]
+[INFO] [parameter_bridge-115]: process started with pid [13166]
+[INFO] [parameter_bridge-116]: process started with pid [13168]
+[INFO] [parameter_bridge-117]: process started with pid [13181]
+[INFO] [parameter_bridge-118]: process started with pid [13196]
+[INFO] [parameter_bridge-119]: process started with pid [13203]
+[INFO] [parameter_bridge-120]: process started with pid [13204]
+[INFO] [parameter_bridge-121]: process started with pid [13205]
+[INFO] [parameter_bridge-122]: process started with pid [13221]
+[INFO] [parameter_bridge-123]: process started with pid [13240]
+[INFO] [parameter_bridge-124]: process started with pid [13241]
+[INFO] [parameter_bridge-125]: process started with pid [13242]
+[INFO] [parameter_bridge-126]: process started with pid [13249]
+[INFO] [parameter_bridge-127]: process started with pid [13255]
+[INFO] [parameter_bridge-128]: process started with pid [13257]
+[INFO] [parameter_bridge-129]: process started with pid [13279]
+[INFO] [parameter_bridge-130]: process started with pid [13280]
+[INFO] [parameter_bridge-131]: process started with pid [13281]
+[INFO] [parameter_bridge-132]: process started with pid [13282]
+[INFO] [parameter_bridge-133]: process started with pid [13283]
+[INFO] [parameter_bridge-134]: process started with pid [13284]
+[INFO] [parameter_bridge-135]: process started with pid [13285]
+[INFO] [parameter_bridge-136]: process started with pid [13286]
+[INFO] [parameter_bridge-137]: process started with pid [13287]
+[INFO] [parameter_bridge-138]: process started with pid [13289]
+[INFO] [parameter_bridge-139]: process started with pid [13300]
+[INFO] [parameter_bridge-140]: process started with pid [13301]
+[INFO] [parameter_bridge-141]: process started with pid [13304]
+[INFO] [parameter_bridge-142]: process started with pid [13305]
+[INFO] [parameter_bridge-143]: process started with pid [13307]
+[INFO] [parameter_bridge-144]: process started with pid [13310]
+[INFO] [parameter_bridge-145]: process started with pid [13316]
+[INFO] [parameter_bridge-146]: process started with pid [13319]
+[INFO] [parameter_bridge-147]: process started with pid [13327]
+[INFO] [parameter_bridge-148]: process started with pid [13331]
+[INFO] [parameter_bridge-149]: process started with pid [13350]
+[INFO] [parameter_bridge-150]: process started with pid [13354]
+[INFO] [parameter_bridge-151]: process started with pid [13371]
+[INFO] [parameter_bridge-152]: process started with pid [13392]
+[INFO] [parameter_bridge-153]: process started with pid [13405]
+[parameter_bridge-116] [WARN] [1790870870.320834592] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-110] [WARN] [1790870870.461890327] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-109] [WARN] [1790870870.692360987] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-108] [WARN] [1790870870.713267889] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-105] [WARN] [1790870870.763721549] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-136] [WARN] [1790870870.764240059] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-115] [WARN] [1790870870.769611754] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-123] [WARN] [1790870870.873833423] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-114] [WARN] [1790870870.892437701] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-113] [WARN] [1790870870.907243926] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-111] [WARN] [1790870870.962606072] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-112] [WARN] [1790870870.986425777] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-106] [WARN] [1790870871.032523234] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-125] [WARN] [1790870871.048573708] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-107] [WARN] [1790870871.139946156] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-142] [WARN] [1790870871.181210302] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-134] [WARN] [1790870871.182051603] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-117] [WARN] [1790870871.197588916] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-104] [WARN] [1790870871.295220968] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-127] [WARN] [1790870871.316222730] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-118] [WARN] [1790870871.333221025] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-122] [WARN] [1790870871.401389101] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-147] [WARN] [1790870871.463110040] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-121] [WARN] [1790870871.465375551] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-120] [WARN] [1790870871.489637501] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-128] [WARN] [1790870871.496393954] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-124] [WARN] [1790870871.532924623] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-126] [WARN] [1790870871.546042350] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-135] [WARN] [1790870871.554338050] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-129] [WARN] [1790870871.679726443] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-145] [WARN] [1790870871.765787199] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-146] [WARN] [1790870871.770668103] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-131] [WARN] [1790870871.836621587] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-144] [WARN] [1790870871.888778741] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-119] [WARN] [1790870871.999606132] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-133] [WARN] [1790870872.098646415] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-130] [WARN] [1790870872.358868731] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-132] [WARN] [1790870872.365117073] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-143] [WARN] [1790870872.473950690] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-138] [WARN] [1790870872.772276876] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-140] [WARN] [1790870872.897850025] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-141] [WARN] [1790870873.019769907] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-151] [WARN] [1790870873.078387114] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-139] [WARN] [1790870873.088011478] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-12] [WARN] [1790870873.197616436] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-104] [INFO] [1790870873.199163943] [odom_bridge_0]: Creating GZ->ROS Bridge: [/model/uav_probe_0/odometry (gz.msgs.Odometry) -> /model/uav_probe_0/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-105] [INFO] [1790870873.209139242] [odom_bridge_1]: Creating GZ->ROS Bridge: [/model/uav_probe_1/odometry (gz.msgs.Odometry) -> /model/uav_probe_1/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-137] [WARN] [1790870873.377344651] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-116] [INFO] [1790870873.690190101] [odom_bridge_12]: Creating GZ->ROS Bridge: [/model/uav_probe_12/odometry (gz.msgs.Odometry) -> /model/uav_probe_12/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-148] [WARN] [1790870873.731409613] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-152] [WARN] [1790870873.785859089] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-111] [INFO] [1790870873.824300802] [odom_bridge_7]: Creating GZ->ROS Bridge: [/model/uav_probe_7/odometry (gz.msgs.Odometry) -> /model/uav_probe_7/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-149] [WARN] [1790870873.850577549] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-128] [INFO] [1790870873.901224826] [odom_bridge_24]: Creating GZ->ROS Bridge: [/model/uav_probe_24/odometry (gz.msgs.Odometry) -> /model/uav_probe_24/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-108] [INFO] [1790870873.929547325] [odom_bridge_4]: Creating GZ->ROS Bridge: [/model/uav_probe_4/odometry (gz.msgs.Odometry) -> /model/uav_probe_4/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-124] [INFO] [1790870873.960517660] [odom_bridge_20]: Creating GZ->ROS Bridge: [/model/uav_probe_20/odometry (gz.msgs.Odometry) -> /model/uav_probe_20/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-113] [INFO] [1790870874.075723591] [odom_bridge_9]: Creating GZ->ROS Bridge: [/model/uav_probe_9/odometry (gz.msgs.Odometry) -> /model/uav_probe_9/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-110] [INFO] [1790870874.124150560] [odom_bridge_6]: Creating GZ->ROS Bridge: [/model/uav_probe_6/odometry (gz.msgs.Odometry) -> /model/uav_probe_6/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-106] [INFO] [1790870874.155656408] [odom_bridge_2]: Creating GZ->ROS Bridge: [/model/uav_probe_2/odometry (gz.msgs.Odometry) -> /model/uav_probe_2/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-142] [INFO] [1790870874.162454734] [odom_bridge_38]: Creating GZ->ROS Bridge: [/model/uav_probe_38/odometry (gz.msgs.Odometry) -> /model/uav_probe_38/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-123] [INFO] [1790870874.265569108] [odom_bridge_19]: Creating GZ->ROS Bridge: [/model/uav_probe_19/odometry (gz.msgs.Odometry) -> /model/uav_probe_19/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-127] [INFO] [1790870874.243956106] [odom_bridge_23]: Creating GZ->ROS Bridge: [/model/uav_probe_23/odometry (gz.msgs.Odometry) -> /model/uav_probe_23/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-109] [INFO] [1790870874.529864951] [odom_bridge_5]: Creating GZ->ROS Bridge: [/model/uav_probe_5/odometry (gz.msgs.Odometry) -> /model/uav_probe_5/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-120] [INFO] [1790870874.550137968] [odom_bridge_16]: Creating GZ->ROS Bridge: [/model/uav_probe_16/odometry (gz.msgs.Odometry) -> /model/uav_probe_16/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-119] [INFO] [1790870874.693694208] [odom_bridge_15]: Creating GZ->ROS Bridge: [/model/uav_probe_15/odometry (gz.msgs.Odometry) -> /model/uav_probe_15/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-112] [INFO] [1790870874.703008662] [odom_bridge_8]: Creating GZ->ROS Bridge: [/model/uav_probe_8/odometry (gz.msgs.Odometry) -> /model/uav_probe_8/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-114] [INFO] [1790870874.778210001] [odom_bridge_10]: Creating GZ->ROS Bridge: [/model/uav_probe_10/odometry (gz.msgs.Odometry) -> /model/uav_probe_10/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-115] [INFO] [1790870874.837970017] [odom_bridge_11]: Creating GZ->ROS Bridge: [/model/uav_probe_11/odometry (gz.msgs.Odometry) -> /model/uav_probe_11/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-146] [INFO] [1790870874.847336127] [odom_bridge_42]: Creating GZ->ROS Bridge: [/model/uav_probe_42/odometry (gz.msgs.Odometry) -> /model/uav_probe_42/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-136] [INFO] [1790870874.900680089] [odom_bridge_32]: Creating GZ->ROS Bridge: [/model/uav_probe_32/odometry (gz.msgs.Odometry) -> /model/uav_probe_32/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-4] [WARN] [1790870875.100815626] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-150] [WARN] [1790870875.125924496] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-134] [INFO] [1790870875.177169765] [odom_bridge_30]: Creating GZ->ROS Bridge: [/model/uav_probe_30/odometry (gz.msgs.Odometry) -> /model/uav_probe_30/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-135] [INFO] [1790870875.186289715] [odom_bridge_31]: Creating GZ->ROS Bridge: [/model/uav_probe_31/odometry (gz.msgs.Odometry) -> /model/uav_probe_31/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-153] [WARN] [1790870875.216069741] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-131] [INFO] [1790870875.222854463] [odom_bridge_27]: Creating GZ->ROS Bridge: [/model/uav_probe_27/odometry (gz.msgs.Odometry) -> /model/uav_probe_27/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-125] [INFO] [1790870875.310384404] [odom_bridge_21]: Creating GZ->ROS Bridge: [/model/uav_probe_21/odometry (gz.msgs.Odometry) -> /model/uav_probe_21/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-126] [INFO] [1790870875.471650635] [odom_bridge_22]: Creating GZ->ROS Bridge: [/model/uav_probe_22/odometry (gz.msgs.Odometry) -> /model/uav_probe_22/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-144] [INFO] [1790870875.474085034] [odom_bridge_40]: Creating GZ->ROS Bridge: [/model/uav_probe_40/odometry (gz.msgs.Odometry) -> /model/uav_probe_40/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-145] [INFO] [1790870875.596673978] [odom_bridge_41]: Creating GZ->ROS Bridge: [/model/uav_probe_41/odometry (gz.msgs.Odometry) -> /model/uav_probe_41/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-147] [INFO] [1790870875.640534284] [odom_bridge_43]: Creating GZ->ROS Bridge: [/model/uav_probe_43/odometry (gz.msgs.Odometry) -> /model/uav_probe_43/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-143] [INFO] [1790870875.686119336] [odom_bridge_39]: Creating GZ->ROS Bridge: [/model/uav_probe_39/odometry (gz.msgs.Odometry) -> /model/uav_probe_39/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-118] [INFO] [1790870875.688651264] [odom_bridge_14]: Creating GZ->ROS Bridge: [/model/uav_probe_14/odometry (gz.msgs.Odometry) -> /model/uav_probe_14/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-122] [INFO] [1790870875.716538830] [odom_bridge_18]: Creating GZ->ROS Bridge: [/model/uav_probe_18/odometry (gz.msgs.Odometry) -> /model/uav_probe_18/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-133] [INFO] [1790870875.723613441] [odom_bridge_29]: Creating GZ->ROS Bridge: [/model/uav_probe_29/odometry (gz.msgs.Odometry) -> /model/uav_probe_29/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-107] [INFO] [1790870875.835172065] [odom_bridge_3]: Creating GZ->ROS Bridge: [/model/uav_probe_3/odometry (gz.msgs.Odometry) -> /model/uav_probe_3/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-132] [INFO] [1790870875.903316202] [odom_bridge_28]: Creating GZ->ROS Bridge: [/model/uav_probe_28/odometry (gz.msgs.Odometry) -> /model/uav_probe_28/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-10] [WARN] [1790870876.196220339] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-117] [INFO] [1790870876.230630917] [odom_bridge_13]: Creating GZ->ROS Bridge: [/model/uav_probe_13/odometry (gz.msgs.Odometry) -> /model/uav_probe_13/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-17] [WARN] [1790870876.301197524] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-9] [WARN] [1790870876.329938137] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-130] [INFO] [1790870876.686688275] [odom_bridge_26]: Creating GZ->ROS Bridge: [/model/uav_probe_26/odometry (gz.msgs.Odometry) -> /model/uav_probe_26/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-141] [INFO] [1790870876.704138960] [odom_bridge_37]: Creating GZ->ROS Bridge: [/model/uav_probe_37/odometry (gz.msgs.Odometry) -> /model/uav_probe_37/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-2] [WARN] [1790870876.869334188] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-129] [INFO] [1790870877.065758642] [odom_bridge_25]: Creating GZ->ROS Bridge: [/model/uav_probe_25/odometry (gz.msgs.Odometry) -> /model/uav_probe_25/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-138] [INFO] [1790870877.100366489] [odom_bridge_34]: Creating GZ->ROS Bridge: [/model/uav_probe_34/odometry (gz.msgs.Odometry) -> /model/uav_probe_34/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-149] [INFO] [1790870877.342300667] [odom_bridge_45]: Creating GZ->ROS Bridge: [/model/uav_probe_45/odometry (gz.msgs.Odometry) -> /model/uav_probe_45/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-22] [WARN] [1790870877.525291158] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-121] [INFO] [1790870877.612237962] [odom_bridge_17]: Creating GZ->ROS Bridge: [/model/uav_probe_17/odometry (gz.msgs.Odometry) -> /model/uav_probe_17/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-152] [INFO] [1790870877.641356838] [odom_bridge_48]: Creating GZ->ROS Bridge: [/model/uav_probe_48/odometry (gz.msgs.Odometry) -> /model/uav_probe_48/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-151] [INFO] [1790870877.846752223] [odom_bridge_47]: Creating GZ->ROS Bridge: [/model/uav_probe_47/odometry (gz.msgs.Odometry) -> /model/uav_probe_47/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-139] [INFO] [1790870877.942192852] [odom_bridge_35]: Creating GZ->ROS Bridge: [/model/uav_probe_35/odometry (gz.msgs.Odometry) -> /model/uav_probe_35/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-15] [WARN] [1790870877.947331116] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-137] [INFO] [1790870877.984301934] [odom_bridge_33]: Creating GZ->ROS Bridge: [/model/uav_probe_33/odometry (gz.msgs.Odometry) -> /model/uav_probe_33/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-140] [INFO] [1790870878.030850369] [odom_bridge_36]: Creating GZ->ROS Bridge: [/model/uav_probe_36/odometry (gz.msgs.Odometry) -> /model/uav_probe_36/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-12] [INFO] [1790870878.040728073] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-148] [INFO] [1790870878.204543268] [odom_bridge_44]: Creating GZ->ROS Bridge: [/model/uav_probe_44/odometry (gz.msgs.Odometry) -> /model/uav_probe_44/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-6] [WARN] [1790870878.608496780] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-7] [WARN] [1790870879.234500122] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-9] [INFO] [1790870879.655123697] [ros_gz_sim]: Requesting list of world names.
+[ros2-44] [WARN] [1790870879.780541734] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-13] [WARN] [1790870879.933040007] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-17] [INFO] [1790870880.144697209] [ros_gz_sim]: Requesting list of world names.
+[ros2-24] [WARN] [1790870880.369329303] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[parameter_bridge-150] [INFO] [1790870880.490066750] [odom_bridge_46]: Creating GZ->ROS Bridge: [/model/uav_probe_46/odometry (gz.msgs.Odometry) -> /model/uav_probe_46/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-19] [WARN] [1790870880.565085320] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-21] [WARN] [1790870880.648819635] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-4] [INFO] [1790870880.656474456] [ros_gz_sim]: Requesting list of world names.
+[ros2-29] [WARN] [1790870880.812883200] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-17] [INFO] [1790870880.816127258] [ros_gz_sim]: Entity creation successful.
+[parameter_bridge-153] [INFO] [1790870881.108224075] [odom_bridge_49]: Creating GZ->ROS Bridge: [/model/uav_probe_49/odometry (gz.msgs.Odometry) -> /model/uav_probe_49/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros2-13] [INFO] [1790870881.110446957] [ros_gz_sim]: Requesting list of world names.
+[ros2-10] [INFO] [1790870881.637722697] [ros_gz_sim]: Requesting list of world names.
+[ros2-15] [INFO] [1790870881.638932587] [ros_gz_sim]: Requesting list of world names.
+[ros2-4] [INFO] [1790870881.665647653] [ros_gz_sim]: Entity creation successful.
+[ros2-2] [INFO] [1790870881.863205510] [ros_gz_sim]: Requesting list of world names.
+[ros2-11] [WARN] [1790870881.982914637] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-22] [INFO] [1790870882.093119860] [ros_gz_sim]: Requesting list of world names.
+[ros2-18] [WARN] [1790870882.289943345] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-3] [WARN] [1790870882.199782559] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-10] [INFO] [1790870882.401991674] [ros_gz_sim]: Entity creation successful.
+[ros2-15] [INFO] [1790870882.459078021] [ros_gz_sim]: Entity creation successful.
+[ros2-23] [WARN] [1790870882.577138079] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-7] [INFO] [1790870882.603803165] [ros_gz_sim]: Requesting list of world names.
+[ros2-22] [INFO] [1790870882.872531740] [ros_gz_sim]: Entity creation successful.
+[ros2-6] [INFO] [1790870882.902317598] [ros_gz_sim]: Requesting list of world names.
+[ros2-20] [WARN] [1790870883.030283378] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-29] [INFO] [1790870883.099382990] [ros_gz_sim]: Requesting list of world names.
+[ros2-12] [INFO] [1790870883.270583864] [ros_gz_sim]: Requesting list of world names.
+[ros2-44] [INFO] [1790870883.378835199] [ros_gz_sim]: Requesting list of world names.
+[ros2-8] [WARN] [1790870883.438191852] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-25] [WARN] [1790870883.500171335] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-6] [INFO] [1790870883.512659525] [ros_gz_sim]: Entity creation successful.
+[ros2-41] [WARN] [1790870883.533639414] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-12] [INFO] [1790870883.561140114] [ros_gz_sim]: Entity creation successful.
+[gz-1] (2026-10-01 16:08:03.648) [error] [SimulationRunner.cc:274] Another world of the same name is running
+[ros2-35] [WARN] [1790870883.649167967] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-29] [INFO] [1790870883.896202324] [ros_gz_sim]: Entity creation successful.
+[ros2-19] [INFO] [1790870883.948861096] [ros_gz_sim]: Requesting list of world names.
+[ros2-24] [INFO] [1790870884.104775074] [ros_gz_sim]: Requesting list of world names.
+[ros2-44] [INFO] [1790870884.160513897] [ros_gz_sim]: Entity creation successful.
+[ros2-5] [WARN] [1790870884.194462374] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-9] [INFO] [1790870884.716338810] [ros_gz_sim]: Requesting list of world names.
+[ros2-19] [INFO] [1790870884.764417739] [ros_gz_sim]: Entity creation successful.
+[ros2-40] [WARN] [1790870885.245492080] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-21] [INFO] [1790870885.250125332] [ros_gz_sim]: Requesting list of world names.
+[ros2-14] [WARN] [1790870885.263363853] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-11] [INFO] [1790870885.430500381] [ros_gz_sim]: Requesting list of world names.
+[ros2-30] [WARN] [1790870885.581253470] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-46] [WARN] [1790870885.716331597] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-37] [WARN] [1790870885.912424663] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-36] [WARN] [1790870886.158510117] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-39] [WARN] [1790870886.167840714] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-13] [INFO] [1790870886.380672854] [ros_gz_sim]: Requesting list of world names.
+[ros2-31] [WARN] [1790870886.432192147] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-18] [INFO] [1790870886.795286907] [ros_gz_sim]: Requesting list of world names.
+[ros2-23] [INFO] [1790870886.828811403] [ros_gz_sim]: Requesting list of world names.
+[ros2-41] [INFO] [1790870886.985794194] [ros_gz_sim]: Requesting list of world names.
+[ros2-2] [INFO] [1790870887.069129210] [ros_gz_sim]: Requesting list of world names.
+[ros2-28] [WARN] [1790870887.180527141] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-3] [INFO] [1790870887.261958682] [ros_gz_sim]: Requesting list of world names.
+[gz-1] NodeShared::RecvSrvRequest() error sending response: Host unreachable
+[ros2-8] [INFO] [1790870887.485596664] [ros_gz_sim]: Requesting list of world names.
+[ros2-7] [INFO] [1790870887.869139017] [ros_gz_sim]: Requesting list of world names.
+[ros2-41] [INFO] [1790870888.238924388] [ros_gz_sim]: Entity creation successful.
+[ros2-33] [WARN] [1790870888.632334931] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-26] [WARN] [1790870888.713842425] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-5] [INFO] [1790870888.955416612] [ros_gz_sim]: Requesting list of world names.
+[ros2-20] [INFO] [1790870889.070270771] [ros_gz_sim]: Requesting list of world names.
+[ros2-25] [INFO] [1790870889.104174581] [ros_gz_sim]: Requesting list of world names.
+[ros2-24] [INFO] [1790870889.142923409] [ros_gz_sim]: Requesting list of world names.
+[ros2-35] [INFO] [1790870889.244918930] [ros_gz_sim]: Requesting list of world names.
+[ros2-24] [INFO] [1790870889.298665681] [ros_gz_sim]: Entity creation successful.
+[ros2-16] [WARN] [1790870889.478204673] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-9] [INFO] [1790870889.721756833] [ros_gz_sim]: Requesting list of world names.
+[ros2-5] [INFO] [1790870889.824517754] [ros_gz_sim]: Entity creation successful.
+[ros2-43] [WARN] [1790870890.074262661] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-9] [INFO] [1790870890.093869525] [ros_gz_sim]: Entity creation successful.
+[ros2-30] [INFO] [1790870890.129839361] [ros_gz_sim]: Requesting list of world names.
+[ros2-32] [WARN] [1790870890.135632697] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-46] [INFO] [1790870890.144320347] [ros_gz_sim]: Requesting list of world names.
+[ros2-21] [INFO] [1790870890.439491949] [ros_gz_sim]: Requesting list of world names.
+[ros2-11] [INFO] [1790870890.483345643] [ros_gz_sim]: Requesting list of world names.
+[ros2-40] [INFO] [1790870890.501816710] [ros_gz_sim]: Requesting list of world names.
+[ros2-39] [INFO] [1790870890.577991681] [ros_gz_sim]: Requesting list of world names.
+[ros2-37] [INFO] [1790870890.605571675] [ros_gz_sim]: Requesting list of world names.
+[ros2-11] [INFO] [1790870890.902702038] [ros_gz_sim]: Entity creation successful.
+[ros2-45] [WARN] [1790870891.096959194] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-37] [INFO] [1790870891.272017746] [ros_gz_sim]: Entity creation successful.
+[ros2-31] [INFO] [1790870891.337160855] [ros_gz_sim]: Requesting list of world names.
+[ros2-13] [INFO] [1790870891.381284745] [ros_gz_sim]: Requesting list of world names.
+[ros2-28] [INFO] [1790870891.383461189] [ros_gz_sim]: Requesting list of world names.
+[ros2-39] [INFO] [1790870891.385206445] [ros_gz_sim]: Entity creation successful.
+[ros2-48] [WARN] [1790870891.474211441] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-13] [INFO] [1790870891.551464636] [ros_gz_sim]: Entity creation successful.
+[ros2-14] [INFO] [1790870891.658155748] [ros_gz_sim]: Requesting list of world names.
+[ros2-38] [WARN] [1790870891.768697037] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-18] [INFO] [1790870891.848187777] [ros_gz_sim]: Requesting list of world names.
+[ros2-23] [INFO] [1790870891.875408536] [ros_gz_sim]: Requesting list of world names.
+[ros2-27] [WARN] [1790870892.040500122] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-2] [INFO] [1790870892.100183312] [ros_gz_sim]: Requesting list of world names.
+[ros2-42] [WARN] [1790870892.238672777] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-47] [WARN] [1790870892.293187684] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-3] [INFO] [1790870892.323956380] [ros_gz_sim]: Requesting list of world names.
+[ros2-51] [WARN] [1790870892.443587298] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-28] [INFO] [1790870892.457477612] [ros_gz_sim]: Entity creation successful.
+[ros2-49] [WARN] [1790870892.489305962] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-2] [INFO] [1790870892.512723157] [ros_gz_sim]: Entity creation successful.
+[ros2-14] [INFO] [1790870892.513639296] [ros_gz_sim]: Entity creation successful.
+[ros2-8] [INFO] [1790870892.589888854] [ros_gz_sim]: Requesting list of world names.
+[ros2-3] [INFO] [1790870892.714547136] [ros_gz_sim]: Entity creation successful.
+[ros2-7] [INFO] [1790870892.881188356] [ros_gz_sim]: Requesting list of world names.
+[ros2-16] [INFO] [1790870892.890666270] [ros_gz_sim]: Requesting list of world names.
+[ros2-7] [INFO] [1790870893.058925620] [ros_gz_sim]: Entity creation successful.
+[ros2-33] [INFO] [1790870893.432507056] [ros_gz_sim]: Requesting list of world names.
+[ros2-16] [INFO] [1790870893.674772744] [ros_gz_sim]: Entity creation successful.
+[ros2-36] [INFO] [1790870893.938874412] [ros_gz_sim]: Requesting list of world names.
+[ros2-34] [WARN] [1790870894.118470458] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-25] [INFO] [1790870894.229347332] [ros_gz_sim]: Requesting list of world names.
+[ros2-20] [INFO] [1790870894.291165508] [ros_gz_sim]: Requesting list of world names.
+[ros2-35] [INFO] [1790870894.420677089] [ros_gz_sim]: Requesting list of world names.
+[ros2-25] [INFO] [1790870894.553972857] [ros_gz_sim]: Entity creation successful.
+[ros2-50] [WARN] [1790870894.602842052] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-20] [INFO] [1790870894.664924184] [ros_gz_sim]: Entity creation successful.
+[ros2-36] [INFO] [1790870894.700480232] [ros_gz_sim]: Entity creation successful.
+[ros2-35] [INFO] [1790870894.751988824] [ros_gz_sim]: Entity creation successful.
+[ros2-43] [INFO] [1790870894.899151111] [ros_gz_sim]: Requesting list of world names.
+[ros2-26] [INFO] [1790870895.055076474] [ros_gz_sim]: Requesting list of world names.
+[ros2-32] [INFO] [1790870895.413226546] [ros_gz_sim]: Requesting list of world names.
+[ros2-21] [INFO] [1790870895.463999701] [ros_gz_sim]: Requesting list of world names.
+[ros2-46] [INFO] [1790870895.544047026] [ros_gz_sim]: Requesting list of world names.
+[ros2-45] [INFO] [1790870895.544868175] [ros_gz_sim]: Requesting list of world names.
+[ros2-40] [INFO] [1790870895.620232945] [ros_gz_sim]: Requesting list of world names.
+[ros2-21] [INFO] [1790870895.641940564] [ros_gz_sim]: Entity creation successful.
+[ros2-46] [INFO] [1790870895.721972000] [ros_gz_sim]: Entity creation successful.
+[ros2-30] [WARN] [1790870895.768001086] [ros_gz_sim]: Waiting for service [/world/scale_field/create] to become available ...
+[ros2-42] [INFO] [1790870895.801412779] [ros_gz_sim]: Requesting list of world names.
+[ros2-30] [INFO] [1790870895.968391020] [ros_gz_sim]: Entity creation successful.
+[ros2-48] [INFO] [1790870896.010531545] [ros_gz_sim]: Requesting list of world names.
+[ros2-27] [INFO] [1790870896.195102002] [ros_gz_sim]: Requesting list of world names.
+[ros2-31] [INFO] [1790870896.488131311] [ros_gz_sim]: Requesting list of world names.
+[ros2-47] [INFO] [1790870896.542892307] [ros_gz_sim]: Requesting list of world names.
+[ros2-31] [INFO] [1790870896.696042561] [ros_gz_sim]: Entity creation successful.
+[ros2-48] [INFO] [1790870896.768445574] [ros_gz_sim]: Entity creation successful.
+[ros2-51] [INFO] [1790870896.846611358] [ros_gz_sim]: Requesting list of world names.
+[ros2-18] [INFO] [1790870896.848903192] [ros_gz_sim]: Requesting list of world names.
+[ros2-23] [INFO] [1790870896.879942242] [ros_gz_sim]: Requesting list of world names.
+[ros2-18] [INFO] [1790870896.921330977] [ros_gz_sim]: Entity creation successful.
+[ros2-27] [INFO] [1790870896.939451651] [ros_gz_sim]: Entity creation successful.
+[ros2-23] [INFO] [1790870896.943488382] [ros_gz_sim]: Entity creation successful.
+[ros2-47] [INFO] [1790870897.200062617] [ros_gz_sim]: Entity creation successful.
+[ros2-38] [INFO] [1790870897.383218663] [ros_gz_sim]: Requesting list of world names.
+[ros2-51] [INFO] [1790870897.454255861] [ros_gz_sim]: Entity creation successful.
+[ros2-8] [INFO] [1790870897.590297903] [ros_gz_sim]: Requesting list of world names.
+[ros2-8] [INFO] [1790870897.645744028] [ros_gz_sim]: Entity creation successful.
+[ros2-49] [INFO] [1790870897.989395076] [ros_gz_sim]: Requesting list of world names.
+[ros2-38] [INFO] [1790870898.121258321] [ros_gz_sim]: Entity creation successful.
+[ros2-50] [INFO] [1790870898.430889968] [ros_gz_sim]: Requesting list of world names.
+[ros2-33] [INFO] [1790870898.662701009] [ros_gz_sim]: Requesting list of world names.
+[ros2-49] [INFO] [1790870898.711690324] [ros_gz_sim]: Entity creation successful.
+[ros2-34] [INFO] [1790870898.748274229] [ros_gz_sim]: Requesting list of world names.
+[ros2-33] [INFO] [1790870899.019410169] [ros_gz_sim]: Entity creation successful.
+[INFO] [ros2-29]: process has finished cleanly [pid 12558]
+[ros2-34] [INFO] [1790870899.478169555] [ros_gz_sim]: Entity creation successful.
+[ros2-43] [INFO] [1790870900.015547258] [ros_gz_sim]: Requesting list of world names.
+[ros2-26] [INFO] [1790870900.196155316] [ros_gz_sim]: Requesting list of world names.
+[ros2-43] [INFO] [1790870900.464027479] [ros_gz_sim]: Entity creation successful.
+[ros2-45] [INFO] [1790870900.604465750] [ros_gz_sim]: Requesting list of world names.
+[ros2-26] [INFO] [1790870900.636166155] [ros_gz_sim]: Entity creation successful.
+[ros2-40] [INFO] [1790870900.646508777] [ros_gz_sim]: Requesting list of world names.
+[ros2-45] [INFO] [1790870900.808482905] [ros_gz_sim]: Entity creation successful.
+[ros2-40] [INFO] [1790870900.846950961] [ros_gz_sim]: Entity creation successful.
+[ros2-42] [INFO] [1790870900.893941139] [ros_gz_sim]: Requesting list of world names.
+[ros2-32] [WARN] [1790870900.997866414] [ros_gz_sim]: Waiting for service [/world/scale_field/create] to become available ...
+[ros2-32] [INFO] [1790870901.001351456] [ros_gz_sim]: Entity creation successful.
+[ros2-42] [INFO] [1790870901.003805822] [ros_gz_sim]: Entity creation successful.
+[planner_node-53] [WARN] [1790870902.093871507] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-28]: process has finished cleanly [pid 12555]
+[INFO] [ros2-14]: process has finished cleanly [pid 12540]
+[INFO] [ros2-39]: process has finished cleanly [pid 12568]
+[INFO] [ros2-11]: process has finished cleanly [pid 12537]
+[ros2-50] [INFO] [1790870903.822285567] [ros_gz_sim]: Requesting list of world names.
+[network_model_node-52] [WARN] [1790870903.948346425] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-37]: process has finished cleanly [pid 12566]
+[planner_node-66] [WARN] [1790870905.061639876] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-18]: process has finished cleanly [pid 12545]
+[INFO] [ros2-41]: process has finished cleanly [pid 12572]
+[logger_node-103] [WARN] [1790870905.744002493] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-51]: process has finished cleanly [pid 12594]
+[INFO] [ros2-20]: process has finished cleanly [pid 12547]
+[INFO] [ros2-30]: process has finished cleanly [pid 12559]
+[INFO] [ros2-35]: process has finished cleanly [pid 12564]
+[planner_node-67] [WARN] [1790870907.212105477] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-55] [WARN] [1790870907.225651544] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-48]: process has finished cleanly [pid 12589]
+[INFO] [ros2-38]: process has finished cleanly [pid 12567]
+[planner_node-75] [WARN] [1790870907.477658647] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-64] [WARN] [1790870907.573740156] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-63] [WARN] [1790870907.635337494] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-27]: process has finished cleanly [pid 12554]
+[planner_node-54] [WARN] [1790870907.837389506] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-5]: process has finished cleanly [pid 12531]
+[planner_node-68] [WARN] [1790870907.854363977] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-77] [WARN] [1790870907.879549762] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-36]: process has finished cleanly [pid 12565]
+[planner_node-76] [WARN] [1790870908.056191111] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-59] [WARN] [1790870908.353003271] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-25]: process has finished cleanly [pid 12552]
+[planner_node-58] [WARN] [1790870908.802576582] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[ros2-50] [INFO] [1790870908.840889010] [ros_gz_sim]: Requesting list of world names.
+[planner_node-57] [WARN] [1790870908.842350244] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-47]: process has finished cleanly [pid 12584]
+[INFO] [ros2-23]: process has finished cleanly [pid 12550]
+[INFO] [ros2-16]: process has finished cleanly [pid 12543]
+[planner_node-72] [WARN] [1790870909.028144959] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-8]: process has finished cleanly [pid 12534]
+[INFO] [ros2-42]: process has finished cleanly [pid 12573]
+[INFO] [ros2-33]: process has finished cleanly [pid 12562]
+[ros2-50] [INFO] [1790870909.292135419] [ros_gz_sim]: Entity creation successful.
+[planner_node-82] [WARN] [1790870909.299306556] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-102] [WARN] [1790870909.391489971] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-3]: process has finished cleanly [pid 12529]
+[planner_node-81] [WARN] [1790870909.601863273] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-98] [WARN] [1790870910.239460464] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-56] [WARN] [1790870910.289080662] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-79] [WARN] [1790870910.613992451] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-61] [WARN] [1790870910.905472844] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-45]: process has finished cleanly [pid 12580]
+[INFO] [ros2-32]: process has finished cleanly [pid 12561]
+[INFO] [ros2-46]: process has finished cleanly [pid 12583]
+[INFO] [ros2-31]: process has finished cleanly [pid 12560]
+[logger_node-103] [INFO] [1790870911.200692717] [swarm_logger]: logger writing data/raw/gazebo_n50.csv
+[planner_node-70] [WARN] [1790870911.283321779] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-49]: process has finished cleanly [pid 12592]
+[planner_node-73] [WARN] [1790870911.569763089] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-60] [WARN] [1790870911.580127711] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-43]: process has finished cleanly [pid 12574]
+[planner_node-65] [WARN] [1790870911.634847918] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-95] [WARN] [1790870911.861404238] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-87] [WARN] [1790870912.039017563] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-71] [WARN] [1790870912.089457641] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-86] [WARN] [1790870912.285510540] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-74] [WARN] [1790870912.764660760] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-26]: process has finished cleanly [pid 12553]
+[planner_node-97] [WARN] [1790870913.090565245] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-62] [WARN] [1790870913.106036863] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-34]: process has finished cleanly [pid 12563]
+[planner_node-90] [WARN] [1790870913.106111633] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-84] [WARN] [1790870913.468604385] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-92] [WARN] [1790870913.880466425] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[INFO] [ros2-40]: process has finished cleanly [pid 12569]
+[planner_node-88] [WARN] [1790870913.913391839] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-100] [WARN] [1790870913.913636869] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-69] [WARN] [1790870914.092513624] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-94] [WARN] [1790870914.356983696] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-89] [WARN] [1790870914.547457208] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-83] [WARN] [1790870915.100254306] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-78] [WARN] [1790870915.122002310] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-101] [WARN] [1790870915.363765532] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-96] [WARN] [1790870915.767493285] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-85] [WARN] [1790870916.013978191] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-93] [WARN] [1790870916.092192869] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-80] [WARN] [1790870916.632626263] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-91] [WARN] [1790870917.246877477] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-53] [INFO] [1790870918.409305855] [mpcare_agent_0]: mpcare agent 0 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-99] [WARN] [1790870919.353523319] [rmw_fastrtps_shared_cpp]: FASTRTPS_DEFAULT_PROFILES_FILE value is used for participant configuration, but it is deprecated and will no longer be supported. Use FASTDDS_DEFAULT_PROFILES_FILE instead.
+[planner_node-76] [INFO] [1790870920.106068733] [mpcare_agent_23]: mpcare agent 23 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-54] [INFO] [1790870921.326437120] [mpcare_agent_1]: mpcare agent 1 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-75] [INFO] [1790870922.290272412] [mpcare_agent_22]: mpcare agent 22 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-63] [INFO] [1790870922.531042515] [mpcare_agent_10]: mpcare agent 10 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-66] [INFO] [1790870923.034660873] [mpcare_agent_13]: mpcare agent 13 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-77] [INFO] [1790870923.340746629] [mpcare_agent_24]: mpcare agent 24 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-64] [INFO] [1790870924.599017756] [mpcare_agent_11]: mpcare agent 11 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-57] [INFO] [1790870924.701939965] [mpcare_agent_4]: mpcare agent 4 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-68] [INFO] [1790870926.241626345] [mpcare_agent_15]: mpcare agent 15 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-67] [INFO] [1790870926.291743618] [mpcare_agent_14]: mpcare agent 14 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-102] [INFO] [1790870926.704544524] [mpcare_agent_49]: mpcare agent 49 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-56] [INFO] [1790870926.803589430] [mpcare_agent_3]: mpcare agent 3 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-79] [INFO] [1790870926.870726023] [mpcare_agent_26]: mpcare agent 26 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-58] [INFO] [1790870927.047141033] [mpcare_agent_5]: mpcare agent 5 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-59] [INFO] [1790870927.524168527] [mpcare_agent_6]: mpcare agent 6 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-65] [INFO] [1790870927.549509165] [mpcare_agent_12]: mpcare agent 12 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-98] [INFO] [1790870927.837699263] [mpcare_agent_45]: mpcare agent 45 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-55] [INFO] [1790870928.175663566] [mpcare_agent_2]: mpcare agent 2 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-74] [INFO] [1790870928.225418855] [mpcare_agent_21]: mpcare agent 21 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-70] [INFO] [1790870928.335779425] [mpcare_agent_17]: mpcare agent 17 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-71] [INFO] [1790870928.699690222] [mpcare_agent_18]: mpcare agent 18 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-69] [INFO] [1790870929.144339454] [mpcare_agent_16]: mpcare agent 16 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-60] [INFO] [1790870929.214635100] [mpcare_agent_7]: mpcare agent 7 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-81] [INFO] [1790870929.227307270] [mpcare_agent_28]: mpcare agent 28 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-73] [INFO] [1790870929.537815683] [mpcare_agent_20]: mpcare agent 20 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-95] [INFO] [1790870929.611831335] [mpcare_agent_42]: mpcare agent 42 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-72] [INFO] [1790870929.913471307] [mpcare_agent_19]: mpcare agent 19 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-96] [INFO] [1790870930.005632163] [mpcare_agent_43]: mpcare agent 43 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-90] [INFO] [1790870930.286234984] [mpcare_agent_37]: mpcare agent 37 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-88] [INFO] [1790870930.343220721] [mpcare_agent_35]: mpcare agent 35 up (MP-CARE router wired: predictive cost + event triggers)
+[network_model_node-52] [INFO] [1790870930.867133468] [network_model]: network model up: alpha=2.5 range=300.0 m, beacon 1.0 s
+[planner_node-86] [INFO] [1790870931.102958258] [mpcare_agent_33]: mpcare agent 33 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-61] [INFO] [1790870931.313436965] [mpcare_agent_8]: mpcare agent 8 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-97] [INFO] [1790870932.107362453] [mpcare_agent_44]: mpcare agent 44 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-84] [INFO] [1790870932.165093289] [mpcare_agent_31]: mpcare agent 31 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-87] [INFO] [1790870932.195247894] [mpcare_agent_34]: mpcare agent 34 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-93] [INFO] [1790870932.518493332] [mpcare_agent_40]: mpcare agent 40 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-80] [INFO] [1790870932.532633283] [mpcare_agent_27]: mpcare agent 27 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-92] [INFO] [1790870932.545695288] [mpcare_agent_39]: mpcare agent 39 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-78] [INFO] [1790870932.779189758] [mpcare_agent_25]: mpcare agent 25 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-62] [INFO] [1790870933.141495236] [mpcare_agent_9]: mpcare agent 9 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-82] [INFO] [1790870933.975378080] [mpcare_agent_29]: mpcare agent 29 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-85] [INFO] [1790870934.107359896] [mpcare_agent_32]: mpcare agent 32 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-83] [INFO] [1790870934.454689472] [mpcare_agent_30]: mpcare agent 30 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-94] [INFO] [1790870934.577393960] [mpcare_agent_41]: mpcare agent 41 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-100] [INFO] [1790870934.779771609] [mpcare_agent_47]: mpcare agent 47 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-101] [INFO] [1790870935.763496770] [mpcare_agent_48]: mpcare agent 48 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-99] [INFO] [1790870937.214629460] [mpcare_agent_46]: mpcare agent 46 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-91] [INFO] [1790870937.235095887] [mpcare_agent_38]: mpcare agent 38 up (MP-CARE router wired: predictive cost + event triggers)
+[planner_node-89] [INFO] [1790870939.547382144] [mpcare_agent_36]: mpcare agent 36 up (MP-CARE router wired: predictive cost + event triggers)
+[INFO] [ros2-50]: process has finished cleanly [pid 12593]

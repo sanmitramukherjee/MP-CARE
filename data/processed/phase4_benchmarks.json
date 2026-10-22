@@ -1,0 +1,24 @@
+{
+  "exp2b_loss_diamond.exp2_pdr80_at_20pct_loss[diamond]": {
+    "mpcare_mean": 0.5047,
+    "astar_dist_mean": 0.4747,
+    "mpcare_above_080": false,
+    "astar_dist_below_060": true
+  },
+  "exp3_latency.exp3_reroute_faster_at_50ms": {
+    "result": "n/a",
+    "reason": "control messages are not delayed by injected_latency_ms in the current model (data-plane only), so the periodic-vs-event re-route latency cannot be measured here"
+  },
+  "exp5_mobility.exp5_let_err_below_30pct_vle15": {
+    "median_rel_err_across_runs": 0.623,
+    "median_rel_err_filtered_act_ge_2s": null,
+    "median_spearman_rho": 0.453,
+    "n_runs": 140,
+    "pass": false
+  },
+  "exp6_failure.exp6_recovery_below_10s_single_kill": {
+    "median_recovery_s": 0.2,
+    "n": 167,
+    "pass": true
+  }
+}
