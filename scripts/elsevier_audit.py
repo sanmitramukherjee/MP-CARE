@@ -21,10 +21,11 @@ abs_t = read("sections/abstract.tex")
 print("abstract words:", len(latex_words(abs_t)))
 
 main = read("main.tex")
-kw = re.search(r"\\begin\{IEEEkeywords\}(.*?)\\end\{IEEEkeywords\}", main, re.S)
+kw = re.search(r"\\begin\{(?:IEEEkeywords|keyword)\}(.*?)\\end\{(?:IEEEkeywords|keyword)\}", main, re.S)
 if kw:
-    kws = [k.strip() for k in kw.group(1).split(",") if k.strip()]
-    print("keywords count:", len(kws))
+    sep = "\\sep" if "\\sep" in kw.group(1) else ","
+    kws = [k.strip() for k in kw.group(1).split(sep) if k.strip()]
+    print("keywords count:", len(kws), kws)
 
 n_cites = 0
 sec_words = 0
