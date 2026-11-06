@@ -1,24 +1,28 @@
-# MP-CARE: Mobility-Predictive, Event-Triggered Communication-Aware Routing for Multi-UAV Swarms
+# MP-CARE: Simulation Modeling, Verification & Mobility-Predictive Routing for Aerial Swarms
 
-Official reference implementation and simulation framework for **MP-CARE** (*Ad Hoc Networks* manuscript submission, Elsevier).
+Official reference implementation, simulation framework, and experimental artifact repository for **MP-CARE** (*Simulation Modelling Practice and Theory* submission, Elsevier).
 
-**Author:** Sanmitra Mukherjee (Sole Author)  
+**Author:** Sanmitra Mukherjee (Independent Researcher)  
 **Email:** [sanmitra.mukherjee15@gmail.com](mailto:sanmitra.mukherjee15@gmail.com)  
 **Repository:** [https://github.com/sanmitramukherjee/MP-CARE](https://github.com/sanmitramukherjee/MP-CARE)  
 **Preprint (SSRN):** [https://doi.org/10.2139/ssrn.7647778](https://doi.org/10.2139/ssrn.7647778)
 
 ---
 
-## Abstract
+## Overview
 
-Autonomous multi-Unmanned Aerial Vehicle (UAV) swarms operating in dynamic airborne environments require robust wireless communication for flight coordination and payload delivery. Traditional flight path planners minimize distance while treating the network as a static disk model, whereas standard Flying Ad-Hoc Network (FANET) routing protocols treat UAV motion as an exogenous disturbance and cannot inform flight trajectories when links degrade. 
+Simulation is the primary evidence base for Flying Ad-Hoc Network (FANET) routing, yet protocol rankings are traditionally reported under single channel and topology abstractions whose structural influence remains unquantified.
 
-**MP-CARE** is a decentralized, closed-loop routing framework that tightly couples flight motion with link-quality dynamics. MP-CARE scores candidate routes with a five-term composite cost engine (path length, predicted ETX, predicted latency, queue congestion, and hop count) over two-hop candidate expansions, and augments 1-hop beaconing with relative radial-velocity prediction of link quality and Link Expiration Time (LET) estimation. Re-routing is governed by a five-condition, edge-triggered hysteresis manager with a formal dwell-time stability bound.
+This repository provides a verified, tick-level simulation and modeling framework designed for high-speed multi-UAV swarms:
+- **Kinematic & Aerial Motion:** 3D kinematics operating across 5–50 m/s speeds in diamond, crossing-patrol, grid, and random geometric topologies.
+- **Physical Channel Realism:** Distance-dependent air-to-air link budgets with temporally correlated log-normal shadow fading ($\sigma \in \{0, 2, 4\}\text{ dB}$, $\tau = 5\text{ s}$) and logistic packet reception curves.
+- **MAC Contention Modeling:** IEEE 802.11-style retry MAC and a frame-level CSMA/CA Distributed Coordination Function (DCF) scheduler evaluating carrier-sense ranges from 600 m down to 150 m.
+- **Routing Baselines:** Evaluated against 8 distinct protocol models, including classic benchmarks (AODV, OLSR, GPSR, Distance-A*), predictive proactive extensions (LET-OLSR), modern reinforcement learning (QLGR: Q-Learning Geographic Routing), and complete-information ETX oracles.
 
 ```
        +--------------------+      +------------------+      +------------------+      +------------------+
        |   Neighbor Table   | ---> |  Link Predictor  | ---> |   Cost Engine    | ---> |  Event Trigger   |
-       |  (1 Hz beacons B_i) |      | (ETX_pred, LET)  |      | (5-term min-max) |      |  (T1-T5 triggers)|
+       |  (10 Hz beacons)   |      | (ETX_pred, LET)  |      | (5-term min-max) |      | (T1-T5 triggers) |
        +--------------------+      +------------------+      +------------------+      +------------------+
                  ^                                                                               |
                  |               Re-route feedback (delivery outcomes -> T1 evidence)            |
@@ -27,16 +31,20 @@ Autonomous multi-Unmanned Aerial Vehicle (UAV) swarms operating in dynamic airbo
 
 ---
 
-## Empirical Benchmark Highlights
+## Empirical Benchmark & Model Sensitivity Highlights
 
-| Experiment / Campaign | Baseline(s) | MP-CARE Performance | Margin / Statistical Significance |
+All reported metrics are measured across 30 independent seeds per condition with non-parametric Mann–Whitney $U$ tests, Holm–Bonferroni corrections, and rank-biserial effect sizes.
+
+| Evaluation Regime | Baseline(s) | MP-CARE Performance | Margin / Key Scientific Finding |
 | :--- | :--- | :--- | :--- |
-| **Diamond Topology (10% Loss)** | A* (0.583), GPSR (0.583), AODV (0.603), OLSR (0.565) | **0.729 PDR** ($\pm 0.025$) | **$+14.6$ to $+20.6$ pp PDR** ($p < 10^{-5}$, rank-biserial $0.88$) |
-| **Mid-Flight Relay Failure** | AODV (0.695 PDR) | **0.992 PDR** ($0.2\text{ s}$ median recovery) | **$+29.7$ pp PDR** ($p < 10^{-5}$, rank-biserial $0.95$) |
-| **Swarm Scale ($N=50$ UAVs)** | AODV (0.875), GPSR (0.861), OLSR (0.857) | **0.939 PDR** ($\pm 0.076$) | **$+6.4$ to $+8.2$ pp PDR** ($p \le 0.0002$, Kruskal-Wallis $p = 7.7 \times 10^{-5}$) |
-| **Protocol Compute ($N=50$)** | OLSR ($0.224\text{ ms/node/tick}$) | **$0.082\text{ ms/node/tick}$** | **$2.7\times$ lower compute**, $O(\mathrm{deg})$ scaling |
-| **Extension A (ORCA Safety)** | Standard ORCA (69.5% link retention) | **100.0% link retention** | **$+43.9\%$ relative retention** ($p = 1.3 \times 10^{-4}$), zero collisions |
-| **Extension B (CBBA Task Alloc.)** | Loss-naive CBBA (0–60% channel loss) | **$+40$ to $+65$ pp task completion** | **$6.3\times$ lower route cost** ($p \le 0.0073$) |
+| **Diamond Benchmark (10% Loss, $\sigma=0$)** | Distance-A* (0.583), GPSR (0.583), AODV (0.603), OLSR (0.565) | **0.729 PDR** ($\pm 0.025$) | **$+14.6$ to $+20.6$ pp PDR** ($p < 10^{-5}$, rank-biserial $0.88$) |
+| **Channel Heterogeneity ($\sigma=0 \to 4\text{ dB}$)** | GPSR (Patrol lanes, 10 UAVs, 20 m/s) | **0.968 PDR** (at 4 dB) | Margin expands from **$+6.5$ pp** ($\sigma=0$) to **$+30.8$ pp** ($\sigma=4\text{ dB}$) ($p < 10^{-5}$) |
+| **Shared Airtime Contention (802.11 DCF)** | GPSR, AODV, OLSR, QLGR (55% airtime load) | **Top-2 ranking** across all loaded patrol cells | Distance margins remain positive and significant (**$+6.8$ to $+29.3$ pp**, $p \le 0.0032$) |
+| **Carrier-Sense Sensitivity ($600 \to 250\text{ m}$)** | 8 Protocol models across 33,600 runs | **Bounded null:** top-4 in every cell | Ranking survives collision growth; breaks at $200\text{ m}$ (sub-decode stress regime) |
+| **Swarm Scale ($N=50$ UAVs)** | AODV (0.875), GPSR (0.861), OLSR (0.857) | **0.939 PDR** ($\pm 0.076$) | **$+6.4$ to $+8.2$ pp PDR** ($p \le 0.0002$); protocol compute: $0.082\text{ ms/node/tick}$ |
+| **High-Speed Aerial Dynamics (50 m/s)** | GPSR, AODV, OLSR, QLGR | **Robust link tracking** | Validated up to 50 m/s fixed-wing velocity profiles |
+| **Task Allocation (CBBA Extension)** | Loss-naive CBBA (0–60% channel loss) | **$+40$ to $+65$ pp task completion** | **$6.3\times$ lower route cost** ($p \le 0.0073$) |
+| **Collision Avoidance (ORCA Extension)**| Standard ORCA (69.5% link retention) | **100.0% link retention** | **$+43.9\%$ relative retention** ($p = 1.3 \times 10^{-4}$), zero collisions |
 
 ---
 
@@ -44,127 +52,105 @@ Autonomous multi-Unmanned Aerial Vehicle (UAV) swarms operating in dynamic airbo
 
 ```
 .
-├── src/                    # ROS 2 packages & core algorithms
+├── src/                    # ROS 2 packages, network models & core routing engines
 │   ├── mpcare_agent/       # MP-CARE router, cost engine, link predictor, event trigger
-│   ├── network_model/      # IEEE 802.11b log-distance PRR/ETX physical channel model
-│   ├── gpsr_forwarding/    # GPSR greedy + perimeter forwarding baseline
+│   ├── network_model/      # Physical channel, log-distance PRR, shadow fading & 802.11 DCF
+│   ├── qlgr_routing/       # Q-Learning Geographic Routing baseline
+│   ├── olsr_routing/       # RFC 3626 OLSR & LET-OLSR baselines
 │   ├── aodv_routing/       # RFC 3561 AODV routing baseline
-│   ├── olsr_routing/       # RFC 3626 OLSR routing baseline
+│   ├── gpsr_forwarding/    # GPSR greedy + perimeter forwarding baseline
 │   ├── cbba_allocator/     # Communication-aware CBBA task allocation node
 │   ├── orca_avoidance/     # Connectivity-aware ORCA collision avoidance node
 │   └── logger/             # 27-column high-rate telemetry logging system
-├── scripts/                # Headless discrete-event simulation engine & benchmark scripts
-│   ├── run_sim.py          # Primary 0.1s tick headless simulation engine
+├── scripts/                # Headless discrete-event simulation & benchmark scripts
+│   ├── run_sim.py          # Primary headless simulation engine (0.1s tick)
 │   ├── run_sweeps.py       # Loss, mobility, and node-failure evaluation campaigns
+│   ├── run_dcf.py          # 802.11 DCF CSMA/CA contention & carrier-sense sweeps
+│   ├── run_phase8.py       # Patrol topology & QLGR learning baseline sweeps
+│   ├── run_phase9.py       # Log-normal shadow fading evaluation campaigns
+│   ├── run_phase10.py      # Spatially uniform vs heterogeneous loss shift sweeps
 │   ├── run_phase5.py       # ORCA (Ext. A) and CBBA (Ext. B) evaluation campaigns
 │   ├── run_phase6.py       # N=5 to N=50 swarm scalability campaigns
 │   ├── run_phase7.py       # Ablation study (A1-A7) and weight sensitivity Pareto front
-│   ├── gen_paper_arch_fig.py # Publication architecture diagram generator
+│   ├── summarize_cs_sweep.py # Carrier-sense boundary analysis
 │   └── stats_utils.py      # Mann-Whitney U, Holm-Bonferroni, Kruskal-Wallis implementations
-├── tests/                  # Unit and integration test suite (101 pytest checks)
+├── tests/                  # Unit and verification test suite (113 pytest checks)
 ├── launch/                 # ROS 2 launch files (mpcare_sim.launch.py)
 ├── config/                 # ROS 2 YAML configuration files
 └── worlds/                 # Gazebo SDF simulation world files
 ```
 
-Datasets (per-trial telemetry CSVs and summary JSONs) are deposited separately on
-Zenodo with a DOI cited in the paper, and the LaTeX manuscript is submitted
-directly to the journal — neither is tracked in this repository.
+> **Data & Manuscript Note:** Per-trial telemetry CSVs and aggregated summary JSONs are openly deposited on Zenodo with DOI cited in the manuscript. All paper source files and versioned PDFs reside in `paper/`.
 
 ---
 
 ## Quickstart & Installation
 
 ### Requirements
-* **Python**: Python 3.9+ (tested on Python 3.13)
-* **Python Dependencies**: `matplotlib`, `pytest`, `pypdfium2`
-* **ROS 2 & Gazebo (Optional for Middleware Validation)**: Ubuntu 26.04 LTS + ROS 2 Lyrical + Gazebo Jetty
+* **Python**: Python 3.9+ (tested on Python 3.9, 3.11, 3.13 across Windows & Linux/WSL2)
+* **Python Dependencies**: `pytest`, `matplotlib`, `numpy`, `scipy`
+* **ROS 2 & Gazebo (Optional for Middleware Validation)**: Ubuntu 24.04/26.04 LTS + ROS 2 + Gazebo
 
-### Python Environment Setup
+### Setup
 ```bash
 # Clone the repository
 git clone https://github.com/sanmitramukherjee/MP-CARE.git
 cd MP-CARE
 
-# Install optional test and plotting dependencies
-pip install pytest matplotlib pypdfium2
+# Install required dependencies
+pip install pytest matplotlib numpy scipy
 ```
 
 ---
 
-## Reproducing Paper Results & Figures
+## Verification & Campaign Reproduction
 
-### 1. Run the Test Suite (101 Checks)
+### 1. Run Verification Test Suite (113 Checks)
+Validates log-distance propagation, shadow fading correlation, 802.11 DCF backoff slots, routing engines, and ROS 2 message schemas:
 ```bash
 pytest
 ```
 
-### 2. Headless Simulation Smoke Test
+### 2. Run Headless Simulation Smoke Test
 ```bash
 python scripts/run_sim.py
 ```
 
-### 3. Run Benchmark Campaigns & Generate Paper Figures
+### 3. Run Benchmark Campaigns
 ```bash
-# Loss, mobility, and node-failure sweeps (Figures 2, 3, 4, 5)
+# 802.11 DCF Contention & Carrier-Sense Sweeps (600 m down to 150 m)
+python scripts/run_dcf.py
+
+# Correlated Log-Normal Shadow Fading Campaigns (sigma = 0, 2, 4 dB)
+python scripts/run_phase9.py
+
+# Crossing-Patrol Topology & QLGR Sweeps
+python scripts/run_phase8.py
+
+# Loss-Shift Analysis (Uniform vs Heterogeneous Loss)
+python scripts/run_phase10.py
+
+# Core Loss, Mobility (up to 50 m/s), and Relay Failure Sweeps
 python scripts/run_sweeps.py
 
-# ORCA & CBBA extensions (Figures 6, 7)
-python scripts/run_phase5.py
-
-# Swarm scalability sweeps N=5 to N=50 (Figures 8, 9)
+# Swarm Scalability Sweeps (N=5 to N=50)
 python scripts/run_phase6.py
 
-# Ablation study & weight sensitivity (Figures 10, 11)
+# Ablation Study & Pareto Weight Analysis
 python scripts/run_phase7.py
-
-# Generate black-and-white IEEE architecture figure (Figure 1)
-python scripts/gen_paper_arch_fig.py
-```
-
-### 4. ROS 2 & Gazebo Launch (Middleware Validation)
-```bash
-colcon build --symlink-install
-source install/setup.bash
-ros2 launch launch/mpcare_sim.launch.py trial_id:=trial_001
-```
-
----
-
-## Compiling the LaTeX Paper
-
-The compiled PDF is self-contained at `paper/main.pdf`. To rebuild `main.pdf` from the LaTeX source:
-
-### Using Tectonic (Recommended)
-```bash
-cd paper
-tectonic main.tex
-```
-
-### Using Standard TeX Live / MikTeX
-```bash
-cd paper
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
 ```
 
 ---
 
 ## Citation
 
-If you find this work or codebase useful in your research, please cite our paper:
-
 ```bibtex
-@article{mukherjee2026mpcare,
+@article{mukherjee2026modelfidelity,
   author    = {Mukherjee, Sanmitra},
-  title     = {MP-CARE: Mobility-Predictive, Communication-Aware Routing with Event-Triggered Re-planning for Multi-UAV Swarms},
-  journal   = {SSRN Electronic Journal},
+  title     = {Model fidelity and protocol ranking in aerial ad-hoc network simulation: a verified, reproducible study of mobility-predictive routing},
+  journal   = {Simulation Modelling Practice and Theory},
   year      = {2026},
-  doi       = {10.2139/ssrn.7647778},
-  url       = {https://doi.org/10.2139/ssrn.7647778},
-  note      = {Preprint under consideration at Elsevier Ad Hoc Networks}
+  note      = {Under review. Preliminary preprint at SSRN: \url{https://doi.org/10.2139/ssrn.7647778}}
 }
 ```
 
