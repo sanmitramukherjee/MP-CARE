@@ -40,8 +40,10 @@ NOTES/
 SUMMARY.md
 .freebuff/
 
-# ---------- Manuscript ----------
+# ---------- Manuscript & Clean Preprint ----------
 paper/
+ssrn_arxiv_clean/
+.mpl/
 
 # ---------- Literature-miner ----------
 literature-miner/

@@ -1,0 +1,801 @@
+[lossstep_0_to20_at15] astar_dist trial 0 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 1 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 2 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 3 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 4 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 5 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 6 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 7 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 8 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 9 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 10 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 11 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 12 pdr=0.440 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 13 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 14 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 15 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 16 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 17 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 18 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 19 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 20 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 21 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 22 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 23 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 24 pdr=0.460 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 25 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 26 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 27 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 28 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] astar_dist trial 29 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 0 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 1 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 2 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 3 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 4 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 5 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 6 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 7 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 8 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 9 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 10 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 11 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 12 pdr=0.440 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 13 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 14 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 15 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 16 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 17 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 18 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 19 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 20 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 21 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 22 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 23 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 24 pdr=0.460 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 25 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 26 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 27 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 28 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] gpsr trial 29 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] aodv trial 0 pdr=0.420 reroutes=None
+[lossstep_0_to20_at15] aodv trial 1 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] aodv trial 2 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] aodv trial 3 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] aodv trial 4 pdr=0.400 reroutes=None
+[lossstep_0_to20_at15] aodv trial 5 pdr=0.480 reroutes=None
+[lossstep_0_to20_at15] aodv trial 6 pdr=0.480 reroutes=None
+[lossstep_0_to20_at15] aodv trial 7 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] aodv trial 8 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] aodv trial 9 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] aodv trial 10 pdr=0.440 reroutes=None
+[lossstep_0_to20_at15] aodv trial 11 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] aodv trial 12 pdr=0.480 reroutes=None
+[lossstep_0_to20_at15] aodv trial 13 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] aodv trial 14 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] aodv trial 15 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] aodv trial 16 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] aodv trial 17 pdr=0.340 reroutes=None
+[lossstep_0_to20_at15] aodv trial 18 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] aodv trial 19 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] aodv trial 20 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] aodv trial 21 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] aodv trial 22 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] aodv trial 23 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] aodv trial 24 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] aodv trial 25 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] aodv trial 26 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] aodv trial 27 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] aodv trial 28 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] aodv trial 29 pdr=0.400 reroutes=None
+[lossstep_0_to20_at15] olsr trial 0 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] olsr trial 1 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] olsr trial 2 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] olsr trial 3 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] olsr trial 4 pdr=0.440 reroutes=None
+[lossstep_0_to20_at15] olsr trial 5 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] olsr trial 6 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] olsr trial 7 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] olsr trial 8 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] olsr trial 9 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] olsr trial 10 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] olsr trial 11 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] olsr trial 12 pdr=0.460 reroutes=None
+[lossstep_0_to20_at15] olsr trial 13 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] olsr trial 14 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] olsr trial 15 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] olsr trial 16 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] olsr trial 17 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] olsr trial 18 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] olsr trial 19 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] olsr trial 20 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] olsr trial 21 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] olsr trial 22 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] olsr trial 23 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] olsr trial 24 pdr=0.420 reroutes=None
+[lossstep_0_to20_at15] olsr trial 25 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] olsr trial 26 pdr=0.460 reroutes=None
+[lossstep_0_to20_at15] olsr trial 27 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] olsr trial 28 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] olsr trial 29 pdr=0.480 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 0 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 1 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 2 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 3 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 4 pdr=0.460 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 5 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 6 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 7 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 8 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 9 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 10 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 11 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 12 pdr=0.460 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 13 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 14 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 15 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 16 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 17 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 18 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 19 pdr=0.620 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 20 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 21 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 22 pdr=0.520 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 23 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 24 pdr=0.420 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 25 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 26 pdr=0.460 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 27 pdr=0.500 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 28 pdr=0.540 reroutes=None
+[lossstep_0_to20_at15] letolsr trial 29 pdr=0.480 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 0 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 1 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 2 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 3 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 4 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 5 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 6 pdr=0.780 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 7 pdr=0.820 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 8 pdr=0.720 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 9 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 10 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 11 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 12 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 13 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 14 pdr=0.780 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 15 pdr=0.820 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 16 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 17 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 18 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 19 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 20 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 21 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 22 pdr=0.800 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 23 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 24 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 25 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 26 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 27 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 28 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] astar_etx trial 29 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 0 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 1 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 2 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 3 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 4 pdr=0.600 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 5 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 6 pdr=0.780 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 7 pdr=0.820 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 8 pdr=0.720 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 9 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 10 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 11 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 12 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 13 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 14 pdr=0.780 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 15 pdr=0.820 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 16 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 17 pdr=0.580 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 18 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 19 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 20 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 21 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 22 pdr=0.800 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 23 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 24 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 25 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 26 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 27 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 28 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] qlgr trial 29 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 0 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 1 pdr=0.720 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 2 pdr=0.720 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 3 pdr=0.720 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 4 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 5 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 6 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 7 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 8 pdr=0.720 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 9 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 10 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 11 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 12 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 13 pdr=0.780 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 14 pdr=0.560 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 15 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 16 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 17 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 18 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 19 pdr=0.740 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 20 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 21 pdr=0.760 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 22 pdr=0.660 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 23 pdr=0.700 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 24 pdr=0.640 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 25 pdr=0.800 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 26 pdr=0.720 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 27 pdr=0.780 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 28 pdr=0.680 reroutes=None
+[lossstep_0_to20_at15] mpcare trial 29 pdr=0.720 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 0 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 1 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 2 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 3 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 4 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 5 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 6 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 7 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 8 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 9 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 10 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 11 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 12 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 13 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 14 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 15 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 16 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 17 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 18 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 19 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 20 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 21 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 22 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 23 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 24 pdr=0.380 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 25 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 26 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 27 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 28 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] astar_dist trial 29 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 0 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] gpsr trial 1 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] gpsr trial 2 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 3 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] gpsr trial 4 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 5 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 6 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] gpsr trial 7 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] gpsr trial 8 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] gpsr trial 9 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 10 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 11 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] gpsr trial 12 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] gpsr trial 13 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] gpsr trial 14 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] gpsr trial 15 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] gpsr trial 16 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] gpsr trial 17 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] gpsr trial 18 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] gpsr trial 19 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] gpsr trial 20 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] gpsr trial 21 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] gpsr trial 22 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] gpsr trial 23 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] gpsr trial 24 pdr=0.380 reroutes=None
+[lossstep_10to20_at15] gpsr trial 25 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] gpsr trial 26 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] gpsr trial 27 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 28 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] gpsr trial 29 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] aodv trial 0 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] aodv trial 1 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] aodv trial 2 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] aodv trial 3 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] aodv trial 4 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] aodv trial 5 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] aodv trial 6 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] aodv trial 7 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] aodv trial 8 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] aodv trial 9 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] aodv trial 10 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] aodv trial 11 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] aodv trial 12 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] aodv trial 13 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] aodv trial 14 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] aodv trial 15 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] aodv trial 16 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] aodv trial 17 pdr=0.340 reroutes=None
+[lossstep_10to20_at15] aodv trial 18 pdr=0.320 reroutes=None
+[lossstep_10to20_at15] aodv trial 19 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] aodv trial 20 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] aodv trial 21 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] aodv trial 22 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] aodv trial 23 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] aodv trial 24 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] aodv trial 25 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] aodv trial 26 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] aodv trial 27 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] aodv trial 28 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] aodv trial 29 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] olsr trial 0 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] olsr trial 1 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] olsr trial 2 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] olsr trial 3 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] olsr trial 4 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] olsr trial 5 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] olsr trial 6 pdr=0.340 reroutes=None
+[lossstep_10to20_at15] olsr trial 7 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] olsr trial 8 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] olsr trial 9 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] olsr trial 10 pdr=0.380 reroutes=None
+[lossstep_10to20_at15] olsr trial 11 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] olsr trial 12 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] olsr trial 13 pdr=0.340 reroutes=None
+[lossstep_10to20_at15] olsr trial 14 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] olsr trial 15 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] olsr trial 16 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] olsr trial 17 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] olsr trial 18 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] olsr trial 19 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] olsr trial 20 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] olsr trial 21 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] olsr trial 22 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] olsr trial 23 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] olsr trial 24 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] olsr trial 25 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] olsr trial 26 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] olsr trial 27 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] olsr trial 28 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] olsr trial 29 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] letolsr trial 0 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] letolsr trial 1 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] letolsr trial 2 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] letolsr trial 3 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] letolsr trial 4 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] letolsr trial 5 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] letolsr trial 6 pdr=0.340 reroutes=None
+[lossstep_10to20_at15] letolsr trial 7 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] letolsr trial 8 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] letolsr trial 9 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] letolsr trial 10 pdr=0.380 reroutes=None
+[lossstep_10to20_at15] letolsr trial 11 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] letolsr trial 12 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] letolsr trial 13 pdr=0.340 reroutes=None
+[lossstep_10to20_at15] letolsr trial 14 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] letolsr trial 15 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] letolsr trial 16 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] letolsr trial 17 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] letolsr trial 18 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] letolsr trial 19 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] letolsr trial 20 pdr=0.400 reroutes=None
+[lossstep_10to20_at15] letolsr trial 21 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] letolsr trial 22 pdr=0.420 reroutes=None
+[lossstep_10to20_at15] letolsr trial 23 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] letolsr trial 24 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] letolsr trial 25 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] letolsr trial 26 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] letolsr trial 27 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] letolsr trial 28 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] letolsr trial 29 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 0 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 1 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 2 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 3 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 4 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 5 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 6 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 7 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 8 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 9 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 10 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 11 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 12 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 13 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 14 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 15 pdr=0.720 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 16 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 17 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 18 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 19 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 20 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 21 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 22 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 23 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 24 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 25 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 26 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 27 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 28 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] astar_etx trial 29 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] qlgr trial 0 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] qlgr trial 1 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] qlgr trial 2 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] qlgr trial 3 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] qlgr trial 4 pdr=0.520 reroutes=None
+[lossstep_10to20_at15] qlgr trial 5 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] qlgr trial 6 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] qlgr trial 7 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] qlgr trial 8 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] qlgr trial 9 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] qlgr trial 10 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] qlgr trial 11 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] qlgr trial 12 pdr=0.500 reroutes=None
+[lossstep_10to20_at15] qlgr trial 13 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] qlgr trial 14 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] qlgr trial 15 pdr=0.720 reroutes=None
+[lossstep_10to20_at15] qlgr trial 16 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] qlgr trial 17 pdr=0.540 reroutes=None
+[lossstep_10to20_at15] qlgr trial 18 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] qlgr trial 19 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] qlgr trial 20 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] qlgr trial 21 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] qlgr trial 22 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] qlgr trial 23 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] qlgr trial 24 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] qlgr trial 25 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] qlgr trial 26 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] qlgr trial 27 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] qlgr trial 28 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] qlgr trial 29 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] mpcare trial 0 pdr=0.640 reroutes=None
+[lossstep_10to20_at15] mpcare trial 1 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] mpcare trial 2 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] mpcare trial 3 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] mpcare trial 4 pdr=0.740 reroutes=None
+[lossstep_10to20_at15] mpcare trial 5 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] mpcare trial 6 pdr=0.720 reroutes=None
+[lossstep_10to20_at15] mpcare trial 7 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] mpcare trial 8 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] mpcare trial 9 pdr=0.440 reroutes=None
+[lossstep_10to20_at15] mpcare trial 10 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] mpcare trial 11 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] mpcare trial 12 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] mpcare trial 13 pdr=0.700 reroutes=None
+[lossstep_10to20_at15] mpcare trial 14 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] mpcare trial 15 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] mpcare trial 16 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] mpcare trial 17 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] mpcare trial 18 pdr=0.620 reroutes=None
+[lossstep_10to20_at15] mpcare trial 19 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] mpcare trial 20 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] mpcare trial 21 pdr=0.600 reroutes=None
+[lossstep_10to20_at15] mpcare trial 22 pdr=0.680 reroutes=None
+[lossstep_10to20_at15] mpcare trial 23 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] mpcare trial 24 pdr=0.460 reroutes=None
+[lossstep_10to20_at15] mpcare trial 25 pdr=0.480 reroutes=None
+[lossstep_10to20_at15] mpcare trial 26 pdr=0.660 reroutes=None
+[lossstep_10to20_at15] mpcare trial 27 pdr=0.560 reroutes=None
+[lossstep_10to20_at15] mpcare trial 28 pdr=0.580 reroutes=None
+[lossstep_10to20_at15] mpcare trial 29 pdr=0.660 reroutes=None
+[lossstep_0_20_0] astar_dist trial 0 pdr=0.580 reroutes=None
+[lossstep_0_20_0] astar_dist trial 1 pdr=0.620 reroutes=None
+[lossstep_0_20_0] astar_dist trial 2 pdr=0.520 reroutes=None
+[lossstep_0_20_0] astar_dist trial 3 pdr=0.600 reroutes=None
+[lossstep_0_20_0] astar_dist trial 4 pdr=0.520 reroutes=None
+[lossstep_0_20_0] astar_dist trial 5 pdr=0.580 reroutes=None
+[lossstep_0_20_0] astar_dist trial 6 pdr=0.620 reroutes=None
+[lossstep_0_20_0] astar_dist trial 7 pdr=0.600 reroutes=None
+[lossstep_0_20_0] astar_dist trial 8 pdr=0.540 reroutes=None
+[lossstep_0_20_0] astar_dist trial 9 pdr=0.540 reroutes=None
+[lossstep_0_20_0] astar_dist trial 10 pdr=0.580 reroutes=None
+[lossstep_0_20_0] astar_dist trial 11 pdr=0.700 reroutes=None
+[lossstep_0_20_0] astar_dist trial 12 pdr=0.440 reroutes=None
+[lossstep_0_20_0] astar_dist trial 13 pdr=0.660 reroutes=None
+[lossstep_0_20_0] astar_dist trial 14 pdr=0.680 reroutes=None
+[lossstep_0_20_0] astar_dist trial 15 pdr=0.620 reroutes=None
+[lossstep_0_20_0] astar_dist trial 16 pdr=0.680 reroutes=None
+[lossstep_0_20_0] astar_dist trial 17 pdr=0.560 reroutes=None
+[lossstep_0_20_0] astar_dist trial 18 pdr=0.560 reroutes=None
+[lossstep_0_20_0] astar_dist trial 19 pdr=0.520 reroutes=None
+[lossstep_0_20_0] astar_dist trial 20 pdr=0.600 reroutes=None
+[lossstep_0_20_0] astar_dist trial 21 pdr=0.560 reroutes=None
+[lossstep_0_20_0] astar_dist trial 22 pdr=0.580 reroutes=None
+[lossstep_0_20_0] astar_dist trial 23 pdr=0.500 reroutes=None
+[lossstep_0_20_0] astar_dist trial 24 pdr=0.460 reroutes=None
+[lossstep_0_20_0] astar_dist trial 25 pdr=0.640 reroutes=None
+[lossstep_0_20_0] astar_dist trial 26 pdr=0.600 reroutes=None
+[lossstep_0_20_0] astar_dist trial 27 pdr=0.540 reroutes=None
+[lossstep_0_20_0] astar_dist trial 28 pdr=0.500 reroutes=None
+[lossstep_0_20_0] astar_dist trial 29 pdr=0.500 reroutes=None
+[lossstep_0_20_0] gpsr trial 0 pdr=0.580 reroutes=None
+[lossstep_0_20_0] gpsr trial 1 pdr=0.620 reroutes=None
+[lossstep_0_20_0] gpsr trial 2 pdr=0.520 reroutes=None
+[lossstep_0_20_0] gpsr trial 3 pdr=0.600 reroutes=None
+[lossstep_0_20_0] gpsr trial 4 pdr=0.520 reroutes=None
+[lossstep_0_20_0] gpsr trial 5 pdr=0.580 reroutes=None
+[lossstep_0_20_0] gpsr trial 6 pdr=0.620 reroutes=None
+[lossstep_0_20_0] gpsr trial 7 pdr=0.600 reroutes=None
+[lossstep_0_20_0] gpsr trial 8 pdr=0.540 reroutes=None
+[lossstep_0_20_0] gpsr trial 9 pdr=0.540 reroutes=None
+[lossstep_0_20_0] gpsr trial 10 pdr=0.580 reroutes=None
+[lossstep_0_20_0] gpsr trial 11 pdr=0.700 reroutes=None
+[lossstep_0_20_0] gpsr trial 12 pdr=0.440 reroutes=None
+[lossstep_0_20_0] gpsr trial 13 pdr=0.660 reroutes=None
+[lossstep_0_20_0] gpsr trial 14 pdr=0.680 reroutes=None
+[lossstep_0_20_0] gpsr trial 15 pdr=0.620 reroutes=None
+[lossstep_0_20_0] gpsr trial 16 pdr=0.680 reroutes=None
+[lossstep_0_20_0] gpsr trial 17 pdr=0.560 reroutes=None
+[lossstep_0_20_0] gpsr trial 18 pdr=0.560 reroutes=None
+[lossstep_0_20_0] gpsr trial 19 pdr=0.520 reroutes=None
+[lossstep_0_20_0] gpsr trial 20 pdr=0.600 reroutes=None
+[lossstep_0_20_0] gpsr trial 21 pdr=0.560 reroutes=None
+[lossstep_0_20_0] gpsr trial 22 pdr=0.580 reroutes=None
+[lossstep_0_20_0] gpsr trial 23 pdr=0.500 reroutes=None
+[lossstep_0_20_0] gpsr trial 24 pdr=0.460 reroutes=None
+[lossstep_0_20_0] gpsr trial 25 pdr=0.640 reroutes=None
+[lossstep_0_20_0] gpsr trial 26 pdr=0.600 reroutes=None
+[lossstep_0_20_0] gpsr trial 27 pdr=0.540 reroutes=None
+[lossstep_0_20_0] gpsr trial 28 pdr=0.500 reroutes=None
+[lossstep_0_20_0] gpsr trial 29 pdr=0.500 reroutes=None
+[lossstep_0_20_0] aodv trial 0 pdr=0.420 reroutes=None
+[lossstep_0_20_0] aodv trial 1 pdr=0.540 reroutes=None
+[lossstep_0_20_0] aodv trial 2 pdr=0.680 reroutes=None
+[lossstep_0_20_0] aodv trial 3 pdr=0.500 reroutes=None
+[lossstep_0_20_0] aodv trial 4 pdr=0.400 reroutes=None
+[lossstep_0_20_0] aodv trial 5 pdr=0.480 reroutes=None
+[lossstep_0_20_0] aodv trial 6 pdr=0.480 reroutes=None
+[lossstep_0_20_0] aodv trial 7 pdr=0.620 reroutes=None
+[lossstep_0_20_0] aodv trial 8 pdr=0.600 reroutes=None
+[lossstep_0_20_0] aodv trial 9 pdr=0.560 reroutes=None
+[lossstep_0_20_0] aodv trial 10 pdr=0.440 reroutes=None
+[lossstep_0_20_0] aodv trial 11 pdr=0.640 reroutes=None
+[lossstep_0_20_0] aodv trial 12 pdr=0.480 reroutes=None
+[lossstep_0_20_0] aodv trial 13 pdr=0.600 reroutes=None
+[lossstep_0_20_0] aodv trial 14 pdr=0.620 reroutes=None
+[lossstep_0_20_0] aodv trial 15 pdr=0.600 reroutes=None
+[lossstep_0_20_0] aodv trial 16 pdr=0.560 reroutes=None
+[lossstep_0_20_0] aodv trial 17 pdr=0.340 reroutes=None
+[lossstep_0_20_0] aodv trial 18 pdr=0.540 reroutes=None
+[lossstep_0_20_0] aodv trial 19 pdr=0.560 reroutes=None
+[lossstep_0_20_0] aodv trial 20 pdr=0.600 reroutes=None
+[lossstep_0_20_0] aodv trial 21 pdr=0.600 reroutes=None
+[lossstep_0_20_0] aodv trial 22 pdr=0.560 reroutes=None
+[lossstep_0_20_0] aodv trial 23 pdr=0.600 reroutes=None
+[lossstep_0_20_0] aodv trial 24 pdr=0.640 reroutes=None
+[lossstep_0_20_0] aodv trial 25 pdr=0.520 reroutes=None
+[lossstep_0_20_0] aodv trial 26 pdr=0.640 reroutes=None
+[lossstep_0_20_0] aodv trial 27 pdr=0.660 reroutes=None
+[lossstep_0_20_0] aodv trial 28 pdr=0.560 reroutes=None
+[lossstep_0_20_0] aodv trial 29 pdr=0.400 reroutes=None
+[lossstep_0_20_0] olsr trial 0 pdr=0.580 reroutes=None
+[lossstep_0_20_0] olsr trial 1 pdr=0.560 reroutes=None
+[lossstep_0_20_0] olsr trial 2 pdr=0.620 reroutes=None
+[lossstep_0_20_0] olsr trial 3 pdr=0.580 reroutes=None
+[lossstep_0_20_0] olsr trial 4 pdr=0.440 reroutes=None
+[lossstep_0_20_0] olsr trial 5 pdr=0.560 reroutes=None
+[lossstep_0_20_0] olsr trial 6 pdr=0.520 reroutes=None
+[lossstep_0_20_0] olsr trial 7 pdr=0.600 reroutes=None
+[lossstep_0_20_0] olsr trial 8 pdr=0.660 reroutes=None
+[lossstep_0_20_0] olsr trial 9 pdr=0.560 reroutes=None
+[lossstep_0_20_0] olsr trial 10 pdr=0.580 reroutes=None
+[lossstep_0_20_0] olsr trial 11 pdr=0.660 reroutes=None
+[lossstep_0_20_0] olsr trial 12 pdr=0.460 reroutes=None
+[lossstep_0_20_0] olsr trial 13 pdr=0.740 reroutes=None
+[lossstep_0_20_0] olsr trial 14 pdr=0.540 reroutes=None
+[lossstep_0_20_0] olsr trial 15 pdr=0.560 reroutes=None
+[lossstep_0_20_0] olsr trial 16 pdr=0.580 reroutes=None
+[lossstep_0_20_0] olsr trial 17 pdr=0.500 reroutes=None
+[lossstep_0_20_0] olsr trial 18 pdr=0.660 reroutes=None
+[lossstep_0_20_0] olsr trial 19 pdr=0.620 reroutes=None
+[lossstep_0_20_0] olsr trial 20 pdr=0.580 reroutes=None
+[lossstep_0_20_0] olsr trial 21 pdr=0.560 reroutes=None
+[lossstep_0_20_0] olsr trial 22 pdr=0.520 reroutes=None
+[lossstep_0_20_0] olsr trial 23 pdr=0.660 reroutes=None
+[lossstep_0_20_0] olsr trial 24 pdr=0.420 reroutes=None
+[lossstep_0_20_0] olsr trial 25 pdr=0.600 reroutes=None
+[lossstep_0_20_0] olsr trial 26 pdr=0.460 reroutes=None
+[lossstep_0_20_0] olsr trial 27 pdr=0.500 reroutes=None
+[lossstep_0_20_0] olsr trial 28 pdr=0.540 reroutes=None
+[lossstep_0_20_0] olsr trial 29 pdr=0.480 reroutes=None
+[lossstep_0_20_0] letolsr trial 0 pdr=0.580 reroutes=None
+[lossstep_0_20_0] letolsr trial 1 pdr=0.560 reroutes=None
+[lossstep_0_20_0] letolsr trial 2 pdr=0.620 reroutes=None
+[lossstep_0_20_0] letolsr trial 3 pdr=0.580 reroutes=None
+[lossstep_0_20_0] letolsr trial 4 pdr=0.460 reroutes=None
+[lossstep_0_20_0] letolsr trial 5 pdr=0.560 reroutes=None
+[lossstep_0_20_0] letolsr trial 6 pdr=0.520 reroutes=None
+[lossstep_0_20_0] letolsr trial 7 pdr=0.600 reroutes=None
+[lossstep_0_20_0] letolsr trial 8 pdr=0.660 reroutes=None
+[lossstep_0_20_0] letolsr trial 9 pdr=0.560 reroutes=None
+[lossstep_0_20_0] letolsr trial 10 pdr=0.580 reroutes=None
+[lossstep_0_20_0] letolsr trial 11 pdr=0.660 reroutes=None
+[lossstep_0_20_0] letolsr trial 12 pdr=0.460 reroutes=None
+[lossstep_0_20_0] letolsr trial 13 pdr=0.740 reroutes=None
+[lossstep_0_20_0] letolsr trial 14 pdr=0.540 reroutes=None
+[lossstep_0_20_0] letolsr trial 15 pdr=0.560 reroutes=None
+[lossstep_0_20_0] letolsr trial 16 pdr=0.580 reroutes=None
+[lossstep_0_20_0] letolsr trial 17 pdr=0.500 reroutes=None
+[lossstep_0_20_0] letolsr trial 18 pdr=0.660 reroutes=None
+[lossstep_0_20_0] letolsr trial 19 pdr=0.620 reroutes=None
+[lossstep_0_20_0] letolsr trial 20 pdr=0.660 reroutes=None
+[lossstep_0_20_0] letolsr trial 21 pdr=0.560 reroutes=None
+[lossstep_0_20_0] letolsr trial 22 pdr=0.520 reroutes=None
+[lossstep_0_20_0] letolsr trial 23 pdr=0.660 reroutes=None
+[lossstep_0_20_0] letolsr trial 24 pdr=0.420 reroutes=None
+[lossstep_0_20_0] letolsr trial 25 pdr=0.600 reroutes=None
+[lossstep_0_20_0] letolsr trial 26 pdr=0.460 reroutes=None
+[lossstep_0_20_0] letolsr trial 27 pdr=0.500 reroutes=None
+[lossstep_0_20_0] letolsr trial 28 pdr=0.540 reroutes=None
+[lossstep_0_20_0] letolsr trial 29 pdr=0.480 reroutes=None
+[lossstep_0_20_0] astar_etx trial 0 pdr=0.660 reroutes=None
+[lossstep_0_20_0] astar_etx trial 1 pdr=0.700 reroutes=None
+[lossstep_0_20_0] astar_etx trial 2 pdr=0.640 reroutes=None
+[lossstep_0_20_0] astar_etx trial 3 pdr=0.740 reroutes=None
+[lossstep_0_20_0] astar_etx trial 4 pdr=0.600 reroutes=None
+[lossstep_0_20_0] astar_etx trial 5 pdr=0.680 reroutes=None
+[lossstep_0_20_0] astar_etx trial 6 pdr=0.780 reroutes=None
+[lossstep_0_20_0] astar_etx trial 7 pdr=0.820 reroutes=None
+[lossstep_0_20_0] astar_etx trial 8 pdr=0.720 reroutes=None
+[lossstep_0_20_0] astar_etx trial 9 pdr=0.700 reroutes=None
+[lossstep_0_20_0] astar_etx trial 10 pdr=0.700 reroutes=None
+[lossstep_0_20_0] astar_etx trial 11 pdr=0.740 reroutes=None
+[lossstep_0_20_0] astar_etx trial 12 pdr=0.660 reroutes=None
+[lossstep_0_20_0] astar_etx trial 13 pdr=0.700 reroutes=None
+[lossstep_0_20_0] astar_etx trial 14 pdr=0.780 reroutes=None
+[lossstep_0_20_0] astar_etx trial 15 pdr=0.820 reroutes=None
+[lossstep_0_20_0] astar_etx trial 16 pdr=0.740 reroutes=None
+[lossstep_0_20_0] astar_etx trial 17 pdr=0.580 reroutes=None
+[lossstep_0_20_0] astar_etx trial 18 pdr=0.760 reroutes=None
+[lossstep_0_20_0] astar_etx trial 19 pdr=0.640 reroutes=None
+[lossstep_0_20_0] astar_etx trial 20 pdr=0.700 reroutes=None
+[lossstep_0_20_0] astar_etx trial 21 pdr=0.680 reroutes=None
+[lossstep_0_20_0] astar_etx trial 22 pdr=0.800 reroutes=None
+[lossstep_0_20_0] astar_etx trial 23 pdr=0.760 reroutes=None
+[lossstep_0_20_0] astar_etx trial 24 pdr=0.740 reroutes=None
+[lossstep_0_20_0] astar_etx trial 25 pdr=0.660 reroutes=None
+[lossstep_0_20_0] astar_etx trial 26 pdr=0.660 reroutes=None
+[lossstep_0_20_0] astar_etx trial 27 pdr=0.760 reroutes=None
+[lossstep_0_20_0] astar_etx trial 28 pdr=0.660 reroutes=None
+[lossstep_0_20_0] astar_etx trial 29 pdr=0.740 reroutes=None
+[lossstep_0_20_0] qlgr trial 0 pdr=0.660 reroutes=None
+[lossstep_0_20_0] qlgr trial 1 pdr=0.700 reroutes=None
+[lossstep_0_20_0] qlgr trial 2 pdr=0.640 reroutes=None
+[lossstep_0_20_0] qlgr trial 3 pdr=0.740 reroutes=None
+[lossstep_0_20_0] qlgr trial 4 pdr=0.600 reroutes=None
+[lossstep_0_20_0] qlgr trial 5 pdr=0.680 reroutes=None
+[lossstep_0_20_0] qlgr trial 6 pdr=0.780 reroutes=None
+[lossstep_0_20_0] qlgr trial 7 pdr=0.820 reroutes=None
+[lossstep_0_20_0] qlgr trial 8 pdr=0.720 reroutes=None
+[lossstep_0_20_0] qlgr trial 9 pdr=0.700 reroutes=None
+[lossstep_0_20_0] qlgr trial 10 pdr=0.700 reroutes=None
+[lossstep_0_20_0] qlgr trial 11 pdr=0.740 reroutes=None
+[lossstep_0_20_0] qlgr trial 12 pdr=0.660 reroutes=None
+[lossstep_0_20_0] qlgr trial 13 pdr=0.700 reroutes=None
+[lossstep_0_20_0] qlgr trial 14 pdr=0.780 reroutes=None
+[lossstep_0_20_0] qlgr trial 15 pdr=0.820 reroutes=None
+[lossstep_0_20_0] qlgr trial 16 pdr=0.740 reroutes=None
+[lossstep_0_20_0] qlgr trial 17 pdr=0.580 reroutes=None
+[lossstep_0_20_0] qlgr trial 18 pdr=0.760 reroutes=None
+[lossstep_0_20_0] qlgr trial 19 pdr=0.640 reroutes=None
+[lossstep_0_20_0] qlgr trial 20 pdr=0.700 reroutes=None
+[lossstep_0_20_0] qlgr trial 21 pdr=0.680 reroutes=None
+[lossstep_0_20_0] qlgr trial 22 pdr=0.800 reroutes=None
+[lossstep_0_20_0] qlgr trial 23 pdr=0.760 reroutes=None
+[lossstep_0_20_0] qlgr trial 24 pdr=0.740 reroutes=None
+[lossstep_0_20_0] qlgr trial 25 pdr=0.660 reroutes=None
+[lossstep_0_20_0] qlgr trial 26 pdr=0.660 reroutes=None
+[lossstep_0_20_0] qlgr trial 27 pdr=0.760 reroutes=None
+[lossstep_0_20_0] qlgr trial 28 pdr=0.660 reroutes=None
+[lossstep_0_20_0] qlgr trial 29 pdr=0.740 reroutes=None
+[lossstep_0_20_0] mpcare trial 0 pdr=0.740 reroutes=None
+[lossstep_0_20_0] mpcare trial 1 pdr=0.720 reroutes=None
+[lossstep_0_20_0] mpcare trial 2 pdr=0.720 reroutes=None
+[lossstep_0_20_0] mpcare trial 3 pdr=0.720 reroutes=None
+[lossstep_0_20_0] mpcare trial 4 pdr=0.740 reroutes=None
+[lossstep_0_20_0] mpcare trial 5 pdr=0.680 reroutes=None
+[lossstep_0_20_0] mpcare trial 6 pdr=0.740 reroutes=None
+[lossstep_0_20_0] mpcare trial 7 pdr=0.680 reroutes=None
+[lossstep_0_20_0] mpcare trial 8 pdr=0.720 reroutes=None
+[lossstep_0_20_0] mpcare trial 9 pdr=0.560 reroutes=None
+[lossstep_0_20_0] mpcare trial 10 pdr=0.680 reroutes=None
+[lossstep_0_20_0] mpcare trial 11 pdr=0.760 reroutes=None
+[lossstep_0_20_0] mpcare trial 12 pdr=0.660 reroutes=None
+[lossstep_0_20_0] mpcare trial 13 pdr=0.780 reroutes=None
+[lossstep_0_20_0] mpcare trial 14 pdr=0.560 reroutes=None
+[lossstep_0_20_0] mpcare trial 15 pdr=0.700 reroutes=None
+[lossstep_0_20_0] mpcare trial 16 pdr=0.640 reroutes=None
+[lossstep_0_20_0] mpcare trial 17 pdr=0.660 reroutes=None
+[lossstep_0_20_0] mpcare trial 18 pdr=0.640 reroutes=None
+[lossstep_0_20_0] mpcare trial 19 pdr=0.740 reroutes=None
+[lossstep_0_20_0] mpcare trial 20 pdr=0.680 reroutes=None
+[lossstep_0_20_0] mpcare trial 21 pdr=0.760 reroutes=None
+[lossstep_0_20_0] mpcare trial 22 pdr=0.660 reroutes=None
+[lossstep_0_20_0] mpcare trial 23 pdr=0.700 reroutes=None
+[lossstep_0_20_0] mpcare trial 24 pdr=0.640 reroutes=None
+[lossstep_0_20_0] mpcare trial 25 pdr=0.800 reroutes=None
+[lossstep_0_20_0] mpcare trial 26 pdr=0.720 reroutes=None
+[lossstep_0_20_0] mpcare trial 27 pdr=0.780 reroutes=None
+[lossstep_0_20_0] mpcare trial 28 pdr=0.680 reroutes=None
+[lossstep_0_20_0] mpcare trial 29 pdr=0.720 reroutes=None
+{
+ "lossstep_0_to20_at15": {
+  "astar_etx": {
+   "mpcare_mean": 0.6993333333333334,
+   "baseline_mean": 0.7106666666666667,
+   "margin_pp": -1.1333333333333306,
+   "mw_p": 0.5469503449248313,
+   "holm_p": 1.0,
+   "rank_biserial": -0.09111111111111114
+  },
+  "olsr": {
+   "mpcare_mean": 0.6993333333333334,
+   "baseline_mean": 0.5633333333333334,
+   "margin_pp": 13.600000000000001,
+   "mw_p": 2.1651716419768263e-08,
+   "holm_p": 6.495514925930479e-08,
+   "rank_biserial": 0.8400000000000001
+  },
+  "aodv": {
+   "mpcare_mean": 0.6993333333333334,
+   "baseline_mean": 0.548,
+   "margin_pp": 15.133333333333333,
+   "mw_p": 2.726731840319019e-09,
+   "holm_p": 8.180195520957056e-09,
+   "rank_biserial": 0.8922222222222222
+  }
+ },
+ "lossstep_10to20_at15": {
+  "astar_etx": {
+   "mpcare_mean": 0.6166666666666667,
+   "baseline_mean": 0.6126666666666667,
+   "margin_pp": 0.40000000000000036,
+   "mw_p": 0.5276180531218924,
+   "holm_p": 1.0,
+   "rank_biserial": 0.09555555555555562
+  },
+  "olsr": {
+   "mpcare_mean": 0.6166666666666667,
+   "baseline_mean": 0.486,
+   "margin_pp": 13.06666666666667,
+   "mw_p": 1.2208452593309715e-06,
+   "holm_p": 3.6625357779929146e-06,
+   "rank_biserial": 0.7288888888888889
+  },
+  "aodv": {
+   "mpcare_mean": 0.6166666666666667,
+   "baseline_mean": 0.498,
+   "margin_pp": 11.86666666666667,
+   "mw_p": 5.850703120424683e-06,
+   "holm_p": 1.755210936127405e-05,
+   "rank_biserial": 0.6799999999999999
+  }
+ },
+ "lossstep_0_20_0": {
+  "astar_etx": {
+   "mpcare_mean": 0.6993333333333334,
+   "baseline_mean": 0.7106666666666667,
+   "margin_pp": -1.1333333333333306,
+   "mw_p": 0.5469503449248313,
+   "holm_p": 1.0,
+   "rank_biserial": -0.09111111111111114
+  },
+  "olsr": {
+   "mpcare_mean": 0.6993333333333334,
+   "baseline_mean": 0.5633333333333334,
+   "margin_pp": 13.600000000000001,
+   "mw_p": 2.1651716419768263e-08,
+   "holm_p": 6.495514925930479e-08,
+   "rank_biserial": 0.8400000000000001
+  },
+  "aodv": {
+   "mpcare_mean": 0.6993333333333334,
+   "baseline_mean": 0.548,
+   "margin_pp": 15.133333333333333,
+   "mw_p": 2.726731840319019e-09,
+   "holm_p": 8.180195520957056e-09,
+   "rank_biserial": 0.8922222222222222
+  }
+ }
+}
+[phase10] -> C:\Users\Lenovo\Desktop\Personal\RoutingComm\MP-CARE\data\processed\phase10_lossshift.csv

@@ -66,6 +66,27 @@ ROW_KEYS = ["seed", "trial", "algorithm", "condition", "chain_pdr", "pdr",
 KILL_POOL = (1, 2, 3, 6, 7, 8)   # grid mid-column nodes (never src 0 / dst 9)
 
 
+def _load_qlgr_tables(needed: list[str]) -> dict:
+    """Load the Phase-8 trained QLGR tables (diamond per-node + dynamic
+    global). Returns {} when absent (then QLGR would silently train online,
+    breaking the inference-only protocol: fail loudly instead)."""
+    if "qlgr" not in needed:
+        return {}
+    tables: dict = {}
+    for scen in ("diamond", "mobility"):
+        p = OUT / f"phase8_qlgr_{scen}.json"
+        if p.exists():
+            tables[scen] = json.loads(p.read_text(encoding="utf-8"))["table"]
+    dyn = OUT / "phase8_qlgr_dynamic.json"
+    if dyn.exists():
+        tables["dynamic"] = json.loads(dyn.read_text(encoding="utf-8"))["table"]
+    if not tables.get("diamond") or not tables.get("dynamic"):
+        raise SystemExit("missing Phase-8 QLGR tables — run "
+                         "scripts/run_phase8.py --train first (inference-only "
+                         "evaluation protocol)")
+    return tables
+
+
 def _kills_for(seed: int, k: int) -> list[tuple[float, int]]:
     """Deterministic per-seed kill schedule: k mid-grid UAVs at t = 15 + 5j s
     (all inside the traffic window, which ends at t = 30)."""
@@ -93,6 +114,8 @@ def run_experiment(name: str, conditions: list[dict], algorithms: list[str],
                    trials: int, seed0: int, duration: float, base: dict,
                    sanity_must_hold: bool = True) -> list[dict]:
     """Run one experiment grid: conditions x algorithms x trials."""
+    required = ["qlgr"] if "qlgr" in algorithms else []
+    tables = _load_qlgr_tables(required)
     rows: list[dict] = []
     t_start = time.perf_counter()
     for ci, cond in enumerate(conditions):
@@ -113,6 +136,16 @@ def run_experiment(name: str, conditions: list[dict], algorithms: list[str],
                                     ",".join(str(t) for t, _ in kw["kill_node"]))
                                   if kw.get("kill_node") else "0",
                           "scenario": kw.get("scenario", "")}
+                if algo == "qlgr" and tables:
+                    scen = kw.get("scenario", "")
+                    table = (tables.get("diamond") if scen == "diamond"
+                             else tables.get("dynamic", {}).get("global"))
+                    if table:
+                        # Phase 8 protocol: inference-only evaluation with the
+                        # Phase-8-trained tables (never online learning inside
+                        # evaluation trials)
+                        kw["qlgr_opts"] = {"learn": False, "seed": seed,
+                                           "eps": 0.0, "table": table}
                 r = run_sim.run(seed, ROOT / "data" / "raw", duration=duration,
                                 write_csv=False, algorithm=algo, **kw)
                 if sanity_must_hold and not (r["stability_ok"] and r["waypoint_ok"]
@@ -408,7 +441,13 @@ KILL_VALUES = [0, 1, 2, 3]
 def build_experiments(args):
     n = args.trials
     s0 = args.seed0
+    # Phase 8 (Task 1): exp2b/exp5 gain the QLGR learned baseline (+full algo
+    # list on the diamond); exp2/exp3/envelope keep their legacy rosters so
+    # their published numbers stay byte-identical to the current paper.
     algos4 = ["astar_dist", "gpsr", "olsr", "mpcare"]
+    algos7 = list(run_sim.ALGORITHMS)
+    algos6 = ["astar_dist", "gpsr", "aodv", "olsr", "qlgr", "mpcare"]
+    speed_ext = list(SPEED_VALUES) + [30.0, 40.0, 50.0]   # Task 3a: aerial speeds
     exps = {}
     exps["exp2_loss"] = dict(
         conditions=[{"label": f"loss_{v:.2f}", "scenario": "chain",
@@ -422,7 +461,7 @@ def build_experiments(args):
         # physics floor)
         conditions=[{"label": f"loss_{v:.2f}", "scenario": "diamond",
                      "injected_loss": v} for v in LOSS_VALUES],
-        algorithms=algos4, duration=90.0, base={},
+        algorithms=algos7, duration=90.0, base={},
         stats_metric="chain_pdr", graph_fn="loss")
     exps["exp3_latency"] = dict(
         conditions=[{"label": f"lat_{v:.0f}", "scenario": "chain",
@@ -431,8 +470,8 @@ def build_experiments(args):
         stats_metric="avg_latency_ms", graph_fn=None)
     exps["exp5_mobility"] = dict(
         conditions=[{"label": f"speed_{v:.0f}", "scenario": "mobility",
-                     "speed": v} for v in SPEED_VALUES],
-        algorithms=algos4, duration=60.0, base={},
+                     "speed": v} for v in speed_ext],
+        algorithms=algos6, duration=60.0, base={},
         stats_metric="chain_pdr", graph_fn="speed")
     exps["exp6_failure"] = dict(
         conditions=[{"label": f"kill_{k}", "scenario": "grid", "kills": k}

@@ -1,0 +1,119 @@
+{
+ "experiment": "phase10_lossshift",
+ "duration_s": 90.0,
+ "n_trials": 1,
+ "seed0": 1000,
+ "per_algo_mean_pdr": {
+  "lossstep_0_to20_at15": {
+   "astar_dist": 0.58,
+   "gpsr": 0.58,
+   "aodv": 0.42,
+   "olsr": 0.58,
+   "letolsr": 0.58,
+   "astar_etx": 0.66,
+   "qlgr": 0.66,
+   "mpcare": 0.74
+  },
+  "lossstep_10to20_at15": {
+   "astar_dist": 0.5,
+   "gpsr": 0.5,
+   "aodv": 0.46,
+   "olsr": 0.54,
+   "letolsr": 0.54,
+   "astar_etx": 0.6,
+   "qlgr": 0.6,
+   "mpcare": 0.64
+  },
+  "lossstep_0_20_0": {
+   "astar_dist": 0.58,
+   "gpsr": 0.58,
+   "aodv": 0.42,
+   "olsr": 0.58,
+   "letolsr": 0.58,
+   "astar_etx": 0.66,
+   "qlgr": 0.66,
+   "mpcare": 0.74
+  }
+ },
+ "posthoc_vs_mpcare": {
+  "lossstep_0_to20_at15": {
+   "astar_etx": {
+    "mpcare_mean": 0.74,
+    "baseline_mean": 0.66,
+    "margin_pp": 7.9999999999999964,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   },
+   "olsr": {
+    "mpcare_mean": 0.74,
+    "baseline_mean": 0.58,
+    "margin_pp": 16.000000000000004,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   },
+   "aodv": {
+    "mpcare_mean": 0.74,
+    "baseline_mean": 0.42,
+    "margin_pp": 32.0,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   }
+  },
+  "lossstep_10to20_at15": {
+   "astar_etx": {
+    "mpcare_mean": 0.64,
+    "baseline_mean": 0.6,
+    "margin_pp": 4.0000000000000036,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   },
+   "olsr": {
+    "mpcare_mean": 0.64,
+    "baseline_mean": 0.54,
+    "margin_pp": 9.999999999999998,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   },
+   "aodv": {
+    "mpcare_mean": 0.64,
+    "baseline_mean": 0.46,
+    "margin_pp": 18.0,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   }
+  },
+  "lossstep_0_20_0": {
+   "astar_etx": {
+    "mpcare_mean": 0.74,
+    "baseline_mean": 0.66,
+    "margin_pp": 7.9999999999999964,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   },
+   "olsr": {
+    "mpcare_mean": 0.74,
+    "baseline_mean": 0.58,
+    "margin_pp": 16.000000000000004,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   },
+   "aodv": {
+    "mpcare_mean": 0.74,
+    "baseline_mean": 0.42,
+    "margin_pp": 32.0,
+    "mw_p": 1.0,
+    "holm_p": 1.0,
+    "rank_biserial": 1.0
+   }
+  }
+ },
+ "wall_s": 1.2
+}

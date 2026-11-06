@@ -1,0 +1,67 @@
+{
+  "experiment": "dcf_legacy_replication",
+  "n_trials": 30,
+  "seed0": 7100,
+  "duration_s": 90.0,
+  "algorithms": [
+    "astar_dist",
+    "gpsr",
+    "aodv",
+    "olsr",
+    "letolsr",
+    "astar_etx",
+    "qlgr",
+    "mpcare"
+  ],
+  "conditions": {
+    "diamond_s2_retry": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.356,
+          "ci95": 0.0505
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.356,
+          "ci95": 0.0505
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.4833,
+          "ci95": 0.0625
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.4613,
+          "ci95": 0.0456
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.4733,
+          "ci95": 0.0552
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.666,
+          "ci95": 0.0328
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.666,
+          "ci95": 0.0328
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.626,
+          "ci95": 0.0397
+        }
+      },
+      "mpcare_minus_oracle_pp": -4.0
+    }
+  },
+  "oracle_test": {
+    "u": 366.5,
+    "p_two_sided": 0.21828589176353352
+  }
+}

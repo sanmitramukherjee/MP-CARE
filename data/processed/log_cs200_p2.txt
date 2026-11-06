@@ -1,0 +1,19 @@
+[dcf] shadow_patrol_s2_bg0         astar_dist  30 trials (11s)
+[dcf] shadow_patrol_s2_bg0         gpsr        30 trials (24s)
+[dcf] shadow_patrol_s2_bg0         aodv        30 trials (41s)
+[dcf] shadow_patrol_s2_bg0         olsr        30 trials (69s)
+[dcf] shadow_patrol_s2_bg0         letolsr     30 trials (104s)
+[dcf] shadow_patrol_s2_bg0         astar_etx   30 trials (119s)
+[dcf] shadow_patrol_s2_bg0         qlgr        30 trials (134s)
+[dcf] shadow_patrol_s2_bg0         mpcare      30 trials (183s)
+[dcf] shadow_patrol_s2_bg600       astar_dist  30 trials (198s)
+[dcf] shadow_patrol_s2_bg600       gpsr        30 trials (212s)
+[dcf] shadow_patrol_s2_bg600       aodv        30 trials (231s)
+[dcf] shadow_patrol_s2_bg600       olsr        30 trials (261s)
+[dcf] shadow_patrol_s2_bg600       letolsr     30 trials (295s)
+[dcf] shadow_patrol_s2_bg600       astar_etx   30 trials (309s)
+[dcf] shadow_patrol_s2_bg600       qlgr        30 trials (326s)
+[dcf] shadow_patrol_s2_bg600       mpcare      30 trials (370s)
+dcf campaign done in 370s
+shadow_patrol_s2_bg0         margin_vs_gpsr=+23.7pp rank=['astar_etx', 'mpcare', 'astar_dist']
+shadow_patrol_s2_bg600       margin_vs_gpsr=+18.9pp rank=['astar_etx', 'mpcare', 'letolsr']

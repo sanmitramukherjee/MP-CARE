@@ -1,0 +1,1384 @@
+{
+  "experiment": "dcf_campaign",
+  "n_trials": 30,
+  "seed0": 1000,
+  "duration_s": 90.0,
+  "algorithms": [
+    "astar_dist",
+    "gpsr",
+    "aodv",
+    "olsr",
+    "letolsr",
+    "astar_etx",
+    "qlgr",
+    "mpcare"
+  ],
+  "dcf": {
+    "slot_s": 9e-06,
+    "difs_s": 2.8e-05,
+    "cw_min": 32,
+    "cw_max": 1024,
+    "retries": 4,
+    "rate_mbps": 11.0,
+    "cs_range_m": 450.0,
+    "bg_frame_bytes": 1000
+  },
+  "conditions": {
+    "diamond_dcf_bg0": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.5787,
+          "ci95": 0.0301,
+          "utilization": 0.0033,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 1e-06,
+          "rank_biserial_vs_mpcare": 0.7544444444444445,
+          "holm_p_vs_mpcare": 3e-06
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.5787,
+          "ci95": 0.0301,
+          "utilization": 0.0033,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 1e-06,
+          "rank_biserial_vs_mpcare": 0.7544444444444445,
+          "holm_p_vs_mpcare": 3e-06
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.6213,
+          "ci95": 0.034,
+          "utilization": 0.0044,
+          "collisions": 24,
+          "mw_p_vs_mpcare": 0.000607,
+          "rank_biserial_vs_mpcare": 0.5144444444444445,
+          "holm_p_vs_mpcare": 0.00182
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.556,
+          "ci95": 0.0289,
+          "utilization": 0.0053,
+          "collisions": 18,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8322222222222222,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.5653,
+          "ci95": 0.0286,
+          "utilization": 0.0053,
+          "collisions": 18,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.81,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.7393,
+          "ci95": 0.0217,
+          "utilization": 0.0021,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.052321,
+          "rank_biserial_vs_mpcare": -0.2911111111111111,
+          "holm_p_vs_mpcare": 0.104643
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.7393,
+          "ci95": 0.0217,
+          "utilization": 0.0021,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.052321,
+          "rank_biserial_vs_mpcare": -0.2911111111111111,
+          "holm_p_vs_mpcare": 0.104643
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.7053,
+          "ci95": 0.0271,
+          "utilization": 0.0147,
+          "collisions": 49
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "qlgr",
+        "mpcare",
+        "aodv",
+        "astar_dist",
+        "gpsr",
+        "letolsr",
+        "olsr"
+      ],
+      "mpcare_minus_gpsr_pp": 12.66,
+      "legacy_no_dcf": null
+    },
+    "diamond_dcf_bg600": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.576,
+          "ci95": 0.0284,
+          "utilization": 0.5548,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9177777777777778,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.576,
+          "ci95": 0.0284,
+          "utilization": 0.5548,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9177777777777778,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.612,
+          "ci95": 0.0565,
+          "utilization": 0.5559,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 2.6e-05,
+          "rank_biserial_vs_mpcare": 0.6311111111111112,
+          "holm_p_vs_mpcare": 7.9e-05
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.59,
+          "ci95": 0.0318,
+          "utilization": 0.5567,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8555555555555556,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.5807,
+          "ci95": 0.0273,
+          "utilization": 0.5568,
+          "collisions": 2,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8855555555555557,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.746,
+          "ci95": 0.0217,
+          "utilization": 0.5537,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.840757,
+          "rank_biserial_vs_mpcare": -0.03111111111111109,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.746,
+          "ci95": 0.0217,
+          "utilization": 0.5537,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.840757,
+          "rank_biserial_vs_mpcare": -0.03111111111111109,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.742,
+          "ci95": 0.022,
+          "utilization": 0.5656,
+          "collisions": 4
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "qlgr",
+        "mpcare",
+        "aodv",
+        "olsr",
+        "letolsr",
+        "astar_dist",
+        "gpsr"
+      ],
+      "mpcare_minus_gpsr_pp": 16.6,
+      "legacy_no_dcf": null
+    },
+    "shadow_diamond_s0_bg0": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.5787,
+          "ci95": 0.0301,
+          "utilization": 0.0033,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 1e-06,
+          "rank_biserial_vs_mpcare": 0.7544444444444445,
+          "holm_p_vs_mpcare": 3e-06
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.5787,
+          "ci95": 0.0301,
+          "utilization": 0.0033,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 1e-06,
+          "rank_biserial_vs_mpcare": 0.7544444444444445,
+          "holm_p_vs_mpcare": 3e-06
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.6213,
+          "ci95": 0.034,
+          "utilization": 0.0044,
+          "collisions": 24,
+          "mw_p_vs_mpcare": 0.000607,
+          "rank_biserial_vs_mpcare": 0.5144444444444445,
+          "holm_p_vs_mpcare": 0.00182
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.556,
+          "ci95": 0.0289,
+          "utilization": 0.0053,
+          "collisions": 18,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8322222222222222,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.5653,
+          "ci95": 0.0286,
+          "utilization": 0.0053,
+          "collisions": 18,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.81,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.7393,
+          "ci95": 0.0217,
+          "utilization": 0.0021,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.052321,
+          "rank_biserial_vs_mpcare": -0.2911111111111111,
+          "holm_p_vs_mpcare": 0.104643
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.7393,
+          "ci95": 0.0217,
+          "utilization": 0.0021,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.052321,
+          "rank_biserial_vs_mpcare": -0.2911111111111111,
+          "holm_p_vs_mpcare": 0.104643
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.7053,
+          "ci95": 0.0271,
+          "utilization": 0.0147,
+          "collisions": 49
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "qlgr",
+        "mpcare",
+        "aodv",
+        "astar_dist",
+        "gpsr",
+        "letolsr",
+        "olsr"
+      ],
+      "mpcare_minus_gpsr_pp": 12.66,
+      "legacy_no_dcf": {
+        "astar_dist": 0.5827,
+        "gpsr": 0.5827,
+        "aodv": 0.6033,
+        "olsr": 0.5647,
+        "letolsr": 0.5673,
+        "astar_etx": 0.746,
+        "qlgr": 0.746,
+        "mpcare": 0.7287
+      }
+    },
+    "shadow_diamond_s0_bg600": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.576,
+          "ci95": 0.0284,
+          "utilization": 0.5548,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9177777777777778,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.576,
+          "ci95": 0.0284,
+          "utilization": 0.5548,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9177777777777778,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.612,
+          "ci95": 0.0565,
+          "utilization": 0.5559,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 2.6e-05,
+          "rank_biserial_vs_mpcare": 0.6311111111111112,
+          "holm_p_vs_mpcare": 7.9e-05
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.59,
+          "ci95": 0.0318,
+          "utilization": 0.5567,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8555555555555556,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.5807,
+          "ci95": 0.0273,
+          "utilization": 0.5568,
+          "collisions": 2,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8855555555555557,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.746,
+          "ci95": 0.0217,
+          "utilization": 0.5537,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.840757,
+          "rank_biserial_vs_mpcare": -0.03111111111111109,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.746,
+          "ci95": 0.0217,
+          "utilization": 0.5537,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.840757,
+          "rank_biserial_vs_mpcare": -0.03111111111111109,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.742,
+          "ci95": 0.022,
+          "utilization": 0.5656,
+          "collisions": 4
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "qlgr",
+        "mpcare",
+        "aodv",
+        "olsr",
+        "letolsr",
+        "astar_dist",
+        "gpsr"
+      ],
+      "mpcare_minus_gpsr_pp": 16.6,
+      "legacy_no_dcf": null
+    },
+    "shadow_diamond_s2_bg0": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.368,
+          "ci95": 0.074,
+          "utilization": 0.0032,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 1e-06,
+          "rank_biserial_vs_mpcare": 0.7444444444444445,
+          "holm_p_vs_mpcare": 4e-06
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.368,
+          "ci95": 0.074,
+          "utilization": 0.0032,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 1e-06,
+          "rank_biserial_vs_mpcare": 0.7444444444444445,
+          "holm_p_vs_mpcare": 4e-06
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.5053,
+          "ci95": 0.0601,
+          "utilization": 0.0046,
+          "collisions": 24,
+          "mw_p_vs_mpcare": 4.7e-05,
+          "rank_biserial_vs_mpcare": 0.6111111111111112,
+          "holm_p_vs_mpcare": 0.000142
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.3907,
+          "ci95": 0.0428,
+          "utilization": 0.0053,
+          "collisions": 17,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8999999999999999,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.418,
+          "ci95": 0.0479,
+          "utilization": 0.0054,
+          "collisions": 17,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8433333333333333,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.6327,
+          "ci95": 0.0334,
+          "utilization": 0.0025,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.319823,
+          "rank_biserial_vs_mpcare": 0.1499999999999999,
+          "holm_p_vs_mpcare": 0.639645
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.6327,
+          "ci95": 0.0334,
+          "utilization": 0.0025,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.319823,
+          "rank_biserial_vs_mpcare": 0.1499999999999999,
+          "holm_p_vs_mpcare": 0.639645
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.644,
+          "ci95": 0.0335,
+          "utilization": 0.015,
+          "collisions": 49
+        }
+      },
+      "ranking": [
+        "mpcare",
+        "astar_etx",
+        "qlgr",
+        "aodv",
+        "letolsr",
+        "olsr",
+        "astar_dist",
+        "gpsr"
+      ],
+      "mpcare_minus_gpsr_pp": 27.6,
+      "legacy_no_dcf": {
+        "astar_dist": 0.3187,
+        "gpsr": 0.3187,
+        "aodv": 0.5113,
+        "olsr": 0.4533,
+        "letolsr": 0.4627,
+        "astar_etx": 0.5953,
+        "qlgr": 0.5953,
+        "mpcare": 0.6793
+      }
+    },
+    "shadow_diamond_s2_bg600": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.3573,
+          "ci95": 0.0562,
+          "utilization": 0.5548,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8500000000000001,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.3573,
+          "ci95": 0.0562,
+          "utilization": 0.5548,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8500000000000001,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.472,
+          "ci95": 0.0778,
+          "utilization": 0.5562,
+          "collisions": 2,
+          "mw_p_vs_mpcare": 0.005696,
+          "rank_biserial_vs_mpcare": 0.41555555555555546,
+          "holm_p_vs_mpcare": 0.017088
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.4573,
+          "ci95": 0.0521,
+          "utilization": 0.5565,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 3e-06,
+          "rank_biserial_vs_mpcare": 0.7066666666666668,
+          "holm_p_vs_mpcare": 1.3e-05
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.4673,
+          "ci95": 0.0505,
+          "utilization": 0.5566,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 6e-06,
+          "rank_biserial_vs_mpcare": 0.6788888888888889,
+          "holm_p_vs_mpcare": 2.5e-05
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.6607,
+          "ci95": 0.036,
+          "utilization": 0.554,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.032276,
+          "rank_biserial_vs_mpcare": -0.3211111111111111,
+          "holm_p_vs_mpcare": 0.064552
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.6607,
+          "ci95": 0.036,
+          "utilization": 0.554,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.032276,
+          "rank_biserial_vs_mpcare": -0.3211111111111111,
+          "holm_p_vs_mpcare": 0.064552
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.618,
+          "ci95": 0.0324,
+          "utilization": 0.5661,
+          "collisions": 4
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "qlgr",
+        "mpcare",
+        "aodv",
+        "letolsr",
+        "olsr",
+        "astar_dist",
+        "gpsr"
+      ],
+      "mpcare_minus_gpsr_pp": 26.07,
+      "legacy_no_dcf": null
+    },
+    "shadow_diamond_s4_bg0": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.2833,
+          "ci95": 0.0637,
+          "utilization": 0.0031,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.000165,
+          "rank_biserial_vs_mpcare": 0.5666666666666667,
+          "holm_p_vs_mpcare": 0.001156
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.2833,
+          "ci95": 0.0637,
+          "utilization": 0.0031,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.000165,
+          "rank_biserial_vs_mpcare": 0.5666666666666667,
+          "holm_p_vs_mpcare": 0.001156
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.402,
+          "ci95": 0.0602,
+          "utilization": 0.0047,
+          "collisions": 24,
+          "mw_p_vs_mpcare": 0.370511,
+          "rank_biserial_vs_mpcare": 0.13555555555555565,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.3927,
+          "ci95": 0.0453,
+          "utilization": 0.0052,
+          "collisions": 16,
+          "mw_p_vs_mpcare": 0.184616,
+          "rank_biserial_vs_mpcare": 0.19999999999999996,
+          "holm_p_vs_mpcare": 0.92308
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.4453,
+          "ci95": 0.0583,
+          "utilization": 0.0052,
+          "collisions": 16,
+          "mw_p_vs_mpcare": 0.964564,
+          "rank_biserial_vs_mpcare": 0.007777777777777883,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.442,
+          "ci95": 0.0575,
+          "utilization": 0.003,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.858984,
+          "rank_biserial_vs_mpcare": -0.02777777777777779,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.442,
+          "ci95": 0.0575,
+          "utilization": 0.003,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.858984,
+          "rank_biserial_vs_mpcare": -0.02777777777777779,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.448,
+          "ci95": 0.0523,
+          "utilization": 0.0154,
+          "collisions": 48
+        }
+      },
+      "ranking": [
+        "mpcare",
+        "letolsr",
+        "astar_etx",
+        "qlgr",
+        "aodv",
+        "olsr",
+        "astar_dist",
+        "gpsr"
+      ],
+      "mpcare_minus_gpsr_pp": 16.47,
+      "legacy_no_dcf": {
+        "astar_dist": 0.274,
+        "gpsr": 0.274,
+        "aodv": 0.4013,
+        "olsr": 0.362,
+        "letolsr": 0.4193,
+        "astar_etx": 0.41,
+        "qlgr": 0.41,
+        "mpcare": 0.4233
+      }
+    },
+    "shadow_diamond_s4_bg600": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.264,
+          "ci95": 0.0552,
+          "utilization": 0.5547,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.000517,
+          "rank_biserial_vs_mpcare": 0.5222222222222221,
+          "holm_p_vs_mpcare": 0.003621
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.264,
+          "ci95": 0.0552,
+          "utilization": 0.5547,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.000517,
+          "rank_biserial_vs_mpcare": 0.5222222222222221,
+          "holm_p_vs_mpcare": 0.003621
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.432,
+          "ci95": 0.0614,
+          "utilization": 0.5561,
+          "collisions": 2,
+          "mw_p_vs_mpcare": 0.538691,
+          "rank_biserial_vs_mpcare": -0.09333333333333338,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.428,
+          "ci95": 0.0477,
+          "utilization": 0.5564,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 0.583797,
+          "rank_biserial_vs_mpcare": -0.08333333333333337,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.4793,
+          "ci95": 0.0602,
+          "utilization": 0.5565,
+          "collisions": 1,
+          "mw_p_vs_mpcare": 0.125428,
+          "rank_biserial_vs_mpcare": -0.23111111111111116,
+          "holm_p_vs_mpcare": 0.627141
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.4,
+          "ci95": 0.0425,
+          "utilization": 0.5546,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.864785,
+          "rank_biserial_vs_mpcare": 0.026666666666666616,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.4,
+          "ci95": 0.0425,
+          "utilization": 0.5546,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.864785,
+          "rank_biserial_vs_mpcare": 0.026666666666666616,
+          "holm_p_vs_mpcare": 1.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.4093,
+          "ci95": 0.0532,
+          "utilization": 0.5667,
+          "collisions": 4
+        }
+      },
+      "ranking": [
+        "letolsr",
+        "aodv",
+        "olsr",
+        "mpcare",
+        "astar_etx",
+        "qlgr",
+        "astar_dist",
+        "gpsr"
+      ],
+      "mpcare_minus_gpsr_pp": 14.53,
+      "legacy_no_dcf": null
+    },
+    "shadow_patrol_s0_bg0": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.9006,
+          "ci95": 0.0078,
+          "utilization": 0.0086,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.97,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.9016,
+          "ci95": 0.007,
+          "utilization": 0.0089,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9788888888888889,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.748,
+          "ci95": 0.0234,
+          "utilization": 0.0123,
+          "collisions": 37,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 1.0,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.8644,
+          "ci95": 0.0171,
+          "utilization": 0.0207,
+          "collisions": 60,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9988888888888889,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.8873,
+          "ci95": 0.0081,
+          "utilization": 0.0385,
+          "collisions": 72,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9966666666666666,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.9984,
+          "ci95": 0.001,
+          "utilization": 0.008,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": -1.0,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.9016,
+          "ci95": 0.007,
+          "utilization": 0.0089,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9788888888888889,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.9618,
+          "ci95": 0.0064,
+          "utilization": 0.0354,
+          "collisions": 151
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "mpcare",
+        "gpsr",
+        "qlgr",
+        "astar_dist",
+        "letolsr",
+        "olsr",
+        "aodv"
+      ],
+      "mpcare_minus_gpsr_pp": 6.02,
+      "legacy_no_dcf": {
+        "astar_dist": 0.8971,
+        "gpsr": 0.9024,
+        "aodv": 0.7151,
+        "olsr": 0.8889,
+        "letolsr": 0.9014,
+        "astar_etx": 0.9994,
+        "qlgr": 0.9024,
+        "mpcare": 0.9676
+      }
+    },
+    "shadow_patrol_s0_bg600": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.9024,
+          "ci95": 0.0083,
+          "utilization": 0.5601,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9866666666666666,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.8954,
+          "ci95": 0.0089,
+          "utilization": 0.5604,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9877777777777779,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.7292,
+          "ci95": 0.0267,
+          "utilization": 0.5632,
+          "collisions": 5,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 1.0,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.8798,
+          "ci95": 0.0189,
+          "utilization": 0.5708,
+          "collisions": 11,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9777777777777779,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.9012,
+          "ci95": 0.0092,
+          "utilization": 0.5865,
+          "collisions": 22,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9933333333333334,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.999,
+          "ci95": 0.0008,
+          "utilization": 0.5596,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": -1.0,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.8954,
+          "ci95": 0.0089,
+          "utilization": 0.5604,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9877777777777779,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.9666,
+          "ci95": 0.0058,
+          "utilization": 0.5851,
+          "collisions": 19
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "mpcare",
+        "astar_dist",
+        "letolsr",
+        "gpsr",
+        "qlgr",
+        "olsr",
+        "aodv"
+      ],
+      "mpcare_minus_gpsr_pp": 7.12,
+      "legacy_no_dcf": null
+    },
+    "shadow_patrol_s2_bg0": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.7183,
+          "ci95": 0.0295,
+          "utilization": 0.0091,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8711111111111112,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.6037,
+          "ci95": 0.0376,
+          "utilization": 0.0098,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9877777777777779,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.6147,
+          "ci95": 0.0366,
+          "utilization": 0.0123,
+          "collisions": 37,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9922222222222221,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.728,
+          "ci95": 0.0241,
+          "utilization": 0.02,
+          "collisions": 59,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8911111111111112,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.7267,
+          "ci95": 0.0289,
+          "utilization": 0.0355,
+          "collisions": 73,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8333333333333333,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.9594,
+          "ci95": 0.0102,
+          "utilization": 0.0086,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": -0.9466666666666667,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.6037,
+          "ci95": 0.0376,
+          "utilization": 0.0098,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9877777777777779,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.8538,
+          "ci95": 0.019,
+          "utilization": 0.0358,
+          "collisions": 149
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "mpcare",
+        "olsr",
+        "letolsr",
+        "astar_dist",
+        "aodv",
+        "gpsr",
+        "qlgr"
+      ],
+      "mpcare_minus_gpsr_pp": 25.01,
+      "legacy_no_dcf": {
+        "astar_dist": 0.6768,
+        "gpsr": 0.6496,
+        "aodv": 0.5966,
+        "olsr": 0.7216,
+        "letolsr": 0.7373,
+        "astar_etx": 0.9681,
+        "qlgr": 0.6496,
+        "mpcare": 0.868
+      }
+    },
+    "shadow_patrol_s2_bg600": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.7088,
+          "ci95": 0.0312,
+          "utilization": 0.5608,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9322222222222223,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.6712,
+          "ci95": 0.03,
+          "utilization": 0.561,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.971111111111111,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.6223,
+          "ci95": 0.0425,
+          "utilization": 0.5634,
+          "collisions": 7,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9822222222222223,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.744,
+          "ci95": 0.0317,
+          "utilization": 0.5722,
+          "collisions": 11,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.7866666666666666,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.7561,
+          "ci95": 0.0286,
+          "utilization": 0.5878,
+          "collisions": 24,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8044444444444445,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.9674,
+          "ci95": 0.0078,
+          "utilization": 0.5601,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": -0.9377777777777778,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.6712,
+          "ci95": 0.03,
+          "utilization": 0.561,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.971111111111111,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.8723,
+          "ci95": 0.0201,
+          "utilization": 0.5855,
+          "collisions": 20
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "mpcare",
+        "letolsr",
+        "olsr",
+        "astar_dist",
+        "gpsr",
+        "qlgr",
+        "aodv"
+      ],
+      "mpcare_minus_gpsr_pp": 20.11,
+      "legacy_no_dcf": null
+    },
+    "shadow_patrol_s4_bg0": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.5528,
+          "ci95": 0.032,
+          "utilization": 0.0098,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9633333333333334,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.4942,
+          "ci95": 0.0391,
+          "utilization": 0.0101,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9822222222222223,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.532,
+          "ci95": 0.0322,
+          "utilization": 0.0145,
+          "collisions": 34,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.98,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.6087,
+          "ci95": 0.037,
+          "utilization": 0.0223,
+          "collisions": 61,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.8344444444444445,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.6533,
+          "ci95": 0.0353,
+          "utilization": 0.0337,
+          "collisions": 71,
+          "mw_p_vs_mpcare": 3e-06,
+          "rank_biserial_vs_mpcare": 0.7077777777777778,
+          "holm_p_vs_mpcare": 5e-06
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.8314,
+          "ci95": 0.0266,
+          "utilization": 0.0097,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.000969,
+          "rank_biserial_vs_mpcare": -0.4966666666666667,
+          "holm_p_vs_mpcare": 0.000969
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.4942,
+          "ci95": 0.0391,
+          "utilization": 0.0101,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9822222222222223,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.7678,
+          "ci95": 0.0215,
+          "utilization": 0.0365,
+          "collisions": 150
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "mpcare",
+        "letolsr",
+        "olsr",
+        "astar_dist",
+        "aodv",
+        "gpsr",
+        "qlgr"
+      ],
+      "mpcare_minus_gpsr_pp": 27.36,
+      "legacy_no_dcf": {
+        "astar_dist": 0.5597,
+        "gpsr": 0.4965,
+        "aodv": 0.463,
+        "olsr": 0.6679,
+        "letolsr": 0.6408,
+        "astar_etx": 0.8427,
+        "qlgr": 0.4965,
+        "mpcare": 0.8042
+      }
+    },
+    "shadow_patrol_s4_bg600": {
+      "per_algorithm": {
+        "astar_dist": {
+          "n": 30,
+          "mean": 0.5178,
+          "ci95": 0.0371,
+          "utilization": 0.5616,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9833333333333334,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "gpsr": {
+          "n": 30,
+          "mean": 0.49,
+          "ci95": 0.0473,
+          "utilization": 0.5615,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9577777777777778,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "aodv": {
+          "n": 30,
+          "mean": 0.5307,
+          "ci95": 0.0344,
+          "utilization": 0.5634,
+          "collisions": 6,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9566666666666668,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "olsr": {
+          "n": 30,
+          "mean": 0.6245,
+          "ci95": 0.0335,
+          "utilization": 0.573,
+          "collisions": 10,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.81,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "letolsr": {
+          "n": 30,
+          "mean": 0.6553,
+          "ci95": 0.0315,
+          "utilization": 0.5851,
+          "collisions": 22,
+          "mw_p_vs_mpcare": 5e-06,
+          "rank_biserial_vs_mpcare": 0.6855555555555555,
+          "holm_p_vs_mpcare": 1e-05
+        },
+        "astar_etx": {
+          "n": 30,
+          "mean": 0.8346,
+          "ci95": 0.0233,
+          "utilization": 0.5612,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 2.2e-05,
+          "rank_biserial_vs_mpcare": -0.6388888888888888,
+          "holm_p_vs_mpcare": 2.2e-05
+        },
+        "qlgr": {
+          "n": 30,
+          "mean": 0.49,
+          "ci95": 0.0473,
+          "utilization": 0.5615,
+          "collisions": 0,
+          "mw_p_vs_mpcare": 0.0,
+          "rank_biserial_vs_mpcare": 0.9577777777777778,
+          "holm_p_vs_mpcare": 0.0
+        },
+        "mpcare": {
+          "n": 30,
+          "mean": 0.7571,
+          "ci95": 0.0205,
+          "utilization": 0.5863,
+          "collisions": 22
+        }
+      },
+      "ranking": [
+        "astar_etx",
+        "mpcare",
+        "letolsr",
+        "olsr",
+        "aodv",
+        "astar_dist",
+        "gpsr",
+        "qlgr"
+      ],
+      "mpcare_minus_gpsr_pp": 26.71,
+      "legacy_no_dcf": null
+    }
+  }
+}

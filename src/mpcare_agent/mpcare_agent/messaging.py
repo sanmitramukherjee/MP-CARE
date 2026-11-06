@@ -32,6 +32,8 @@ class MessageBus:
         self.link = link            # network_model.model.LinkModel
         self._pending: list[tuple[dict, int, int, float]] = []
         # (msg, from_id, to_id, distance_m)
+        self._pending_bc: list[tuple[dict, int, list[tuple[int, float]]]] = []
+        # (msg, from_id, [(neighbour_id, distance_m), ...]) — one broadcast frame
         self.control_bytes_sent: dict[int, int] = {}   # per node
         self.control_msgs_sent: dict[int, int] = {}    # per node
         self.rx_dropped: int = 0
@@ -41,8 +43,14 @@ class MessageBus:
         size = msg.get("size", 0)
         self.control_msgs_sent[from_id] = self.control_msgs_sent.get(from_id, 0) + 1
         self.control_bytes_sent[from_id] = self.control_bytes_sent.get(from_id, 0) + size
-        for nb in sorted(links.get(from_id, ())):
-            d = math.dist(positions[from_id][:2], positions[nb][:2])
+        pairs = [(nb, math.dist(positions[from_id][:2], positions[nb][:2]))
+                 for nb in sorted(links.get(from_id, ()))]
+        if getattr(self.link, "dcf", None) is not None:
+            # 802.11 broadcast: one frame for all neighbours, no ACK/retry
+            if pairs:
+                self._pending_bc.append((dict(msg), from_id, pairs))
+            return
+        for nb, d in pairs:
             self._pending.append((dict(msg), from_id, nb, d))
 
     def unicast(self, msg: dict, from_id: int, to_id: int, positions: dict):
@@ -60,9 +68,35 @@ class MessageBus:
         t: current sim time, stamped into msg["_t"] so receiver-side timers
         (OLSR HELLO/TC expiry) see the delivery time.
         """
+        if self._pending_bc:
+            bcs, self._pending_bc = self._pending_bc, []
+            for msg, frm, pairs in bcs:
+                size = max(64, int(msg.get("size", 0) or 100))
+                outs = self.link.broadcast_success(dict(pairs), frm, size_bytes=size)
+                for to, ok in outs.items():
+                    if not ok:
+                        continue
+                    m = dict(msg)
+                    if "ttl" in m:
+                        if m["ttl"] <= 0:
+                            continue
+                        m["ttl"] -= 1
+                    if t is not None:
+                        m["_t"] = t
+                    h = handlers.get(to)
+                    if h is None:
+                        self.rx_dropped += 1
+                        continue
+                    if hasattr(h, "on_message"):
+                        h.on_message(m, frm)
+                    elif callable(h):
+                        h(m, frm)
         pending, self._pending = self._pending, []
         for msg, frm, to, d in pending:
-            if not self.link.unicast_success(d):
+            # identity-aware draw: the per-link shadow offset applies to
+            # control traffic exactly as it does to data and beacon hops
+            size = max(64, int(msg.get("size", 0) or 100))
+            if not self.link.unicast_success(d, frm, to, size_bytes=size):
                 continue  # lost on the channel
             h = handlers.get(to)
             if h is None:

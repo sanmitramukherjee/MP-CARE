@@ -1,0 +1,9 @@
+seed,algorithm,condition,scenario,sigma_db,bg_fps,loss,chain_pdr,avg_latency_ms,reroutes,airtime_s,utilization,collisions,frames_scheduled,bc_frames,bc_rx_attempts,bc_rx_blocked,bc_rx_ok,bc_collided_frames,deferred,bg_frames
+1000,astar_dist,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.54,1.5,0,0.288586,0.0032,0,234,0,0,0,0,0,149,0
+1000,gpsr,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.54,1.5,0,0.288586,0.0032,0,234,0,0,0,0,0,149,0
+1000,aodv,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.76,2.2,8,0.35315,0.0039,28,664,460,1494,123,1309,82,377,0
+1000,olsr,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.24,2.2,0,0.303312,0.0034,24,802,700,2353,139,2122,90,571,0
+1000,letolsr,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.74,8.0,0,0.367445,0.0041,24,854,700,2352,139,2117,90,623,0
+1000,astar_etx,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.8,2.2,0,0.204723,0.0023,0,166,0,0,0,0,0,22,0
+1000,qlgr,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.8,2.2,0,0.204723,0.0023,0,166,0,0,0,0,0,22,0
+1000,mpcare,diamond_dcf_bg0,diamond,0.0,0.0,0.1,0.18,2.3,30,1.606228,0.0178,59,4932,4500,14640,1171,12885,767,3288,0

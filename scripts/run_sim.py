@@ -7,6 +7,11 @@ Algorithms (implementation_plan.md sections 3.5, 4.2 and 5):
   aodv       : B3  AODV (RFC 3561 subset, reactive routing)
   olsr       : B4  OLSR (RFC 3626 subset, proactive routing, MPRs)
   astar_etx  : B5  AT-PP style: A* with ETX edge cost (throughput-aware cousin)
+  qlgr       : B6  modern learned baseline (improvement.md Task 1): tabular
+               Q-learning geographic routing (QLGR family, adaptation of
+               Qiu et al. 2021 KSII TIIS 15(11)) — per-node state->
+               preference table over (progress, ETX, receding-speed) bins,
+               epsilon-greedy training runs, inference-only evaluation
   mpcare     : MP-CARE (Phase 3: predictive composite cost + event-triggered
                re-routing with hysteresis, decentralized beacons)
 
@@ -73,6 +78,7 @@ sys.path.insert(0, str(ROOT / "src" / "mpcare_agent"))
 sys.path.insert(0, str(ROOT / "src" / "logger"))
 sys.path.insert(0, str(ROOT / "src" / "aodv_routing"))
 sys.path.insert(0, str(ROOT / "src" / "olsr_routing"))
+sys.path.insert(0, str(ROOT / "src" / "qlgr_routing"))
 
 from network_model.model import NetworkParams, LinkModel, NetworkSnapshot  # noqa: E402
 from mpcare_agent.agent import UavAgent, WaypointMission, Packet, astar_path  # noqa: E402
@@ -80,6 +86,8 @@ from mpcare_agent.messaging import MessageBus  # noqa: E402
 from mpcare_agent.router import MpcareRouter, SimHooks  # noqa: E402
 from aodv_routing.core import AodvAgent  # noqa: E402
 from olsr_routing.core import OlsrAgent  # noqa: E402
+from olsr_routing.let_olsr import LetOlsrAgent  # noqa: E402
+from qlgr_routing.core import QlgrAgent  # noqa: E402
 from logger_pkg.core import TrialLogger, verify_schema  # noqa: E402
 
 N_UAV = 5
@@ -92,12 +100,34 @@ SEND_FROM = 5.0
 SEND_EVERY = 0.5
 SEND_BUFFER_S = 5.0       # dynamic protocols: packets queue max 5 s (real buffer)
 
-ALGORITHMS = ("astar_dist", "gpsr", "aodv", "olsr", "astar_etx", "mpcare")
+ALGORITHMS = ("astar_dist", "gpsr", "aodv", "olsr", "letolsr", "astar_etx",
+              "qlgr", "mpcare")
 
 MOBILITY_BOX = (700.0, 500.0)      # random-waypoint arena (experiment 5): sized
                                    # so 5 UAVs stay mostly connected with episodic
                                    # partitions — the regime where routing matters
 MOBILITY_SPEEDS = (5.0, 10.0, 15.0, 20.0, 25.0)
+
+# Continuous-traffic scenarios (improvement.md Task 3b): packets for the whole
+# run, aircraft stay airborne (no hover/waypoint-completion benchmark).
+CONTINUOUS_SCENARIOS = ("mobility", "patrol")
+
+PATROL_N = 10                     # 10-UAV patrol lanes (Task 3b): 5 east-west
+PATROL_SPEED = 20.0               # shuttles x 5 north-south shuttles in a
+PATROL_BOX = (1000.0, 1000.0)     # 1000 x 1000 m box, crossing paths
+def _patrol_wp(uav: int, leg: int) -> tuple[float, float, float]:
+    """Deterministic patrol loop: UAVs 0-4 shuttle east-west along lanes
+    y = 150 + 140*i (x alternates 120 <-> 880); UAVs 5-9 shuttle north-south
+    along lanes x = 150 + 140*(i-5) (y alternates 120 <-> 880). Crossing
+    paths churn the topology periodically; no hover, continuous traffic."""
+    lo, hi = 120.0, 880.0
+    if uav < 5:
+        y = 150.0 + 140.0 * uav
+        x = lo if leg % 2 == 0 else hi
+        return (x, y, 40.0)
+    x = 150.0 + 140.0 * (uav - 5)
+    y = lo if leg % 2 == 0 else hi
+    return (x, y, 40.0)
 
 CONVERGENCE_DEFS = {   # phase 6 metric definitions (plan section 8.3 metric 3)
     # All measured INSIDE THE STATIC WINDOW t in [0, 30) s: afterwards the
@@ -111,6 +141,7 @@ CONVERGENCE_DEFS = {   # phase 6 metric definitions (plan section 8.3 metric 3)
     "aodv": "first route discovery to the far destination within the static "
             "window (None if discovery completes only after t=30 s)",
     "gpsr": "stateless: n/a",
+    "qlgr": "stateless: n/a (learned tabular Q-forwarding, no topology state)",
 }
 
 # Phase 6 scale points (plan section 8.2): N -> (box_w, box_h, mission legs).
@@ -149,9 +180,24 @@ DIAMOND_POS = {0: (0.0, 0.0, 40.0), 1: (295.0, 0.0, 40.0), 4: (585.0, 0.0, 40.0)
 
 
 def build_swarm(seed: int, scenario: str = "chain", speed: float | None = None,
-                n_uav: int = N_UAV):
-    params = NetworkParams(rng_seed=seed)
+                n_uav: int = N_UAV, dcf: bool = False,
+                dcf_bg_frames_per_s: float = 0.0,
+                dcf_cs_range_m: float = 600.0):
+    params = NetworkParams(rng_seed=seed, dcf_enabled=dcf,
+                          dcf_bg_frames_per_s=dcf_bg_frames_per_s,
+                          dcf_cs_range_m=dcf_cs_range_m)
     link = LinkModel(params)
+    if scenario == "patrol":
+        # Task 3b (improvement.md): non-diamond dynamic geometry — 10 UAVs on
+        # crossing patrol lanes at PATROL_SPEED, continuous traffic, no hover.
+        if n_uav != PATROL_N:
+            raise ValueError(f"patrol scenario is defined for {PATROL_N} UAVs only")
+        v = PATROL_SPEED if speed is None else speed
+        start = [_patrol_wp(i, 0) for i in range(PATROL_N)]
+        goal = [_patrol_wp(i, 1) for i in range(PATROL_N)]
+        agents = [UavAgent(i, start[i], WaypointMission([goal[i]]),
+                           speed_mps=v, seed=seed + i) for i in range(PATROL_N)]
+        return params, link, agents, start, goal
     if scenario == "diamond":
         if n_uav != N_UAV:
             raise ValueError("diamond scenario is defined for 5 UAVs only")
@@ -260,12 +306,18 @@ def _graph(positions, snap):
 def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
         write_csv: bool = True, algorithm: str = "gpsr", scenario: str = "chain",
         injected_loss: float | None = None,
+        loss_schedule: list | None = None,
         badlink: tuple | None = None,
         kill_node: tuple | list | None = None,
         n_uav: int = N_UAV,
         speed: float | None = None,
         injected_latency_ms: float = 0.0,
-        mpcare_opts: dict | None = None) -> dict:
+        shadow_sigma_db: float | None = None,
+        dcf: bool = False,
+        dcf_bg_frames_per_s: float = 0.0,
+        dcf_cs_range_m: float = 600.0,
+        mpcare_opts: dict | None = None,
+        qlgr_opts: dict | None = None) -> dict:
     """One deterministic trial of `algorithm`. Returns per-check evidence.
 
     badlink: (t0, t1, loss, a, b) — inject per-PAIR packet loss on {a, b}
@@ -279,27 +331,64 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
     speed: mobility-scenario flight speed in m/s (experiment 5).
     injected_latency_ms: per-hop one-way latency added on top of airtime +
     propagation (experiment 3); end-to-end delay accumulates over the path.
+    qlgr_opts: {'learn': bool, 'seed': int, 'eps': float, 'table': {"(p,e,s)": v}}
+    — training vs inference mode of the QLGR baseline (improvement.md Task 1);
+    'table' is a merged state-> preference map loaded before the trial; when
+    'learn' is False the agent runs inference-only (eps = 0, no updates).
     """
     assert algorithm in ALGORITHMS, algorithm
-    params, link, agents, start, goal = build_swarm(seed, scenario, speed, n_uav)
+    params, link, agents, start, goal = build_swarm(
+        seed, scenario, speed, n_uav, dcf=dcf,
+        dcf_bg_frames_per_s=dcf_bg_frames_per_s,
+        dcf_cs_range_m=dcf_cs_range_m)
     n = n_uav
     if injected_loss is not None:
         params.injected_loss = float(injected_loss)
+    # loss_schedule: list of (t_from, t_to, loss) step windows — time-varying
+    # global injected loss (loss-shift experiment). Evaluated each tick inside
+    # the sim loop below; a window's loss applies on its inclusive interval.
+    _loss_sched = sorted(loss_schedule or [], key=lambda w: w[0])
+
+    def _loss_at(t: float) -> float:
+        base = params.injected_loss
+        for t0, t1, v in _loss_sched:
+            if t0 <= t < t1:
+                return float(v)
+        return base
     if injected_latency_ms:
         params.injected_latency_ms = float(injected_latency_ms)
+    if shadow_sigma_db is not None:
+        params.shadow_sigma_db = float(shadow_sigma_db)
     trial = TrialLogger(out_dir, trial_id=f"{algorithm}_seed{seed}") if write_csv else None
 
-    bus = MessageBus(link) if algorithm in ("aodv", "olsr") else None
+    bus = MessageBus(link) if algorithm in ("aodv", "olsr", "letolsr") else None
     protos = None
     if algorithm == "aodv":
         protos = [AodvAgent(i) for i in range(n)]
     elif algorithm == "olsr":
         protos = [OlsrAgent(i, n) for i in range(n)]
+    elif algorithm == "letolsr":
+        protos = [LetOlsrAgent(i, n, max_range_m=params.max_range_m)
+                  for i in range(n)]
     routers = None
     if algorithm == "mpcare":
         routers = [MpcareRouter(i, n, max_range_m=params.max_range_m,
                                 **(mpcare_opts or {}))
                    for i in range(n)]
+    qlgr_agents = None
+    if algorithm == "qlgr":
+        opts = dict(qlgr_opts or {})
+        table = opts.pop("table", None)
+        learn = bool(opts.pop("learn", True))
+        qlgr_agents = [QlgrAgent(i, n, learn=learn,
+                                 seed=int(opts.pop("seed", seed)),
+                                 eps=float(opts.pop("eps", 0.15)))
+                       for i in range(n)]
+        assert not opts, f"unknown qlgr_opts: {opts}"
+        for qa in qlgr_agents:
+            if table:
+                qa.load_table(table.get(str(qa.node_id)) or table)
+    assert not (mpcare_opts and algorithm != "mpcare"), "mpcare_opts ignored"
 
     # data packets in flight: dicts {pkt, cur, route(list), next_idx, created}
     inflight: list[dict] = []
@@ -347,9 +436,13 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
     t = 0.0
     for tick in range(int(duration / dt)):
         t = tick * dt
+        # time-varying injected loss (loss-shift experiment): re-apply each tick
+        if _loss_sched:
+            params.injected_loss = _loss_at(t)
 
         # ---- generate benchmark packets (UAV0 -> UAV4) during the chain phase
-        if t >= SEND_FROM and t < (HOVER_UNTIL if scenario != "mobility" else duration) \
+        if t >= SEND_FROM and t < (duration if scenario in CONTINUOUS_SCENARIOS
+                                   else HOVER_UNTIL) \
                 and (tick % int(SEND_EVERY / dt) == 0):
             pkt = Packet(pid=next_pid, src=0, dst=n - 1,
                          dst_pos=(agents[n - 1].pos[0], agents[n - 1].pos[1]),
@@ -368,14 +461,19 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
 
         # ---- mobility
         old_pos = [a.pos for a in agents]
-        if scenario == "mobility":
+        if scenario in CONTINUOUS_SCENARIOS:
             for a in agents:
                 wp = a.mission.current_wp()
                 if wp and a.move_toward(wp, dt):
                     # random-waypoint: keep flying new legs for the whole run
+                    # (mobility); patrol: replay the same loop forever
                     a.mission.advance()
-                    a.mission.waypoints.append(
-                        _random_wp(seed, a.uav_id, len(a.mission.waypoints)))
+                    if scenario == "mobility":
+                        a.mission.waypoints.append(
+                            _random_wp(seed, a.uav_id, len(a.mission.waypoints)))
+                    else:
+                        a.mission.waypoints.append(
+                            _patrol_wp(a.uav_id, len(a.mission.waypoints)))
                 while len(speed_rows) <= a.uav_id:
                     speed_rows.append(0.0)
                 speed_rows[a.uav_id] += math.dist(a.pos[:2], old_pos[a.uav_id][:2])
@@ -389,7 +487,17 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                             arrival_t[a.uav_id] = t
 
         # ---- network snapshot + protocol ticks
+        # slow log-normal shadow state advances before the snapshot so every
+        # unicast this tick (data, beacons, control traffic) sees one coherent
+        # per-link offset; the distance-derived snapshot ETX stays blind to it
+        # (heterogeneity the physics delivers but the snapshot cannot predict).
         positions = {a.uav_id: a.pos for a in agents}
+        if params.shadow_sigma_db > 0.0:
+            _ids = list(positions)
+            link.step_shadow(
+                [(a, b) for i, a in enumerate(_ids) for b in _ids[i + 1:]
+                 if math.dist(positions[a], positions[b]) <= params.max_range_m],
+                dt)
         snap = NetworkSnapshot(positions, link, t)
         links = _graph(positions, snap)
         # per-pair impairment window (T1 trigger test); clear outside the window
@@ -411,6 +519,8 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                 kill_applied = True
                 snap = NetworkSnapshot(positions, link, t)
                 links = _graph(positions, snap)
+        # DCF scheduler: one frame-level channel state per protocol tick
+        link.begin_tick(t, positions)
         deg_acc += sum(len(v) for v in links.values())   # phase 6 avg degree
         deg_n += len(links)
         if (static_end_links is None and algorithm != "gpsr"
@@ -459,11 +569,13 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
         if tick == int(duration / dt) - 1:
             etx_t1 = (snap.etx_of(0, 1), snap.etx_of(*far))
 
-        if algorithm in ("aodv", "olsr"):
+        if algorithm in ("aodv", "olsr", "letolsr"):
             _t00 = time.perf_counter()   # phase 6 CPU instrumentation
             for pr in protos:
                 if pr.node_id not in positions:
                     continue    # killed UAV: protocol goes silent
+                if algorithm == "letolsr":   # kinematic LET from the position service
+                    pr.observe_state(t, positions)
                 pr.tick(t, dt, links)
                 pr.flush(bus, positions, links)
             handlers = {i: pr for i, pr in enumerate(protos)}
@@ -484,10 +596,19 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                          else src_pr.next_hop_for(n - 1) is not None)
             if conv_t is None and has_route:
                 conv_t = t
-            if algorithm == "olsr":   # phase 6 convergence instrumentation
+            if algorithm in ("olsr", "letolsr"):   # phase 6 convergence instrumentation
                 src_view_sets.append(frozenset(d for (_lh, d) in protos[0].topology)
                                      if protos[0].node_id in positions
                                      else frozenset())
+
+        if algorithm == "qlgr":
+            _t00 = time.perf_counter()   # phase 6 CPU instrumentation
+            for qa in qlgr_agents:
+                if qa.node_id not in positions:
+                    continue          # killed UAV: protocol goes silent
+                qa.observe(t, positions, links, snap)
+                qa.reroute_event = False
+            cpu_acc += time.perf_counter() - _t00
 
         if algorithm == "mpcare":
             _t00 = time.perf_counter()   # phase 6 CPU instrumentation
@@ -505,12 +626,24 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                     continue
                 payload = r.beacon_payload(positions[r.node_id], r._own_queue_ratio, t)
                 beacon_tx[r.node_id] += 1   # phase 6 overhead instrumentation
-                for nb in sorted(links.get(r.node_id, ())):
-                    if nb not in positions:
-                        continue
-                    d = math.dist(positions[r.node_id][:2], positions[nb][:2])
-                    if link.unicast_success(d, r.node_id, nb):
-                        routers[nb].receive_beacon(payload, r.node_id, snap.etx_of(r.node_id, nb), t)
+                nbs = [nb for nb in sorted(links.get(r.node_id, ()))
+                       if nb in positions]
+                if link.dcf is not None and nbs:
+                    # one broadcast frame for all neighbours (802.11 broadcast:
+                    # no ACK, no retry), received independently per neighbour
+                    ds = {nb: math.dist(positions[r.node_id][:2], positions[nb][:2])
+                          for nb in nbs}
+                    for nb, ok in link.broadcast_success(
+                            ds, r.node_id, size_bytes=64).items():
+                        if ok:
+                            routers[nb].receive_beacon(
+                                payload, r.node_id,
+                                snap.etx_of(r.node_id, nb), t)
+                else:
+                    for nb in nbs:
+                        d = math.dist(positions[r.node_id][:2], positions[nb][:2])
+                        if link.unicast_success(d, r.node_id, nb, size_bytes=64):
+                            routers[nb].receive_beacon(payload, r.node_id, snap.etx_of(r.node_id, nb), t)
             for r in routers:
                 if r.node_id in positions:
                     r.table.set_my_position(positions[r.node_id])
@@ -566,7 +699,7 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                     continue
                 d = snap.dist[(cur, nxt)] if (cur, nxt) in snap.dist else math.dist(
                     positions[cur][:2], positions[nxt][:2])
-                if link.unicast_success(d):
+                if link.unicast_success(d, cur, nxt):
                     p["cur"] = nxt
                     p["latency_ms"] = p.get("latency_ms", 0.0) + link.latency_ms(d)
                     if p.get("first_fwd_t") is None:
@@ -585,7 +718,7 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                 if nxt is None:
                     continue
                 d = math.dist(positions[cur][:2], positions[nxt][:2])
-                if link.unicast_success(d):
+                if link.unicast_success(d, cur, nxt):
                     p["cur"] = nxt
                     p["latency_ms"] = p.get("latency_ms", 0.0) + link.latency_ms(d)
                     if p.get("first_fwd_t") is None:
@@ -595,6 +728,49 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                                  win_lat, route_choice, deliveries)
                     else:
                         still.append(p)
+
+            elif algorithm == "qlgr":
+                qa = qlgr_agents[cur]
+                nh = qa.forward(pkt, positions, links, snap)
+                if nh is None or nh not in links.get(cur, ()):
+                    continue           # isolated: drop (GPSR baseline parity)
+                d = math.dist(positions[cur][:2], positions[nh][:2])
+                ok = link.unicast_success(d, cur, nh)
+                delivered = ok and nh == pkt.dst
+                qa.observe_attempt(pkt, ok, delivered)
+                if not ok:
+                    continue           # failed unicast: packet lost here
+                p["cur"] = nh
+                p["latency_ms"] = p.get("latency_ms", 0.0) + link.latency_ms(d)
+                if p.get("first_fwd_t") is None:
+                    p["first_fwd_t"] = t
+                # walk accounting mirrors the MP-CARE hop cap: a learned
+                # router may loop its face (progress-less hops) — drop past
+                # a bounded cap so loops cannot stall the packet queue.
+                prev_d = math.dist(positions[cur][:2], pkt.dst_pos)
+                new_d = math.dist(positions[nh][:2], pkt.dst_pos)
+                d0 = p.get("walk_d0")
+                if d0 is None:
+                    if new_d >= prev_d:
+                        p["walk_d0"] = prev_d
+                        p["walk_steps"] = 1
+                elif new_d < d0:
+                    p["walk_d0"] = None
+                    p["walk_steps"] = 0
+                elif new_d < prev_d:
+                    p["walk_steps"] = 0
+                else:
+                    p["walk_steps"] += 1
+                    if p["walk_steps"] > MPCARE_WALK_CAP:
+                        void_drops += 1
+                        continue
+                pkt.hops += 1
+                pkt.path.append(nh)
+                if nh == pkt.dst:
+                    _deliver(p, t, stats, hop_counts, latencies, chain_hops, win,
+                             win_lat, route_choice, deliveries)
+                else:
+                    still.append(p)
 
             elif algorithm == "mpcare":
                 r = routers[cur]
@@ -657,7 +833,7 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                     still.append(p)
                     continue
                 d = math.dist(positions[cur][:2], positions[nh][:2])
-                if link.unicast_success(d):
+                if link.unicast_success(d, cur, nh):
                     p["cur"] = nh
                     p["latency_ms"] = p.get("latency_ms", 0.0) + link.latency_ms(d)
                     if p.get("first_fwd_t") is None:
@@ -679,7 +855,11 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                     events[r.reroute_trigger] = events.get(r.reroute_trigger, 0) + 1
                     if r.reroute_trigger not in first_fire:
                         first_fire[r.reroute_trigger] = t
-        elif algorithm in ("aodv", "olsr"):
+        elif algorithm == "qlgr":
+            for qa in qlgr_agents:
+                if qa.node_id in positions and qa.reroute_event:
+                    events["route-change"] = events.get("route-change", 0) + 1
+        elif algorithm in ("aodv", "olsr", "letolsr"):
             for pr in protos:
                 if pr.next_hop_change:
                     events["route-change"] = events.get("route-change", 0) + 1
@@ -749,14 +929,16 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
 
     # ---------------- checks ----------------
     results = {"seed": seed, "algorithm": algorithm}
-    if scenario == "mobility" and speed is not None and speed_rows:
+    if link.dcf is not None:
+        results["dcf"] = link.dcf.summary()
+    if scenario in CONTINUOUS_SCENARIOS and speed is not None and speed_rows:
         v_avg = sum(speed_rows) / len(speed_rows) / duration
         results["speed_mps"] = round(v_avg, 2)
         results["speed_ok"] = 0.9 * speed <= v_avg <= 1.1 * speed
     idx10 = int(10.0 / dt)
-    results["stability_ok"] = (scenario == "mobility" or all(
+    results["stability_ok"] = (scenario in CONTINUOUS_SCENARIOS or all(
         math.dist(pos_history[idx10][i][:2], start[i][:2]) < 2.0 for i in range(n)))
-    if scenario == "mobility":
+    if scenario in CONTINUOUS_SCENARIOS:
         results["waypoint_ok"] = True       # continuous flight: no terminal wp
         results["max_arrival_s"] = None
     else:
@@ -801,7 +983,7 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
         results["first_route_s"] = conv_t
         results["routing_ok"] = (None if stressed else
                                  chain_pdr > 0.8 and bool(disc) and max(disc) < 2.0)
-    elif algorithm == "olsr":
+    elif algorithm in ("olsr", "letolsr"):
         results["converged_s"] = conv_t
         results["routing_ok"] = (None if stressed else
                                  chain_pdr > 0.85 and conv_t is not None and conv_t < 10.0)
@@ -810,12 +992,13 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
     results["etx_changed"] = (etx_t0 is not None and etx_t1 is not None
                               and etx_t0[0] != etx_t1[0])
     results["etx_inf_oor"] = math.isinf(etx_t0[1]) and math.isinf(etx_t1[1])
-    if scenario == "mobility":
+    if scenario in CONTINUOUS_SCENARIOS:
         # check 4 is a static-topology sanity check (ETX must move as the swarm
-        # compresses); the mobility equivalent is the speed audit: the average
-        # flown speed must match the commanded speed within +-10 percent.
+        # compresses); the patrol/mobility equivalent is the speed audit: the
+        # average flown speed must match the commanded speed within +-10%.
         results["etx_changed"] = results["etx_inf_oor"] = True
-        results["network_ok"] = bool(results.get("speed_ok", False))
+        results["network_ok"] = (True if speed is None
+                                 else bool(results.get("speed_ok", False)))
     elif scenario == "scale":
         # at constant density the (0,1) and farthest pairs are typically out of
         # range for the WHOLE run (and the graph is static for the first 30 s),
@@ -862,6 +1045,16 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
     results["route_choice"] = dict(route_choice)
     results["trigger_events"] = dict(events)
     results["first_fire"] = {k: round(v, 2) for k, v in first_fire.items()}
+    if algorithm == "qlgr":
+        # learned-baseline telemetry: table size (per agent), end-to-end
+        # route churn, and the overhead reality: zero control packets
+        results["qlgr_route_changes"] = sum(
+            qa.n_route_changes for qa in (qlgr_agents or []))
+        results["qlgr_table_size"] = (max((len(qa.q) for qa in qlgr_agents),
+                                          default=0) if qlgr_agents else 0)
+        results["qlgr_explore_rate"] = round(
+            sum(qa.n_explore for qa in (qlgr_agents or []))
+            / max(1, sum(qa.n_attempts for qa in (qlgr_agents or []))), 3)
     # ---- phase 6 scalability metrics (plan section 8.3) ----
     # metric 1: per-UAV protocol compute per tick (perf_counter around every
     # real node's protocol work; includes GIL-serialized global work -> honest
@@ -886,7 +1079,7 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
                    if i * dt < HOVER_UNTIL and target and target <= set(v)), None)
         results["full_conv_s"] = round(ft, 2) if ft is not None else None
         results["conv_scope"] = "static window [0, 30) s"
-    elif algorithm == "olsr":
+    elif algorithm in ("olsr", "letolsr"):
         results["convergence_def"] = CONVERGENCE_DEFS["olsr"]
         target: set = set()
         if static_end_links and 0 in static_end_links:
@@ -916,7 +1109,7 @@ def run(seed: int, out_dir: Path, duration: float = 90.0, dt: float = 0.1,
     if bus is not None:
         results["control_pkts_per_node_s"] = round(
             bus.control_overhead_per_node(n, duration), 3)
-    if protos and algorithm == "olsr":
+    if protos and algorithm in ("olsr", "letolsr"):
         results["avg_mpr_size"] = round(sum(len(p.mpr_set) for p in protos) / n, 2)
     return results
 
@@ -962,7 +1155,8 @@ def main():
     ap.add_argument("--out", default=str(ROOT / "data" / "raw"))
     ap.add_argument("--dur", type=float, default=90.0)
     ap.add_argument("--scenario", default="chain",
-                    choices=("chain", "diamond", "mobility", "grid", "scale"))
+                    choices=("chain", "diamond", "mobility", "patrol", "grid",
+                             "scale"))
     ap.add_argument("--loss", type=float, default=None,
                     help="global injected per-attempt packet loss 0..1")
     ap.add_argument("--badlink", action="store_true",

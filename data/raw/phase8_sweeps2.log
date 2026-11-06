@@ -1,0 +1,129 @@
+
+=== exp2b_loss_diamond: 7 conditions x 7 algorithms x 30 trials ===
+[exp2b_loss_diamond] loss_0.00      astar_dist  30 trials done (1s elapsed)
+[exp2b_loss_diamond] loss_0.00      gpsr        30 trials done (2s elapsed)
+[exp2b_loss_diamond] loss_0.00      aodv        30 trials done (3s elapsed)
+[exp2b_loss_diamond] loss_0.00      olsr        30 trials done (8s elapsed)
+[exp2b_loss_diamond] loss_0.00      astar_etx   30 trials done (10s elapsed)
+[exp2b_loss_diamond] loss_0.00      qlgr        30 trials done (13s elapsed)
+[exp2b_loss_diamond] loss_0.00      mpcare      30 trials done (22s elapsed)
+[exp2b_loss_diamond] loss_0.05      astar_dist  30 trials done (24s elapsed)
+[exp2b_loss_diamond] loss_0.05      gpsr        30 trials done (26s elapsed)
+[exp2b_loss_diamond] loss_0.05      aodv        30 trials done (29s elapsed)
+[exp2b_loss_diamond] loss_0.05      olsr        30 trials done (34s elapsed)
+[exp2b_loss_diamond] loss_0.05      astar_etx   30 trials done (36s elapsed)
+[exp2b_loss_diamond] loss_0.05      qlgr        30 trials done (40s elapsed)
+[exp2b_loss_diamond] loss_0.05      mpcare      30 trials done (48s elapsed)
+[exp2b_loss_diamond] loss_0.10      astar_dist  30 trials done (50s elapsed)
+[exp2b_loss_diamond] loss_0.10      gpsr        30 trials done (52s elapsed)
+[exp2b_loss_diamond] loss_0.10      aodv        30 trials done (56s elapsed)
+[exp2b_loss_diamond] loss_0.10      olsr        30 trials done (60s elapsed)
+[exp2b_loss_diamond] loss_0.10      astar_etx   30 trials done (63s elapsed)
+[exp2b_loss_diamond] loss_0.10      qlgr        30 trials done (66s elapsed)
+[exp2b_loss_diamond] loss_0.10      mpcare      30 trials done (74s elapsed)
+[exp2b_loss_diamond] loss_0.15      astar_dist  30 trials done (76s elapsed)
+[exp2b_loss_diamond] loss_0.15      gpsr        30 trials done (78s elapsed)
+[exp2b_loss_diamond] loss_0.15      aodv        30 trials done (82s elapsed)
+[exp2b_loss_diamond] loss_0.15      olsr        30 trials done (86s elapsed)
+[exp2b_loss_diamond] loss_0.15      astar_etx   30 trials done (88s elapsed)
+[exp2b_loss_diamond] loss_0.15      qlgr        30 trials done (91s elapsed)
+[exp2b_loss_diamond] loss_0.15      mpcare      30 trials done (99s elapsed)
+[exp2b_loss_diamond] loss_0.20      astar_dist  30 trials done (102s elapsed)
+[exp2b_loss_diamond] loss_0.20      gpsr        30 trials done (104s elapsed)
+[exp2b_loss_diamond] loss_0.20      aodv        30 trials done (107s elapsed)
+[exp2b_loss_diamond] loss_0.20      olsr        30 trials done (112s elapsed)
+[exp2b_loss_diamond] loss_0.20      astar_etx   30 trials done (114s elapsed)
+[exp2b_loss_diamond] loss_0.20      qlgr        30 trials done (117s elapsed)
+[exp2b_loss_diamond] loss_0.20      mpcare      30 trials done (125s elapsed)
+[exp2b_loss_diamond] loss_0.25      astar_dist  30 trials done (128s elapsed)
+[exp2b_loss_diamond] loss_0.25      gpsr        30 trials done (130s elapsed)
+[exp2b_loss_diamond] loss_0.25      aodv        30 trials done (133s elapsed)
+[exp2b_loss_diamond] loss_0.25      olsr        30 trials done (138s elapsed)
+[exp2b_loss_diamond] loss_0.25      astar_etx   30 trials done (140s elapsed)
+[exp2b_loss_diamond] loss_0.25      qlgr        30 trials done (143s elapsed)
+[exp2b_loss_diamond] loss_0.25      mpcare      30 trials done (151s elapsed)
+[exp2b_loss_diamond] loss_0.30      astar_dist  30 trials done (153s elapsed)
+[exp2b_loss_diamond] loss_0.30      gpsr        30 trials done (155s elapsed)
+[exp2b_loss_diamond] loss_0.30      aodv        30 trials done (159s elapsed)
+[exp2b_loss_diamond] loss_0.30      olsr        30 trials done (163s elapsed)
+[exp2b_loss_diamond] loss_0.30      astar_etx   30 trials done (166s elapsed)
+[exp2b_loss_diamond] loss_0.30      qlgr        30 trials done (169s elapsed)
+[exp2b_loss_diamond] loss_0.30      mpcare      30 trials done (177s elapsed)
+[exp2b_loss_diamond] wrote exp2b_loss_diamond.csv/_summary.json + graphs (loss)
+
+  condition       astar_dist    gpsr          aodv          olsr          astar_etx     qlgr          mpcare        
+  loss_0.00       0.705±0.023   0.705±0.023   0.726±0.033   0.707±0.031   1.000±0.000   1.000±0.000   1.000±0.000   
+  loss_0.05       0.645±0.026   0.645±0.026   0.664±0.033   0.638±0.030   0.872±0.018   0.872±0.018   0.851±0.019   
+  loss_0.10       0.583±0.023   0.583±0.023   0.603±0.031   0.565±0.027   0.746±0.022   0.746±0.022   0.729±0.025   
+  loss_0.15       0.526±0.019   0.526±0.019   0.515±0.032   0.504±0.032   0.617±0.022   0.617±0.022   0.627±0.027   
+  loss_0.20       0.475±0.025   0.475±0.025   0.415±0.029   0.431±0.033   0.523±0.025   0.523±0.025   0.505±0.030   
+  loss_0.25       0.423±0.026   0.423±0.026   0.369±0.024   0.403±0.022   0.439±0.026   0.439±0.026   0.409±0.025   
+  loss_0.30       0.369±0.026   0.369±0.026   0.301±0.033   0.331±0.026   0.354±0.024   0.354±0.024   0.345±0.023   
+  post-hoc vs mpcare @loss_0.30 (Holm): astar_dist: p=1, margin=-0.023, gpsr: p=1, margin=-0.023, aodv: p=0.23856, margin=+0.044, olsr: p=1, margin=+0.014, astar_etx: p=1, margin=-0.009, qlgr: p=1, margin=-0.009
+
+=== exp5_mobility: 8 conditions x 6 algorithms x 30 trials ===
+[exp5_mobility] speed_5        astar_dist  30 trials done (2s elapsed)
+[exp5_mobility] speed_5        gpsr        30 trials done (4s elapsed)
+[exp5_mobility] speed_5        aodv        30 trials done (7s elapsed)
+[exp5_mobility] speed_5        olsr        30 trials done (11s elapsed)
+[exp5_mobility] speed_5        qlgr        30 trials done (15s elapsed)
+[exp5_mobility] speed_5        mpcare      30 trials done (21s elapsed)
+[exp5_mobility] speed_10       astar_dist  30 trials done (23s elapsed)
+[exp5_mobility] speed_10       gpsr        30 trials done (25s elapsed)
+[exp5_mobility] speed_10       aodv        30 trials done (28s elapsed)
+[exp5_mobility] speed_10       olsr        30 trials done (32s elapsed)
+[exp5_mobility] speed_10       qlgr        30 trials done (35s elapsed)
+[exp5_mobility] speed_10       mpcare      30 trials done (42s elapsed)
+[exp5_mobility] speed_15       astar_dist  30 trials done (44s elapsed)
+[exp5_mobility] speed_15       gpsr        30 trials done (46s elapsed)
+[exp5_mobility] speed_15       aodv        30 trials done (49s elapsed)
+[exp5_mobility] speed_15       olsr        30 trials done (53s elapsed)
+[exp5_mobility] speed_15       qlgr        30 trials done (57s elapsed)
+[exp5_mobility] speed_15       mpcare      30 trials done (63s elapsed)
+[exp5_mobility] speed_20       astar_dist  30 trials done (65s elapsed)
+[exp5_mobility] speed_20       gpsr        30 trials done (68s elapsed)
+[exp5_mobility] speed_20       aodv        30 trials done (71s elapsed)
+[exp5_mobility] speed_20       olsr        30 trials done (74s elapsed)
+[exp5_mobility] speed_20       qlgr        30 trials done (78s elapsed)
+[exp5_mobility] speed_20       mpcare      30 trials done (84s elapsed)
+[exp5_mobility] speed_25       astar_dist  30 trials done (86s elapsed)
+[exp5_mobility] speed_25       gpsr        30 trials done (88s elapsed)
+[exp5_mobility] speed_25       aodv        30 trials done (91s elapsed)
+[exp5_mobility] speed_25       olsr        30 trials done (95s elapsed)
+[exp5_mobility] speed_25       qlgr        30 trials done (98s elapsed)
+[exp5_mobility] speed_25       mpcare      30 trials done (105s elapsed)
+[exp5_mobility] speed_30       astar_dist  30 trials done (107s elapsed)
+[exp5_mobility] speed_30       gpsr        30 trials done (110s elapsed)
+[exp5_mobility] speed_30       aodv        30 trials done (113s elapsed)
+[exp5_mobility] speed_30       olsr        30 trials done (117s elapsed)
+[exp5_mobility] speed_30       qlgr        30 trials done (120s elapsed)
+[exp5_mobility] speed_30       mpcare      30 trials done (126s elapsed)
+[exp5_mobility] speed_40       astar_dist  30 trials done (128s elapsed)
+[exp5_mobility] speed_40       gpsr        30 trials done (130s elapsed)
+[exp5_mobility] speed_40       aodv        30 trials done (133s elapsed)
+[exp5_mobility] speed_40       olsr        30 trials done (137s elapsed)
+[exp5_mobility] speed_40       qlgr        30 trials done (140s elapsed)
+[exp5_mobility] speed_40       mpcare      30 trials done (147s elapsed)
+[exp5_mobility] speed_50       astar_dist  30 trials done (149s elapsed)
+[exp5_mobility] speed_50       gpsr        30 trials done (152s elapsed)
+[exp5_mobility] speed_50       aodv        30 trials done (155s elapsed)
+[exp5_mobility] speed_50       olsr        30 trials done (159s elapsed)
+[exp5_mobility] speed_50       qlgr        30 trials done (162s elapsed)
+[exp5_mobility] speed_50       mpcare      30 trials done (169s elapsed)
+[exp5_mobility] wrote exp5_mobility.csv/_summary.json + graphs (speed)
+
+  condition       astar_dist    gpsr          aodv          olsr          qlgr          mpcare        
+  speed_5         0.965±0.030   0.967±0.029   0.968±0.032   0.960±0.031   0.940±0.058   0.975±0.028   
+  speed_10        0.951±0.031   0.969±0.021   0.921±0.050   0.935±0.042   0.943±0.042   0.967±0.025   
+  speed_15        0.954±0.025   0.976±0.011   0.916±0.038   0.932±0.033   0.944±0.032   0.969±0.015   
+  speed_20        0.953±0.022   0.972±0.011   0.905±0.043   0.937±0.032   0.955±0.022   0.977±0.013   
+  speed_25        0.952±0.022   0.973±0.013   0.911±0.042   0.924±0.032   0.963±0.018   0.977±0.009   
+  speed_30        0.950±0.022   0.971±0.014   0.903±0.051   0.936±0.022   0.958±0.016   0.981±0.008   
+  speed_40        0.951±0.015   0.968±0.012   0.913±0.042   0.944±0.019   0.959±0.015   0.982±0.007   
+  speed_50        0.947±0.015   0.969±0.012   0.893±0.053   0.948±0.015   0.963±0.011   0.980±0.005   
+  post-hoc vs mpcare @speed_50 (Holm): astar_dist: p=0.00556, margin=+0.033, gpsr: p=0.42246, margin=+0.011, aodv: p=0.00517, margin=+0.086, olsr: p=0.00521, margin=+0.032, qlgr: p=0.03516, margin=+0.017
+
+=== section 6.3 benchmark checks ===
+  [MISS] exp5_mobility.exp5_let_err_below_30pct_vle15
+
+DONE — data in C:\Users\Lenovo\Desktop\Personal\RoutingComm\MP-CARE\data\processed

@@ -75,7 +75,7 @@ def main() -> None:
 
     # Top Row: Protocol Modules
     draw_box(ax, (x1, y_top), w_main, h_main, "Neighbor Table",
-             ["1 Hz beacons $B_i$", "EWMA ETX ($\\alpha=0.3$)", "radial vel. $\\dot{d}$", "loss timeout 2.5 s"])
+             ["10 Hz beacons $B_i$ (T$_b$=0.1 s)", "EWMA ETX ($\\alpha=0.3$)", "radial vel. $\\dot{d}$", "loss timeout 2.5 s"])
 
     draw_box(ax, (x2, y_top), w_main, h_main, "Link Predictor",
              ["$\\mathrm{ETX}_{pred}=\\mathrm{ETX}\\cdot f(\\dot{d})$",
